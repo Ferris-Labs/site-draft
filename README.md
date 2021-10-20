@@ -26,7 +26,7 @@ A simple way to get started is to use this project as a template, which gives yo
 3. Make your own local working copy of your new repo using git clone, replacing https://github.com/my/example.git with your repo’s web URL:
 
 ```bash
-git clone --recurse-submodules --depth 1 https://github.com/my/example.git
+git clone --recurse-submodules --depth 1 https://github.com/Ferris-Labs/site-draft.git
 ```
 
 You can now edit your own versions of the site’s source files.
