@@ -25,7 +25,7 @@ A simple way to get started is to use this project as a template, which gives yo
 
 2. Select a name for your new project and click **Create repository from template**.
 
-3. Make your own local working copy of your new repo using git clone, replacing https://github.com/my/example.git with your repo’s web URL:
+3. Make your own local working copy of your new repo using git clone:
 
 ```bash
 git clone --recurse-submodules --depth 1 https://github.com/Ferris-Labs/site-draft.git
