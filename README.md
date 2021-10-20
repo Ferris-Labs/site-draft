@@ -2,6 +2,34 @@
 
 **Please follow instructions. IMPORTANT clone with submodules as in instructions below.** 
 
+# Steps for Local Install
+
+1. Make your own local working copy of your new repo using git clone:
+
+```bash
+git clone --recurse-submodules --depth 1 https://github.com/Ferris-Labs/site-draft.git
+```
+2. Change to the site-draft directory
+3. Run the image build
+```bash
+docker-compose build
+```
+4. Start the image
+```bash
+docker-compose up
+```
+5. Open http://localhost:1313 in browser
+
+# Steps to Edit
+1. Open your favorite Markdown writer ( recommend http://typora.io )
+2. Browse to directory site-draft/content/en 
+3. Select the suitable directory in which to place the content
+4. Write your markdown
+5. Do not forget to add the yaml front mattter ( the stuff on top - check an existing page to see how )
+6. Do NOT REMOVE sample pages. These are for now meant as a guide.
+
+
+
 [Docsy](https://github.com/google/docsy) is a Hugo theme for technical documentation sites, providing easy site navigation, structure, and more. This **Docsy Example Project** uses the Docsy theme, as well as providing a skeleton documentation structure for you to use. You can either copy this project and edit it with your own content, or use the theme in your projects like any other [Hugo theme](https://gohugo.io/themes/installing-and-using-themes/).
 
 The theme is included in this project as a Git submodule:
