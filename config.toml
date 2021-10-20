@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Goldydocs"
+title = "FERRIS LABS"
 
 enableRobotsTXT = true
 
@@ -70,7 +70,7 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "Goldydocs"
+title = "FERRIS LABS"
 description = "A Docsy example site"
 languageName ="English"
 # Weight used for sorting.
@@ -108,7 +108,7 @@ time_format_blog = "2006.01.02"
 section = ["HTML", "print", "RSS"]
 
 [params]
-copyright = "The Docsy Authors"
+copyright = "FERRIS LABS"
 privacy_policy = "https://policies.google.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
