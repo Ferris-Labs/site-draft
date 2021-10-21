@@ -23,7 +23,13 @@ docker-compose up
 5. Open http://localhost:1313 in browser
 
 # Steps to Edit
-1. Before you start GIT PULL to ensure your version is up to date.
+There are 2 ways to edit.
+
+## Option Local Edit
+
+Following are instructions for editing locally on your desktop
+
+1. **Before you start GIT PULL to ensure your version is up to date.**
 2. Open your favorite Markdown writer ( recommend http://typora.io )
 3. Browse to directory site-draft/content/en/docs ( the directory is meant for documentation but please place content here for now ) 
 4. Select the suitable directory in which to place the content. If in doubt place the file in site-draft/content/en/docs/drafts
@@ -32,6 +38,21 @@ docker-compose up
 7. Do NOT REMOVE sample pages. These are for now meant as a guide.
 8. Do not edit any other settings
 9. Once finished please remember to push to git. Please ensure site builds and dispays correctly before pushing to GIT.
+
+
+
+**If you forget to pull and make changes and have issues with sync. Please follow the instructions below.** 
+
+* rename your current directory to another name
+* clone the repo as normal so you get an upto date version
+* indivividually copy over the content you created into the freshly cloned directory.
+
+## GIT Based Edit
+
+For shorter edits and structuring it may be better to edit directly on GIT. 
+
+* The feedback/ edit page / create child page are linked to GIT
+* So you can click on the links and edit within GIT hub and make your commits directly.
 
 # Images
 
