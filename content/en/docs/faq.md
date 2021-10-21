@@ -6,11 +6,7 @@ description: >-
      Frequently Asked Questions.
 ---
 
-## Heading
+## How fast is Ferris? ( PLEASE EDIT )
+We are frequently asked how fast is Envoy? or how much latency will Envoy add to my requests? The answer is: it depends. Performance depends a great deal on which Envoy features are being used and the environment in which Envoy is run. In addition, doing accurate performance testing is an incredibly difficult task that the project does not currently have resources for.
 
-Edit this template to create your new page.
-
-* Give it a good name, ending in `.md` - e.g. `getting-started.md`
-* Edit the "front matter" section at the top of the page (weight controls how its ordered amongst other pages in the same directory; lowest number first).
-* Add a good commit message at the bottom of the page (<80 characters; use the extended description field for more detail).
-* Create a new branch so you can preview your new file and request a review via Pull Request.
+Although we have done quite a bit of performance tuning of Envoy in the critical path and we believe it performs extremely well, because of the previous points we do not currently publish any official benchmarks. We encourage users to benchmark Envoy in their own environments with a configuration similar to what they plan on using in production.
