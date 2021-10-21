@@ -7,19 +7,16 @@ Add styles or override variables from the theme here.
 
 // colors
 
-$primary: #b81414 !default;
-
+$primary: #1d1b1b !default;
 
 
 // Fonts
 
-$google_font_name: "Barlow" !default;
-$google_font_family: "Barlow:300,300i,400,400i,700,700i" !default;
+$google_font_name: "Lato" !default;
+$google_font_family: "Lato:300,300i,400,400i,700,700i" !default;
 $web-font-path: "https://fonts.googleapis.com/css?family=#{$google_font_family}&display=swap";
 
-$td-fonts-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Barlow, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-
+$td-fonts-serif: Lato, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 $font-family-sans-serif: $td-fonts-serif !default;
 
