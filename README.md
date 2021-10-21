@@ -24,12 +24,20 @@ docker-compose up
 1. Before you start GIT PULL to ensure your version is up to date.
 2. Open your favorite Markdown writer ( recommend http://typora.io )
 3. Browse to directory site-draft/content/en/docs ( the directory is meant for documentation but please place content here for now ) 
-4. Select the suitable directory in which to place the content
+4. Select the suitable directory in which to place the content. If in doubt place the file in site-draft/content/en/docs/drafts
 5. Write your markdown
 6. Do not forget to add the yaml front mattter ( the stuff on top - check an existing page to see how )
 7. Do NOT REMOVE sample pages. These are for now meant as a guide.
 8. Do not edit any other settings
-9. Once finished please remember to push to git.
+9. Once finished please remember to push to git. Please ensure site builds and dispays correctly before pushing to GIT.
+
+# Images
+
+Images can be placed in the directory:  site-draft/static/images/
+
+You may also create sub-directories here for improved organisation.
+
+These can be reffered to by using absolute links /images/......
 
 # Docsy Guide
 
