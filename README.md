@@ -2,6 +2,8 @@
 
 **Please follow instructions. IMPORTANT clone with submodules as in instructions below.** 
 
+**Please follow project management instructions further below.**
+
 # Steps for Local Install
 
 1. Make your own local working copy of your new repo using git clone:
@@ -38,6 +40,15 @@ Images can be placed in the directory:  site-draft/static/images/
 You may also create sub-directories here for improved organisation.
 
 These can be reffered to by using absolute links /images/......
+
+
+
+# Project Management and Issue Reporting
+
+* The project links to git such as feedback and create page etc are linked to the GIT Repo.
+* Issue reporting: Please use the issues links to report directly into GIT.
+* Where possible fix the issue yourself - not bump tasks around.
+* If you are reporting an issue and have suggestions for fix please note them into the issue.
 
 # Docsy Guide
 

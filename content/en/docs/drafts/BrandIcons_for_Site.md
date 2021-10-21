@@ -1,3 +1,16 @@
+---
+title: "Brand Icons Holding Page"
+linkTitle: "Brand Icons Holding Page"
+weight: 1
+description: >
+  Place Brand Icons Here.
+---
+
+{{% pageinfo %}}
+Place Brand Icons Here
+{{% /pageinfo %}}
+
+
 # List of Brand Icons For Website
 
 The following are brand icons required for website

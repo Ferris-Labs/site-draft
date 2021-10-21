@@ -1,6 +1,6 @@
 ---
 title: "Drafts"
-linkTitle: "Drafter"
+linkTitle: "Drafts"
 weight: 1
 description: >
   Please place draft documents here.
