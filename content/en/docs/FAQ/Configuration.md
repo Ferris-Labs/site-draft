@@ -3,7 +3,7 @@ title: "Configuration"
 linkTitle: "Configuration"
 weight: 100
 description: >-
-     Page description for heading and indexes.
+     FAQ on Configuration.
 ---
 
 ## Heading
