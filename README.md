@@ -12,6 +12,10 @@
 git clone --recurse-submodules --depth 1 https://github.com/Ferris-Labs/site-draft.git
 ```
 2. Change to the site-draft directory
+```bash
+cd site-draft
+```
+
 3. Run the image build
 ```bash
 docker-compose build
