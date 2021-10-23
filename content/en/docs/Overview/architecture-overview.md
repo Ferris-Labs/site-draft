@@ -29,29 +29,10 @@ The following are the infrastructure components required for a FerrisFX installa
 
 The FerrisFX platform is intended as an Async platform and therefore at the core of the system messages are passed through the Kafka Message Bus. These 'events' are JSON formatted messages which adhere to the CloudEvents format. 
 
+![image-20211023085329814](/images/diagram_1.png)
+
 Each message consists of what may be simplified as Headers and Payload. The headers indicate the type of event and other attributes. Whereas the payload are the attributes or parameters that are sent out by Services in order to either provide information about their state or for usage by downstream Services.
 
 The FX gateway is listening on the stream ofEvents passing through Kafka. Based on the configuration of the platform the gateway decides if a Service requires to be executed based on the Event contents. On finding a configured Handler the gateway sends a message to the Executor and informs it of which packages or scripts required to be run.
 
 The Executor downloads the package from the Minio storage and executes the package. The Execuor sends a series of messages on package execution and maintains track of the state of teh execution and the metrics. These are once again processed by the gateway and stored either in Postgres or in Elasticsearch based on the tyep of message and the contents.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Edit this template to create your new page.
-
-* Give it a good name, ending in `.md` - e.g. `getting-started.md`
-* Edit the "front matter" section at the top of the page (weight controls how its ordered amongst other pages in the same directory; lowest number first).
-* Add a good commit message at the bottom of the page (<80 characters; use the extended description field for more detail).
-* Create a new branch so you can preview your new file and request a review via Pull Request.
