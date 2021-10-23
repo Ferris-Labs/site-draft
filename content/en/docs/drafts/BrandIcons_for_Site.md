@@ -13,13 +13,15 @@ Place Brand Icons Here
 
 # List of Brand Icons For Website
 
-The following are brand icons required for website
+The following are brand icons required for website (pull from preset.io to start with. There is more required but this is a good start)
 
-| Name          | Image            | URL                        |
-| ------------- | ---------------- | -------------------------- |
-| Put Name Here | Paste Image Here | Provide the homepage here. |
-|               |                  |                            |
-|               |                  |                            |
+- Img size 113x48px
+
+| Name          | Image                                 | URL                        |
+| ------------- | ------------------------------------- | -------------------------- |
+| Put Name Here | ![img](/images/googlebigquery_2x.png) | Provide the homepage here. |
+|               |                                       |                            |
+|               |                                       |                            |
 
 
 
