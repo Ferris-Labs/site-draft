@@ -15,6 +15,14 @@ Place Brand Icons Here
 
 The following are brand icons required for website
 
+| Name          | Image            | URL                        |
+| ------------- | ---------------- | -------------------------- |
+| Put Name Here | Paste Image Here | Provide the homepage here. |
+|               |                  |                            |
+|               |                  |                            |
+
+
+
 
 
 **CONFIGURATION SYSTEMS**
