@@ -16,13 +16,8 @@ The following User Guide will explain and describe how to understand and use the
 
 ## **Getting started:**
 
-- 
-
-- Login to [home.ferris.ai](http://home.ferris.ai/)
-
-- 
-
-- Login Credentials:
+* Login to [home.ferris.ai](http://home.ferris.ai/)
+* Login Credentials:
 
 - - 
 
@@ -37,13 +32,7 @@ In this given Use Case the identity and access management process is secured thr
 ## **Dashboard / Landing page**
 
 The dashboard can show various statistics and analytics such as:
-
-- 
-
 - User activities
-
-- 
-
 - Page views
 
 - 
@@ -54,7 +43,7 @@ The dashboard can show various statistics and analytics such as:
 
 - Active projects
 
-![](/Users/masanlubarda/site-draft/static/images/ferris_home.png)
+![](/images/ferris_home.png)
 
 ## Taxonomy / Tagging
 
