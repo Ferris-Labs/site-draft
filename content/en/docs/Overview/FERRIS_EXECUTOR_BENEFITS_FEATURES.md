@@ -1,8 +1,8 @@
 ---
 categories: ["Overview", "Placeholders"]
 tags: ["features","docs"] 
-title: "ferrisFX Features and Benefits"
-linkTitle: "ferrisFX Features and Benefits"
+title: "FerrisFX Features and Benefits"
+linkTitle: "FerrisFX Features and Benefits"
 weight: -11
 description: >
   A short overview of the benefits and features of ferrisFX
@@ -14,7 +14,7 @@ Our unique low learning curve approach significantly reduces the cost of deployi
 
 FX is a ground-up rethink of how both aync and sync microservices are built in multi-cloud, highly volatile and fragmented software environments. 
 
-**On FX you are effectively writing large applications by connecting “blocks” of code (Services) through Events.** An approach that is highly intuitive and in line agile iterative practices.
+**On FX you are effectively writing large applications by connecting “blocks” of code (Services) through Events.** An approach that is highly intuitive and in line with iterative agile practices.
 
 The following is a brief review of some of the benefits and features of FerrisFX.
 
@@ -22,7 +22,7 @@ The following is a brief review of some of the benefits and features of FerrisFX
 | ---------------------------------------------------------- | ------------------------------------------------------------ |
 | **Low Learning Curve**                                     | Developers can practically learn within 1 hour how to work with Ferris. Other frameworks who only handle a fraction of what FX does can take weeks and months. |
 | **Highly Scalable**                                        | Built from ground-up for scalability. Our event messaging core is based on an Apache Kafka backbone we can transmit MILLIONs of jobs per day to Millions of Services without break |
-| **Resource Efficient**                                     | FX Microservices are deployed in real time as Events comes in. There are not 100s of microservice containers running on your platform. Just 3 components. The Management UI, The Event Dispatcher and any number Executors. |
+| **Resource Efficient**                                     | FX Microservices are deployed in real time as Events comes in. There are not 100s of microservice containers running on your platform. Just 3 components. The Ferris Manager UI, The Event Router and any number Executors. |
 | **Plug into anything. Practically Limitless Integrations** | Leverage the whole universe of Library capabilites of Python ( Java, DOTNET or GoLang coming soon) , no need to depend solely on paid pre-packaged modules based on a strict structure and complicated build procedures and vendor lock-in. No-Code or Low-Code take your pick. |
 | **Combined Support for Sync and Async micro- services**    | Manage both your Async and Sync Service Mesh in a single interface without any expensive and cumbersome 3rd party system.  Reduce the complexity of your infrastructure and the number of components. |
 | **Fully Containerised and Easy to Deploy**                 | *Pre-packaged Kubernetes Templates with minimal customisation requirements fit straight into your enterprise Kubernetes(and if you dont have one we will build you one). Run in 1 command and Scale as you wish* |
@@ -39,7 +39,7 @@ The following is a brief review of some of the benefits and features of FerrisFX
 | **Run AB Testing with Ease**                               | Plug different code versions to same event to measure differences. |
 | **RUN Anything**                                           | *Our unique RUN ANYTHING architecture furthers breaks boundaries of running polyglot container systems. Simply tell the system on which image a code is to execute. Please read here (add link) how that works.* PLEASE NOTE THAT THIS IS A YET AN UNDISCLOSED FEATURE. |
 | **Activate or Deactivate Services in Realtime**            | Services can be activated when you need them.                |
-| **Instant Scaling**                                        | Just increase the number of executor replicas to process faster (provided your underlying services can support it) |
+| **Instant Scaling**                                        | Just increase the number of Router or Executor replicas to process faster (provided your underlying services can support it) |
 | **View Logs in Realtime**                                  | *View the Logs of any executor in Realtime directly on the Management UI.* |
 | **Trace Event Dependencies Easily**                        | *Have an error? Trace easily the events which led to the Error with all the parameters used to run the event flow.* |
 | **UI Support for Microservices**                           | Drop in a UI.json file to auto generate UIs for entering parameters for a specific executor. |
