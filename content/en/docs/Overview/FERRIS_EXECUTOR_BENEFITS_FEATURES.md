@@ -8,15 +8,15 @@ description: >
   A short overview of the benefits and features of ferrisFX
 ---
 
-**ferrisFX** is a platform for building highly scalable, cross-network  sync or async microservices and agents. 
+**FerrisFX** is a platform for building highly scalable, cross-network  sync or async microservices and agents. 
 
-Our unique low learning curve approach significantly reduces the cost of deploying enterprise wide process and integration pipelines across disparate systems at a speed which redefines the term AGILE and at levels of scalability that redefines SCALABLE.
+Our unique low learning curve approach significantly reduces the cost of deploying enterprise wide process and integration pipelines across disparate systems at a speed.  While at the same time creating a platform with practically unbound access and ease of integration.  
 
-FX is a ground-up rethink of how both aync and sync microservices should be built in a multi-cloud, highly volatile software environment. FX is built within the crucible of real life large scale implementations in Fintech and IoT and AI.
+FX is a ground-up rethink of how both aync and sync microservices are built in multi-cloud, highly volatile and fragmented software environments. 
 
-In doing so our main concerns are about how to significantly reduce the learning curve for building micro services while at the same time creating a platform with practically unbound access and ease of integration.  
+**On FX you are effectively writing large applications by connecting “blocks” of code through Events.** An appraach that is highly intuitive and in line agile iterative practices.
 
-See below some of the benefits of ferrisFX.
+The following is a brief review of some of the benefits and features of FerrisFX.
 
 | Quality                                                    | Description                                                  |
 | ---------------------------------------------------------- | ------------------------------------------------------------ |
