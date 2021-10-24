@@ -1,7 +1,7 @@
 ---
 title: "Architecture Overview"
 linkTitle: "Architecture Overview"
-weight: 100
+weight: -10
 description: >-
      An Overview of the architecture of FerrisFX.
 ---

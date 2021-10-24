@@ -3,7 +3,7 @@ categories: ["Overview", "Placeholders"]
 tags: ["features","docs"] 
 title: "ferrisFX Features and Benefits"
 linkTitle: "ferrisFX Features and Benefits"
-weight: 2
+weight: -11
 description: >
   A short overview of the benefits and features of ferrisFX
 ---
