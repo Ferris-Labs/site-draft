@@ -16,7 +16,9 @@ Each Service is a self contained piece of functionality like loading a file, run
 
 The source code can be as big or as tiny as you like. 
 
-You are not required to think in terms of pre-defined DAGS and can rapidly and iteratively build, test and deploy your applications.
+You are not required to think in terms of pre-defined DAGS and can rapidly and iteratively build, test and deploy your applications. 
+
+On FX a service can respond to multiple event types, and a single event may trigger multiple services - Thereby allowing you to also extend your Application(s) on the fly with ease.
 
 ### Services
 
