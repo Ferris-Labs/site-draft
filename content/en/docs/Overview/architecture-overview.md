@@ -12,7 +12,7 @@ FerrisFX is based on 2 simple concepts - **Services** and **Events**
 
 **On FX you are effectively writing large applications by connecting “blocks” of code through Events. **
 
-**Each Service – as we refer to them – is a self contained piece of functionality like loading a file, running a view rebuild or launching a container. You can link and re-link the blocks of code at anytime you like.** 
+Each Service is a self contained piece of functionality like loading a file, running a view rebuild or launching a container. You can link and re-link the blocks of code at anytime you like. 
 
 The source code can be as big or as tiny as you like. 
 
