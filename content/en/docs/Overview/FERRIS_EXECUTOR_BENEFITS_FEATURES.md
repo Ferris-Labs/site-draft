@@ -14,7 +14,7 @@ Our unique low learning curve approach significantly reduces the cost of deployi
 
 FX is a ground-up rethink of how both aync and sync microservices are built in multi-cloud, highly volatile and fragmented software environments. 
 
-**On FX you are effectively writing large applications by connecting “blocks” of code through Events.** An appraach that is highly intuitive and in line agile iterative practices.
+**On FX you are effectively writing large applications by connecting “blocks” of code (Services) through Events.** An approach that is highly intuitive and in line agile iterative practices.
 
 The following is a brief review of some of the benefits and features of FerrisFX.
 
