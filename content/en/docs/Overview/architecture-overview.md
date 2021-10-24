@@ -12,7 +12,11 @@ FerrisFX is based on 2 simple concepts - **Services** and **Events**
 
 **On FX you are effectively writing large applications by connecting “blocks” of code through Events.** 
 
+![image-20211024081829495](/images/image-20211024081829495.png)
+
 Each Service is a self contained piece of functionality like loading a file, running a view rebuild or launching a container. You can link and re-link the blocks of code at anytime you like. The source code can be as big or as tiny as you like. 
+
+Each Service also emits Events thereby allowing other Services to be triggered following(or during) the execution of a Service.
 
 On FX a Service can respond to multiple Event types, and a single Event may trigger multiple Services - Thereby allowing you to also extend your Application(s) on the fly with ease.
 
@@ -81,8 +85,6 @@ Irrespective of how a Service is triggered it is always triggered by an Event. I
 
 One of the most important features of the FX Platform is that you are not required to link the Service to an Event during the course of development. And you can also change the Trigger Event(s) post-deployment. 
 
-**On FX you are effectively write large applications by connecting “blocks” of code. Each node – as we refer to them – is a self contained piece of functionality like loading a file, running a view rebuild or launching a container. The source code can be as big or as tiny as you like.** 
-
 This approach gives you a great flexibility to 
 
 * not having to think of pre-defined flows but to build the Flow as well as the Services iteratively.
@@ -92,15 +94,19 @@ This approach gives you a great flexibility to
 
 ## The FerrisFX Flow
 
-The FerrisFX platform is an Async platform. At the core of the platform messages(Events) are passed through the **Kafka Message Bus**. These 'events' are JSON formatted messages which adhere to the CloudEvents format. 
+At the core of the FX Platform messages(Events) are passed through **Apache Kafka**. These 'events' are JSON formatted messages which adhere to the CloudEvents format. 
 
-![image-20211023085329814](/images/diagram_1.png)
+![image-20211024083411584](/images/image-20211024083411584.png)
 
 Each **Event** consists of what may be simplified as Headers and Payload. The headers indicate the type of event and other attributes. Whereas the payload are the attributes or parameters that are sent out by Services in order to either provide information about their state or for usage by downstream Services.
 
 The **FX Router(s)** is listening on the stream of Events passing through Kafka. Based on the configuration of the platform which is managed in the **Ferris Manager UI** the Router decides if a Service requires to be executed based on the Event contents. On finding a configured Handler the gateway sends a message to the Executor and informs it of which packages or scripts required to be run.
 
-The **FX Executor(s)** downloads the Service from the **Minio** storage and executes the **Service**. The Service may use any Python module that is embedded in the Executor and also use **Consul** for storing its configurations. The Execuor sends a series of messages on Service execution and maintains track of the state of the execution and the metrics. These are once again processed by the gateway and stored either in **Postgres** or in **Elasticsearch** based on the type of message and the contents.
+The **FX Executor(s)** downloads the Service from the **Minio** storage and executes the **Service**. The Service may use any Python module that is embedded in the Executor and also use **Consul** for storing its configurations. The Execuor sends a series of Events on Service execution. These are once again processed by the FX Router.
+
+![image-20211024084807506](/images/image-20211024084807506.png)
+
+The FX Executor provides infrastructure which tracks logs, maintains record of service metrics and operational data. The Operational information is first sent to appropriate Kafka Topics from where they are picked up by Ops-Data Sinks whose role it is to store data within **Elasticsearch** and in some cases also filter the data for the purpose of alerting or anomaly tracking. All operational data may be viewd and queried through tools such as **Kibana**.
 
 
 
