@@ -6,21 +6,27 @@ description: >-
      An Overview of the architecture of FerrisFX.
 ---
 
-## FerrisFX Architecture Overview
-
-The following provides an in-depth overvew of the FerrisFX Architecture
-
 ## Concepts
 
 FerrisFX is based on 2 simple concepts - **Services** and **Events**
 
+**On FX you are effectively writing large applications by connecting “blocks” of code through Events. **
+
+**Each Service – as we refer to them – is a self contained piece of functionality like loading a file, running a view rebuild or launching a container. You can link and re-link the blocks of code at anytime you like.** 
+
+The source code can be as big or as tiny as you like. 
+
+You are not required to think in terms of pre-defined DAGS and can rapidly and iteratively build, test and deploy your applications.
+
 ### Services
 
-**SERVICES** are collections of scripts and modules which are executed in sequence by the FX Executor. 
+**SERVICES** are collections of scripts and modules which are executed in sequence by the **FX Executor**. 
 
-Services are triggered by **EVENTS**, which are JSON messages which carry a header and payload.
+Services are triggered by **EVENTS**, which are JSON messages which carry a header and payload. A Service can be Linked to one or more events.
 
-Each script is provided with the Payload of the Event that triggered it. The following is a basic script which parses the event sent above.
+Each script is provided with the Payload of the Event that triggered it. It is the job of the **FX Router** to send Events to the appropriate Service.
+
+The following is a basic Service which parses the event sent to it and prints the payload.
 
 ```python
 import sys
@@ -45,13 +51,13 @@ The following is a sample Event.
 ```json
 {
     "specversion" : "1.0",
-    "type" : "com.example.someevent",
+    "type" : "com.example.someevent", // The Event Type
     "source" : "/mycontext",
     "subject": null,
     "id" : "C234-1234-1234",
     "time" : "2018-04-05T17:31:00Z",
     "datacontenttype" : "application/json",
-    "data" : {
+    "data" : {                       // The event payload as JSON
         "appinfoA" : "abc",
         "appinfoB" : 123,
         "appinfoC" : true
@@ -59,7 +65,7 @@ The following is a sample Event.
 }
 ```
 
-### Service Triggering Methods
+### Service Triggering
 
 Services can be triggered in the following ways
 
@@ -69,9 +75,20 @@ Services can be triggered in the following ways
 
 Irrespective of how a Service is triggered it is always triggered by an Event. In the case of Manual and Scheduled triggering it is the FX platform that generates the trigger event.
 
+### Late Linking
+
+One of the most important features of the FX Platform is that you are not required to link the Service to an Event during the course of development. And you can also change the Trigger Event(s) post-deployment. 
+
+**On FX you are effectively write large applications by connecting “blocks” of code. Each node – as we refer to them – is a self contained piece of functionality like loading a file, running a view rebuild or launching a container. The source code can be as big or as tiny as you like.** 
+
+This approach gives you a great flexibility to 
+
+* not having to think of pre-defined flows but to build the Flow as well as the Services iteratively.
+* maintain and test multiple versions of the same Service in parallel.
 
 
-## Understanding the FerrisFX Flow
+
+## The FerrisFX Flow
 
 The FerrisFX platform is an Async platform. At the core of the platform messages(Events) are passed through the **Kafka Message Bus**. These 'events' are JSON formatted messages which adhere to the CloudEvents format. 
 
@@ -92,8 +109,8 @@ The following are the infrastructure components required for a FerrisFX installa
 | Component         | Descriptio                                                   |
 | ----------------- | ------------------------------------------------------------ |
 | Apache Kafka      | Apache Kafka serves as the backbone to pass events and operational data within a FerrisFX Installation. |
-| PostgresSQL       | Postgres is used as the database for the Ferris Webserver Application. |
-| Consul            | Consul is the configuration store used by the FerrisFX installation. It is also used by the services to store their configurations. |
+| PostgresSQL       | Postgres is used as the database for the FerrisFX Manager Application. |
+| Consul            | Consul is the configuration store used by the FerrisFX platform. It is also used by the services to store their configurations. |
 | Minio             | Minio provides the platform internal storage for scripts and assets used by the Services |
 | Elasticsearch     | Elasticsearch is used as a central store for all operational data. Thereby making the data easiliy searchable. |
 | Kibana            | Kibana is used to view and query the data stored in Elasticsearch. |
