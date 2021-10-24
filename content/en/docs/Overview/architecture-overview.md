@@ -106,7 +106,7 @@ The **FX Executor(s)** downloads the Service from the **Minio** storage and exec
 
 ![image-20211024084807506](/images/image-20211024084807506.png)
 
-The FX Executor provides infrastructure which tracks logs, maintains record of service metrics and operational data. The Operational information is first sent to appropriate Kafka Topics from where they are picked up by Ops-Data Sinks whose role it is to store data within **Elasticsearch** and in some cases also filter the data for the purpose of alerting or anomaly tracking. All operational data may be viewd and queried through tools such as **Kibana**.
+The FX Executor provides infrastructure which tracks logs, maintains record of service metrics and operational data. The Operational information is first sent to appropriate Kafka Topics from where they are picked up by Ops-Data Sinks whose role it is to store data within **Elasticsearch** and in some cases also filter the data for the purpose of alerting or anomaly tracking. All operational data may be viewd and queried through tools such as **Kibana** and is also viewable on the **FX Manager UI**.
 
 
 
