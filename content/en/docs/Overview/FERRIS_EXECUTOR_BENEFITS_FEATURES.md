@@ -1,11 +1,11 @@
 ---
 categories: ["Overview", "Placeholders"]
 tags: ["features","docs"] 
-title: "FerrisFX Features and Benefits"
-linkTitle: "FerrisFX Features and Benefits"
+title: "Features & Benefits"
+linkTitle: "Features & Benefits"
 weight: -11
 description: >
-  A short overview of the benefits and features of ferrisFX
+  A short overview of the benefits and features of FerrisFX
 ---
 
 **FerrisFX** is a platform for building highly scalable, cross-network  sync or async microservices and agents. 
