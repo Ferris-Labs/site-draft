@@ -6,115 +6,128 @@ description: >
   User Guide.
 ---
 
-Taxonomies (Tagging)
 
 
+# Taxonomies (Tagging)
+
+ 
 
 The following User Guide will explain and describe how to understand and use the Taxonomy/Tagging module.
 
-**Tagging/Taxonomy makes** it easier to group and find similar functions, rules and data elements.
+**Tagging/Taxonomy** makes it easier to group and find similar functions, rules and data elements.
 
-## **Getting started:**
+
+
+## Getting Started
 
 * Login to [home.ferris.ai](http://home.ferris.ai/)
-* Login Credentials:
-
-- - 
-
+* Login Credentials: 
   - Username (email)
-
-  - 
-
   - Password
 
 In this given Use Case the identity and access management process is secured through KeyCloak.
 
-## **Dashboard / Landing page**
+
+
+### Dashboard / Landing Page
 
 The dashboard can show various statistics and analytics such as:
+
 - User activities
 - Page views
-
-- 
-
 - Income (daily, weekly, total)
-
-- 
-
 - Active projects
 
 ![](/images/ferris_home.png)
 
-## Taxonomy / Tagging
+### Taxonomy / Tagging 
 
 It was developed as a module and can easily be added to any model by the developers/users.
 
 Two different ways of adding tags are available:
 
-- 
-
 - Executions -> Packages
+- [Taxonomies -> Tags -> Please refer to section further down] (href="Taxonomies / Tags") [Taxonomies/Tags] (#Taxonomies/Tags)
 
-- 
 
-- [Taxonomies -> Tags -> Please refer to the section further down]()
 
-### Executions -> Packages
+#### Executions / Packages
 
-1. 1.
+1. Click on Executions on the left side of the dashboard menu to open drop-down
+2. Click on Packages
+3. Click on +Add to create a package
 
-2. Click on Executions on the left side of the dashboard menu to open drop-down
+![](/images/Executions GB.png)
 
-3. 2.
 
-4. Click on Packages
 
-5. 3.
+#### Create Package
 
-6. Click on +Add to create a package
+1. Name package
+2. Describe package
+3. Add Tags manually or select from predefined tags
+4. Schedule cron job -> TBD in the "Create Package User Guide"
+5. Trigger Event Types - Select Value -> TBD
+6. Check the checkbox to Allow Manual Triggering -> TBD
+7. Check the checkbox to Activate your package -> TBD
+8. Click on Choose file (optional) to Upload a Script -> TBD
+9. Click on +Add More Scripts... to add more scripts -> TBD
+10. Click on Save to save package
 
-![](/Users/masanlubarda/Desktop/Ferris Work/Ferris Executions - Packages.png)
+![](/images/create_package_new.png)
 
-**Create Package** 
 
-1. 1.
 
-2. Name package
+#### Check Created Package
 
-3. 2.
+1. Click on any tag to open details page  
+2. Click on List Packages to see in which packages the same tags are used
+3. Click on List Workflows to see in which workflows the same tags are used
 
-4. Describe package
+![](/images/List packages 1 click tag.png)
 
-5. 3.
+![](/images/Details package.png)
 
-6. Add Tags manually or select from predefined tags
+![](/images/list packages 2.png)
 
-7. 4.
+![](/images/list workflows 3.png)
 
-8. Schedule cron job -> TBD in the "Create Package User Guide"
 
-9. 5.
 
-10. Trigger Event Types - Select Value -> TBD
+#### Taxonomies / Tags
 
-11. 6.
+1. Click on Taxonomies in the left menu and then on Tags
+2. Click Add to create a tag
 
-12. Check the checkbox to Allow Manual Triggering -> TBD
+![](/images/Taxonomies Tags Add.png)
 
-13. 7.
+1. Name Tag
+2. Save
 
-14. Check the checkbox to Activate your package -> TBD
+![](/images/Create Tag.png)
 
-15. 8.
+1. Check created Tag(s)
+2. Details (same as in "Check Created Package" section)
+3. Click on the Edit icon to edit a tag
 
-16. Click on Choose file (optional) to Upload a Script -> TBD
+![](/images/Check Tag Details Edit.png)
 
-17. 9.
 
-18. Click on +Add More Scripts... to add more scripts -> TBD
 
-19. 10.
+#### Search Tag
 
-20. Click on Save to save package
+1. Search Tag
+2. Click Add Filter to choose a filter
 
-21. ![](/Users/masanlubarda/Desktop/Ferris Work/create package new.png)
+![](/images/Search Tag.png)
+
+1. Choose from the dropdown list
+2. Insert Name
+3. Hit the Search button
+
+![](/images/Search with Filter.png)
+
+1. Check search results
+
+![](/images/search results.png)
+
