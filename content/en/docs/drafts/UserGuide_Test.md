@@ -1,33 +1,28 @@
 ---
-title: "User Guide"
+title: "Ferris User Guide"
 linkTitle: "User Guide"
 weight: 1
 description: >
-  User Guide.
+  User Guide:
 ---
 
 
 
-# Taxonomies (Tagging)
+# Executor
 
- 
+The Executor is a custom framework allowing the organization and automatization of script processing which can be triggered:
 
-The following User Guide will explain and describe how to understand and use the Taxonomy/Tagging module.
-
-**Tagging/Taxonomy** makes it easier to group and find similar functions, rules and data elements.
-
+- at a scheduled time (intervals)
+- as a reaction to an event
 
 
-## Getting Started
+
+### Getting Started
 
 * Login to [home.ferris.ai](http://home.ferris.ai/)
 * Login Credentials: 
   - Username (email)
   - Password
-
-In this given Use Case the identity and access management process is secured through KeyCloak.
-
-
 
 ### Dashboard / Landing Page
 
@@ -40,18 +35,13 @@ The dashboard can show various statistics and analytics such as:
 
 ![](/images/ferris_home.png)
 
-### Taxonomy / Tagging 
+### Executor (Executions) 
 
-It was developed as a module and can easily be added to any model by the developers/users.
+Primar entities on "Executions" are packages which are composed by scripts that are executed in a defined order.
 
-Two different ways of adding tags are available:
+#### Executions -> Packages
 
-- Executions -> Packages
-- [Taxonomies -> Tags -> Please refer to section further down] (href="Taxonomies / Tags") [Taxonomies/Tags] (#Taxonomies/Tags)
-
-
-
-#### Executions / Packages
+In this given Use Case it is defined how to create and run a package.
 
 1. Click on Executions on the left side of the dashboard menu to open drop-down
 2. Click on Packages
@@ -65,16 +55,17 @@ Two different ways of adding tags are available:
 
 1. Name package
 2. Describe package
-3. Add Tags manually or select from predefined tags
-4. Schedule cron job -> TBD in the "Create Package User Guide"
-5. Trigger Event Types - Select Value -> TBD
-6. Check the checkbox to Allow Manual Triggering -> TBD
-7. Check the checkbox to Activate your package -> TBD
-8. Click on Choose file (optional) to Upload a Script -> TBD
-9. Click on +Add More Scripts... to add more scripts -> TBD
-10. Click on Save to save package
+3. Select the Project to which the package will be bound
+4. Add Tags manually or select from predefined tags
+5. Schedule cron job -> "Cron like schedule definition. NOTE: day of week start on Monday (0 - Monday, 6 - Sunday)" example: "20****" -> meaning every 20 minutes of every hour, every day, every month and year.
+6. Trigger Event Types - Select Value -> select event type to trigger the exectution of the package
+7. Check the checkbox to Allow Manual Triggering -> click to allow manual triggering of the package
+8. Check the checkbox to Activate your package -> click to set the package to active
+9. Click on Choose file (optional) to Upload a Script -> upload a JSON "config.json" script to configure the package
+10. Click on +Add More Scripts... to add more scripts -> upload a python "test_scr.py" script to pull the configuratio from config file and print all items
+11. Click on Save to save package
 
-![](/images/create_package_new.png)
+![](/images/create_package_with_configs.png)
 
 
 
@@ -91,6 +82,36 @@ Two different ways of adding tags are available:
 ![](/images/list packages 2.png)
 
 ![](/images/list workflows 3.png)
+
+
+
+## Taxonomies (Tagging) 
+
+The following User Guide will explain and describe how to understand and use the Taxonomy/Tagging module.
+
+**Tagging/Taxonomy** makes it easier to group and find similar functions, rules and data elements.
+
+
+
+### Getting Started
+
+* Login to [home.ferris.ai](http://home.ferris.ai/)
+* Login Credentials: 
+  - Username (email)
+  - Password
+
+In this given Use Case the identity and access management process is secured through KeyCloak.
+
+
+
+### Taxonomy / Tagging 
+
+It was developed as a module and can easily be added to any model by the developers/users.
+
+Two different ways of adding tags are available:
+
+- Executions -> Packages
+- [Taxonomies -> Tags -> Please refer to section further down] (href="Taxonomies / Tags") [Taxonomies/Tags] (#Taxonomies/Tags)
 
 
 
