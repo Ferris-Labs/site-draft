@@ -24,6 +24,10 @@ The Executor is a custom framework allowing the organization and automatization 
   - Username (email)
   - Password
 
+In this given Use Case the identity and access management process is secured through KeyCloak.
+
+
+
 ### Dashboard / Landing Page
 
 The dashboard can show various statistics and analytics such as:
@@ -71,17 +75,50 @@ In this given Use Case it is defined how to create and run a package.
 
 #### Check Created Package
 
-1. Click on any tag to open details page  
-2. Click on List Packages to see in which packages the same tags are used
-3. Click on List Workflows to see in which workflows the same tags are used
+The created package should be triggered every 20 minutes of every hour but can also be run manually.
 
-![](/images/List packages 1 click tag.png)
+- Click on the loupe icon to open the package's details page
 
-![](/images/Details package.png)
+![](/images/click_loupe_packages.png)
 
-![](/images/list packages 2.png)
+1. Check details page
+2. Click on "Show Trigger Event"
 
-![](/images/list workflows 3.png)
+![](/images/package_details_show_trigger_event.png)
+
+1. Check the triggered event details
+2. Close
+
+![](/images/triggered_event_details.png)
+
+
+
+#### Package Executions / Runs
+
+- Click on the "Run" button down the page to run the package manually
+
+![](/images/run_button_manual_package.png)
+
+It will automatically transfer you to the "List Package Executions" tab
+
+1. Check runs/package executions to see if you manually triggered execution was processed
+2. Click on the loupe icon of your latest manually triggered run to open details page of the exectuion
+
+![](/images/run_check_loupe_details.png)
+
+1. Check the details "Show Package Execution" of the run/exection
+2. Click on "List Steps" tab to see the steps of the execution
+
+![](/images/exection_run_details.png)
+
+1. Check the steps of the run and status (completed; pending; failed)
+2. Click on "Show Results" to verify the script for failed executions
+
+![](/images/run_list_steps.png)
+
+![](/images/script_run_execution.png)
+
+- Close window
 
 
 
@@ -99,8 +136,6 @@ The following User Guide will explain and describe how to understand and use the
 * Login Credentials: 
   - Username (email)
   - Password
-
-In this given Use Case the identity and access management process is secured through KeyCloak.
 
 
 
@@ -127,9 +162,21 @@ Two different ways of adding tags are available:
 
 ![](/images/Create Tag.png)
 
-1. Check created Tag(s)
-2. Details (same as in "Check Created Package" section)
-3. Click on the Edit icon to edit a tag
+- Check created Tag(s)
+
+1. Details 
+2. Click on any tag to open details page  
+3. Click on List Packages to see in which packages the same tags are used
+4. Click on List Workflows to see in which workflows the same tags are used
+5. Click on the Edit icon to edit a tag
+
+![](/images/List packages 1 click tag.png)
+
+![](/images/Details package.png)
+
+![](/images/list packages 2.png)
+
+![](/images/list workflows 3.png)
 
 ![](/images/Check Tag Details Edit.png)
 
