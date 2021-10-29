@@ -39,6 +39,42 @@ The dashboard can show various statistics and analytics such as:
 
 ![](/images/ferris_home.png)
 
+
+
+#### Add Users and define User Roles
+
+In this given Use Case, 3 different user roles are defined: 
+
+1. Admin
+2. Public
+3. Executor
+
+**Note that the User Roles on platform level still need to be defined.**
+
+1. Click on Security to open dropdown
+2. Click on List Users to open the user details page
+3. Click on "+" to add a new user
+
+![](/images/security_list_users.png)
+
+The following steps define how to create a new user:
+
+1. First Name
+2. Last Name
+3. User Name (valid for authentication on DB or LDAP, unused OID auth)
+4. Click checkbox to activate the user (can be deactivated if removed from project/company)
+5. Email
+6. Select the User Role
+7. Save
+
+![](/images/add_user_platform.png)
+
+- Click on Security -> List Users to check the created user
+
+![](/images/list_users.png)
+
+
+
 ### Executor (Executions) 
 
 Primar entities on "Executions" are packages which are composed by scripts that are executed in a defined order.
@@ -51,7 +87,7 @@ In this given Use Case it is defined how to create and run a package.
 2. Click on Packages
 3. Click on +Add to create a package
 
-![](/images/Executions GB.png)
+![](/images/executions_packages_add.png)
 
 
 
@@ -111,7 +147,7 @@ It will automatically transfer you to the "List Package Executions" tab
 
 ![](/images/exection_run_details.png)
 
-1. Check the steps of the run and status (completed; pending; failed)
+1. Check the steps of the run and status (completed; pending; unprocessed; failed)
 2. Click on "Show Results" to verify the script for failed executions
 
 ![](/images/run_list_steps.png)
@@ -119,6 +155,37 @@ It will automatically transfer you to the "List Package Executions" tab
 ![](/images/script_run_execution.png)
 
 - Close window
+
+**Note that currently only python and sql handlers are available, files of different type will be unprocessed.**
+
+#### Save a Run/Execution
+
+1. Go back to the "List Package Executions" tab 
+2. Click on the edit icon to open make the run/execution editable
+
+![](/images/list_package_executions_edit_run.png)
+
+1. Name the execution/run
+2. Describe the execution/run
+3. Click "Saved" check box
+4. Save
+
+![](/images/save_execution_run.png)
+
+1. Click on Executions to open dropdown
+2. Click on Saved Executions to check the saved run
+
+![](/images/check_saved_run.png)
+
+**In the next section "Typeform like UI Generator", the importance of the saved run will be showcased**.
+
+
+
+#### Typeform like UI Generator
+
+
+
+
 
 
 
@@ -143,12 +210,7 @@ The following User Guide will explain and describe how to understand and use the
 
 It was developed as a module and can easily be added to any model by the developers/users.
 
-Two different ways of adding tags are available:
-
-- Executions -> Packages
-- [Taxonomies -> Tags -> Please refer to section further down] (href="Taxonomies / Tags") [Taxonomies/Tags] (#Taxonomies/Tags)
-
-
+Two different ways of adding tags are available and will be showcased below.
 
 #### Taxonomies / Tags
 
