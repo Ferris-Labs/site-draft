@@ -229,7 +229,63 @@ If the user is a DevOp for example and wants to trigger a script which will veri
 
 
 
-## Taxonomies (Tagging) 
+### Workflow
+
+A workflow is an administrative process that consists in verifying, in this case the incomming data, before enabling a predefined mechanism and setting it from undone to done, inactive to active or pending to approved. 
+
+In this given use case, a workflow will be created that works as follows:
+
+1. A file gets uploaded to the File Storage (MinIO)
+2. Once the file verified and approved by "admin"
+3. The package/execution gets triggered
+
+#### Getting Started
+
+1. On the left side menu, click on Workflows to open dropdown
+2. Click on List Workflows
+3. Click on "+Add" to create a workflow
+
+![](/images/list_workflows.png)
+
+**Note that before starting to input the values for the workflow, the JSON file needs to be edited:**
+
+**1. "package_id" in the JSON file which is the "Uuid (unique user ID)" in the predefined package/execution**
+
+**2. package_name" in the JSON file which is also called "Package Name" in the predefined package/execution**
+
+![](/images/uuid_packagename_edit_json.png)
+
+Change those values with the values from the package and safe JSON file.
+
+1. Name the workflow
+2. Add a description
+3. Add Tags 
+4. Copy and paste the script from the JSON file
+5. Copy from the script the "source" and paste it to the "Entrypoint source"
+6. Copy from the script the "event_type" and paste it to the "Entrypoint event"
+7. Click the checkbox to set the workflow as active
+8. Click "Save"
+
+![](/images/create_workflow.png)
+
+**Upload a file to the bucket to test the approval process**
+
+1. Click on File Storage in the left side menu to open dropdown
+2. Click on List Files
+3. Click on "+Add"
+
+![](/images/upload_file_test_workflow.png)
+
+1. Choose File to insert
+2. Select File/Data Type in dropdown (CSV Table; Plain Text; JSON)
+3. Select Bucket Name (scripts; test; testbucket)
+4. Save 
+
+![](/images/select_file_test_workflow.png)
+
+
+
+### Taxonomies / Tagging
 
 The following User Guide will explain and describe how to understand and use the Taxonomy/Tagging module.
 
