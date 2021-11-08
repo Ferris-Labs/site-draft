@@ -283,6 +283,54 @@ Change those values with the values from the package and safe JSON file.
 
 ![](/images/select_file_test_workflow.png)
 
+#### Case Management / Approval Process
+
+1. Click on Case Management in the left menu to open dropdown and then on Approvals
+
+2. Click on "Info" to verify the data/file type, name and the bucket. Close "Info"
+
+   ![](/images/case_management_workflow.png)
+
+   ![](/images/cm_workflow_info.png)
+
+3. **In this given use case, the administrator should download the file "view file" to verify the content to decide of its outcome. "Approve; Decline; Cancel"** 
+
+4. Click on Approve
+
+5. Add commentar to describe the reason why it has been approved
+
+![](/images/workflow_approve.png)
+
+![](/images/approval_comment.png)
+
+6. Click on "Approved i" to check the reason it has been approved (declined; cancelled)
+
+![](/images/approvedi_comment_check.png)
+
+#### Execution Triggered 
+
+Once the workflow was approved, an execution was triggered. Below the details and steps are verified:
+
+1. Click on Workflows to open dropdwon and then on List Workflows
+2. Click on the loupe to open details page
+
+![](/images/list_workflows.png)
+
+![](/images/workflow_details.png)
+
+3. Click on "Steps" to check the execution steps of the approved workflow
+
+![](/images/steps_workflow_execution.png)
+
+The next step is to verify if the execution/package has been triggered.
+
+1. Click on Executions -> Packages
+2. Click on the loupe to open the details page of your execution/package
+
+![](/images/triggered_execution_wf.png)
+
+![](/images/triggered_execution_wf.png)
+
 
 
 ### Taxonomies / Tagging
@@ -310,50 +358,52 @@ Two different ways of adding tags are available and will be showcased below.
 
 #### Taxonomies / Tags
 
-1. Click on Taxonomies in the left menu and then on Tags
+1. Click on Taxonomies in the left menu to open dropdown and then on Tags
 2. Click Add to create a tag
 
-![](/images/Taxonomies Tags Add.png)
+![](/images/taxonomies_tags_add.png)
 
 1. Name Tag
 2. Save
 
-![](/images/Create Tag.png)
+![](/images/create_tag_save.png)
 
 - Check created Tag(s)
 
-1. Details 
-2. Click on any tag to open details page  
+1. Click on the loupe to open details (show tag) page
+2. It will automatically transfer you to the details page of the tag
 3. Click on List Packages to see in which packages the same tags are used
-4. Click on List Workflows to see in which workflows the same tags are used
-5. Click on the Edit icon to edit a tag
+4. Click on List Workflows to see in which workflows the same tags are used (in this given use case no workflow is associated with the created tag)
+5. Click on the Edit icon (List tags page) to edit/rename a tag
 
-![](/images/List packages 1 click tag.png)
+![](/images/tag_list_click_loupe_details.png)
 
-![](/images/Details package.png)
+![](/images/show_tag_details.png)
 
-![](/images/list packages 2.png)
+![](/images/list_tag_packages.png)
 
-![](/images/list workflows 3.png)
+![](/images/list_workflows_tag.png)
 
-![](/images/Check Tag Details Edit.png)
-
-
+![](/images/list_tags_edit.png)
 
 #### Search Tag
 
-1. Search Tag
-2. Click Add Filter to choose a filter
+1. Click on Search  on top in the List Tags/details page
+2. Click Add Filter to choose a filter (atm there is only the "Name" filter)
+3. Choose from the dropdown list to choose how the tag should be searched for
 
-![](/images/Search Tag.png)
+- Starts with
+- Ends with
+- Contains
+- Equal to
+- Etc.
 
-1. Choose from the dropdown list
-2. Insert Name
-3. Hit the Search button
+4. Insert tag "Name"
 
-![](/images/Search with Filter.png)
+5. Hit the Search button
 
-1. Check search results
+![](/images/search_tag_filter.png)
 
-![](/images/search results.png)
+- Check search results
 
+![](/images/search_results.png)
