@@ -201,6 +201,8 @@ Another script which will be able to generate typeform like UIs will be added to
 
 The "Run" button changed by displaying the package has a typeform that needs to be filled out by the user before finalizing the execution.
 
+#### Create/Build the Typeform by clicking Run
+
 - Click on "Run" to display the created/built typeform
 
 ![](/images/run_typeform_package.png)
@@ -326,10 +328,67 @@ The next step is to verify if the execution/package has been triggered.
 
 1. Click on Executions -> Packages
 2. Click on the loupe to open the details page of your execution/package
+3. Click on "List Package Executions" to verify if it was triggered and completed
 
 ![](/images/triggered_execution_wf.png)
 
-![](/images/triggered_execution_wf.png)
+![](/images/execution_triggered_verified_wf.png)
+
+**Note that any component of the FerrisFX app is a module on its own. Through the workflow we make it possible that any event can combine the different modules.**
+
+
+
+### Project Creation & Users within the Project
+
+In this subcategory the creation of new projects and users withtin the project will be elaborated.
+
+#### Project
+
+1. Click on Projects in the menu on the left side to open dropdown and then on List Projects
+2. Click on "+Add"
+
+![](/images/list_projects_add.png)
+
+1. Name the new project
+2. Save
+
+![](/images/create_project.png)
+
+![](/images/list_projects_created.png)
+
+In this given use case, the Project was created by the Platform Administrator which has insights in all projects on the Ferris Platform. 
+
+#### User creation within the project
+
+Since the Platform Administrator created the Project, he is automatically assigned as the Project Owner. All user roles on the project level are defined in debt as follows:
+
+- **Project Owner -  has all permissions on project and related entities (packages, users) including deletion of project. By default it is the user that created project**
+- **Project Admin - has all permissions as Owner except deletion**
+- **Project User - has only list / view permissions**
+
+**Please note that users without Platform Administrator role, won't see any projects and packages they are not belonging to. All project role rights are translated to package level also, eg. a user with Project User role will not be able to edit packages of that project, only to list/view them and run (manually) an execution**
+
+
+
+1. Click on the loupe to open Project details page
+
+![](/images/list_projects_details.png)
+
+2. Click on "+Add" to add a new user to the project
+
+![](/images/click_add_new_user.png)
+
+3. Choose a user from the drowdown 
+4. Choose a user role from dropdown (Owner; Admin; User)
+5. Click Save
+
+![](/images/add_new_project_user.png)
+
+- Check created users
+
+![](/images/check_all_users.png)
+
+
 
 
 
@@ -353,8 +412,6 @@ The following User Guide will explain and describe how to understand and use the
 ### Taxonomy / Tagging 
 
 It was developed as a module and can easily be added to any model by the developers/users.
-
-Two different ways of adding tags are available and will be showcased below.
 
 #### Taxonomies / Tags
 
