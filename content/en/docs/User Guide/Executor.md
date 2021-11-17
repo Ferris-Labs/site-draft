@@ -11,6 +11,8 @@ The Executor is a custom framework allowing the organization and automatization 
 - at a scheduled time (intervals)
 - as a reaction to an event
 
+It allows users to use their locally tested scripts without changes or need to learn complex DL (description language). Together with Git integration it gives possibility to easily deploy and test new versions of code in an agile way with changes being applied immediately. Packages can be configurable and parametrised which makes them reusable for similar jobs. Events package triggering allows users to run multiple packages in parallel as a reaction to the same event.
+
 ### Executor (Executions) 
 
 Primar entities on "Executions" are packages which are composed by scripts that are executed in a defined order.
