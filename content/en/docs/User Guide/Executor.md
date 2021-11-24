@@ -3,7 +3,7 @@ title: "Executor"
 linkTitle: "Executor / Executions"
 weight: -10
 description: >-  
-
+  Overview and "How to" use the Executor Framework for script automation and package (execution) triggerin
 ---
 
 The Executor is a custom framework allowing the organization and automatization of script processing which can be triggered:
@@ -11,7 +11,7 @@ The Executor is a custom framework allowing the organization and automatization 
 - at a scheduled time (intervals)
 - as a reaction to an event
 
-It allows users to use their locally tested scripts without changes or need to learn complex DL (description language). Together with Git integration it gives possibility to easily deploy and test new versions of code in an agile way with changes being applied immediately. Packages can be configurable and parametrised which makes them reusable for similar jobs. Events package triggering allows users to run multiple packages in parallel as a reaction to the same event.
+It allows users to use their locally tested scripts without changes or need to learn complex DL (description language). Together with a Git integration it gives the possibility to easily deploy and test new versions of code in an agile way with changes being applied immediately. Packages can be configurable and parametrised which makes them reusable for similar jobs. Events package triggering allows users to run multiple packages in parallel as a reaction to the same event.
 
 ### Executor (Executions) 
 
@@ -35,7 +35,7 @@ In this given Use Case it is defined how to create and run a package.
 2. Describe package
 3. Select the Project to which the package will be bound
 4. Add Tags manually or select from predefined tags
-5. Schedule cron job -> "Cron like schedule definition. NOTE: day of week start on Monday (0 - Monday, 6 - Sunday)" example: "20****" -> meaning every 20 minutes of every hour, every day, every month and year.
+5. Schedule cron job -> "Cron like schedule definition. NOTE: day of week start on Monday (0 - Monday, 6 - Sunday)" example: "20****" **-> The whole definition of "Cron Jobs" can be found in a separate sub-category of this UserGuide **
 6. Trigger Event Types - Select Value -> select event type to trigger the exectution of the package
 7. Check the checkbox to Allow Manual Triggering -> click to allow manual triggering of the package
 8. Check the checkbox to Activate your package -> click to set the package to active

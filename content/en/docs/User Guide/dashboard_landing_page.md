@@ -3,10 +3,10 @@ title: "Dashboard Landing Page"
 linkTitle: "Dashboard"
 weight: -10
 description: >-
-     An overview of the FerrisFX Dashboard.
+     Overview of the FerrisFX Dashboard.
 ---
 
-
+The FerrisFX Dashboard on the Landing page provides a handful of insights and analytics. It can be adapted based on customers requests and needs. 
 
 ### Getting Started
 

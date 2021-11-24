@@ -3,7 +3,7 @@ title: "Project Creation & Users within the Project"
 linkTitle: "Project Creation & Users within the Project"
 weight: 1
 description: >
- 
+  Overview and "How to" create Projects and Users within the Project
 ---
 
 In this subcategory the creation of new projects and users withtin the project will be elaborated.

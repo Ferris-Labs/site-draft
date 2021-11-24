@@ -3,8 +3,10 @@ title: "Taxonomy/Tagging"
 linkTitle: "Taxonomy/Tagging"
 weight: 1
 description: >
-  
+  Overview and "How to" add Tags and the importance of Taxonomy
 ---
+
+Taxonomies or Tags, are the ability to organize and structure types and classes of objects and their correlations within executions/packages and workflows in this given use case. In other words, it is searchable and it makes it very easy to find related information.
 
 It was developed as a module and can easily be added to any model by the developers/users.
 

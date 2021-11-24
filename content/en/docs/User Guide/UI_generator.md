@@ -2,11 +2,13 @@
 title: "UI Generator"
 linkTitle: "UI Generator"
 weight: -10
-description: >
-  
+description: >-
+  Overview and "How to" generate UIs in a simplified and automated approach
 ---
 
-Another script which will be able to generate typeform like UIs will be added to the package created above "Test Package with Scripts".
+The UI Generator has the ability to facilitate and automate manual processes in order to define step by step what has to be done. Based on definition of models, views and interfaces within the code, the generator will create UI automatically considering the configuration of modules as well.
+
+Another script which has the ability to generate  UIs will be added to the package already created previously "Test Package with Scripts". This process will work as follows:
 
 1. Click on Executions -> Packages to open the list of packages
 

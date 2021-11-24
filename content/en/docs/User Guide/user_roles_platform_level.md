@@ -2,8 +2,8 @@
 title: "Security"
 linkTitle: "Security"
 weight: -10
-description: >
-  
+description: >-
+  Overview and "How to" add Users and define User Roles on a Platform level.
 ---
 #### Add Users and define User Roles
 
