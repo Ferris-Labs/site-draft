@@ -32,7 +32,7 @@ The "Run" button changed by displaying the package has a typeform that needs to 
 
 - Click on "Run" to display the created/built UI
 
-![](/static/images/run_UI_package.png)
+![](/images/run_UI_package.png)
 
 The parameters from the "parameters.json" test script will be rendered and displayed.
 
@@ -42,7 +42,7 @@ The parameters from the "parameters.json" test script will be rendered and displ
 
 **Note that these are test parameters with dummy text**
 
-![](/static/images/run_parameters_UI.png)
+![](/images/run_parameters_UI.png)t
 
 - Click on the "magnifying glass" icon to check the details of the execution/run
 
