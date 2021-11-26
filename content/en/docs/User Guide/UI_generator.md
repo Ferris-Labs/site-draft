@@ -1,7 +1,7 @@
 ---
 title: "UI Generator"
 linkTitle: "UI Generator"
-weight: -10
+weight: -14
 description: >-
   Overview and "How to" generate UIs in a simplified and automated approach
 ---
@@ -28,11 +28,11 @@ Another script which has the ability to generate  UIs will be added to the packa
 
 The "Run" button changed by displaying the package has a typeform that needs to be filled out by the user before finalizing the execution.
 
-#### Create/Build the Typeform by clicking Run
+#### Create/Build the UI by clicking Run
 
-- Click on "Run" to display the created/built typeform
+- Click on "Run" to display the created/built UI
 
-![](/images/run_typeform_package.png)
+![](/static/images/run_UI_package.png)
 
 The parameters from the "parameters.json" test script will be rendered and displayed.
 
@@ -42,9 +42,9 @@ The parameters from the "parameters.json" test script will be rendered and displ
 
 **Note that these are test parameters with dummy text**
 
-![](/images/run_parameters_typeform.png)
+![](/static/images/run_parameters_UI.png)
 
-- Click on the "loupe" icon to check the details of the execution/run
+- Click on the "magnifying glass" icon to check the details of the execution/run
 
   ![](/images/click_loupe_parameters_run.png)
 

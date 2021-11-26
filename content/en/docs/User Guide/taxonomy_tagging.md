@@ -1,7 +1,7 @@
 ---
 title: "Taxonomy/Tagging"
 linkTitle: "Taxonomy/Tagging"
-weight: 1
+weight: -11
 description: >
   Overview and "How to" add Tags and the importance of Taxonomy
 ---
@@ -24,7 +24,7 @@ It was developed as a module and can easily be added to any model by the develop
 
 - Check created Tag(s)
 
-1. Click on the loupe to open details (show tag) page
+1. Click on the magnifying glass to open details (show tag) page
 2. It will automatically transfer you to the details page of the tag
 3. Click on List Packages to see in which packages the same tags are used
 4. Click on List Workflows to see in which workflows the same tags are used (in this given use case no workflow is associated with the created tag)

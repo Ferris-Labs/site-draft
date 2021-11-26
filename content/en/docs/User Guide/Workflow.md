@@ -1,7 +1,7 @@
 ---
 title: "Case Management - Workflow"
 linkTitle: "Workflow"
-weight: -10
+weight: -13
 description: >-
   Overview and "How to" generate a Workflow to facilitate the verification of the administration process
 ---
@@ -87,7 +87,7 @@ Change those values with the values from the package and safe JSON file.
 Once the workflow was approved, an execution was triggered. Below the details and steps are verified:
 
 1. Click on Workflows to open dropdwon and then on List Workflows
-2. Click on the loupe to open details page
+2. Click on the magnifying glass to open details page
 
 ![](/images/list_workflows.png)
 
@@ -100,7 +100,7 @@ Once the workflow was approved, an execution was triggered. Below the details an
 The next step is to verify if the execution/package has been triggered.
 
 1. Click on Executions -> Packages
-2. Click on the loupe to open the details page of your execution/package
+2. Click on the magnifying glass to open the details page of your execution/package
 3. Click on "List Package Executions" to verify if it was triggered and completed
 
 ![](/images/triggered_execution_wf.png)

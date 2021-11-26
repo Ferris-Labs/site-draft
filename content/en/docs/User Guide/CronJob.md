@@ -1,7 +1,7 @@
 ---
 title: "CronJob"
 linkTitle: "CronJob"
-weight: -10
+weight: -15
 description: >-
   Overview and "How to" use CronJob for performing regular scheduled actions
 ---

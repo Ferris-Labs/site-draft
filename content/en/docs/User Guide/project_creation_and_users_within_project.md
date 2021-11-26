@@ -1,7 +1,7 @@
 ---
 title: "Project Creation & Users within the Project"
 linkTitle: "Project Creation & Users within the Project"
-weight: 1
+weight: -12
 description: >
   Overview and "How to" create Projects and Users within the Project
 ---
@@ -28,13 +28,13 @@ In this given use case, the Project was created by the Platform Administrator wh
 
 Since the Platform Administrator created the Project, he is automatically assigned as the Project Owner. All user roles on the project level are defined in debt as follows:
 
-- **Project Owner -  has all permissions on project and related entities (packages, users) including deletion of project(s) (and users) created by him. By default it is the user that created project**
+- **Project Owner -  has all permissions on project and related entities (packages, users) including deletion of project(s) (and users) created by the PO. By default it is the user that created project**
 - **Project Admin - has all permissions as Owner except deletion**
 - **Project User - has only list / view permissions**
 
 **Please note that users without Platform Administrator role, won't see any projects and packages they are not belonging to. All project role rights are translated to package level also, eg. a user with Project User role will not be able to edit packages of that project, only to list/view them and run (manually) an execution**
 
-1. Click on the loupe to open Project details page
+1. Click on the magnifying glass to open Project details page
 
 ![](/images/list_projects_details.png)
 
