@@ -42,7 +42,7 @@ The parameters from the "parameters.json" test script will be rendered and displ
 
 **Note that these are test parameters with dummy text**
 
-![](/images/run_parameters_UI.png)t
+![](/images/run_parameters_UI.png)
 
 - Click on the "magnifying glass" icon to check the details of the execution/run
 
