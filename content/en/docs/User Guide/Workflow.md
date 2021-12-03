@@ -45,6 +45,8 @@ Change those values with the values from the package and safe JSON file.
 
 ##### workflow_script.json
 
+The workflow module gives user possibility to define a list of actions that should be executed in a certain order as reaction to some event. Each workflow is defined with it’s entrypoint (event that will trigger the workflow execution) and a list of steps (actions).
+
 ```json
 {
   'workflow': {
