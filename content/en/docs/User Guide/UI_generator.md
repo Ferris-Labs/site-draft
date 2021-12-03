@@ -26,7 +26,115 @@ Another script which has the ability to generate  UIs will be added to the packa
 
 **Note that the "parameters.json" file describes which parameters a user can input while executing the package. These parameters can be adapted to any use case.**
 
-The "Run" button changed by displaying the package has a typeform that needs to be filled out by the user before finalizing the execution.
+##### parameters.json script
+
+The parameters.json file contains a JSON definition of fields that will be rendered and presented to user on manual run of package execution in order to gather parameters needed for running package execution. This way, same package can be easily reused by sending different parameter values to the same package.
+
+```json
+{
+  "fields": [
+    {
+      "type": "text",
+      "label": "Some Text",
+      "name": "some_text",
+      "required": true,
+      "description": "This field is required"
+    },
+    {
+      "type": "textarea",
+      "label": "Some Textarea",
+      "name": "some_textarea"
+    },
+    {
+      "type": "file",
+      "label": "Some File",
+      "name": "some_file",
+      "data": {
+        "bucket": "testbucket",
+        "async": true
+      }
+    },
+    {
+      "type": "int",
+      "label": "Some Number",
+      "name": "some_number",
+      "default": 1,
+      "min": 0,
+      "max": 10
+    },
+    {
+      "type": "float",
+      "label": "Some Float",
+      "name": "some_float",
+      "placeholder": "0.01",
+      "step": 0.01,
+      "min": 0,
+      "max": 10
+    },
+    {
+      "type": "select",
+      "label": "Some Select",
+      "name": "some_select",
+      "default": "value 2",
+      "choices": [
+        {
+          "title": "Choice 1",
+          "value": "value 1"
+        },
+        {
+          "title": "Choice 2",
+          "value": "value 2"
+        },
+        {
+          "title": "Choice 3",
+          "value": "value 3"
+        }
+      ]
+    },
+    {
+      "type": "multiselect",
+      "label": "Some MultiSelect",
+      "name": "some_multiselect",
+      "default": ["value 2", "value 3"],
+      "choices": [
+        {
+          "title": "Choice 1",
+          "value": "value 1"
+        },
+        {
+          "title": "Choice 2",
+          "value": "value 2"
+        },
+        {
+          "title": "Choice 3",
+          "value": "value 3"
+        }
+      ]
+    },
+    {
+      "type": "radio",
+      "label": "Some Radio",
+      "name": "some_radio",
+      "choices": [
+        {
+          "title": "Choice 1",
+          "value": "value 1"
+        },
+        {
+          "title": "Choice 2",
+          "value": "value 2"
+        },
+        {
+          "title": "Choice 3",
+          "value": "value 3"
+        }
+      ]
+    }
+  ]
+}
+```
+
+**The "Run" button changed by displaying the package has a typeform that needs to be filled out by the user before finalizing the execution.**
 
 #### Create/Build the UI by clicking Run
 

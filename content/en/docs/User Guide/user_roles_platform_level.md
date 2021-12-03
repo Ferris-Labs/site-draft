@@ -9,9 +9,11 @@ description: >-
 
 In this given Use Case, 3 different user roles are defined: 
 
-1. Admin
-2. Public
-3. Executor
+1. Platform Admin
+2. Platform Executor
+3. Platform Public (Suggestion to rename it as Platform User)
+
+
 
 **Note that the User Roles on platform level still need to be defined.**
 

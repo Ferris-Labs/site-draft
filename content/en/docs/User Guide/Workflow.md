@@ -43,6 +43,64 @@ Change those values with the values from the package and safe JSON file.
 
 ![](/images/create_workflow.png)
 
+##### workflow_script.json
+
+```json
+{
+  'workflow': {
+    'entrypoint': {
+      'type': 'event',
+      'source': 'ferris.apps.web',
+      'event_type': 'ferris.apps.modules.minio.file_uploaded'
+    },
+    'steps': [
+      {
+        'event_type': 'ferris.apps.modules.minio.file_uploaded',
+        'actions': [
+          {
+            'event_type': 'ferris.apps.modules.approvals.approve_step',
+            'action_name': 'File Content Verification',
+            'additional_data': {
+              'approval_type': 'file_content_verification',
+              'approval_role': 'Admin'
+            }
+          }]
+      },
+      {
+        'event_type': 'ferris.apps.modules.approvals.step_approval_completed',
+        'actions': [
+          {
+            'event_type': 'ferris_executor.run_execution.scheduled_run',
+            'action_name': 'Trigger Execution',
+            'additional_data': {
+              'package_id': '0b2d6295-d0a9-40b5-84df-c95d5d407a9c',
+              'package_name': 'ferris.executor.packages.test_package_with_scripts'
+            },
+            'condition': {
+              'approval_status': 'Approved'
+            }
+          },
+          {
+            'event_type': 'ferris.apps.modules.workflow.execution_canceled',
+            'action_name': 'Workflow Canceled',
+            'additional_data': {
+            },
+            'condition': {
+              'approval_status': 'Canceled'
+            }
+          }]
+      },
+      {
+        'event_type': 'ferris_executor.run_execution.execution_finished',
+        'actions': [
+        ]
+      }]
+  }
+}
+```
+
+#### 
+
 **Upload a file to the bucket to test the approval process**
 
 1. Click on File Storage in the left side menu to open dropdown

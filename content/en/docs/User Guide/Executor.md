@@ -36,7 +36,7 @@ In this given Use Case it is defined how to create and run a package.
 2. Describe package
 3. Select the Project to which the package will be bound
 4. Add Tags manually or select from predefined tags
-5. Schedule cron job -> "Cron like schedule definition. NOTE: day of week start on Monday (0 - Monday, 6 - Sunday)" example: "20****" -> **The whole definition of "Cron Jobs" can be found in a separate sub-category of this UserGuide**
+5. Schedule cron job -> "Cron like schedule definition. NOTE: day of week start on Monday (0 - Monday, 6 - Sunday)" example: "20****" -> **The whole definition of "Cron Jobs" can be found in the next sub-category of this UserGuide**
 6. Trigger Event Types - Select Value -> select event type to trigger the exectution of the package
 7. Check the checkbox to Allow Manual Triggering -> click to allow manual triggering of the package
 8. Check the checkbox to Activate your package -> click to set the package to active
@@ -46,7 +46,31 @@ In this given Use Case it is defined how to create and run a package.
 
 ![](/images/create_package_with_configs.png)
 
+##### config.json script
 
+The config.json file contains key/value configuration pairs that can be accessed in scripts at execution time.
+
+```json
+{"somekey":"some value 2"}
+```
+
+##### test_scr.py script
+
+This is an example script that shows how configuration from `config.json` file can be accessed from a script. `package_name` will be passed to the script as argument and then can be used for fetching configuration using `ApplicationConfigurator` from `ferris_cli` python package.
+
+```python
+import sys, json
+from ferris_cli.v2 import ApplicationConfigurator
+
+fa = json.loads(sys.argv[1])
+
+package_name = fa['package_name']
+config = ApplicationConfigurator.get(package_name)
+
+for k, v in config.items():
+    print(f"{k} -> {v}")
+    print(v)
+```
 
 #### Check Created Package
 
