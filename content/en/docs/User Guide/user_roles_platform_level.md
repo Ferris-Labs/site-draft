@@ -10,8 +10,8 @@ description: >-
 In this given Use Case, 3 different user roles are defined: (**Suggestions for the Platform User Role Rules**)
 
 1. **Platform Admin has all permissions. The PA can see, add and delete services, events and users to some extend. Users should not be deletable due to security reasons such auditability and transparency but deactivated so it leaves a track record.**
-2. **Platform Executor has similar permissions as the PA, with the exception that the ability to delete anything will be disabled. The PE can edit and add but not delete events and services. The PE has the ability to execute case managent/approval processes but has not the ability to see the Security tab to add or edit platform users.  **
-3. **Platform Public User (not functional yet BTW) can only see and verify the different events and services on the platform. The abilities are restricted, read only access for verification. **
+2. **Platform Executor has similar permissions as the PA, with the exception that the ability to delete anything will be disabled. The PE can edit and add but not delete events and services. The PE has the ability to execute case managent/approval processes but has not the ability to see the Security tab to add or edit platform users.**
+3. **Platform Public User (not functional yet BTW) can only see and verify the different events and services on the platform. The abilities are restricted, read only access for verification.**
 
 
 
