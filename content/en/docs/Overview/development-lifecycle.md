@@ -44,7 +44,7 @@ If the script has errors you will see the errors displayed in the same pop-up.
 
 ### Trigger an Event and Another Service from your Service
 
-First let us create another service "**hello_world_2**" with a copy of the **app.py** of the previous service
+First let us create another service "**hello_world_2**" with a copy of the **app.py** of the previous service.
 
 So the code for "**hello_world_2**" is as below.
 
@@ -58,7 +58,7 @@ print(payload)
 
 Create the new service and upload the script to the service.
 
-Now we edit our earlier service **hello_world/app.py** to send out a custom event type
+Now we edit our earlier service **hello_world/app.py** to send out a custom event type.
 
 ```python
 import sys
@@ -83,21 +83,21 @@ Now browse to 'Runs' menu of the UI and on refreshing the page you will see that
 
 ### Run your Service on a Scheduled CRON
 
-Open the edit Package UI of the service '**hello_world**'
+Open the edit Package UI of the service '**hello_world**'.
 
-Add the following corn expression in the schedule. 
+Add the following CRON expression in the schedule. 
 
-Save the package
+Save the package.
 
-Switch to the Execute
+Switch to the Execute.
 
-You should now see the hello_world package execute every 5 minutes. ( and also trigger the hello_world_2 Service in turn.)
+You should now see the hello_world package executes every 5 minutes (and also triggers the hello_world_2 Service in turn).
 
 Now that you have seen how it works it is probably best to delete the CRON expression and save the service.
 
-For a more detailed understanding of the CRON expression please check this page "CRON Expressions"
+For a more detailed understanding of the CRON expression please check this page "CronJob" in the User Guide.
 
-In the above sections you have seen how basic services can be created and triggred in 3 ways.
+In the above sections you have seen how basic services can be created and triggered in 3 ways.
 
 ### Run Multiple Scripts in a Service
 
@@ -112,11 +112,11 @@ print(payload)
 print("I am step 2")
 ```
 
-Upload the new script to the Service. Once you upload the script you will have 2 scripts and you can change the order in which they are run by clicking and drag. When you run the service you will also note that the boh scripts have access to the properties of the incoming event.
+Upload the new script to the Service. Once you upload the script you will have 2 scripts and you can change the order in which they are run by clicking and dragging. When you run the service you will also note that boh scripts have access to the properties of the incoming event.
 
 ### Add and Retrieve Service Specific Configurations
 
-Service specific configurations are often a requirement. In order to set up specific configuration for your service please create a file named **config.json** and upload it to the service.
+Service specific configurations are often a requirement. In order to set up specific configurations for your service please create a file named **config.json** and upload it to the service.
 
 ```json
 {
@@ -124,9 +124,9 @@ Service specific configurations are often a requirement. In order to set up spec
 }
 ```
 
-The configs that you uploaded will be placed by the platform within Consul. Since the application is called hello_world the key of the config in Consul will be "ferris.services.hello_world.config". If you have called your service something else you can always retreive the path from the UI as shown below.
+The configs that you uploaded will be placed by the platform within Consul. Since the application is called hello_world the key of the config in Consul will be "ferris.services.hello_world.config". If you have called your service something else you can always retrieve the path from the UI as shown below.
 
-You can now adjust your code to retreive and print the configs at run time.
+You can now adjust your code to retrieve and print the configs at run time.
 
 ```python
 import sys
@@ -139,13 +139,13 @@ my_config = ApplicationConfigurator().get("ferris.services.hello_world.config")[
 print(my_config)
 ```
 
-Update the service by uploading the new version of the code and trigger it and check the results.
+Update the service by uploading the new version of the code, trigger it and check the results.
 
 For a full discussion on configuration best practices please review this page - Configurations in FerrisFX.
 
 ### Retrieve Platform Specific Configurations
 
-Platform specifc configurtions are stored in Consul in the ferris.env key. These are primarily used for platform wide configurations and environment ( DEV, UAT, PRD) specific URLs etc. You can retrieve them like so.
+Platform specifc configurations are stored in Consul in the ferris.env key. These are primarily used for platform wide configurations and environment ( DEV, UAT, PRD) specific URLs etc. You can retrieve them like so.
 
 ```python
 import sys
@@ -194,4 +194,5 @@ Show how to load asset files and get path on OS.
 
 ### Extend the Executor with New Libraries
 
-Show how imaes are built.
+Show how images are built.
+

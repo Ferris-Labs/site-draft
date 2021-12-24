@@ -76,7 +76,7 @@ The following is a sample Event.
 Services can be triggered in the following ways:
 
 - Manually: By clicking the 'Run' button on the FerrisFX Management Server.
-- On Schedule: As a cron job whereas the Cron expression is added on the UI
+- On Schedule: As a cron job whereas the Cron expression is added on the UI.
 - On Event: Where a package is configured to be triggered bt the FX Router when a specific type of event is observed on the platform.
 
 Irrespective of how a Service is triggered it is always triggered by an Event. In the case of Manual and Scheduled triggering it is the FX platform that generates the trigger event.
