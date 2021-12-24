@@ -3,7 +3,7 @@ title: "Executor"
 linkTitle: "Executor / Executions"
 weight: -16
 description: >-  
-  Overview and "How to" use the Executor Framework for script automation and package (execution) triggering
+  Overview and "How to" use the Executor Framework for script automation and package (execution) triggering.
 ---
 
 The Executor is a framework allowing the organization and automatization of script processing which can be triggered:

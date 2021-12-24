@@ -3,7 +3,7 @@ title: "Case Management - Workflow"
 linkTitle: "Workflow"
 weight: -13
 description: >-
-  Overview and "How to" generate a Workflow to facilitate the verification of the administration process
+  Overview and "How to" generate a Workflow to facilitate the verification of the administration process.
 ---
 
 A workflow is an administrative process that consists in verifying, in this case the incomming data, before enabling a predefined mechanism and setting it from undone to done, inactive to active or pending to approved. 

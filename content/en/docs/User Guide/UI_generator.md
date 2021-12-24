@@ -3,7 +3,7 @@ title: "UI Generator"
 linkTitle: "UI Generator"
 weight: -14
 description: >-
-  Overview and "How to" generate UIs in a simplified and automated approach
+  Overview and "How to" generate UIs in a simplified and automated approach.
 ---
 
 The UI Generator has the ability to facilitate and automate manual processes in order to define step by step what has to be done. Based on definition of models, views and interfaces within the code, the generator will create UI automatically considering the configuration of modules as well.

@@ -3,7 +3,7 @@ title: "CronJob"
 linkTitle: "CronJob"
 weight: -15
 description: >-
-  Overview and "How to" use CronJob for performing regular scheduled actions
+  Overview and "How to" use CronJob for performing regular scheduled actions.
 ---
 
 CronJobs are meant for performing regular scheduled actions such as backups, report generation, and so on. Each of those tasks should be configured to recur indefinitely (for example: once a day / week / month); you can define the point in time within that interval when the job should start.
