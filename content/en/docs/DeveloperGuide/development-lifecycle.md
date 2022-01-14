@@ -461,5 +461,29 @@ send_hpsm(hpsm_message)
 
 
 
+# GIT Enabling Your Project
+
+All projects may have 1 or more attached GIT Repositories. In order to attach a GIT Repository to your project the following are the steps.
+
+- Select your project
+- Select the GIT Repositories Tab
+- Click on the 'ADD' Button.
+- Enter the SSH URL of the repository which you would like to add. You can find the URL as shown in the ScreenShots below.
+- FX will generate an SSH Key to be added to the repository.
+- Add the Key to the REPO as shown in screenshot below.
+- Once the settings are saved you can sync to the repository by clicking the 'SYNC NOW' button on the repository specific detail page. 
+
+
+
+# Structuring Packages Within The GIT Repository
+
+Each directory within the git repo is considered a package by FX. As there is no way to control the sequence of script execution within the repository based backages please ensure that your scripts either do not require a specific run sequence or ensure that only a single script needs to be called ( other functionality can be called from teh entry point script)
+
+The configurations are loaded from the config.json file. If secrets.json file exists in the git repo then it will be loaded and discarded ( but will remain in the GIT Repository)
+
+
+
+
+
 
 
