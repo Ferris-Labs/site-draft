@@ -3,22 +3,22 @@ title: "Case Management - Workflow"
 linkTitle: "Workflow"
 weight: -13
 description: >-
-  Overview and "How to" generate a Workflow to facilitate the verification of the administration process.
+  How to generate a Workflow to facilitate the verification of the administration process.
 ---
 
-A workflow is an administrative process that consists in verifying, in this case the incomming data, before enabling a predefined mechanism and setting it from undone to done, inactive to active or pending to approved. 
+A workflow is an administrative process that consists in verifying, in this example the incomming data, before enabling a predefined mechanism and setting its status from "to be verified" to "done", "inactive" to "active" or "pending" to "approved". 
 
-In this given use case, a workflow will be created that works as follows:
+In this use case example, the workflow created works as follows:
 
-1. A file gets uploaded to the File Storage (MinIO)
-2. Once the file verified and approved by "admin"
-3. The package/execution gets triggered
+1. A file gets uploaded to the File Storage (S3)
+2. The file needs to be verified and approved by an "admin" role
+3. The package/execution gets triggered by the approval
 
 #### Getting Started
 
-1. On the left side menu, click on Workflows to open dropdown
-2. Click on List Workflows
-3. Click on "+Add" to create a workflow
+1. On the left side menu, click on *Workflows* to open dropdown
+2. Click on *List Workflows*
+3. Click on *"+Add"* to create a new workflow
 
 ![](/images/list_workflows.png)
 
@@ -30,7 +30,7 @@ In this given use case, a workflow will be created that works as follows:
 
 ![](/images/uuid_packagename_edit_json.png)
 
-Change those values with the values from the package and safe JSON file.
+Change the template / example values to the values from the package and safe JSON file.
 
 1. Name the workflow
 2. Add a description
@@ -105,9 +105,9 @@ The workflow module gives user possibility to define a list of actions that shou
 
 **Upload a file to the bucket to test the approval process**
 
-1. Click on File Storage in the left side menu to open dropdown
-2. Click on List Files
-3. Click on "+Add"
+1. Click on *File Storage* in the left menu to open dropdown
+2. Click on *List Files*
+3. Click on *"+Add"*
 
 ![](/images/upload_file_test_workflow.png)
 
@@ -120,40 +120,41 @@ The workflow module gives user possibility to define a list of actions that shou
 
 #### Case Management / Approval Process
 
-1. Click on Case Management in the left menu to open dropdown and then on Approvals
+1. Click on *Case Management* in the left menu to open dropdown and then on *Approvals*
 
-2. Click on "Info" to verify the data/file type, name and the bucket. Close "Info"
+2. Click on *"Info"* to verify the data/file type, name and the bucket. Close "Info"
 
    ![](/images/case_management_workflow.png)
 
    ![](/images/cm_workflow_info.png)
 
-3. **In this given use case, the administrator should download the file "view file" to verify the content to decide of its outcome. "Approve; Decline; Cancel"** 
+3. In this example use case, the administrator should download the file "view file" to verify the content to decide of the outcome of the approval and then decide to "Approve", "Decline" or "Cancel" 
 
-4. Click on Approve
+4. Click on *Approve*
 
-5. Add commentar to describe the reason why it has been approved
+5. Add a comment to describe the reason for the approval / dismissal
 
 ![](/images/workflow_approve.png)
 
 ![](/images/approval_comment.png)
 
-6. Click on "Approved i" to check the reason it has been approved (declined; cancelled)
+6. Click on *"Approved i"* to check the reason it has been approved (declined; cancelled)
 
 ![](/images/approvedi_comment_check.png)
 
 #### Execution Triggered 
 
-Once the workflow was approved, an execution was triggered. Below the details and steps are verified:
+Once the workflow was approved, an execution was triggered. 
+Below the details and steps executed are verified:
 
-1. Click on Workflows to open dropdwon and then on List Workflows
+1. Click on *Workflows* to open dropdown and then on *List Workflows*
 2. Click on the magnifying glass to open details page
 
 ![](/images/list_workflows.png)
 
 ![](/images/workflow_details.png)
 
-3. Click on "Steps" to check the execution steps of the approved workflow
+3. Click on *"Steps"* to check the execution steps of the approved workflow
 
 ![](/images/steps_workflow_execution.png)
 
@@ -167,4 +168,4 @@ The next step is to verify if the execution/package has been triggered.
 
 ![](/images/execution_triggered_verified_wf.png)
 
-**Note that any component of the FerrisFX app is a module on its own. Through the workflow we make it possible that any event can combine the different modules.**
+**Note that any component of the FerrisFX app is a module on its own. Through the workflow we make it possible that any event can be combined across different modules. Hence it also is possible to model an event cascade that involves different approval and manual parameter entry UI steps as required by any given enterprise use case.**

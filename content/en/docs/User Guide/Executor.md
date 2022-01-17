@@ -3,28 +3,30 @@ title: "Executor"
 linkTitle: "Executor / Executions"
 weight: -16
 description: >-  
-  Overview and "How to" use the Executor Framework for script automation and package (execution) triggering.
+  How to use the Executor Framework for script automation and package (execution) triggering.
 ---
 
-The Executor is a framework allowing the organization and automatization of script processing which can be triggered:
+The Executor is an event oriented framework that allows enterprise organizations the automation of script processing which can be triggered by:
 
-- at a scheduled time (intervals)
-- as a reaction to an event
-- manual triggering
+- a scheduled time (intervals)
+- a reaction to an event
+- manually via a user interface
 
-It allows users to use their locally tested scripts without changes or need to learn complex DSL (description language). Together with a Git integration it gives the possibility to easily deploy and test new versions of code in an agile way with changes being applied immediately. Packages can be configurable and parametrised which makes them reusable for similar jobs. Events package triggering allows users to run multiple packages in parallel as a reaction to the same event.
+It allows users to deploy their locally tested scripts without DevOps specific changes or the need to learn complex DSL (description and configuration language). In tandem with Git integrated source code management FX allows distributed and fragmented tech teans to easily deploy and test new versions of code in an agile way with changes being applied immediately. 
+
+Contiuous Change Integration / Change Deployment becomes a component based and building block driven approach, where packages can be configurable and parametrised. All scripts and their parameters like secrets and environment variables form packages which makes them reusable for similar jobs or event chains. Event baased package triggering allows users to run multiple packages in parallel as a reaction to the same event.
 
 ### Executor (Executions) 
 
-Primar entities on "Executions" are packages which are composed by scripts that are executed in a defined order.
+Primary entities for "Executions" are packages which are composed by scripts that are executed in a predefined order.
 
 #### Executions -> Packages
 
-In this given Use Case it is defined how to create and run a package.
+This Use Case defines how to create and run a new package.
 
-1. Click on Executions on the left side of the dashboard menu to open drop-down
-2. Click on Packages
-3. Click on +Add to create a package
+1. Click on *Executions* on the left side of the dashboard menu to open drop-down
+2. Click on *Packages*
+3. Click on *+Add* to create a package
 
 ![](/images/executions_packages_add.png)
 

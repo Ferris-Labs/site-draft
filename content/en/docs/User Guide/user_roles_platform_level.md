@@ -3,19 +3,19 @@ title: "Security"
 linkTitle: "Security"
 weight: -17
 description: >-
-  Overview and "How to" add Users and define User Roles on a Platform level.
+  How to add Users and define User Roles on a Platform level.
 ---
 #### Add Users and define User Roles
 
-In this given Use Case, 3 different user roles are defined: (**Suggestions for the Platform User Role Rules**)
+In this exemplary Use Case, three different user roles are defined: (**Suggestions for the Platform User Role Rules**)
 
-1. **Platform Admin has all permissions. The PA can see, add and delete services, events and users to some extend. Users should not be deletable due to security reasons such auditability and transparency but deactivated so it leaves a track record.**
-2. **Platform Executor has similar permissions as the PA, with the exception that the ability to delete anything will be disabled. The PE can edit and add but not delete events and services. The PE has the ability to execute case managent/approval processes but has not the ability to see the Security tab to add or edit platform users.**
-3. **Platform Public User (not functional yet BTW) can only see and verify the different events and services on the platform. The abilities are restricted, read only access for verification.**
+1. **Platform Admin (PA)** has all permissions. The PA can see, add and delete services, events and users. In a production setting users should not be deletable due to  auditability and transparency reasons but rather deactivated to ensure a complete audit trail.
+2. **Platform Executor (PE)** has similar permissions as the PA but lacks the ability to delete anything. The PE can edit and add events and services but not delete them. In addition the PE has the ability to execute case managent/approval processes. In this example setup the PE but may not see the Security tab to add or edit platform users.
+3. **Public User** (not functional yet) can only see and verify existing events and services on the platform. All change abilities are restricted except for read only access to support verification and monitoring tasks.
 
 
 
-**Note that the User Roles on platform level still need to be defined.**
+**Note: The following process example only defines Plattform wide roles & users.**
 
 1. Click on Security to open dropdown
 2. Click on List Users to open the user details page
@@ -39,4 +39,4 @@ The following steps define how to create a new user:
 
 ![](/images/list_users.png)
 
-**Note that the User Roles on platform level still need to be defined.**
+**Note: that the User Roles on project and application level still need to be defined.**

@@ -3,12 +3,14 @@ title: "Taxonomy/Tagging"
 linkTitle: "Taxonomy/Tagging"
 weight: -11
 description: >
-  Overview and "How to" add Tags and the importance of Taxonomy.
+  How to add Tags and the importance of Taxonomy.
 ---
 
-Taxonomies or Tags, are the ability to organize and structure types and classes of objects and their correlations within executions/packages and workflows in this given use case. In other words, it is searchable and it makes it very easy to find related information.
+Taxonomies or Tags describe the ability to organize and structure types and classes of objects and their correlations within executions/packages and workflows across any given application, use case or project. Tags are searchable and makes it easy to group and relate objects across different components and lifecycle stages.
 
-It was developed as a module and can easily be added to any model by the developers/users.
+As a generic base module "taggability" can easily be included in any model, use case or application by the developers/users.
+
+**Note: As of the current release the Taxonomy is universal across all projects and use cases and cannot be segregated along different functional domains. It is thus essential to create a unified naming convention to be shared among the different projects & user groups. **
 
 #### Taxonomies / Tags
 
@@ -25,9 +27,9 @@ It was developed as a module and can easily be added to any model by the develop
 - Check created Tag(s)
 
 1. Click on the magnifying glass to open details (show tag) page
-2. It will automatically transfer you to the details page of the tag
-3. Click on List Packages to see in which packages the same tags are used
-4. Click on List Workflows to see in which workflows the same tags are used (in this given use case no workflow is associated with the created tag)
+2. This will automatically transfer you to the tag details page
+3. Click on *List Packages* to see in which packages the same tag is used
+4. Click on *List Workflows* to see in which workflows the same tag is used (in this example no workflow is associated with the tag just created)
 5. Click on the Edit icon (List tags page) to edit/rename a tag
 
 ![](/images/tag_list_click_loupe_details.png)
@@ -42,9 +44,9 @@ It was developed as a module and can easily be added to any model by the develop
 
 #### Search Tag
 
-1. Click on Search  on top in the List Tags/details page
-2. Click Add Filter to choose a filter (atm there is only the "Name" filter)
-3. Choose from the dropdown list to choose how the tag should be searched for
+1. Click *Search* on top of the *List Tags* / *Details Page*
+2. Click *Add Filter* to choose a filter (currently only the "Name" filter is supported)
+3. From the dropdown list choose the tag to be searched for
 
 - Starts with
 - Ends with
@@ -53,7 +55,6 @@ It was developed as a module and can easily be added to any model by the develop
 - Etc.
 
 4. Insert tag "Name"
-
 5. Hit the Search button
 
 ![](/images/search_tag_filter.png)
