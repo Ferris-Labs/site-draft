@@ -21,7 +21,7 @@ In this exemplary Use Case, three different user roles are defined: (**Suggestio
 2. Click on List Users to open the user details page
 3. Click on "+" to add a new user
 
-![](/images/security_list_users.png)
+![](/images/security_list_users_OpenSans.png)
 
 The following steps define how to create a new user:
 
@@ -33,10 +33,10 @@ The following steps define how to create a new user:
 6. Select the User Role
 7. Save
 
-![](/images/add_user_platform.png)
+![](/images/add_platform_user_OpenSans.png)
 
-- Click on Security -> List Users to check the created user
+Click on Security -> List Users to check the created user
 
-![](/images/list_users.png)
+![](/images/list_users_new_blurred.png)
 
 **Note: that the User Roles on project and application level still need to be defined.**
