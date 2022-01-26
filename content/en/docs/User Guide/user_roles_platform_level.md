@@ -21,7 +21,7 @@ In this exemplary Use Case, three different user roles are defined: (**Suggestio
 2. Click on List Users to open the user details page
 3. Click on "+" to add a new user
 
-![](/images/security_list_users_OpenSans.png)
+![](/images/security_list_users_roboto.png)
 
 The following steps define how to create a new user:
 
@@ -33,7 +33,7 @@ The following steps define how to create a new user:
 6. Select the User Role
 7. Save
 
-![](/images/add_platform_user_OpenSans.png)
+![](/images/add_platform_user_roboto.png)
 
 Click on Security -> List Users to check the created user
 

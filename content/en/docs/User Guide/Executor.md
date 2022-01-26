@@ -28,7 +28,7 @@ This Use Case defines how to create and run a new package.
 2. Click on *Packages*
 3. Click on *+Add* to create a package
 
-![](/images/executions_packages_add.png)
+![](/images/executions_packages_add_roboto.png)
 
 
 
@@ -46,7 +46,7 @@ This Use Case defines how to create and run a new package.
 10. Click on +Add More Scripts... to add more scripts -> upload a python "test_scr.py" script to pull the configuratio from config file and print all items
 11. Click on Save to save package
 
-![](/images/create_package_with_configs.png)
+![](/images/create_package_with_configs_roboto.png)
 
 ##### config.json script
 
@@ -80,17 +80,17 @@ The created package should be triggered every 20 minutes of every hour but can a
 
 - Click on the magnifying glass icon to open the package's details page
 
-![](/images/click_loupe_packages.png)
+![](/images/click_loupe_package_roboto.png)
 
 1. Check details page
 2. Click on "Show Trigger Event"
 
-![](/images/package_details_show_trigger_event.png)
+![](/images/package_details_show_trigger_event_roboto.png)
 
 1. Check the triggered event details
 2. Close
 
-![](/images/triggered_event_details.png)
+![](/images/triggered_event_details_roboto.png)
 
 
 
@@ -105,19 +105,19 @@ It will automatically transfer you to the "List Package Executions" tab
 1. Check runs/package executions to see if you manually triggered execution was processed
 2. Click on the magnifying glass icon of your latest manually triggered run to open details page of the exectuion
 
-![](/images/run_check_loupe_details.png)
+![](/images/manual_run_check_loupe_details_roboto.png)
 
 1. Check the details "Show Package Execution" of the run/exection
 2. Click on "List Steps" tab to see the steps of the execution
 
-![](/images/exection_run_details.png)
+![](/images/exection_manual_run_details_roboto.png)
 
 1. Check the steps of the run and status (completed; pending; unprocessed; failed)
 2. Click on "Show Results" to verify the script for failed executions
 
-![](/images/run_list_steps.png)
+![](/images/manual_run_list_steps_roboto.png)
 
-![](/images/script_run_execution.png)
+![](/images/script_manual_run_execution.png)
 
 - Close window
 
@@ -128,18 +128,18 @@ It will automatically transfer you to the "List Package Executions" tab
 1. Go back to the "List Package Executions" tab 
 2. Click on the edit icon to open make the run/execution editable
 
-![](/images/list_package_executions_edit_run.png)
+![](/images/list_package_executions_edit_manual_run_roboto.png)
 
 1. Name the execution/run
 2. Describe the execution/run
 3. Click "Saved" check box
 4. Save
 
-![](/images/save_execution_run.png)
+![](/images/save_execution_run_roboto.png)
 
 1. Click on Executions to open dropdown
 2. Click on Saved Executions to check the saved run
 
-![](/images/check_saved_run.png)
+![](/images/check_saved_run_roboto.png)
 
 **In the next section "UI Generator", the importance of the saved run will be showcased**.

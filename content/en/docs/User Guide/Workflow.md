@@ -16,19 +16,27 @@ In this use case example, the workflow created works as follows:
 
 #### Getting Started
 
+Note that before starting to input the values for the workflow, the JSON file needs to be edited and 2 values will need to be added as follows:
+
+1. On the left side menu, click on *Executions* to open dropdown and then on *Packages* to load the *Packages page*
+
+2. Click on the magnifying glass to open the details page of the *Package*
+
+![](/images/package_workflow_roboto.png)
+
+Copy 2 following inputs and insert into the JSON file:
+
+3. "package_id" in the JSON file which is the "Uuid (unique user ID)" in the predefined package/execution
+
+4. package_name" in the JSON file which is also called "Package Name" in the predefined package/execution
+
+![](/images/uuid_packagename_edit_json_roboto.png)
+
 1. On the left side menu, click on *Workflows* to open dropdown
 2. Click on *List Workflows*
 3. Click on *"+Add"* to create a new workflow
 
-![](/images/list_workflows.png)
-
-**Note that before starting to input the values for the workflow, the JSON file needs to be edited:**
-
-**1. "package_id" in the JSON file which is the "Uuid (unique user ID)" in the predefined package/execution**
-
-**2. package_name" in the JSON file which is also called "Package Name" in the predefined package/execution**
-
-![](/images/uuid_packagename_edit_json.png)
+![](/images/list_workflows_add_new_roboto.png)
 
 Change the template / example values to the values from the package and safe JSON file.
 
@@ -41,7 +49,7 @@ Change the template / example values to the values from the package and safe JSO
 7. Click the checkbox to set the workflow as active
 8. Click "Save"
 
-![](/images/create_workflow.png)
+![](/images/create_workflow_roboto.png)
 
 ##### workflow_script.json
 
@@ -109,24 +117,23 @@ The workflow module gives user possibility to define a list of actions that shou
 2. Click on *List Files*
 3. Click on *"+Add"*
 
-![](/images/upload_file_test_workflow.png)
+![](/images/upload_file_test_workflow_roboto.png)
 
 1. Choose File to insert
 2. Select File/Data Type in dropdown (CSV Table; Plain Text; JSON)
 3. Select Bucket Name (scripts; test; testbucket)
 4. Save 
 
-![](/images/select_file_test_workflow.png)
+![](/images/select_file_test_workflow_roboto.png)
 
 #### Case Management / Approval Process
 
 1. Click on *Case Management* in the left menu to open dropdown and then on *Approvals*
-
 2. Click on *"Info"* to verify the data/file type, name and the bucket. Close "Info"
 
-   ![](/images/case_management_workflow.png)
+![](/images/case_management_workflow_roboto.png)
 
-   ![](/images/cm_workflow_info.png)
+![](/images/cm_workflow_info.png)
 
 3. In this example use case, the administrator should download the file "view file" to verify the content to decide of the outcome of the approval and then decide to "Approve", "Decline" or "Cancel" 
 
@@ -134,29 +141,29 @@ The workflow module gives user possibility to define a list of actions that shou
 
 5. Add a comment to describe the reason for the approval / dismissal
 
-![](/images/workflow_approve.png)
+![](/images/workflow_approve_roboto.png)
 
-![](/images/approval_comment.png)
+![](/images/approval_comment_roboto.png)
 
 6. Click on *"Approved i"* to check the reason it has been approved (declined; cancelled)
 
-![](/images/approvedi_comment_check.png)
+![](/images/approvedi_comment_check_roboto.png)
 
 #### Execution Triggered 
 
 Once the workflow was approved, an execution was triggered. 
 Below the details and steps executed are verified:
 
-1. Click on *Workflows* to open dropdown and then on *List Workflows*
+1. Click on *Workflows* to open dropdown and then on *List Executions*
 2. Click on the magnifying glass to open details page
 
-![](/images/list_workflows.png)
+![](/images/workflows_list_executions_roboto.png)
 
-![](/images/workflow_details.png)
+![](/images/workflow_details_new.png)
 
 3. Click on *"Steps"* to check the execution steps of the approved workflow
 
-![](/images/steps_workflow_execution.png)
+![](/images/steps_workflow_execution_roboto.png)
 
 The next step is to verify if the execution/package has been triggered.
 
@@ -164,8 +171,8 @@ The next step is to verify if the execution/package has been triggered.
 2. Click on the magnifying glass to open the details page of your execution/package
 3. Click on "List Package Executions" to verify if it was triggered and completed
 
-![](/images/triggered_execution_wf.png)
+![](/images/triggered_execution_wf_roboto.png)
 
-![](/images/execution_triggered_verified_wf.png)
+![](/images/execution_triggered_verified_wf_roboto.png)
 
 **Note that any component of the FerrisFX app is a module on its own. Through the workflow we make it possible that any event can be combined across different modules. Hence it also is possible to model an event cascade that involves different approval and manual parameter entry UI steps as required by any given enterprise use case.**
