@@ -1,68 +1,52 @@
 ---
 title: "Executor"
 linkTitle: "Executor / Executions"
-tags: [executor, pacakges] 
-categories: [""]
 weight: -16
 description: >-  
-  Overview and "How to" use the Executor Framework for script automation and package (execution) triggering.
+  How to use the Executor Framework for script automation and package (execution) triggering.
 ---
 
-The Executor is a framework allowing the organization and automation of script processing which can be triggered:
+The Executor is an event oriented framework that allows enterprise organizations the automation of script processing which can be triggered by:
 
-- at a scheduled time (intervals)
-- as a reaction to an event
-- manual triggering
+- a scheduled time (intervals)
+- a reaction to an event
+- manually via a user interface
 
-It allows users to use their locally tested scripts without changes or need to learn complex DSL (description language). Together with a Git integration it gives the possibility to easily deploy and test new versions of code in an agile way with changes being applied immediately. Packages can be configurable and parametrised which makes them reusable for similar jobs. Events package triggering allows users to run multiple packages in parallel as a reaction to the same event.
+It allows users to deploy their locally tested scripts without DevOps specific changes or the need to learn complex DSL (description and configuration language). In tandem with Git integrated source code management FX allows distributed and fragmented tech teans to easily deploy and test new versions of code in an agile way with changes being applied immediately. 
+
+Contiuous Change Integration / Change Deployment becomes a component based and building block driven approach, where packages can be configurable and parametrised. All scripts and their parameters like secrets and environment variables form packages which makes them reusable for similar jobs or event chains. Event baased package triggering allows users to run multiple packages in parallel as a reaction to the same event.
 
 ### Executor (Executions) 
 
-Primary entities on "Executions" are packages which are composed by scripts that are executed in a defined order.
+Primary entities for "Executions" are packages which are composed by scripts that are executed in a predefined order.
 
 #### Executions -> Packages
 
-In this given Example you learn how to create and run a package.
+This Use Case defines how to create and run a new package.
 
-1. Click on Executions on the left hand navigation to expand the menu
-2. Click on Packages
-3. Click on +Add to create a package
+1. Click on *Executions* on the left side of the dashboard menu to open drop-down
+2. Click on *Packages*
+3. Click on *+Add* to create a package
 
-![](/images/executions_packages_add.png)
+![](/images/executions_packages_add_roboto.png)
 
 
 
 #### Create Package
 
 1. Name package
-
 2. Describe package
+3. Select the Project to which the package will be bound
+4. Add Tags manually or select from predefined tags
+5. Schedule cron job -> "Cron like schedule definition. NOTE: day of week start on Monday (0 - Monday, 6 - Sunday)" example: "20****" -> **The whole definition of "Cron Jobs" can be found in the next sub-category of this UserGuide**
+6. Trigger Event Types - Select Value -> select event type to trigger the exectution of the package
+7. Check the checkbox to Allow Manual Triggering -> click to allow manual triggering of the package
+8. Check the checkbox to Activate your package -> click to set the package to active
+9. Click on Choose file (optional) to Upload a Script -> upload a JSON "config.json" script to configure the package
+10. Click on +Add More Scripts... to add more scripts -> upload a python "test_scr.py" script to pull the configuratio from config file and print all items
+11. Click on Save to save package
 
-3. Select the [#Project]({{< ref "project_creation_and_users_within_project.md" >}}) to which the package will be bound
-
-4. Add [#Tags]({{< ref "taxonomy_tagging.md" >}}) manually or select from predefined tags
-
-5. Schedule [#Cron Job]({{< ref "CronJob" >}}) to define regularly scheduled jobs
-
-   *NOTE: day of week start on Monday (0 - Monday, 6 - Sunday)"*
-
-6. Trigger Event Types: Select from previously defined event types to trigger the exectution of the package
-
-7. Check to allow Manual Triggering of this package
-
-8. Check to activate the Package
-
-9. Upload Execution Script of any supported language
-
-   *Example: JSON "config.json" script to configure the package*
-
-10. Upload any number of additional Executions Scripts
-
-    *Example: Python "test_scr.py" script to pull the configuratio from config file and print all items*
-
-11. Save package
-
-![](/images/create_package_with_configs.png)
+![](/images/create_package_with_configs_roboto.png)
 
 ##### config.json script
 
@@ -74,7 +58,7 @@ The config.json file contains key/value configuration pairs that can be accessed
 
 ##### test_scr.py script
 
-This is an example script that shows how the configuration from `config.json` file can be accessed from a script. `package_name` will be passed to the script as argument and then can be used for fetching configuration using `ApplicationConfigurator` from `ferris_cli` python package.
+This is an example script that shows how configuration from `config.json` file can be accessed from a script. `package_name` will be passed to the script as argument and then can be used for fetching configuration using `ApplicationConfigurator` from `ferris_cli` python package.
 
 ```python
 import sys, json
@@ -96,17 +80,17 @@ The created package should be triggered every 20 minutes of every hour but can a
 
 - Click on the magnifying glass icon to open the package's details page
 
-![](/images/click_loupe_packages.png)
+![](/images/click_loupe_package_roboto.png)
 
 1. Check details page
 2. Click on "Show Trigger Event"
 
-![](/images/package_details_show_trigger_event.png)
+![](/images/package_details_show_trigger_event_roboto.png)
 
 1. Check the triggered event details
 2. Close
 
-![](/images/triggered_event_details.png)
+![](/images/triggered_event_details_roboto.png)
 
 
 
@@ -116,50 +100,46 @@ The created package should be triggered every 20 minutes of every hour but can a
 
 ![](/images/run_button_manual_package.png)
 
-This will open the "List Package Executions" tab
+It will automatically transfer you to the "List Package Executions" tab
 
-1. Check runs/package executions to see if the manually triggered execution was processed
-2. Click on the magnifying glass icon of the latest manually triggered run to open the details page of the execution
+1. Check runs/package executions to see if you manually triggered execution was processed
+2. Click on the magnifying glass icon of your latest manually triggered run to open details page of the exectuion
 
-![](/images/run_check_loupe_details.png)
+![](/images/manual_run_check_loupe_details_roboto.png)
 
 1. Check the details "Show Package Execution" of the run/exection
 2. Click on "List Steps" tab to see the steps of the execution
 
-![](/images/exection_run_details.png)
+![](/images/exection_manual_run_details_roboto.png)
 
-1. Check the steps of the run and their respective status (completed, pending, unprocessed, failed)
+1. Check the steps of the run and status (completed; pending; unprocessed; failed)
 2. Click on "Show Results" to verify the script for failed executions
 
-![](/images/run_list_steps.png)
+![](/images/manual_run_list_steps_roboto.png)
 
-![](/images/script_run_execution.png)
+![](/images/script_manual_run_execution.png)
 
 - Close window
+
+**Note that currently only python and sql handlers are available, files of different type will be unprocessed.**
 
 #### Save a Run/Execution
 
 1. Go back to the "List Package Executions" tab 
 2. Click on the edit icon to open make the run/execution editable
 
-![](/images/list_package_executions_edit_run.png)
+![](/images/list_package_executions_edit_manual_run_roboto.png)
 
 1. Name the execution/run
 2. Describe the execution/run
 3. Click "Saved" check box
 4. Save
 
-![](/images/save_execution_run.png)
+![](/images/save_execution_run_roboto.png)
 
 1. Click on Executions to open dropdown
 2. Click on Saved Executions to check the saved run
 
-![](/images/check_saved_run.png)
+![](/images/check_saved_run_roboto.png)
 
-
-
-#### Note
-
-- *Currently only python and sql handlers are available, files of different type will be unprocessed.*
-
-- *In the next section "UI Generator", the importance of the saved run will be showcased.*
+**In the next section "UI Generator", the importance of the saved run will be showcased**.

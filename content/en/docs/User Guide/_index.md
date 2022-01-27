@@ -8,4 +8,4 @@ description: >-
 
 
 
-In this User Guide, a complete overview of the FerrisFX Data Platform use cases regarding the Executor Framework will be showcased in detail. 
+This User Guide showcases a complete overview of the FerrisFX Executor Framework. Working along typical patterns for engineers working with the Ferris Data Platform.   
