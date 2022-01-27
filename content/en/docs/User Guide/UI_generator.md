@@ -1,16 +1,18 @@
 ---
 title: "UI Generator"
 linkTitle: "UI Generator"
+tags: [ui, executor, packages] 
+categories: []
 weight: -14
 description: >-
   Overview and "How to" generate UIs in a simplified and automated approach.
 ---
 
-The UI Generator has the ability to facilitate and automate manual processes in order to define step by step what has to be done. Based on definition of models, views and interfaces within the code, the generator will create UI automatically considering the configuration of modules as well.
+The UI Generator has the ability to facilitate and automate manual processes in order to define step by step what has to be done. Based on the definition of models, views and interfaces within the code, the generator creates pages automatically considering the configuration of modules as wel.
 
-Another script which has the ability to generate  UIs will be added to the package already created previously "Test Package with Scripts". This process will work as follows:
+Following the example setup from the Executor / Executions section, another script which has the ability to generate UIs will be added to the package already created previously "Test Package with Scripts". This process works as follows:
 
-1. Click on Executions -> Packages to open the list of packages
+1. Navigate to Executions -> Packages to open the list of packages
 
 2. Click on the edit icon to open the package/execution details
 
@@ -24,11 +26,11 @@ Another script which has the ability to generate  UIs will be added to the packa
 
 ![](/images/add_parametersjson_script.png)
 
-**Note that the "parameters.json" file describes which parameters a user can input while executing the package. These parameters can be adapted to any use case.**
+*Note that the "parameters.json" file describes which parameters a user can input while executing the package. These parameters can be adapted to any use case.*
 
 ##### parameters.json script
 
-The parameters.json file contains a JSON definition of fields that will be rendered and presented to user on manual run of package execution in order to gather parameters needed for running package execution. This way, same package can be easily reused by sending different parameter values to the same package.
+The parameters.json file contains a JSON definition of fields that will be rendered and presented to the user on a manual run of the Package Execution in order to gather parameters needed for running package execution. This way, the same package can be  reused by sending different parameter values to the same package.
 
 ```json
 {
@@ -134,21 +136,21 @@ The parameters.json file contains a JSON definition of fields that will be rende
 }
 ```
 
-**The "Run" button changed by displaying the package has a typeform that needs to be filled out by the user before finalizing the execution.**
+*Note that the "Run" button changed by displaying the package has a typeform that needs to be filled out by the user before finalizing the execution.*
 
 #### Create/Build the UI by clicking Run
 
-- Click on "Run" to display the created/built UI
+- Click on "Run" to display the automatically genUI
 
 ![](/images/run_UI_package.png)
 
-The parameters from the "parameters.json" test script will be rendered and displayed.
+The parameters from the "parameters.json" test script a rendered and displayed.
 
 1. Fill in some text "Server 1 - test" since it is a required field
 2. Fill in some text
-3. Click on Run to send the filled parameters to the package for execution
+3. Click on Run to send the c parameters to the package for execution
 
-**Note that these are test parameters with dummy text**
+*Note that these are test parameters with dummy text*
 
 ![](/images/run_parameters_UI.png)
 
@@ -156,10 +158,10 @@ The parameters from the "parameters.json" test script will be rendered and displ
 
   ![](/images/click_loupe_parameters_run.png)
 
-On the next screenshot it is clearly displayed that the run has been completed.
+The next page shows that the run has been completed.
 
 ![](/images/parameters_run_completed.png)
 
-**The importance of saved runs:**
+#### The importance of saved runs
 
-If the user is a DevOp for example and wants to trigger a script which will verify the server down or up time, instead of creating 10 packages and changing the details in the typeform (parameters) every time he executed the package, the user will be able to simply edit and save the package before running it. By doing so it avoids loosing tremendous time by creating new packages and filling or changing data in the generated typeform. 
+A user, such as Dev Ops, may simply edit and save a package before running it. By doing so it avoids repetitively generating and running packages.

@@ -1,6 +1,8 @@
 ---
 title: "Dashboard Landing Page"
 linkTitle: "Dashboard"
+tags: [] 
+categories: ["Getting Started"]
 weight: -18
 description: >-
      Overview of the FerrisFX Dashboard.
@@ -15,4 +17,5 @@ The FerrisFX Dashboard on the Landing page provides  insights and analytics. It 
   - Username (email)
   - Password
 
-In this given Use Case the identity and access management process is secured through KeyCloak.
+The content displayed on the dashboard is user and context sensitive. Meaning, each users sees only the data, reports and features that are relevant to the roles associated to their login profile.
+

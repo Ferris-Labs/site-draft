@@ -1,16 +1,18 @@
 ---
 title: "CronJob"
 linkTitle: "CronJob"
+tags: [executor] 
+categories: []
 weight: -15
 description: >-
   Overview and "How to" use CronJob for performing regular scheduled actions.
 ---
 
-CronJobs are meant for performing regular scheduled actions such as backups, report generation, and so on. Each of those tasks should be configured to recur indefinitely (for example: once a day / week / month); you can define the point in time within that interval when the job should start.
+CronJobs are meant for performing regularly scheduled actions such as backups, report generation, and so on. Each of those tasks should be configured to recur indefinitely (for example: once a day / week / month). The point in time when the job is to be started can be freely defined.
 
 #### Example:
 
-This example CronJob manifest would execute or trigger and event every minute:
+This example Cron Job manifest triggers an event every minute:
 
 ```json
 schedule: "*/1 * * * *"
@@ -48,5 +50,5 @@ For example, the line below states that the task must be started every Friday at
 0 0 13 * 5
 ```
 
-To generate CronJob schedule expressions, you can also use web tools like [crontab.guru](https://crontab.guru/).
+To generate Cron Job schedule expressions, you can also use web tools like [crontab.guru](https://crontab.guru/).
 

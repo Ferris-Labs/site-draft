@@ -1,16 +1,18 @@
 ---
 title: "Project Creation & Users within the Project"
 linkTitle: "Project Creation & Users within the Project"
+tags: [projects, users] 
+categories: []
 weight: -12
 description: >
   Overview and "How to" create Projects and Users within the Project.
 ---
 
-In this subcategory the creation of new projects and users withtin the project will be elaborated.
+In this section the creation of new projects and users withtin the project is described in detail.
 
 #### Project
 
-1. Click on Projects in the menu on the left side to open dropdown and then on List Projects
+1. Click on Projects in the left hand navigation and then select List Projects
 2. Click on "+Add"
 
 ![](/images/list_projects_add.png)
@@ -22,17 +24,17 @@ In this subcategory the creation of new projects and users withtin the project w
 
 ![](/images/list_projects_created.png)
 
-In this given use case, the Project was created by the Platform Administrator which has insights in all projects on the Ferris Platform. 
+In this example use case, the Project was created by the Platform Administrator which has insights in all projects on the Ferris Platform. 
 
 #### User creation within the project
 
-Since the Platform Administrator created the Project, he is automatically assigned as the Project Owner. All user roles on the project level are defined in debt as follows:
+Since the Platform Administrator created the Project, it is automatically assigned as the Project Owner. All user roles on the project level are defined as follows:
 
-- **Project Owner -  has all permissions on project and related entities (packages, users) including deletion of project(s) (and users) created by the PO. By default it is the user that created project**
-- **Project Admin - has all permissions as Owner except deletion**
-- **Project User - has only list / view permissions**
+- Project Owner -  has all permissions on project and related entities (packages, users) including deletion of project(s) (and users) created by the PO. By default it is the user who created the project
+- Project Admin - has the same permissions as the Owner, except deletion
+- Project User - has only list and view permissions
 
-**Please note that users without Platform Administrator role, won't see any projects and packages they are not belonging to. All project role rights are translated to package level also, eg. a user with Project User role will not be able to edit packages of that project, only to list/view them and run (manually) an execution**
+*Note that users without the Platform Administrator role won't see any projects and packages they are not belonging to. All project role rights are translated to package level also, eg. a user with Project User role will not be able to edit packages of that project, only to list/view them and run (manually) an execution*
 
 1. Click on the magnifying glass to open Project details page
 
@@ -64,50 +66,50 @@ Since new users were created, no package(s) are yet assigned to the project. A p
 
 ![](/images/added_project_to_package.png)
 
-Once that a project was assigned to a package, the users created within the project will be able to perform their cores.
+Once a project is assigned to a package the users created within the project will be able to perform their tasks.
 
 ##### Project Owner
 
 1. Log in as "Project Owner"
-2. Click on Projects to open dropdown and then List Projects
+2. Click on Projects in the navigation and then select List Projects
 
 ![](/images/list_projects_as_projectowner.png)
 
-As defined above, a Project Owner can add new projects, view, edit and delete the projects he belongs to.
+As described above a Project Owner can add new projects, view, edit and delete the projects he belongs to.
 
-3. Click on Executions to open dropdown and then on Packages
+3. Click on Executions in the navigation and then select Packages
 
 ![](/images/view_packages_as_project_owner.png)
 
-As Project Owner, one can add new packages, view, edit, delete and trigger manually runs and delete the packages within the projects the user belongs to.
+As Project Owner one can add new packages, view, edit, delete and trigger manually runs and delete the packages within the projects the user belongs to.
 
 ##### Project Admin
 
 1. Log in as "Project Admin"
-2. Click on Projects to open dropdown and then List Projects
+2. Click on Projects in the navigation and then select List Projects
 
 ![](/images/list_projects_as_projectadmin.png)
 
-As defined above, a Project Admin can add new projects, view and edit the projects he belongs to but can not delete anything.
+As described above a Project Admin can add new projects, view and edit the projects he belongs to but can not delete anything.
 
-3. Click on Executions to open dropdown and then on Packages
+3. Click on Executions in the navigation and then select Packages
 
 ![](/images/view_packages_as_projectadmin.png)
 
-As Project Admin, one can add new packages, view, edit and trigger manually runs within the projects the user belongs to. The Project Admin can not delete the packages, runs, whatsoever.
+As Project Admin one can add new packages, view, edit and trigger manually runs within the projects the user belongs to. The Project Admin can not delete the packages, runs, whatsoever.
 
 **Project User**
 
 1. Log in as "Project User"
-2. Click on Projects to open dropdwon and then List Projects
+2. Click on Projects in the navigation and then select List Projects
 
 ![](/images/list_projects_as_projectuser.png)
 
-As defined above, a Project User can only view the projects he belongs to. He can neither edit, nore delete anything. 
+As described above, a Project User can only view the projects he belongs to. He can neither edit, nore delete anything. 
 
-3. Click on Executions to open dropdown and then on Packages.
+3. Click on Executions in the navigation and then select Packages.
 
 ![](/images/view_packages_as_projectuser.png)
 
-As Project User, one can view packages and trigger manuallz runs within the projects the user belongs to. The Project User can not delete or edit packages, runs, whatsoever.
+As Project User one can view packages and manually trigger runs within the projects the user belongs to. The Project User can not delete or edit packages or runs.
 

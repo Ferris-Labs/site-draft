@@ -1,12 +1,14 @@
 ---
 title: "Executor"
 linkTitle: "Executor / Executions"
+tags: [executor, pacakges] 
+categories: [""]
 weight: -16
 description: >-  
   Overview and "How to" use the Executor Framework for script automation and package (execution) triggering.
 ---
 
-The Executor is a framework allowing the organization and automatization of script processing which can be triggered:
+The Executor is a framework allowing the organization and automation of script processing which can be triggered:
 
 - at a scheduled time (intervals)
 - as a reaction to an event
@@ -16,13 +18,13 @@ It allows users to use their locally tested scripts without changes or need to l
 
 ### Executor (Executions) 
 
-Primar entities on "Executions" are packages which are composed by scripts that are executed in a defined order.
+Primary entities on "Executions" are packages which are composed by scripts that are executed in a defined order.
 
 #### Executions -> Packages
 
-In this given Use Case it is defined how to create and run a package.
+In this given Example you learn how to create and run a package.
 
-1. Click on Executions on the left side of the dashboard menu to open drop-down
+1. Click on Executions on the left hand navigation to expand the menu
 2. Click on Packages
 3. Click on +Add to create a package
 
@@ -33,16 +35,32 @@ In this given Use Case it is defined how to create and run a package.
 #### Create Package
 
 1. Name package
+
 2. Describe package
-3. Select the Project to which the package will be bound
-4. Add Tags manually or select from predefined tags
-5. Schedule cron job -> "Cron like schedule definition. NOTE: day of week start on Monday (0 - Monday, 6 - Sunday)" example: "20****" -> **The whole definition of "Cron Jobs" can be found in the next sub-category of this UserGuide**
-6. Trigger Event Types - Select Value -> select event type to trigger the exectution of the package
-7. Check the checkbox to Allow Manual Triggering -> click to allow manual triggering of the package
-8. Check the checkbox to Activate your package -> click to set the package to active
-9. Click on Choose file (optional) to Upload a Script -> upload a JSON "config.json" script to configure the package
-10. Click on +Add More Scripts... to add more scripts -> upload a python "test_scr.py" script to pull the configuratio from config file and print all items
-11. Click on Save to save package
+
+3. Select the [#Project]({{< ref "project_creation_and_users_within_project.md" >}}) to which the package will be bound
+
+4. Add [#Tags]({{< ref "taxonomy_tagging.md" >}}) manually or select from predefined tags
+
+5. Schedule [#Cron Job]({{< ref "CronJob" >}}) to define regularly scheduled jobs
+
+   *NOTE: day of week start on Monday (0 - Monday, 6 - Sunday)"*
+
+6. Trigger Event Types: Select from previously defined event types to trigger the exectution of the package
+
+7. Check to allow Manual Triggering of this package
+
+8. Check to activate the Package
+
+9. Upload Execution Script of any supported language
+
+   *Example: JSON "config.json" script to configure the package*
+
+10. Upload any number of additional Executions Scripts
+
+    *Example: Python "test_scr.py" script to pull the configuratio from config file and print all items*
+
+11. Save package
 
 ![](/images/create_package_with_configs.png)
 
@@ -56,7 +74,7 @@ The config.json file contains key/value configuration pairs that can be accessed
 
 ##### test_scr.py script
 
-This is an example script that shows how configuration from `config.json` file can be accessed from a script. `package_name` will be passed to the script as argument and then can be used for fetching configuration using `ApplicationConfigurator` from `ferris_cli` python package.
+This is an example script that shows how the configuration from `config.json` file can be accessed from a script. `package_name` will be passed to the script as argument and then can be used for fetching configuration using `ApplicationConfigurator` from `ferris_cli` python package.
 
 ```python
 import sys, json
@@ -98,10 +116,10 @@ The created package should be triggered every 20 minutes of every hour but can a
 
 ![](/images/run_button_manual_package.png)
 
-It will automatically transfer you to the "List Package Executions" tab
+This will open the "List Package Executions" tab
 
-1. Check runs/package executions to see if you manually triggered execution was processed
-2. Click on the magnifying glass icon of your latest manually triggered run to open details page of the exectuion
+1. Check runs/package executions to see if the manually triggered execution was processed
+2. Click on the magnifying glass icon of the latest manually triggered run to open the details page of the execution
 
 ![](/images/run_check_loupe_details.png)
 
@@ -110,7 +128,7 @@ It will automatically transfer you to the "List Package Executions" tab
 
 ![](/images/exection_run_details.png)
 
-1. Check the steps of the run and status (completed; pending; unprocessed; failed)
+1. Check the steps of the run and their respective status (completed, pending, unprocessed, failed)
 2. Click on "Show Results" to verify the script for failed executions
 
 ![](/images/run_list_steps.png)
@@ -118,8 +136,6 @@ It will automatically transfer you to the "List Package Executions" tab
 ![](/images/script_run_execution.png)
 
 - Close window
-
-**Note that currently only python and sql handlers are available, files of different type will be unprocessed.**
 
 #### Save a Run/Execution
 
@@ -140,4 +156,10 @@ It will automatically transfer you to the "List Package Executions" tab
 
 ![](/images/check_saved_run.png)
 
-**In the next section "UI Generator", the importance of the saved run will be showcased**.
+
+
+#### Note
+
+- *Currently only python and sql handlers are available, files of different type will be unprocessed.*
+
+- *In the next section "UI Generator", the importance of the saved run will be showcased.*
