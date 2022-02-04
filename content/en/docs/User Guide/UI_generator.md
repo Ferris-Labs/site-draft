@@ -145,7 +145,8 @@ The parameters from the "parameters.json" test script will be rendered and displ
 
 1. Fill in some text "Server 1 - test" since it is a required field
 2. Fill in some text
-3. Click on Run to send the filled parameters to the package for execution
+3. Add some file
+4. Click on Run to send the filled parameters to the package for execution
 
 **Note that these are test parameters with dummy text**
 
