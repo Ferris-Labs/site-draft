@@ -2,36 +2,63 @@
 categories: ["Examples", "Placeholders"]
 tags: ["test","docs"] 
 title: "Getting Started"
+tags: [quickstart] 
+categories: ["Getting Started"]
 linkTitle: "Getting Started"
 weight: 2
 description: >
-  What does your user need to know to try your project?
+  What do you need to get started with FerrisFX, learn what it does and how to use it yourself?
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+Are you new to Ferris? We help you getting started and show you how you register and use ferris for the first
+time. 
 
-Information in this section helps your user try your project themselves.
+We show you all the nitty gritty details of FerrisFX, including:
 
-* What do your users need to do to start using your project? This could include downloading/installation instructions, including any prerequisites or system requirements.
+- What you need to do in order to get your system up and running
+- Getting yourself registered as a user and log into Ferris
+- Connect to our secure cloud environmrnt
+- ... and of course, how to use Ferris
 
-* Introductory “Hello World” example, if appropriate. More complex tutorials should live in the Tutorials section.
 
-Consider using the headings below for your getting started page. You can delete any that are not applicable to your project.
 
-## Prerequisites
+## Registration
 
-Are there any system requirements for using your project? What languages are supported (if any)? Do users need to already have any software or tools installed?
+Follow the link below to login or register yourself as a user.
 
-## Installation
+[![](/images/ferris_registration_button.png)](<a href="https://www.getdrip.com/forms/42984789/submissions/new" data-drip-show-form="42984789">Show form</a>) 
 
-Where can your user find your project code? How can they install it (binaries, installable package, build from source)? Are there multiple options/versions they can install and how should they choose the right one for them?
+*Register yourself as a new user and obtain immediately your own login credentials*
 
-## Setup
+[![](/images/ferris_login_button.png)](https://home.ferris.ai) 
 
-Is there any initial setup users need to do after installation to try your project?
+*For registered users > connect to VPN first*
 
-## Try it out!
 
-Can your users test their installation, for example by running a command or deploying a Hello World example?
+
+## Ferris Connect Quickstart
+
+Follow the [#Ferris Connect Quickstart]({{< ref "connect_quickstart.md" >}}) steps in order to securely connect to Ferris.
+
+
+
+## Development Quickstart
+
+Use the [#Development Quickstart]({{< ref "development_quickstart.md" >}}) to understand the Ferris technology and become a master developer.
+
+
+
+<!-- Drip -->
+<script type="text/javascript">
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {};
+  _dcs.account = '6844546';
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true;
+    dc.src = '//tag.getdrip.com/6844546.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script>
+<!-- end Drip -->
