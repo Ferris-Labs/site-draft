@@ -18,7 +18,7 @@ A new Project will be created to showcase the capabilty of the git integration:
 ![](/images/create_project_git_int.png)
 
 3. Name the project
-4. Save
+4. Save the new project
 
 ![](/images/git_int_created_project.png)
 
@@ -32,8 +32,8 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 #### Add a GitHub Repository to the created project
 
-1. Click on Git Repositories
-2. Click on +Add 
+1. Click on the Git Repositories tab
+2. Click on +Add to add a SSH repository URL
 
 ![](/images/add_git_repo.png)
 
@@ -87,6 +87,34 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 3. Check the synchronised details page
 
-*Note that the branches were added and the status has changed.*
+*Note that the branches (main; dev) were added and the status has changed (synced).*
 
 ![](/images/synced_repos.png)
+
+4. Click on the List Packages tab to verify that the packages were imported
+
+![](/images/list_packages_git_import.png)
+
+#### Change Git Branch on the platform
+
+*If a user wants to test or work on a specific branch, he can select the branch required to do so. The main branch is selected by default.*
+
+1. Click on the edit button to open the Edit Repository details page
+
+![](/images/edit_repo_branch.png)
+
+2. Click in the drop-down to select the branch, in thise case "dev"
+3. Click on Save to save the selected branch
+
+![](/images/save_branch.png)
+
+4. Click on Sync to synchronise the packages from the dev branch
+
+![](/images/sync_dev_branch.png)
+
+5. Click on the List Packages tab to verify the packages have been synced from the dev branch
+
+![](/images/list_packages_dev.png)
+
+*Note that a public key can be regenerated at any moment if in doubt that someone has access to it. If a new key gets generated, it needs to get added to GitHub again and synced on the platform afterwards.*
+
