@@ -10,7 +10,7 @@ The GitHub Integration is the capability to generate a connection from a git rep
 
 A new Project will be created to showcase the capabilty of the git integration:
 
-#### Create a new project
+## Create a new project
 
 1. Click on Projects in the left side menu to open drop-down and then on List Projects
 2. Click on +Add to create a new project
@@ -22,7 +22,7 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 ![](/images/git_int_created_project.png)
 
-#### Check the created project
+## Check the created project
 
 1. Click on the magnifying glass to open the details page of the project
 
@@ -30,14 +30,14 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 ![](/images/git_project_details_page.png)
 
-#### Add a GitHub Repository to the created project
+## Add a GitHub Repository to the created project
 
 1. Click on the Git Repositories tab
 2. Click on +Add to add a SSH repository URL
 
 ![](/images/add_git_repo.png)
 
-#### Copy GitHub Repo
+## Copy GitHub Repo
 
 *Note that before adding your GitHub Repository to the platform, a public SSH key needs to be generated.*
 
@@ -48,7 +48,7 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 ![](/images/github_copy_ssh_url.png)
 
-#### Paste SSH URL
+## Paste SSH URL
 
 1. Paste the copied SSH URL from your repo
 2. Click save to create the repository on the platform
@@ -59,7 +59,7 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 ![](/images/public_key_repo.png)
 
-#### Add the public key to GitHub
+## Add the public key to GitHub
 
 1. Return to your GitHub account
 2. Click on Settings in the top menu bar
@@ -78,7 +78,7 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 ![](/images/check_saved_key_git.png)
 
-#### Synchronise the repository
+## Synchronise the repository
 
 1. Return to the FerrisFX platform
 2. Click the Sync Now button to synchronise the platform with the GitHub
@@ -95,7 +95,7 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 ![](/images/list_packages_git_import.png)
 
-#### Change Git Branch on the platform
+## Change Git Branch on the platform
 
 *If a user wants to test or work on a specific branch, he can select the branch required to do so. The main branch is selected by default.*
 

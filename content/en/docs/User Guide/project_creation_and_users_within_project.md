@@ -8,7 +8,7 @@ description: >
 
 This subcategory explains the creation of new projects and users withtin these projects.
 
-#### Project
+## Project 
 
 1. Click on *Projects* in the menu on the left side to open dropdown and then on List Projects
 2. Click on *"+Add"*
@@ -24,7 +24,7 @@ This subcategory explains the creation of new projects and users withtin these p
 
 Project on the Ferris Platform form the overarching organizational bracket for different types of objects. All users, packages, scripts, parameters, secrets and other elements are organized into projects to ease enterprise data management. The default owner for new projects is the Platform Admin (PA).  
 
-#### User creation within the project
+## User creation within the project
 
 Since the Platform Administrator created the Project, he is automatically assigned as the Project Owner. All user roles on the project level are defined in detail as follows:
 

@@ -10,6 +10,8 @@ The UI Generator has the ability to facilitate and automate manual parameter bas
 
 Another script which has the ability to generate  UIs will be added to the package already created previously "Test Package with Scripts". This process will work as follows:
 
+## Edit existing Package
+
 1. Click on *Executions -> Packages* to open the list of packages
 2. Click on the edit icon to open the package/execution details
 
@@ -135,7 +137,7 @@ The *parameters.json* file contains a JSON definition of fields that will be ren
 
 **The "Run" button changed by displaying the package has a typeform that needs to be filled out by the user before starting the actual execution.**
 
-#### Create/Build the UI by clicking Run
+## Create/Build the UI by clicking Run
 
 - Click on *"Run"* to display the created/built UI
 

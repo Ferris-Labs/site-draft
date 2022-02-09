@@ -12,7 +12,7 @@ As a generic base module "taggability" can easily be included in any model, use 
 
 **Note: As of the current release the Taxonomy is universal across all projects, use cases and cannot be segregated along different functional domains. It is thus essential to create a unified naming convention to be shared among the different projects & user groups.**
 
-#### Taxonomies / Tags
+# Taxonomies / Tags
 
 1. Click on Taxonomies in the left menu to open dropdown and then on Tags
 2. Click Add to create a tag
@@ -45,7 +45,7 @@ As a generic base module "taggability" can easily be included in any model, use 
 
 ![](/images/list_tags_edit_roboto.png)
 
-#### Search Tag
+## Search Tag
 
 1. Click *Search* on top of the *List Tags* / *Details Page*
 2. Click *Add Filter* to choose a filter (currently only the "Name" filter is supported)

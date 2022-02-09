@@ -16,11 +16,11 @@ It allows users to deploy their locally tested scripts without DevOps specific c
 
 Contiuous Change Integration / Change Deployment becomes a component based and building block driven approach, where packages can be configurable and parametrised. All scripts and their parameters like secrets and environment variables form packages which makes them reusable for similar jobs or event chains. Event baased package triggering allows users to run multiple packages in parallel as a reaction to the same event.
 
-### Executor (Executions) 
+# Executor (Executions) 
 
 Primary entities for "Executions" are packages which are composed by scripts that are executed in a predefined order.
 
-#### Executions -> Packages
+## Executions -> Packages
 
 This Use Case defines how to create and run a new package.
 
@@ -30,9 +30,7 @@ This Use Case defines how to create and run a new package.
 
 ![](/images/executions_packages_add_roboto.png)
 
-
-
-#### Create Package
+## Create Package
 
 1. Name package
 2. Describe package
@@ -74,7 +72,7 @@ for k, v in config.items():
     print(v)
 ```
 
-#### Check Created Package
+## Check Created Package
 
 The created package should be triggered every 20 minutes of every hour but can also be run manually.
 
@@ -92,9 +90,7 @@ The created package should be triggered every 20 minutes of every hour but can a
 
 ![](/images/triggered_event_details_roboto.png)
 
-
-
-#### Package Executions / Runs
+## Package Executions / Runs
 
 - Click on the "Run" button down the page to run the package manually
 
@@ -123,7 +119,7 @@ It will automatically transfer you to the "List Package Executions" tab
 
 **Note that currently only python and sql handlers are available, files of different type will be unprocessed.**
 
-#### Save a Run/Execution
+## Save a Run/Execution
 
 1. Go back to the "List Package Executions" tab 
 2. Click on the edit icon to open make the run/execution editable

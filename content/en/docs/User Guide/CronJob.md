@@ -8,7 +8,7 @@ description: >-
 
 CronJobs are used to schedule regularly recurring actions such as backups, report generation and similar items. Each of those tasks should be configured to recur for an indefinite period into the future on a regular frequency (for example: once a day / week / month). The user also can define the point in time within that interval when the job should start.
 
-#### Example:
+## Example:
 
 This example CronJob manifest would execute and trigger an event every minute:
 
@@ -16,9 +16,7 @@ This example CronJob manifest would execute and trigger an event every minute:
 schedule: "*/1 * * * *"
 ```
 
-
-
-#### Cron Schedule Syntax
+## Cron Schedule Syntax
 
 ```json
 # ┌───────────── minute (0 - 59)

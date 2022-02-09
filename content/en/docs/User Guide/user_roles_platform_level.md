@@ -5,7 +5,7 @@ weight: -17
 description: >-
   How to add Users and define User Roles on a Platform level.
 ---
-#### Add Users and define User Roles
+## Add Users and define User Roles
 
 In this exemplary Use Case, three different user roles are defined: (**Suggestions for the Platform User Role Rules**)
 

@@ -14,7 +14,7 @@ In this use case example, the workflow created works as follows:
 2. The file needs to be verified and approved by an "admin" role
 3. The package/execution gets triggered by the approval
 
-#### Getting Started
+## Getting Started
 
 Note that before starting to input the values for the workflow, the JSON file needs to be edited and 2 values will need to be added as follows:
 
@@ -126,7 +126,7 @@ The workflow module gives user possibility to define a list of actions that shou
 
 ![](/images/select_file_test_workflow_roboto.png)
 
-#### Case Management / Approval Process
+# Case Management / Approval Process
 
 1. Click on *Case Management* in the left menu to open dropdown and then on *Approvals*
 2. Click on *"Info"* to verify the data/file type, name and the bucket. Close "Info"
@@ -149,7 +149,7 @@ The workflow module gives user possibility to define a list of actions that shou
 
 ![](/images/approvedi_comment_check_roboto.png)
 
-#### Execution Triggered 
+## Execution Triggered 
 
 Once the workflow was approved, an execution was triggered. 
 Below the details and steps executed are verified:
