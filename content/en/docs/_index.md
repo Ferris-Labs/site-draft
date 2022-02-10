@@ -2,7 +2,7 @@
 ---
 title: "Documentation"
 linkTitle: "Documentation"
-weight: 20
+weight: -10
 menu:
   main:
     weight: 20
@@ -32,5 +32,4 @@ API reference: Envoy API detailed reference.
 Envoy FAQ: Have questions? We have answers. Hopefully.
 
 Version history: Per-version release notes.
-
 

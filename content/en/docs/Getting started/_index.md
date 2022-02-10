@@ -5,7 +5,7 @@ title: "Getting Started"
 tags: [quickstart] 
 categories: ["Getting Started"]
 linkTitle: "Getting Started"
-weight: 2
+weight: -9
 description: >
   What do you need to get started with FerrisFX, learn what it does and how to use it yourself?
 ---

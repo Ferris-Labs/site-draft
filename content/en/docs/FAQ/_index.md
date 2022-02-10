@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 linkTitle: "FAQ"
-weight: 1
+weight: -5
 description: >
   Please place FAQ documents here.
 ---

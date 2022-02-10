@@ -48,7 +48,7 @@ This Use Case defines how to create and run a new package.
 
 ##### config.json script
 
-The config.json file contains key/value configuration pairs that can be accessed in scripts at execution time.
+The `config.json` file contains key/value configuration pairs that can be accessed in scripts at execution time.
 
 ```json
 {"somekey":"some value 2"}

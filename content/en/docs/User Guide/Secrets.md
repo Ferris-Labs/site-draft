@@ -35,32 +35,20 @@ Note that the package creation was presented in another submenu of the User Guid
 
 ##### test_secrets.py script
 
-"Text will be added later"``
+This is an example script that shows how secrets from the `secrets.json` file can be accessed from a script at execution time using the `get_secret()` helper function from the `ferris_ef` package.
 
 ```python
-import os
-
-import sys, json
 from ferris_ef import get_secret, get_param
 
 print(f"DB NAME: {get_secret('DB_NAME')}")
 print(f"DB PASS: {get_secret('DB_PASS')}")
 
 print(f"PACKAGE NAME: {get_param('package_name')}")
-
-fa = json.loads(sys.argv[1])
-secrets = fa['secrets']
-
-for k, v in secrets.items():
-    print(f"{k} -> {v}")
-
-
-print(os.environ)
 ```
 
 ##### secrets.json script
 
-"Text will be added later"
+The `secrets.json` file contains sensitive key/value pairs that can be accessed in scripts at execution time. Those values are stored double encrypted in database and can be only accessed within the executing script.
 
 ```json
 {
