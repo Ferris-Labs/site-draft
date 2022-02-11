@@ -5,3 +5,9 @@ p.home_title {
         font-family: 'Prompt', sans-serif;
         font-size: 60px;
 }
+.td-navbar {
+    background: #B81414;
+    min-height: 4rem;
+    margin: 0;
+    z-index: 32;
+}
