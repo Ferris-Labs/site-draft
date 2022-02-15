@@ -24,15 +24,9 @@ We show you all the nitty gritty details of FerrisFX, including:
 
 ## Registration
 
-Follow the link below to login or register yourself as a user.
+__New to Ferris__: Contact us with a short mail to info@ferrislabs.net and we'll get in touch with you shortly to help you getting started with Ferris.
 
-[![](/images/ferris_registration_button.png)](<a href="https://www.getdrip.com/forms/42984789/submissions/new" data-drip-show-form="42984789">Show form</a>) 
-
-*Register yourself as a new user and obtain immediately your own login credentials*
-
-[![](/images/ferris_login_button.png)](https://home.ferris.ai) 
-
-*For registered users > connect to VPN first*
+__Return Users__: If you're already a registered user, [![](/images/ferris_login_button.png)](https://home.ferris.ai) to Ferris. *Note that you need to connect your VPN first.*
 
 
 
@@ -48,17 +42,3 @@ Use the [#Development Quickstart]({{< ref "development_quickstart.md" >}}) to un
 
 
 
-<!-- Drip -->
-<script type="text/javascript">
-  var _dcq = _dcq || [];
-  var _dcs = _dcs || {};
-  _dcs.account = '6844546';
-  (function() {
-    var dc = document.createElement('script');
-    dc.type = 'text/javascript'; dc.async = true;
-    dc.src = '//tag.getdrip.com/6844546.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(dc, s);
-  })();
-</script>
-<!-- end Drip -->
