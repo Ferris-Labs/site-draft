@@ -72,24 +72,25 @@ id = "UA-00000000-0"
 [languages.en]
 title = "FERRIS LABS"
 description = "FERRIS LABS web site"
-languageName ="English"
+languageName =""
 # Weight used for sorting.
 weight = 1
 [languages.no]
 title = "FERRIS LABS"
 description = "FERRIS LABS"
-languageName ="Norsk"
+languageName =""
 contentDir = "content/no"
 time_format_default = "02.01.2006"
 time_format_blog = "02.01.2006"
 
 [languages.fa]
-title = "اسناد گلدی"
-description = "یک نمونه برای پوسته داکسی"
-languageName ="فارسی"
+title = ""
+description = ""
+languageName =""
 contentDir = "content/fa"
 time_format_default = "2006.01.02"
 time_format_blog = "2006.01.02"
+
 
 [markup]
   [markup.goldmark]
@@ -99,7 +100,7 @@ time_format_blog = "2006.01.02"
       # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
       style = "tango"
       # Uncomment if you want your chosen highlight style used for code blocks without a specified language
-      # guessSyntax = "true"
+      # guessSyntax = "false"
 
 # Everything below this are Site Params
 
