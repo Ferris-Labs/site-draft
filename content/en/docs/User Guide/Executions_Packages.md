@@ -1,12 +1,12 @@
 ---
-title: "Executor"
-linkTitle: "Executor / Executions"
+title: "Executions - Packages"
+linkTitle: "Executions - Packages"
 weight: -16
 description: >-  
-  How to use the Executor Framework for script automation and package (execution) triggering.
+  How to use the Executions/Packages Framework for script automation and package (execution) triggering.
 ---
 
-The Executor is an event oriented framework that allows enterprise organizations the automation of script processing which can be triggered by:
+The Executions/Packages is an event oriented framework that allows enterprise organizations the automation of script processing which can be triggered by:
 
 - a scheduled time (intervals)
 - a reaction to an event
@@ -16,7 +16,7 @@ It allows users to deploy their locally tested scripts without DevOps specific c
 
 Contiuous Change Integration / Change Deployment becomes a component based and building block driven approach, where packages can be configurable and parametrised. All scripts and their parameters like secrets and environment variables form packages which makes them reusable for similar jobs or event chains. Event baased package triggering allows users to run multiple packages in parallel as a reaction to the same event.
 
-# Executor (Executions) 
+# Executions - Packages
 
 Primary entities for "Executions" are packages which are composed by scripts that are executed in a predefined order.
 
