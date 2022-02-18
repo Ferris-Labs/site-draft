@@ -8,6 +8,3 @@ description: >-
 
 The FerrisFX  Landing page provides insights and analytics around typical platform related metrics mostly related to data ops and detailed event handling. It can be finetuned and tailored to customer specific needs. 
 
-# Getting Started
-
-Once you are logged in for the first time....

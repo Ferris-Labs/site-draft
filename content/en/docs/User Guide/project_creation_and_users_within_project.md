@@ -1,7 +1,7 @@
 ---
-title: "Project Creation & User Handling"
-linkTitle: "Project Creation & Users Handling"
-weight: -12
+title: "Projects"
+linkTitle: "Projects"
+weight: -17
 description: >
   How to create Projects and Users for new projects.
 ---

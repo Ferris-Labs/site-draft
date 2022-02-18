@@ -1,5 +1,5 @@
 ---
-title: "Release 08.2021"
+title: "Release 1.1.2"
 tags: ["releases"] 
 categories: ["Release Notes"]
 linkTitle:
