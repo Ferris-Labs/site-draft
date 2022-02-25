@@ -1,11 +1,11 @@
 ---
-title: "Release 1.1.3"
+title: "Release 1.0.4"
 tags: ["releases"]
 categories: ["Release Notes"]
 linkTitle:
 weight: 100
 description: >-
-     New features, improvements and fixes provided to you in September and October 2021.
+     New features, improvements and fixes provided to you in the 4th Quarter of 2021.
 
 ---
 

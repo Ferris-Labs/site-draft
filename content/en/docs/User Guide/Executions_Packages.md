@@ -8,13 +8,13 @@ description: >-
 
 The Executions/Packages is an event oriented framework that allows enterprise organizations the automation of script processing which can be triggered by:
 
-- a scheduled time (intervals)
-- a reaction to an event
-- manually via a user interface
+- Manually: By clicking the ‘Run’ button on the FerrisFX Management Server.
+- On Schedule: As a cron job whereas the Cron expression is added on the UI.
+- On Event: Where a package is configured to be triggered bt the FX Router when a specific type of event is observed on the platform.
 
 It allows users to deploy their locally tested scripts without DevOps specific changes or the need to learn complex DSL (description and configuration language). In tandem with Git integrated source code management FX allows distributed and fragmented tech teans to easily deploy and test new versions of code in an agile way with changes being applied immediately. 
 
-Contiuous Change Integration / Change Deployment becomes a component based and building block driven approach, where packages can be configurable and parametrised. All scripts and their parameters like secrets and environment variables form packages which makes them reusable for similar jobs or event chains. Event baased package triggering allows users to run multiple packages in parallel as a reaction to the same event.
+Contiuous Change Integration / Change Deployment becomes a component based and building block driven approach, where packages can be configurable and parametrised. All scripts and their parameters like secrets and environment variables form packages which makes them reusable for similar jobs or event chains. Event based package triggering allows users to run multiple packages in parallel as a reaction to the same event.
 
 # Executions - Packages
 
@@ -36,7 +36,7 @@ This Use Case defines how to create and run a new package.
 2. Describe package
 3. Select the Project to which the package will be bound
 4. Add Tags manually or select from predefined tags
-5. Schedule cron job -> "Cron like schedule definition. NOTE: day of week start on Monday (0 - Monday, 6 - Sunday)" example: "20****" -> **The whole definition of "Cron Jobs" can be found in the next sub-category of this UserGuide**
+5. Schedule cron job -> "Cron like schedule definition. NOTE: day of week start on Monday (0 - Monday, 6 - Sunday)" example: "20****" -> **The whole definition of [Cron Jobs](/docs/user-guide/cronjob/ "CronJob") can be found in the next sub-category of this UserGuide**
 6. Trigger Event Types - Select Value -> select event type to trigger the exectution of the package
 7. Check the checkbox to Allow Manual Triggering -> click to allow manual triggering of the package
 8. Check the checkbox to Activate your package -> click to set the package to active

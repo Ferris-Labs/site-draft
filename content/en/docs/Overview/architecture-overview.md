@@ -102,7 +102,7 @@ Each **Event** consists of what may be simplified as Headers and Payload. The he
 
 The **FX Router(s)** is listening on the stream of Events passing through Kafka. Based on the configuration of the platform which is managed in the **Ferris Manager UI** the Router decides if a Service requires to be executed based on the Event contents. On finding a configured Handler the gateway sends a message to the Executor and informs it of which packages or scripts are required to be run.
 
-The **FX Executor(s)** downloads the Service from the **Minio** storage and executes the **Service**. The Service may use any Python module that is embedded in the Executor and also use **Consul** for storing its configurations. The Execuor sends a series of Events on Service execution. These are once again processed by the FX Router.
+The **FX Executor(s)** downloads the Service from the **Minio** storage and executes the **Service**. The Service may use any Python module that is embedded in the Executor and also use **Consul** for storing its configurations. The Executor sends a series of Events on Service execution. These are once again processed by the FX Router.
 
 ![image-20211024084807506](/images/image-20211024084807506.png)
 

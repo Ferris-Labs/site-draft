@@ -1,11 +1,11 @@
 ---
-title: "Release 1.1.1"
+title: "Release 1.0.2"
 tags: ["releases"] 
 categories: ["Release Notes"]
 linkTitle:
 weight: 100
 description: >-
-     New features, improvements and fixes provided to you in May and June.
+     New features, improvements and fixes provided to you in the 2nd Quarter of 2021.
 
 ---
 
@@ -23,8 +23,7 @@ description: >-
 - [x] We have integrated our **Slack Support Channel** into the Control Center menu so that you can contact us directly and easily with your questions.
 - [x] To get quicker access to the most frequently used services and components we've  built a list of **Platform Services links** and placed them into the Control Center navigation.
 - [x] We have added a new **File Storage** capability for creating and uploading files and managing buckets.
-- [x] Introduced a new **User Interface** and **Navigation**. 
-- [x] Introduced **GPU** and **TPU** capabilities. 
+- [x] Introduced a new **User Interface** and **Navigation**.  
 - [x] Made important improvements of **Access Rights Management**.
 
 ---

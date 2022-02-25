@@ -107,7 +107,7 @@ You should now see the hello_world package executes every 5 minutes (and also tr
 
 Now that you have seen how it works it is probably best to delete the CRON expression and save the service.
 
-For a more detailed understanding of the CRON expression please check this page "CronJob" in the User Guide.
+For a more detailed understanding of the CRON expression please check this page [CronJob](/docs/developerguide/development-lifecycle/"CronJob") in the *User Guide*.
 
 In the above sections you have seen how basic services can be created and triggered in 3 ways.
 
