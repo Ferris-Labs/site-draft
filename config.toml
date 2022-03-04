@@ -14,7 +14,7 @@ contentDir = "content/en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
-enableMissingTranslationPlaceholders = true
+enableMissingTranslationPlaceholders = false
 
 # Comment out to disable taxonomies in Docsy
 # disableKinds = ["taxonomy", "taxonomyTerm"]

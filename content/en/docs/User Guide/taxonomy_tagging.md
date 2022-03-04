@@ -1,7 +1,7 @@
 ---
 title: "Taxonomy/Tagging"
 linkTitle: "Taxonomy/Tagging"
-weight: -11
+weight: -10
 description: >
   How to add Tags and the importance of Taxonomy.
 ---

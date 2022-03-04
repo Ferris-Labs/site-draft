@@ -1,7 +1,7 @@
 ---
 title: "Events"
 linkTitle: "Events"
-weight: -10
+weight: -11
 description: >-
   How to configure a package to be triggered bt the FX Router when a specific type of event is observed on the platform.
 ---
@@ -95,15 +95,12 @@ In this use case an existing package will be edited to define the file upload ev
 ![](/images/edit_package_event.png)
 
 1. Delete the *CronJob Schedule* to allow a *Trigger Event Type*
-2. Select the *Value* of the event type
-3. Click on *+Add More Scripts...* and *Choose file* to reupload the Workflow script for Case Management activation
+2. Select the *Value* of the event type (ferris.apps.modules.approvals.step_approval_completed)
+3. Click on *+Add More Scripts...* and *Choose file* to reupload the Workflow
 4. Save the edited package.
 
 ![](/images/save_package_approval_event.png)
 
-## Case Management
+## Workflow
 
-To finalize the process the case management needs to be approved.
-
-
-
+To finalize the second trigger event, an existing Workflow will be used to trigger a Case Management 

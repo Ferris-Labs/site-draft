@@ -17,7 +17,6 @@ description: >-
 ## New <img src="/images/added_blue.png" alt="added_blue" style="zoom:25%;" />
 
 - [x] We have introduced a **Tagging** capability, which enables users to tag almost any data element on the platform making it easy and user friendly to navigate through the application and find items.
-- [x] We have introduced a **Tagging** capability, which enables users to tag almost any data element on the platform making it easy and user friendly to navigate through the application and find items.
 - [x] The **Checks Framework** greatly improves the data quality monitoring around any kind of data sources, data types and event types. 
 - [x] The **Topics & Consumer Monitor** listens in on Kafka and provides an up-to-the-second view of data sourcing and streaming.
 - [x] New **Service Logs** can be used to track all services running within the network as well as their logs and events that occur between them. Each log or event have their own data stored within elasticsearch and can be filtered by numerous fields.
