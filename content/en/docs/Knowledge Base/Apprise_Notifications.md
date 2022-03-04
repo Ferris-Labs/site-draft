@@ -32,7 +32,7 @@ In order to send notifications from your package you need to send a 'ferris.noti
 
 You can do it like so.
 
-```
+```python
 import sys, json
 from ferris_cli.v2 import ApplicationConfigurator
 from ferris_ef import get_secret, get_param
@@ -42,7 +42,7 @@ from ferris_ef import get_secret, get_param
 # Please see configurations sample on how to configure
 
 data = {
-"url_template": "ses_1",
+"url_template": "slack_1",
 "body": "This is the content",
 "title": "This is the subject"
 }
@@ -52,29 +52,6 @@ event_type = "ferris.notifications.apprise.notification"
 Events().send(event_type, data)
 
 ```
-
-## Configuration
-
-The following is a sample configuration which is uploaded as a secrets.json file for the Ferris Apprise Package. 
-
-The configuration consists of a set of named URL templates. With each url_template being based on the Apprise URL schema as shown in the sections further in document. 
-
-While you are free to name URL templates as you wish it is preferred to prefix them with an indication of the underlying service being used to send notifications. 
-
-```json
-{
-  "slack_1": "slack://TokenA/TokenB/TokenC/",
-  "slack_2": "slack://TokenA/TokenB/TokenC/Channel",
-  "slack_3":"slack://botname@TokenA/TokenB/TokenC/Channel",
-  "slack_4": "slack://user@TokenA/TokenB/TokenC/Channel1/Channel2/ChannelN",
-  "telegram_1": "tgram://bottoken/ChatID",
-  "telegram_2": "tgram://bottoken/ChatID1/ChatID2/ChatIDN"
-}
-```
-
-The configurations must be added to a secrets.json file and uploaded as part of the apprise_package.
-
-The apprise package must be configured to be triggered by the 'ferris.notifications.apprise.notification' event.
 
 
 
@@ -108,6 +85,29 @@ except Exception as ex:
 ```
 
 
+
+## Configuration
+
+The following is a sample configuration which is uploaded as a secrets.json file for the Ferris Apprise Package. 
+
+The configuration consists of a set of named URL templates. With each url_template being based on the Apprise URL schema as shown in the sections further in document. 
+
+While you are free to name URL templates as you wish it is preferred to prefix them with an indication of the underlying service being used to send notifications. 
+
+```json
+{
+  "slack_1": "slack://TokenA/TokenB/TokenC/",
+  "slack_2": "slack://TokenA/TokenB/TokenC/Channel",
+  "slack_3":"slack://botname@TokenA/TokenB/TokenC/Channel",
+  "slack_4": "slack://user@TokenA/TokenB/TokenC/Channel1/Channel2/ChannelN",
+  "telegram_1": "tgram://bottoken/ChatID",
+  "telegram_2": "tgram://bottoken/ChatID1/ChatID2/ChatIDN"
+}
+```
+
+The configurations must be added to a secrets.json file and uploaded as part of the apprise_package.
+
+The apprise package must be configured to be triggered by the 'ferris.notifications.apprise.notification' event.
 
 ### Popular Notification Services
 

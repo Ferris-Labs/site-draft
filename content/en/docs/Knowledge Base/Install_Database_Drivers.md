@@ -58,3 +58,44 @@ A list of some of the recommended packages.
 Note that many other databases are supported, the main criteria being the existence of a functional SQLAlchemy dialect and Python driver. Searching for the keyword "sqlalchemy + (database name)" should help get you to the right place.
 
 If your database or data engine isn't on the list but a SQL interface exists, please file an issue so we can work on documenting and supporting it.
+
+
+
+## Configuring Database Connections
+
+Ferris DX can manage preset connection configurations. This enables a platform wide set up for both confidential as well as general access databases. Ferris uses the SQL Alchemy Engine as described above along with the URL template based approach to connection management. The connection configurations are maintained as secrets within the platform and are therefore not publicly accessible i.e. access is provided for administrators only.
+
+
+
+## Retrieving DB Connections
+
+The following is how to retrieve a named connection. The following sample assumes that the connection identifier key is uploaded to the package as a secrets.json. 
+
+```
+from ferris_ef import get_secret, get_param
+from ferris_ef import db_manager
+
+db_identifier = get_secret(db_identifier)
+
+# Option 1: retreive the db_url
+db_url = db_manager.get_url(db_identifier)
+engine = create_engine(db_url)
+
+# Option 2: get connection directly using the db_identifier
+conn = db_manager.get_connection(db_identifier)
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+

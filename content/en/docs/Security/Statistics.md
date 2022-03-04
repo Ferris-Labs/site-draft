@@ -1,30 +1,23 @@
 ---
 title: "Statistics"
 linkTitle: "Statistics"
-tags: [security, access rights] 
+tags: [security, access rights]
 categories: [Security]
-weight: -14
+weight: 4
 description: >-
-  Meaning, role and application of Roles.
+  Statistics lists the number of successful as well as failed login counts by user.
+
 
 ---
 
-#### Roles
+#### Users Statistics
 
-This is us - humans - using Ferris on a day to day basis. And in this section each user is listed with the most important attributes defininig name, e-mail, status and - most importantly - the associated roles.
+Here a Security Lead finds useful information on any user's successful as well as failed login attempts.
 
-> To get the the Users page, navigate to: Security > List Roles
+Navigate to: Security > User's Statistics
 
-![](../../../../../../../images/list_users_page.png)
+![](/images/users_statistics.png)
 
-*Example: List of Ferris Users*
+*Example: Users Statistics > Login count*
 
-Besides displaying the list of all current users, the Users page offers a number of capabilities:
-
-- Add User ![Add User](../../../../../../../images/add_icon.png) 
-- Show User ![](../../../../../../../images/view_icon.png)
-- Edit User ![](../../../../../../../images/edit_icon.png)
-- Delete User ![](../../../../../../../images/delete_icon.png)
-
-*Note that each of these capabilities depends on the Permissions given to your Role. Some roles may be given full rights (e.g. add, show, edit, delete), where others may only be given viewing rights (e.g. show). As a result, some users may only be seeing the "Show User" magnifying glass icon.*
 
