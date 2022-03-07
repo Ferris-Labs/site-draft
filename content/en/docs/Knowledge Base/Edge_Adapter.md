@@ -48,14 +48,6 @@ The following sections document details on some of the possible integrations.
 
 
 
-![image-20220305130837792](/Users/balajibal/Library/Application Support/typora-user-images/image-20220305130837792.png)
-
-
-
-![image-20220305130919017](/Users/balajibal/Library/Application Support/typora-user-images/image-20220305130919017.png)
-
-
-
 <div style="position: relative; padding-bottom: 49.21875%; height: 0;"><iframe src="https://www.loom.com/embed/7ec1542c166f4dbb941510f4dbf5c2f0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 
@@ -66,13 +58,13 @@ A pre-requisite is to ensure that EventBridge is sending Events to Ferris. Pleas
 
 Create a bucket and switch to the Properties Tab of the UI
 
-![image-20220305125600033](/Users/balajibal/Library/Application Support/typora-user-images/image-20220305125600033.png)
+![image-20220305125600033](/images/image-20220305125600033.png)
 
 
 
 Scroll to the bottom and turn on Event Bridge Notfications by clicking on the Edit button below the section Amazon EventBridge
 
-![image-20220305125800254](/Users/balajibal/Library/Application Support/typora-user-images/image-20220305125800254.png)
+![image-20220305125800254](/images/image-20220305125800254.png)
 
 
 
@@ -84,18 +76,18 @@ To be notified on changes to a Git Hub Repo please follow the steps below.
 
 Click on the 'Settings' icon for the repo
 
-![image-20220305123206740](/Users/balajibal/Library/Application Support/typora-user-images/image-20220305123206740.png)
+![image-20220305123206740](/images/image-20220305123206740.png)
 
 
 
 Select the Webhooks menu on the left of the 'Settings' page. Then click on the 'Add webhook' button.
 
-![image-20220305123425675](/Users/balajibal/Library/Application Support/typora-user-images/image-20220305123425675.png)
+![image-20220305123425675](/images/image-20220305123425675.png)
 
 
 
 Add the URL of your edge adapter end point. And ensure the content type is application/json. Finally add the api token generated on the Ferris Management UI. Further in the page you may select what event types should be sent. If unsure please maintain the default settings.
 
-![image-20220305123919206](/Users/balajibal/Library/Application Support/typora-user-images/image-20220305123919206.png)
+![image-20220305123919206](/images/image-20220305123919206.png)
 
 Test your integration by pushing an update to the repository.
