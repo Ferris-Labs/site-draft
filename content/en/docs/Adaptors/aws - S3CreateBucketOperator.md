@@ -23,25 +23,30 @@ This operator creates an S3 bucket. For more information on how to use this oper
 
 ### Installation
 
-Install the Amazon provider package into your Airflow environment.
+Install the following supporting libraries to the Excutor image.
 
+```python
+`pip install boto3`
+`pip install --upgrade jsonpath-ng`
+`pip install pandas`
+`pip install redshift_connector`
+`pip install sqlalchemy-redshift`
+`pip install watchtower`
 ```
-`pip install apache-airflow-providers-amazon`
+
+Import the module into your execution package file and instantiate it with your desired params.
+
+```python
+`import boto3
+from aws_session import session`
 ```
 
-Import the module into your DAG file and instantiate it with your desired params.
-
-```
-`from airflow.providers.amazon.aws.operators.s3 import S3CreateBucketOperator`
-```
-
-
+Please refer to FerrisLabs DX Samples on GitHub [AWS Integration](https://github.com/Ferris-Labs/dx_samples/blob/main/integration_aws/boto_test.py) for further usage and integration samples.
 
 ### PIP Requirements
 
 | PIP PACKAGE | VERSION REQUIRED |
 | :------------- | :--- |
-| [`apache-airflow`](https://pypi.org/project/apache-airflow/ "Apache-Airflow") | `>=2.1.0`         |
 | [`boto3`](https://pypi.org/project/boto3/ "Boto3") | `>=1.15.0,<2.0.0` |
 | [`jsonpath_ng`](https://pypi.org/project/jsonpath-ng/ "JSONPath") | `>=1.5.3` |
 | [`pandas`](https://pypi.org/project/pandas/ 'pandas') | `>=0.17.1, <1.4` |
