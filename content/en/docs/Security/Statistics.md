@@ -20,4 +20,3 @@ Navigate to: Security > User's Statistics
 
 *Example: Users Statistics > Login count*
 
-

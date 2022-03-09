@@ -84,23 +84,25 @@ It will automatically open the *List Package Executions* tab.
 
 ![](/images/details_page_event.png)
 
-## Executions - Packages -> approval completed trigger event
+## Workflow -> approval completed trigger event
 
-In this use case an existing package will be edited to define the file upload event type.
+To finalize the second trigger event (ferris.apps.modules.approvals.step_approval_completed), an existing Workflow will be used to trigger a Case Management that will need to get approved.
 
-1. Click on *Executions* on the left side of the dashboard menu to open drop-down
-2. Click on *Packages*
-3. Click on the edit record button to edit the existing package *Test Package with Scripts*
+1. Click on *Workflows* on the left side of the dashboard menu to open the drop-down
+2. Click on *List Workflows* 
+3. Click on the magnifying glass to show the details page of the workflow
 
-![](/images/edit_package_event.png)
+Note that before even getting a closer look at the Workflow details, the *Entrypoint Event* is displayed -> ferris.apps.modules.minio.file_uploaded
 
-1. Delete the *CronJob Schedule* to allow a *Trigger Event Type*
-2. Select the *Value* of the event type (ferris.apps.modules.approvals.step_approval_completed)
-3. Click on *+Add More Scripts...* and *Choose file* to reupload the Workflow
-4. Save the edited package.
+![](/images/workflow_second_trigger_event.png)
 
-![](/images/save_package_approval_event.png)
+Check the details in the JSON snippet to understand what or which event types will trigger the second event type. The first event type shown in the JSON snippet is: ferris.apps.modules.minio.file_uploaded -> which means that a file will need to get uploaded for the event to get triggered. The second event type shown in the JSON snippet is: ferris.apps.modules.approvals.step_approval_completed -> meaning the uploaded file will need to get approved in the *Case Management* module before the wanted event gets triggered. 
 
-## Workflow
+![](/images/workflow_trigger_event_types.png)
 
-To finalize the second trigger event, an existing Workflow will be used to trigger a Case Management 
+## Case Management -> -> approval completed trigger event
+
+1. Upload a file to a bucket (the process of uploading a file was described in detail on top of this page)
+2. Click on *Case Management* on the left side of the dashboard menu to open the drop-down
+3. Click on *Approvals* 
+
