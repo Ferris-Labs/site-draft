@@ -11,7 +11,7 @@ description: >-
 
 ### Description
 
-This operator creates an S3 bucket. For more information on how to use this operator, take a look at the guide: [Create and Delete Amazon S3 Buckets](https://airflow.apache.org/docs/apache-airflow-providers-amazon/stable/operators/s3.html#howto-operator-s3createbucketoperator)
+This operator creates an S3 bucket.. For more information on how to use this operator, take a look at the guide: [Create and Delete Amazon S3 Buckets](https://airflow.apache.org/docs/apache-airflow-providers-amazon/stable/operators/s3.html#howto-operator-s3createbucketoperator)
 
 
 
