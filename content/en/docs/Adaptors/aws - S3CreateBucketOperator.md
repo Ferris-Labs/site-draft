@@ -26,12 +26,12 @@ This operator creates an S3 bucket. For more information on how to use this oper
 Install the following supporting libraries to the Excutor image.
 
 ```python
-`pip install boto3`
-`pip install --upgrade jsonpath-ng`
-`pip install pandas`
-`pip install redshift_connector`
-`pip install sqlalchemy-redshift`
-`pip install watchtower`
+pip install boto3
+pip install --upgrade jsonpath-ng
+pip install pandas
+pip install redshift_connector
+pip install sqlalchemy-redshift
+pip install watchtower
 ```
 
 Import the module into your execution package file and instantiate it with your desired params.
@@ -41,7 +41,7 @@ Import the module into your execution package file and instantiate it with your 
 from aws_session import session`
 ```
 
-Please refer to FerrisLabs DX Samples on GitHub [AWS Integration](https://github.com/Ferris-Labs/dx_samples/blob/main/integration_aws/boto_test.py) for further usage and integration samples.
+Please refer to FerrisLabs DX Samples on GitHub [AWS Integration](https://github.com/Ferris-Labs/dx_samples/tree/main/integration_aws) for further usage and integration samples.
 
 ### PIP Requirements
 
