@@ -40,7 +40,7 @@ pygmentsCodeFences = true
 pygmentsUseClasses = false
 # Use the new Chroma Go highlighter in Hugo.
 pygmentsUseClassic = false
-#pygmentsOptions = "linenos=table"
+pygmentsOptions = "linenos=table"
 # See https://help.farbox.com/pygments.html
 pygmentsStyle = "tango"
 
@@ -75,21 +75,7 @@ description = "FERRIS LABS web site"
 languageName =""
 # Weight used for sorting.
 weight = 1
-[languages.no]
-title = "FERRIS LABS"
-description = "FERRIS LABS"
-languageName =""
-contentDir = "content/no"
-time_format_default = "02.01.2006"
-time_format_blog = "02.01.2006"
 
-[languages.fa]
-title = ""
-description = ""
-languageName =""
-contentDir = "content/fa"
-time_format_default = "2006.01.02"
-time_format_blog = "2006.01.02"
 
 
 [markup]
@@ -109,7 +95,7 @@ time_format_blog = "2006.01.02"
 section = ["HTML", "print", "RSS"]
 
 [params]
-copyright = "FERRIS LABS"
+copyright = "FERRIS LABS AG"
 privacy_policy = "https://policies.google.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
@@ -127,7 +113,7 @@ archived_version = false
 # The version number for the version of the docs represented in this doc set.
 # Used in the "version-banner" partial to display a version number for the
 # current doc set.
-version = "0.0"
+version = "1.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
@@ -168,7 +154,7 @@ navbar_logo = true
 # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
 navbar_translucent_over_cover_disable = false
 # Enable to show the side bar menu in its compact state.
-sidebar_menu_compact = false
+sidebar_menu_compact = true
 # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
 sidebar_search_disable = false
 
@@ -205,3 +191,36 @@ enable = false
 	url = "https://github.com/Ferris-Labs"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
+
+[menu]
+[[menu.main]]
+  identifier = 'platform'
+  name = 'PLATFORM'
+  url = '/platform/'
+  weight = -40
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+  identifier = 'usecases'
+  name = 'USE CASES'
+  url = '/usecases/'
+  weight = -30
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+  identifier = 'solutions'
+  name = 'SOLUTIONS'
+  url = '/solutions/'
+  weight = -20
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+  identifier = 'about'
+  name = 'ABOUT'
+  url = '/about/'
+  weight = -10
+  [menu.main.params]
+    class = 'highlight-menu-item'
