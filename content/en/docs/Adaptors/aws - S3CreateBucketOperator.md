@@ -37,8 +37,8 @@ pip install watchtower
 Import the module into your execution package file and instantiate it with your desired params.
 
 ```python
-`import boto3
-from aws_session import session`
+import boto3
+from aws_session import session
 ```
 
 Please refer to FerrisLabs DX Samples on GitHub [AWS Integration](https://github.com/Ferris-Labs/dx_samples/tree/main/integration_aws) for further usage and integration samples.
