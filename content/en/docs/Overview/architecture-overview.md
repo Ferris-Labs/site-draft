@@ -24,12 +24,8 @@ A Service can respond to multiple Event types, and a single Event Type may trigg
 
 You are not required to think in terms of pre-defined DAGS and can rapidly and iteratively build, test and deploy your applications. 
 
-{{< blocks/lead color="primary" >}}
-<div class="col">
- <p class="lead mt-1">Ferris is a platform for building highly scalable, cross-network sync or async microservices and agents. The unique low learning curve approach significantly reduces the cost of deploying enterprise wide process and integration pipelines across disparate systems at a speed. While at the same time creating a platform with practically unbound access and ease of integration.</p>
-<p class="lead mt-2">On Ferris you are effectively writing large applications by connecting “blocks” of code (Services) through Events.</p>
-</div>
- {{< /blocks/lead >}}
+{{< blocks/screenshot color="white" image="/images/list_projects_add_roboto.png">}}
+
 
 ### Services
 
