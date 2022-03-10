@@ -14,11 +14,11 @@ FerrisFX is based on 2 simple concepts - **Services** and **Events**
 
 ![image-20211024081829495](/images/image-20211024081829495.png)
 
-Each Service is a self contained piece of functionality like loading a file, running a view rebuild or launching a container. You can link and re-link the blocks of code at anytime you like. The source code can be as big or as tiny as you like. 
+Each Service is a self contained piece of functionality such as loading a file, running a database view rebuild or launching a container. You can link and re-link the blocks of code at anytime you like. The source code can be as big or as tiny as you like. 
 
-Each Service also emits Events thereby allowing other Services to be triggered following (or during) the execution of a Service.
+Each Service is triggered by an Event. Each Service also emits Events thereby allowing other Services to be triggered following (or during) the execution of a Service.
 
-On FX a Service can respond to multiple Event types, and a single Event may trigger multiple Services - Thereby allowing you to also extend your Application(s) on the fly with ease.
+A Service can respond to multiple Event types, and a single Event Type may trigger multiple Services - Thereby allowing you to also extend your Application(s) on the fly with ease.
 
 ![image-20211024080659941](/images/image-20211024080659941.png)
 
