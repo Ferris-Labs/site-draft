@@ -39,7 +39,9 @@ Below you can find a visual example on how to import the FerrisRootCA on a Mac s
 
 Save the file [FerrisRootCA](https://raw.githubusercontent.com/Ferris-Labs/platform-docs/master/wiki-resources/certificates/FerrisRootCA.crt)  locally and follow the visual instructions.  
 
-![How to import FerrisRootCA](/images/import-FerrisRootCA.png)
+
+
+{{< blocks/screenshot color="white" image="/images/import-FerrisRootCA.png">}}
 
 ## Request Platform Access
 If you are 

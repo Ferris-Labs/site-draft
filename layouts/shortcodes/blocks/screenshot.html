@@ -3,16 +3,12 @@
 {{ $height := .Get "height" | default "auto"  }}
 {{ $image := .Get "image" | default "fa-lightbulb" }}
 {{/* Height can be one of: auto, min, med, max, full. */}}
-<a id="td-block-{{ .Ordinal }}" class="td-offset-anchor"></a>
-<section class="row td-box td-box--{{ $col_id }} position-relative td-box--gradient td-box--height-{{ $height }}">
-	<div class="container text-center">
-		<span class="h4 mb-0">
+
+<p> 
             <img src="{{ $image }}" style="border:2px solid #fff;
             background: url(img/tiger.png) no-repeat;
             box-shadow: 10px 10px 5px #ccc;
             -moz-box-shadow: 10px 10px 5px #ccc;
             -webkit-box-shadow: 10px 10px 5px #ccc;
             -khtml-box-shadow: 10px 10px 5px #ccc;"/>
-		</span>
-	</div>
-</section>
+</p>
