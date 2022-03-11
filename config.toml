@@ -195,10 +195,10 @@ enable = false
 
 [menu]
 [[menu.main]]
-  identifier = 'platform'
-  name = 'PLATFORM'
-  url = '/platform/'
-  weight = -40
+  identifier = 'product'
+  name = 'PRODUCT'
+  url = '/product/'
+  weight = -50
   [menu.main.params]
     class = 'highlight-menu-item'
 
@@ -206,7 +206,7 @@ enable = false
   identifier = 'usecases'
   name = 'USE CASES'
   url = '/usecases/'
-  weight = -30
+  weight = -40
   [menu.main.params]
     class = 'highlight-menu-item'
 
@@ -214,6 +214,14 @@ enable = false
   identifier = 'solutions'
   name = 'SOLUTIONS'
   url = '/solutions/'
+  weight = -30
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+  identifier = 'services'
+  name = 'SERVICES'
+  url = '/services/'
   weight = -20
   [menu.main.params]
     class = 'highlight-menu-item'
