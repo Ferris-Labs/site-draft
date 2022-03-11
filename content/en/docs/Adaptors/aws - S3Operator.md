@@ -11,7 +11,7 @@ description: >-
 
 ### Description
 
-This operator creates an S3 bucket. For more information on how to use this operator, take a look at the guide: [Create and Delete Amazon S3 Buckets](https://airflow.apache.org/docs/apache-airflow-providers-amazon/stable/operators/s3.html#howto-operator-s3createbucketoperator)
+This operator creates and uses a S3 bucket. For more information on AWS S3 Bucket creation, deletion and configurations, visit [Boto3AWSBucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#bucket "Boto3AWSBucket").
 
 
 
@@ -34,7 +34,7 @@ pip install sqlalchemy-redshift
 pip install watchtower
 ```
 
-Import the module into your execution package file and instantiate it with your desired params.
+Import the module into your execution package file and instantiate it with your desired parameters.
 
 ```python
 import boto3
@@ -59,5 +59,5 @@ Please refer to FerrisLabs DX Samples on GitHub [AWS Integration](https://github
 ### Parameters
 
 - **bucket_name:** This is bucket name you want to create
-- **aws_conn_id:** The Airflow connection used for AWS credentials. If this is None or empty then the default boto3 behaviour is used. If running Airflow in a distributed manner and aws_conn_id is None or empty, then default boto3 configuration would be used (and must be maintained on each worker node).
+- **aws_conn_id:** The Ferris connection used for AWS credentials. If this is None or empty then the default boto3 behaviour is used. If running Ferris in a distributed manner and aws_conn_id is None or empty, then default boto3 configuration would be used (and must be maintained on each worker node).
 - **region_name:** AWS region_name. If not specified fetched from connection.

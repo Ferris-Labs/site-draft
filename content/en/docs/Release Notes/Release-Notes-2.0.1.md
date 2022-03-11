@@ -36,7 +36,4 @@ description: >-
 
 ## Fixed <img src="/images/fixed_red.png" alt="fixed_red" style="zoom:25%;" />
 
-- no fixes to report
-
----
-
+- [x] Synchronisation of Git Repositories that contain empty packages

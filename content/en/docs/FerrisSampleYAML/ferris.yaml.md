@@ -17,72 +17,42 @@ Overview of how a sample YAML file is structured.
 ```yaml
 ---
 # Insert the package-name from executions/packages, the name of the Service Provider and the description(service provider URL)
-package-name: "ferris-providers-service_provider"
-name: "Service_Provider"
+package-name: ferris-providers-aws-s3
+name: AWS S3 Operator
 description: |
-    `ServiceProvider <https://serviceprovider.com/>`__
+    'Ferris Provider for manipulating with AWS S3 objects <https:////docs/adaptors/aws-s3operator///>`__
 
 # Overview of the supported service_provider versions
 versions:
-  - 2.0.2
-  - 2.0.1
-  - 2.0.0
-  - 1.0.3
-  - 1.0.2
-  - 1.0.2
-  - 1.0.1
-  - 1.0.0
+  - 0.1.0
 
-# Additional dependecies are listed if existing
-additional-dependencies:
-  "- ferris docker image verion>=3.0.3
+release:
+  - 3.0.0
+
+# Additional requirements are listed if existing
+requirements:
+  - ferris-cli>=2.4.0
+  - boto3>=`>=1.15.0,<2.0.0
 
 # Additional integrations with the service provider of choice
 integrations:
-  - integration-name: "Service Provider"
-    external-doc-url: "https://serviceprovider.com/""
+  - integration-name: Amazon Simple Storage Service (S3)
+    external-doc-url: https://aws.amazon.com/s3/
     how-to-guide:
-     "- /docs/adaptors/aws-s3createbucketoperator/
-     "- /docs/adaptors/azure-azurebasehook1/
-    logo: "/integration-logos/serviceprovider/Serviceprovider.png"
-    tags: [service]
-  - integration-name: "Service_Provider SQL"
-    external-doc-url: "https://serviceprovider.com/product/serviceprovider-sql
-    how-to-guide:
-      "- /docs/adaptors/aws-s3createbucketoperator/
-      "- /docs/adaptors/azure-azurebasehook1/
-    logo: "/integration-logos/serviceprovider/serviceprovider.png"
-    tags: [service]
+      - /docs/adaptors/aws-s3createbucketoperator/
+    tags: [aws]
 
 # Additional integrations with the python modules of the Service Provider
 operators:
-  - integration-name: "Service_Provider"
+  - integration-name: Amazon Simple Storage Service (S3)
     python-modules:
-      "- ferris.providers.serviceprovider.operators.serviceprovider.py
-  - integration-name: "ServiceProvider SQL"
-    python-modules:
-      "- ferris.providers.serviceprovider.operators.serviceprovider_sql
-
-# Hook integration with the Service Provider of choice
-hooks:
-  - integration-name: "ServiceProvider"
-    python-modules:
-      "- ferris.providers.serviceprovider.hooks.serviceprovider
-      "- ferris.providers.serviceprovider.hooks.serviceprovider_base
-  - integration-name: "ServiceProvider SQL"
-    python-modules:
-      "- ferris.providers.serviceprovider.hooks.serviceprovider_sql
-
-# Hook class names if existing
-hook-class-names:
-  "- ferris.providers.serviceprovider.hooks.serviceprovider.ServiceproviderHook
+      - ferris.providers.aws.operators.s3_bucket
+      - ferris.providers.aws.operators.s3_object
 
 # Overview of the connection-types if existing
-connection-types:
-  - hook-class-name: "ferris.providers.serviceprovider.hooks.serviceprovider.ServiceproviderHook"
-    connection-type: "serviceprovider"
-  - hook-class-name: "serviceprovider.providers.serviceprovider.hooks.serviceprovider_sql.ServiceproviderSqlHook"
-    connection-type: "serviceprovider"
+connection-parameters:
+  - aws-secret: 
+    aws-region: 
 ```
 
 Please refer to FerrisLabs [DX Samples](https://github.com/Ferris-Labs/dx_samples "DX Samples") on GitHub for further usage and integration samples.
