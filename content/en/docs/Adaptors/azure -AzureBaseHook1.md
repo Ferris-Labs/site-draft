@@ -41,7 +41,7 @@ pip install azure-storage-common
 pip install azure-storage-file
 ```
 
-Import the module into your execution package file and instantiate it with your desired params.
+Import the module into your execution package file and instantiate it with your desired parameters.
 
 ```
 TBD
