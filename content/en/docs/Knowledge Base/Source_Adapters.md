@@ -1,12 +1,176 @@
 ---
-title: "Edge Adapter"
-linkTitle: "Ferris Edge Adapter"
+title: "Event Source Adapters"
+linkTitle: "Event Source Adapters"
 weight: -10
 description: >-
   A Guide to Integrations Using the Ferris Edge Adapter.
 ---
 
-The Edge Adapter enables easy integration of external services to Ferris. The Edge Adapter exposes a single endpoint for Webhooks. The webhook may be used for a large number of incoming integrations. Some examples are provided below. 
+The Event Source Adapter enables easy integration of external event streams to Ferris.  
+
+
+
+The role of the Event Source Adapter is to receive events from external streams, convert them into Cloud Events and push them to the ferris.events Kafka Topic.  The Cloud Events that are generated will contain an indicator of the source, one or more specific event types (depending on the type of source and the use case) and the content of the source event in the payload of the output Cloud Event.
+
+
+
+## Example Event Source Adapters
+
+
+
+The following are a couple of examples of source adapters
+
+Generic Webhook Adapter : Exposes a webhook end point outside the cluster which may be used to submit events as webhook requets. The generic adapter may source multiple event types and does not filter the content. It may be used for example to simultaneously accept AWS EventBrige CouldEvents and GitHub Webhooks. It is the role of a package to filter or split events as is suited for the use case.
+
+Twitter Adapter: Streams twitter based on configured hash tags and converts them to cloud events.
+
+IBM MQ Adapter
+
+Kafka Adapter: Sources data from JSON streams within kafka and converts them to Cloud Events.
+
+Azure MessageBus Adapter:
+
+Amazon SQS Adapter
+
+MQTT Adapter
+
+Redis Queue Adapter
+
+ActiveMQ Source
+
+Amazon CloudWatch Logs Source
+
+Amazon CloudWatch Metrics Sink
+
+Amazon DynamoDB Sink
+
+Amazon Kinesis Source
+
+Amazon Redshift Sink
+
+Amazon SQS Source
+
+Amazon S3 Sink
+
+AWS Lambda Sink
+
+Azure Blob Storage Sink
+
+Azure Cognitive Search Sink
+
+Azure Cosmos DB Sink
+
+Azure Data Lake Storage Gen2 Sink
+
+Azure Event Hubs Source
+
+Azure Functions Sink
+
+Azure Service Bus Source
+
+Azure Synapse Analytics Sink
+
+Databricks Delta Lake Sink
+
+Datadog Metrics Sink
+
+Datagen Source (development and testing)
+
+Elasticsearch Service Sink
+
+GitHub Source
+
+Google BigQuery Sink
+
+Google Cloud BigTable Sink
+
+Google Cloud Functions Sink
+
+Google Cloud Spanner Sink
+
+Google Cloud Storage Sink
+
+Google Pub/Sub Source
+
+HTTP Sink
+
+IBM MQ Source
+
+Microsoft SQL Server CDC Source (Debezium)
+
+Microsoft SQL Server Sink (JDBC)
+
+Microsoft SQL Server Source (JDBC)
+
+MongoDB Atlas Sink
+
+MongoDB Atlas Source
+
+MQTT Sink
+
+MQTT Source
+
+MySQL CDC Source (Debezium)
+
+MySQL Sink (JDBC)
+
+MySQL Source (JDBC)
+
+Oracle Database Sink
+
+Oracle Database Source
+
+PagerDuty Sink
+
+PostgreSQL CDC Source (Debezium)
+
+PostgreSQL Sink (JDBC)
+
+PostgreSQL Source (JDBC)
+
+RabbitMQ Sink
+
+RabbitMQ Source Connector
+
+Redis Sink
+
+Salesforce Bulk API Source
+
+Salesforce CDC Source
+
+Salesforce Platform Event Sink
+
+Salesforce Platform Event Source
+
+Salesforce PushTopic Source
+
+Salesforce SObject Sink
+
+ServiceNow Sink
+
+ServiceNow Source
+
+SFTP Sink
+
+SFTP Source
+
+Snowflake Sink
+
+Solace Sink
+
+Splunk Sink
+
+Zendesk Source
+
+
+
+
+
+## Generic Webhook Adapter
+
+
+
+The Edge Adapter exposes a single endpoint for Webhooks. The webhook may be used for a large number of incoming integrations. Some examples are provided below. 
 
 To see the API please visit webhook.edge.YOURDOMAIN.COM/ui  . For example webhook.edge.ferris.ai . 
 
