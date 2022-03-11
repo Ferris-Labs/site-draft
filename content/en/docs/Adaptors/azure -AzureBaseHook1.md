@@ -6,7 +6,7 @@ tags: [adaptor, azure]
 categories: ["adaptors"]
 weight: 100
 description: >-
-     Base hook for Azure services.
+     Ferris base hook for Azure services.
 ---
 
 ### Description
