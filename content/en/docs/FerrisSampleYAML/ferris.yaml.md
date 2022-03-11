@@ -20,7 +20,7 @@ Overview of how a sample YAML file is structured.
 package-name: ferris-providers-aws-s3
 name: AWS S3 Operator
 description: |
-    `Ferris Provider for manipulating with AWS S3 objects <https://link/>`__
+    'Ferris Provider for manipulating with AWS S3 objects <https:////docs/adaptors/aws-s3operator///>`__
 
 # Overview of the supported service_provider versions
 versions:
