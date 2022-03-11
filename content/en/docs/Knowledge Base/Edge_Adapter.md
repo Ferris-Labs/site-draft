@@ -47,10 +47,11 @@ The following sections document details on some of the possible integrations.
 # AWS EventBridge
 
 
+{{< blocks/youtube color="white" video="https://www.loom.com/embed/7ec1542c166f4dbb941510f4dbf5c2f0">}} 
 
 
 
-<div style="position: relative; padding-bottom: 49.21875%; height: 0;"><iframe src="https://www.loom.com/embed/7ec1542c166f4dbb941510f4dbf5c2f0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 
 
 
