@@ -203,25 +203,6 @@ enable = false
     class = 'highlight-menu-item'
 
 [[menu.main]]
-  identifier = "category1"
-  name = "Category1"
-  url = "/tags/category1"
-  parent = "product"
-  weight = 1
-  [menu.main.params]
-    class = 'highlight-menu-item'
-
-[[menu.main]]
-  identifier = "category2"
-  name = "Category2"
-  url = "/tags/category2"
-  parent = "product"
-  weight = 2
-  [menu.main.params]
-    class = 'highlight-menu-item'
-
-
-[[menu.main]]
   identifier = 'usecases'
   name = 'USE CASES'
   url = '/usecases/'
@@ -245,10 +226,19 @@ enable = false
   [menu.main.params]
     class = 'highlight-menu-item'
 
+
 [[menu.main]]
   identifier = 'about'
   name = 'ABOUT'
   url = '/about/'
-  weight = -10
+  weight = -20
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+  identifier = 'design'
+  name = 'DESIGN'
+  url = '/design/'
+  weight = -20
   [menu.main.params]
     class = 'highlight-menu-item'
