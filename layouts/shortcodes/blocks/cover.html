@@ -8,6 +8,10 @@
 {{/* Height can be one of: auto, min, med, max, full. */}}
 {{ $height := .Get "height" | default "max" }}
 {{ $byline := .Get "byline" | default "" }}
+
+{{ $title_text_color_class := .Get "title_text_color_class" | default "" }}
+{{ $byline_text_color_class := .Get "byline_text_color_class" | default "" }}
+
 {{ with $promo_image }}
 {{ $promo_image_big := (.Fill (printf "1920x1080 %s" $image_anchor)) }}
 {{ $promo_image_small := (.Fill (printf "960x540 %s" $image_anchor)) }}
@@ -29,7 +33,7 @@
     <div class="row">
       <div class="col-12">
         <div class="text-center" >
-          {{ with .Get "title" }}<h1 class="display-1 mt-0 mt-md-5 pb-4 home_title text-primary">{{ $title := . }}{{ with $logo_image }}{{ $logo_image_resized := (.Fit (printf "70x70 %s" $logo_anchor)) }}<img class="td-cover-logo" src="{{ $logo_image_resized.RelPermalink }}" alt="{{ $title | html }} Logo">{{ end }}{{ $title | html }}</h1>{{ end }}
+          {{ with .Get "title" }}<h1 class="display-1 mt-0 mt-md-5 pb-4 home_title {{ $title_text_color_class }}">{{ $title := . }}{{ with $logo_image }}{{ $logo_image_resized := (.Fit (printf "70x70 %s" $logo_anchor)) }}<img class="td-cover-logo" src="{{ $logo_image_resized.RelPermalink }}" alt="{{ $title | html }} Logo">{{ end }}{{ $title | html }}</h1>{{ end }}
           {{ with .Get "subtitle" }}<p class="display-2 text-uppercase text-primary mb-0">{{ . | html }}</p>{{ end }}
           <div class="pt-3 lead">
             {{ if eq .Page.File.Ext "md" }}
@@ -43,7 +47,7 @@
     </div>
   </div>
   {{ if $byline }}
-  <div class="byline text-primary">
+  <div class="byline {{ $byline_text_color_class }}">
     <small>{{ $byline }}</small>
   </div>
   {{ end }}
