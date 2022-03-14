@@ -74,7 +74,7 @@ Since new users were created, no package(s) are yet assigned to the project. A p
 3. Choose a project from dropdown
 4. Click Save
 
-![](/images/added_project_to_package_roboto.png)
+{{< blocks/screenshot color="white" image="/images/added_project_to_package_roboto.png">}}
 
 Once that a project was assigned to a package, the users created within that project will be able to perform their chores.
 
@@ -83,13 +83,13 @@ Once that a project was assigned to a package, the users created within that pro
 1. Log in as *"Project Owner"*
 2. Click on *Projects* to open dropdown and then List Projects
 
-![](/images/list_projects_as_projectowner_roboto.png)
+{{< blocks/screenshot color="white" image="/images/list_projects_as_projectowner_roboto.png">}}
 
 As defined above, a Project Owner can add new projects, view, edit and delete the projects he belongs to.
 
 3. Click on *Executions* to open dropdown and then on *Packages*
 
-![](/images/view_packages_as_project_owner.png)
+{{< blocks/screenshot color="white" image="/images/view_packages_as_project_owner.png">}}
 
 As Project Owner, one can add new packages, view, edit, delete and trigger manual runs and delete the packages within the projects the user belongs to.
 
@@ -98,13 +98,13 @@ As Project Owner, one can add new packages, view, edit, delete and trigger manua
 1. Log in as *"Project Admin"*
 2. Click on *Projects* to open dropdown and then *List Projects*
 
-![](/images/list_projects_as_projectadmin_roboto.png)
+{{< blocks/screenshot color="white" image="/images/list_projects_as_projectadmin_roboto.png">}}
 
 As defined above, a Project Admin can add new projects, view and edit the projects he belongs to but can not delete anything.
 
 3. Click on *Executions* to open dropdown and then on *Packages*
 
-![](/images/view_packages_as_projectadmin_roboto.png)
+{{< blocks/screenshot color="white" image="/images/view_packages_as_projectadmin_roboto.png">}}
 
 As Project Admin, one can add new packages, view, edit and trigger manually runs within the projects the user belongs to. The Project Admin can not delete the packages, runs or related elements.
 
@@ -113,13 +113,13 @@ As Project Admin, one can add new packages, view, edit and trigger manually runs
 1. Log in as "Project User"
 2. Click on *Projects* to open dropdwon and then *List Projects*
 
-![](/images/list_projects_as_projectuser_roboto.png)
+{{< blocks/screenshot color="white" image="/images/list_projects_as_projectuser_roboto.png">}}
 
 As defined above, a Project User can only view the projects he belongs to. He can neither edit, nore delete anything. 
 
 3. Click on *Executions* to open dropdown and then on *Packages*.
 
-![](/images/view_packages_as_projectuser_roboto.png)
+{{< blocks/screenshot color="white" image="/images/view_packages_as_projectuser_roboto.png">}}
 
 As Project User, one can view packages and trigger manually runs within the projects the user belongs to. The Project User can not delete or edit packages, runs or related elements.
 
