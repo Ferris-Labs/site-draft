@@ -15,7 +15,7 @@ This is us - humans - using Ferris on a day to day basis. And in this section ea
 
 > To get the the Users page, navigate to: Security > List Roles
 
-![](../../../../../../../images/list_users_page.png)
+{{< blocks/screenshot color="white" image="/images/list_users_page.png">}} 
 
 *Example: List of Ferris Users*
 

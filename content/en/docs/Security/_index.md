@@ -41,7 +41,7 @@ The Security menu is found on left hand navigation of Ferris.
 
 - Click on the Security menu to expand it and display all security relevant menu items.
 
-![](/images/security_navigation.png)
+{{< blocks/screenshot color="white" image="/images/security_navigation.png">}}
 
 *Ferris Security Navigation*
 

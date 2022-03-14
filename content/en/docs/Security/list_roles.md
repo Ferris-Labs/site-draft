@@ -15,7 +15,7 @@ Roles represent a collection of permissions or rights that can be performed with
 
 > To get the the Users page, navigate to: Security > List Roles
 
-![](/images/list_roles_page.png)
+{{< blocks/screenshot color="white" image="/images/list_roles_page.png">}}
 
 *Example: List of Ferris Roles*
 
@@ -39,7 +39,7 @@ Often times, adding new Roles is done by integrating Ferris with the corporate I
 
 > Click on the plus sign ![Add Role](/images/add_icon.png) to add a new user.
 
-![Add User](/images/add_role_page.png) 
+{{< blocks/screenshot color="white" image="/images/add_role_page.png">}} 
 
 *Example: Adding a new Role and Permissions*
 
@@ -56,7 +56,7 @@ Often times, adding new Roles is done by integrating Ferris with the corporate I
 In order to apply an Action, first select the Role you want the action to apply to.
 
 - Select a Role then click Actions > Copy Role > click **Yes** to confirm
-- The Role is now copied and can be found in the list of Roles as **""[original role name] copy"**
+- The Role is now copied and can be found in the list of Roles as **"[original role name] copy"**
 
 
 

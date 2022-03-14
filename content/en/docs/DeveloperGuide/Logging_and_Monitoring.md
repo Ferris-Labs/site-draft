@@ -14,17 +14,17 @@ The following are the Kex Data and The matching Elasticsearch Indexes
 
 
 
-Logs 
+## Logs 
 
 Contains Logs from all applications. Elasticsearch index is XYZ
 
-Events
+## Events
 
 All events that are transported through the ferris.events Topic are loaded into Elasticsearch Index.
 
 
 
-Checking Logs
+## Checking Logs
 
 Ferris Logs are in logstash format. The logs can be aggregated from the application by using the ferris_cli library. 
 
@@ -40,7 +40,7 @@ App_name:
 
 
 
-Checking Events
+## Checking Events
 
 Events are in form of cloud events. The data section of an event is schema less i.e. the data provided in the attributes may vara from event type to event type. If you require custom extractions for specific event types the best is to tap into the 
 
@@ -48,5 +48,5 @@ Events are in form of cloud events. The data section of an event is schema less 
 
 
 
-Event Name Spaces
+## Event Name Spaces
 

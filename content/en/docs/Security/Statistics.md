@@ -16,7 +16,7 @@ Here a Security Lead finds useful information on any user's successful as well a
 
 Navigate to: Security > User's Statistics
 
-![](/images/users_statistics.png)
+{{< blocks/screenshot color="white" image="/images/users_statistics.png">}} 
 
 *Example: Users Statistics > Login count*
 

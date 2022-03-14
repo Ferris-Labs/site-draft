@@ -15,7 +15,7 @@ This is us - humans - using Ferris on a day to day basis. And in this section ea
 
 > To get the the Users page, navigate to: Security > List Users
 
-![](/images/list_users_page.png)
+{{< blocks/screenshot color="white" image="/images/list_users_page.png">}} 
 
 *Example: List of Ferris Users*
 
@@ -36,7 +36,7 @@ Most often though, adding new Users is done by integrating Ferris with the corpo
 
 > Click on the plus sign ![Add User](/images/add_icon.png) to add a new user.
 
-![Add User](/images/add_user_page.png) 
+{{< blocks/screenshot color="white" image="/images/add_user_page.png">}} 
 
 *Example: Adding a new Ferris Users*
 
@@ -62,7 +62,7 @@ Most often though, adding new Users is done by integrating Ferris with the corpo
 
 >  Click on the spyglass icon ![Add User](/images/view_icon.png) in front of the user you want to look at.
 
-![Add User](/images/view_user_page.png) 
+{{< blocks/screenshot color="white" image="/images/view_user_page.png">}} 
 
 *Example: View only List of Ferris Users*
 
