@@ -32,17 +32,20 @@ This Use Case defines how to create and run a new package.
 
 ## Create Package
 
-1. Name package
-2. Describe package
-3. Select the Project to which the package will be bound
-4. Add Tags manually or select from predefined tags
-5. Schedule cron job -> "Cron like schedule definition. NOTE: day of week start on Monday (0 - Monday, 6 - Sunday)" example: "20****" -> **The whole definition of [Cron Jobs](/docs/user-guide/cronjob/ "CronJob") can be found in the next sub-category of this UserGuide**
-6. Trigger Event Types - Select Value -> select event type to trigger the exectution of the package
-7. Check the checkbox to Allow Manual Triggering -> click to allow manual triggering of the package
-8. Check the checkbox to Activate your package -> click to set the package to active
-9. Click on Choose file (optional) to Upload a Script -> upload a JSON "config.json" script to configure the package
-10. Click on +Add More Scripts... to add more scripts -> upload a python "test_scr.py" script to pull the configuratio from config file and print all items
-11. Click on Save to save package
+| **Field name**                | **Steps & Description**                                      |
+| :---------------------------- | ------------------------------------------------------------ |
+| 1. Name                       | 1. Name the package                                          |
+| 2. Description                | 2. Descripe the package                                      |
+| 3. Project                    | 3. Select the project to which the package will be bound     |
+| 4. Tags                       | 4. Add Tags of choice manually or select from predefined tags |
+| 5. Schedule                   | 5. Schedule cron job -> "Cron like schedule definition. NOTE: day of week start on Monday (0 - Monday, 6 - Sunday)" example: "20****" -> **The whole definition of [Cron Jobs](/docs/user-guide/cronjob/ "CronJob") can be found in the next sub-category of this UserGuide** |
+| 6. Trigger Event Type         | 6. Select Value -> select event type to trigger the exectution of the package -> please visit the sub-category [Events](/docs/user-guide/events/ "Events") to get a better understanding of how to set event triggers. |
+| 7. Allow Manual Triggering    | 7. Checkbox -> click to allow manual triggering of the package |
+| 8. Active                     | 8. Checkbox -> click to set the package to active            |
+| 9. File Upload (choose file)  | 9. Click on Choose file (Optional) to upload a script -> upload a JSON "config.json" script to configure the package |
+| 10. File Upload (choose file) | 10. Click on Choose file (Optional) to upload a script -> upload a python "test_scr.py" script to pull the configuratio from config file and print all items |
+| 11. Save                      | 11. Click Save to save packages                              |
+| *Supported File upload Types* | 4 different file types are supported: **1. ".py file"** -> A PY file is a program file or script written in Python, an interpreted object-oriented programming language. **2. ".json file"** -> A JSON file is a file that stores simple data structures and objects in JavaScript Object Notation (JSON) format, which is a standard data interchange format. **3. ".sql file"** -> A (SQL) file with .sql extension is a Structured Query Language (SQL) file that contains code to work with relational databases. **4. ".csv file"** -> A CSV (comma-separated values) file is a text file that has a specific format which allows data to be saved in a table structured format. |
 
 {{< blocks/screenshot color="white" image="/images/create_package_with_configs_roboto.png">}}
 
