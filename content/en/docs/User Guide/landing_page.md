@@ -52,4 +52,4 @@ In this specific use case the insights and analytics of the FerrisFX Data Platfo
   - Package (name)
   - Number of exections
 
-![](/images/dashboard_landing_page.png)
+{{< blocks/screenshot color="white" image="/images/dashboard_landing_page.png">}}
