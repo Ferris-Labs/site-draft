@@ -3,74 +3,125 @@ title: "ABOUT"
 linkTitle: "ABOUT"
 ---
 
+<!-- Header block-->
 {{< blocks/cover title="FERRIS LABS : ABOUT" image_anchor="top" height=auto color="primary" >}}
-
-<div class="mx-auto">
-	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
-		Learn More <i class="fas fa-arrow-alt-circle-right ml-2"></i>
-	</a>
-	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/Ferris-Labs">
-		Download <i class="fab fa-github ml-2 "></i>
-	</a>
-	<p class="lead mt-5">The Platform for the fasted and simplest way to building your micro-integrations for events and services.</p>
-	{{< blocks/link-down color="info" >}}
-</div>
 {{< /blocks/cover >}}
 
 
-
+<!-- Ferris Evolution & History -->
 {{< blocks/lead color="primary" >}}
 <div class="col">
- <p class="lead mt-1">Ferris is a platform for building highly scalable, cross-network sync or async microservices and agents. The unique low learning curve approach significantly reduces the cost of deploying enterprise wide process and integration pipelines across disparate systems at a speed. While at the same time creating a platform with practically unbound access and ease of integration.</p>
-<p class="lead mt-2">On Ferris you are effectively writing large applications by connecting “blocks” of code (Services) through Events.</p>
+	<h1>Evolution and History</h1>
+ <p class="lead mt-1">The Ferris technology ecosystem began its journey back in 2016 when the first Big Data and AI platform for one of the leading global Private and Wealth Management Banks in Switzerland was developed. From the beginning, key architectural principles were set, based on open source technologies and a hybrid cloud approach.</p>
+ <p class="lead mt-1">Soon, Ferris evolved into an open and integrative platform, enabling customer centric and adaptive deplyoments, allowing a component based platform choice where only technologies are selected that are fit for each customer's needs. What started out as a Hadoop centric data platform, quickly became a toolbox of choice.</p>
+ <p class="lead mt-1">The need for Agile development and fast time to market of projects, paired with an inherent challenge to harness ever more complex technologies, have lead Ferris to become more and more events and services driven. Sourcing new data and ingesting services fast and deploying new products within weeks has thus become the logical baseline of Ferris.</p>
+ <p class="lead mt-1">Today, Ferris stands for THE micro-integrations platform, enabling ANY organization to build simple to complex data and process driven solutions fast and with a low learning curve.</p>
+</body>
+{{< /blocks/lead >}}
+
+ <!-- Ferris Principles -->
+{{< blocks/lead color="light gray" >}}
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1" class="lead mt-1">
+ <style>
+ * {
+   box-sizing: border-box;
+ }
+
+ .column {
+   float: left;
+   width: 33%;
+   padding: auto;
+   height: auto;
+ }
+
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ </style>
+ </head>
+
+<body>
+<h1>Principles</h1>
+<div class="lead mt-1">
 </div>
- {{< /blocks/lead >}}
+
+ <div class="row" class="lead mt-1">
+   <div class="column">
+		 <ul class="lead mt-1" style="padding: 0; list-style-position: inside; text-align: center">
+		  <li>Hybrid cloud enabled</li>
+		  <li>Open source technology</li>
+		  <li>Fully containerized</li>
+		</ul>
+   </div>
+   <div class="column">
+		 <ul class="lead mt-1" style="padding: 0; list-style-position: inside; text-align: center">
+			<li>Open architecture</li>
+		  <li>Strong security</li>
+		  <li>Low learning curve adaptation</li>
+		</ul>
+   </div>
+	 <div class="column">
+		<ul class="lead mt-1" style="padding: 0; list-style-position: inside; text-align: center">
+			<li>Hybrid cloud enabled</li>
+		  <li>Open source technology</li>
+		  <li>Fully containerized</li>
+	 </ul>
+	 </div>
+ </div>
+ </body>
+{{< /blocks/lead >}}
+
+<!-- Founding Ferris Labs AG -->
+<section class="row td-cover-block td-overlay" style="background-color: #FFFFFF;">
+
+	<div class="container">
+		<p class="home_title" style="text-align: center;">Founding Ferris Labs AG</p>
+	</div>
+
+	<div class="container">
+	   <div class="row">
+	 	 <div class="col-6" style="display: flex; justify-content: center;">
+				<img src="/images/FERRIS LABS_Red.png" height="250" width="250">
+		 </div>
+
+		 <div class="col-6">
+		  <p class="home_title">
+		   <p class="lead ">Ferris Labs AG was founded on 1.1.2021 in Zug, Switzerland by a group of Data and Technology enterpreneurs, each bringing many years of successful track records in international and corporate business.</p>
+		 	 <p class="lead ">The Ferris platform has been developed and established at prime customer sights since 2016. The reason for founding Ferris Labs was to establish Ferris as an industry leading data and process platform across industries and geographies.</p>
+			 <p class="lead ">Ferris Labs is an indepependent and privately owned company. The organic growth of Ferris ensures laser sharp focus on development, distribution and growth.
+			 </p>
+
+			 <a class="btn btn-lg btn-primary mr-3 mb-4" href="/docs/">
+			 Contact us <i class="fas fa-arrow-alt-circle-right ml-2"></i>
+			 </a>
+		   </p>
+		 </div>
+	   </div>
+	   <div class="row">&nbsp;</div>
+   </div>
+   </section>
 
 
+	 <!-- Ferris Management -->
+	 <section class="row td-cover-block td-overlay" style="background-color: #e6d4da;">
 
-{{< blocks/section  color="secondary" height="min" >}}
-<div class="col">
-	<p class="text-center"><img class="text-center" src="/images/ferris_products2.webp" width=1000 height=auto/></p>
-  <p></p>
-</div>
-{{< /blocks/section >}}
+	 	{{< blocks/usecases color="primary" >}}
 
-
-{{< blocks/section  color="secondary" height="min" >}}
-{{% blocks/2columnwide image="/images/ferris_products1.webp"  title=""%}}
-# Micro-Integrations
-* any combination of services and events
-* simple to complex event processing
-* hybrid cloud integrations
-{{% /blocks/2columnwide %}}
-{{< /blocks/section >}}
+	  {{< /blocks/usecases >}}
 
 
+	 </section>
 
-{{< blocks/section color="dark" >}}
-<div class="col">
- <h1 class="text-center">Inventory of Adaptors and Services</h1>
- <p class="text-center">Anticipated target-state flow for continuous use by Ferris client</p>
- <p></p>
-</div>
-{{< /blocks/section >}}
-
-
-
-{{< blocks/section color="secondary" >}}
-<div class="col">
- <h1 class="text-center">Ferris example for end2end product flow</h1>
- <p class="text-center">Anticipated target-state flow for continuous use by Ferris client</p>
- <p class="text-center"><img class="text-center" src="/images/ferris_example_flow.webp" width=1000 height=auto/></p>
-</div>
-{{< /blocks/section >}}
 
 
 
 {{< blocks/section color="primary" >}}
 
-{{% blocks/feature icon="fa-lightbulb" title="Development News!" url="https://ferrislabs.net/about" %}}
-Get informed about new releases and the product roadmap.
+{{% blocks/feature icon="fa-lightbulb" title="Careers" url="https://ferrislabs.net/about" %}}
+<p> Our vision is to work at the forefront of technology and to push the boundaries of the possible! What are your skills? Care to share them with us?</p>
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
