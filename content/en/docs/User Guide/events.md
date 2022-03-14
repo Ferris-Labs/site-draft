@@ -30,7 +30,7 @@ Events can be created within scripts during package execution by sending a messa
 
 Further details regarding `ferris_cli` can be found in the subcategory [Development Lifecycle](/docs/developerguide/development-lifecycle/ "development-lifecycle") in the *Developer Guide*.
 
-![](/images/events_event_types.png)
+{{< blocks/screenshot color="white" image="/images/events_event_types.png">}}
 
 ## Executions - Packages -> file upload trigger event
 
@@ -40,13 +40,13 @@ In this use case an existing package will be edited to define the file upload ev
 2. Click on *Packages*
 3. Click on the edit record button to edit the existing package *Test Package with Scripts*
 
-![](/images/edit_package_event.png)
+{{< blocks/screenshot color="white" image="/images/edit_package_event.png">}}
 
 1. Delete the *CronJob Schedule* to allow a *Trigger Event Type*
 2. Select the *Value* of the event type (ferris.apps.modules.minio.file_uploaded)
 3. Save the edited package.
 
-![](/images/save_edited_package_event.png)
+{{< blocks/screenshot color="white" image="/images/save_edited_package_event.png">}}
 
 ## File Storage
 
@@ -56,14 +56,14 @@ To finalize the process, a file needs to be uploaded to a MinIO bucket (file sto
 2. Click on *List Files* 
 3. Click on *+Add* to upload a file to the bucket
 
-![](/images/list_files_event.png)
+{{< blocks/screenshot color="white" image="/images/list_files_event.png">}}
 
 1. Choose file to upload
 2. Choose *File Type*  (CSV Table; Plain Text; JSON)
 3. Select the *Bucket Name*
 4. Click on *Save* to save the file 
 
-![](/images/upload_file_event.png)
+{{< blocks/screenshot color="white" image="/images/upload_file_event.png">}}
 
 To verify if the package execution has been triggered, go back to the initial, edited package.
 
@@ -71,18 +71,18 @@ To verify if the package execution has been triggered, go back to the initial, e
 2. Click on *Packages*
 3. Click on the magnifying glass to open the details page of the package *Test Package with Scripts*
 
-![](/images/package_details_event.png)
+{{< blocks/screenshot color="white" image="/images/package_details_event.png">}}
 
 It will automatically open the *List Package Executions* tab.
 
 1. Check the last Event, date and time to verify it corresponds to the time the file was uploaded
 2. Click on the magnifying glass to open the details page of the triggered execution
 
-![list_triggered_event](/images/list_triggered_event.png)
+{{< blocks/screenshot color="white" image="/images/list_triggered_event.png">}}
 
 - Check the details page of the event triggered run
 
-![](/images/details_page_event.png)
+{{< blocks/screenshot color="white" image="/images/details_page_event.png">}}
 
 ## Workflow -> approval completed trigger event
 
@@ -94,11 +94,11 @@ To finalize the second trigger event (ferris.apps.modules.approvals.step_approva
 
 Note that before even getting a closer look at the Workflow details, the *Entrypoint Event* is displayed -> ferris.apps.modules.minio.file_uploaded
 
-![](/images/workflow_second_trigger_event.png)
+{{< blocks/screenshot color="white" image="/images/workflow_second_trigger_event.png">}}
 
 Check the details in the JSON snippet to understand what or which event types will trigger the second event type. The first event type shown in the JSON snippet is: ferris.apps.modules.minio.file_uploaded -> which means that a file will need to get uploaded for the event to get triggered. The second event type shown in the JSON snippet is: ferris.apps.modules.approvals.step_approval_completed -> meaning the uploaded file will need to get approved in the *Case Management* module before the wanted event gets triggered. 
 
-![](/images/workflow_trigger_event_types.png)
+{{< blocks/screenshot color="white" image="/images/workflow_trigger_event_types.png">}}
 
 ## Case Management -> -> approval completed trigger event
 

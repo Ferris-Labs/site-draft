@@ -38,7 +38,7 @@ This Use Case defines how to create and run a new package.
 | 2. Description                | 2. Descripe the package                                      |
 | 3. Project                    | 3. Select the project to which the package will be bound     |
 | 4. Tags                       | 4. Add Tags of choice manually or select from predefined tags |
-| 5. Schedule                   | 5. Schedule cron job -> "Cron like schedule definition. NOTE: day of week start on Monday (0 - Monday, 6 - Sunday)" example: "20****" -> **The whole definition of [Cron Jobs](/docs/user-guide/cronjob/ "CronJob") can be found in the next sub-category of this UserGuide** |
+| 5. Schedule                   | 5. Schedule cron job -> "Cron like schedule definition. NOTE: day of week start on Monday (0 - Monday, 6 - Sunday) example: "20****" -> **The whole definition of [Cron Jobs](/docs/user-guide/cronjob/ "CronJob") can be found in the next sub-category of this UserGuide** |
 | 6. Trigger Event Type         | 6. Select Value -> select event type to trigger the exectution of the package -> please visit the sub-category [Events](/docs/user-guide/events/ "Events") to get a better understanding of how to set event triggers. |
 | 7. Allow Manual Triggering    | 7. Checkbox -> click to allow manual triggering of the package |
 | 8. Active                     | 8. Checkbox -> click to set the package to active            |
