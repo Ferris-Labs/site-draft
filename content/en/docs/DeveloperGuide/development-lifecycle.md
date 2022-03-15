@@ -76,11 +76,6 @@ import json
 from ferris_cli import ApplicationConfigurator
 from ferris_cli import EventSender
 
-payload = json.loads(sys.arg[1])
-print(payload)
-my_config = ApplicationConfigurator().get("ferris.services.hello_world.config")['my_config']
-print(my_config)
-
 event_type = "my_custom_event_type"
 data = {"some_parameter":"Hello from Hello World"}
 
@@ -128,11 +123,7 @@ print("I am step 2")
 
 Upload the new script to the Service. Once you upload the script you will have 2 scripts and you can change the order in which they are run by clicking and dragging. When you run the service you will also note that boh scripts have access to the properties of the incoming event.
 
-
-
 ### Add and Retrieve Service Specific Configurations
-
-
 
 Service specific configurations are often a requirement. In order to set up specific configurations for your service please create a file named **config.json** and upload it to the service.
 
@@ -142,22 +133,23 @@ Service specific configurations are often a requirement. In order to set up spec
 }
 ```
 
-The configs that you uploaded will be placed by the platform within Consul. Since the application is called hello_world the key of the config in Consul will be "ferris.services.hello_world.config". If you have called your service something else you can always retrieve the path from the UI as shown below.
+The configs that you uploaded will be placed by the platform within Consul. 
 
 You can now adjust your code to retrieve and print the configs at run time.
 
 ```python
-import sys
-import json
 from ferris_cli import ApplicationConfigurator
+from ferris_ef import get_param
 
-payload = json.loads(sys.arg[1])
-print(payload)
-my_config = ApplicationConfigurator().get("ferris.services.hello_world.config")['my_config']
+my_package_name = get_param('package_name')
+
+my_config = ApplicationConfigurator().get(my_package_name)
 print(my_config)
 ```
 
 Update the service by uploading the new version of the code, trigger it and check the results.
+
+**Please note that service specific configurations are not displayed in the configuration manager to avoid inadvertent manual editing or secrets leakage.**
 
 For a full discussion on configuration best practices please review this page - Configurations in FerrisFX.
 
@@ -180,9 +172,40 @@ print(platform_config)
 
 
 
+## Add and Retrieve Service Specific Secrets
+
+Secrets are variables that you require in executor packages which you do not wish to be exposed on UI or in Consul, but use in your scripts. Secrets are package specific.
+
+In order to use secrets there are 2 steps:
+
+1. Upload a secrets.json file to your package.
+2. Use the provided library to access the Secrets 
+
+The following is a sample secrets json.
+
+```json
+{
+    "DB_NAME": "my_database_username",
+    "DB_PASS": "my_database_password"
+}
+```
+
+The following is a sample retreival of secrets.
+
+```python
+from ferris_ef import get_secret
+
+print(f"DB NAME: {get_secret('DB_NAME')}")
+print(f"DB PASS: {get_secret('DB_PASS')}")
+```
+
+
+
+**Please note that secrets are not exposed in the UI nor stored in plain text in the system. So once set they can only be updated or queried through the executor.**
+
+
+
 ## Modularising Your Service
-
-
 
 Within each package you can create classes in order to keep your code clean. Let us create a simple class and use it.
 
@@ -221,10 +244,15 @@ The data section of trigger events are provided to all scripts executed within a
 ```python
 import json
 import sys
+from ferris_ef import get_param
 
 fa = json.loads(sys.argv[1])
 for k, v in fa.items():
     print(k, v)
+
+# Alternatively you can use the provided helper function.
+my_parameter = get_param('MY_PARAMETER')
+
 ```
 
 
@@ -246,52 +274,6 @@ with open(abs_file_path, 'r') as f:
     for line in f:
         print(line)
 ```
-
-
-
-## Add Secrets
-
-
-
-Secrets are variables that you require in executor packages which you do not wish to be exposed on UI or in Consul, but use in your scripts. Secrets are package specific.
-
-In order to use secrets there are 2 steps:
-
-1. Upload a secrets.json file to your package.
-2. Use the provided library to access the Secrets 
-
-The following is a sample secrets json.
-
-```json
-{
-    "DB_NAME": "my_database_username",
-    "DB_PASS": "my_database_password"
-}
-```
-
-The following is a sample retreival of secrets.
-
-```python
-import sys, json
-from ferris_cli.v2 import ApplicationConfigurator
-from ferris_ef import get_secret, get_param
-
-fa = json.loads(sys.argv[1])
-
-print(f"DB NAME: {get_secret('DB_NAME')}")
-print(f"DB PASS: {get_secret('DB_PASS')}")
-
-print(f"PACKAGE NAME: {get_param('package_name')}")
-
-secrets = fa['secrets']
-
-for k, v in secrets.items():
-    print(f"{k} -> {v}")
-```
-
-
-
-**Please note that secrets are not exposed in the UI nor stored in plain text in the system. So once set they can only be updated or queried through the executor.**
 
 
 
