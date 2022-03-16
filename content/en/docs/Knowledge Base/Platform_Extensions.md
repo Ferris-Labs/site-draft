@@ -17,7 +17,7 @@ The platform may be extended at 3 logical points within the event life cycle.
 
 
 * **At Entry Point:** 
-  * They are respnsible for injecting external event streams into the platform. Primarily they mediate betweeen the exrernal event stream and the internal CloudEvents based Kafka Topics.  The following are the typical examples.
+  * They are respnsible for injecting external event streams into the platform. Primarily they mediate betweeen the exrernal event stream and the internal CloudEvents based Kafka Topics.  These run on separate containers within the platform. The following are the typical examples.
     * **Event Gateway**: are the primary mechanism.  To build event gateways we provide templates. Please check this document on extension.
 * **At Processing**
   * These are extensions that operate on internal event streams or are required by services that are created on the platform. The following are the types thereof.
@@ -26,8 +26,8 @@ The platform may be extended at 3 logical points within the event life cycle.
     * **Event Processing Packages**: These are services that only modify event attributes normally convert one type of event to another. These can be implemented as services within the platform. Please see following guide to see how they are used and some typical scenarios. 
     * **No Code Generators:** Generators combine UI based with templated code to allow No Code based approach to creating services. Please check this guide on how that works. 
 * **At Exit Point**
-  * These are primarily modules that interact with external systems but operate across the example. The primarily operate on streams that originate from the platform and mediate with the outside. The following are typical implementaions. Examples are
-    * **Protocol Adapters** The y adapt between the internal kafka even streams and external protocols for example webhook adapter, Kafka to imbm mq adapter etc. Their primary purpose is to offload activity from the platform which may cause bottle necks or require long running services.
+  * These are primarily modules that interact with external systems but operate across the example. The primarily operate on streams that originate from the platform and mediate with the outside. These run on separate containers within the platform.  The following are typical implementaions. Examples are
+    * **Protocol Adapters** They adapt between the internal kafka even streams and external protocols for example webhook adapter, Kafka to imbm mq adapter etc. Their primary purpose is to offload activity from the platform which may cause bottle necks or require long running services.
     * **Splitters and Filters:** These may operate on strams to split content or event infromation into derivative streams. Or feed data into supporting infrastructure. The elastissearch and Splunk adapters are typical examples. In order to build these use the following guide and related templates.
 
 
