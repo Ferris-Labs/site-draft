@@ -34,27 +34,27 @@ linkTitle = "DESIGN"
 		  </div>
 
 		 <div class="col-6">
-			 
+
 		   <p></p>
-   
-   
+
+
 		   <p class="home_title">
-			  
+
 			   <p class="lead ">Digital Transformation requires you to deal with mutlple challenges such as multi-cloud, a plethora of services in your landscape, on-premise software and Saas Services, containerisation, big data processing, CI/CD and AI/ML pipelines and  scale.</p>
-				   
+
 				<p class="lead ">All challenges which can bog down your project, send costs sky rocketing and dampen innovation.</p>
-				   
+
 			   <p class="lead ">FerrisDX is a unique re-think of how to meet the chanllenges of Digital Transofrmation. Our mission is to unleash your Digital Transformation....
-				
-   
+
+
 			   </p>
 			   <a class="btn btn-lg btn-primary mr-3 mb-4" href="/docs/">
 				   Get Started <i class="fas fa-arrow-alt-circle-right ml-2"></i>
 			   </a>
 		   </p>
-   
+
 		   <p></p>
-	 
+
 		 </div>
 
 	   </div>
@@ -127,7 +127,7 @@ linkTitle = "DESIGN"
 		</p>
 			<p class="home_title_small">Agile.</p>
 			   <p class="lead ">The Ferris concept of micro-integrations you can additively evolve your solution with ZERO downtime and Zero deployment overhead. This is the promise of Ferris DX.
-   
+
 			   </p>
 		</div>
 		<div class="col-4">
@@ -135,11 +135,11 @@ linkTitle = "DESIGN"
 			<img src="/images/icon_square_c.svg">
 		</p>
 			<p class="home_title_small">Scalable.</p>
-			   <p class="lead">Evolved in the engine rooms of Big Data and FinTech, Ferris packages hyper-scalability practices within the platform. Ensuring you are ready to scale from Day One. 
+			   <p class="lead">Evolved in the engine rooms of Big Data and FinTech, Ferris packages hyper-scalability practices within the platform. Ensuring you are ready to scale from Day One.
 			   </p>
 		</div>
 	   </div>
-	  
+
    </div>
    </section>
 
@@ -152,7 +152,7 @@ linkTitle = "DESIGN"
 	<div class="row">&nbsp;</div>
     <div class="row">
       <div class="col-6">
-		  
+
 		<p></p>
 
 
@@ -167,7 +167,7 @@ linkTitle = "DESIGN"
         </p>
 
 		<p></p>
-  
+
       </div>
       <div class="col-6">
         <img src="/images/sample_screen.png" class="img-fluid" style="border:2px solid #fff;
@@ -217,7 +217,7 @@ linkTitle = "DESIGN"
 <section class="row td-cover-block td-overlay" style="background-color: #f9f9fa;">
 
 	<div class="container">
-	   
+
 	<div class="row" style="text-align: center;">
 
 		<div class="col-2">&nbsp;</div>
@@ -226,9 +226,9 @@ linkTitle = "DESIGN"
 		-moz-box-shadow: 10px 10px 5px #ccc;
 		-webkit-box-shadow: 10px 10px 5px #ccc;
 		-khtml-box-shadow: 10px 10px 5px #ccc; padding: 30px;" >
-		
+
 			<p class="home_title_quote">Within a very short time frame Ferris Labs has implemented a state-of-the-art Data Platform and integrated it with our ecosystem. Doing that, they have optimally positioned the bank for Big Data, Data Operations and Governance.</p>
-			
+
 			<p class="lead">ADRIAN BERCHTEN, DEPUTY CIO, BANK JULIUS B&Auml;R.</p>
 		</div>
 
@@ -281,10 +281,10 @@ linkTitle = "DESIGN"
 		<div class="col-4">
 
 
-	
+
 			<p class="home_title_medium">Connect Anything Anytime with no Downtime</p>
 			   <p class="lead ">FX Microservices are deployed in real time as Events comes in. There are not 100s of microservice containers running on your platform. Just 3 components. The Ferris Manager UI, The Event Router and any number Executors
-   
+
 			   </p>
 
 			   <p>
@@ -301,7 +301,7 @@ linkTitle = "DESIGN"
 		</p>
 			<p class="home_title_small">Scale access management in dynamic environments</p>
 			   <p class="lead ">Scale access management by defining access controls around logical services instead of IP-based access policies.
-   
+
 		</p>
 
 		<p>
@@ -309,7 +309,7 @@ linkTitle = "DESIGN"
 		</p>
 			<p class="home_title_small">Scale access management in dynamic environments</p>
 			   <p class="lead ">Scale access management by defining access controls around logical services instead of IP-based access policies.
-   
+
 		</p>
 
 		</div>
@@ -320,7 +320,7 @@ linkTitle = "DESIGN"
 					<p class="home_title_small">Streamline remote access with easy-to-use CLI</p>
 					<p class="lead">Make it easy to access all applications and systems through a single workflow that works with existing tooling.
 				</p>
-			
+
 				<p>
 					<img src="/images/icon_square_c.svg">
 				</p>
@@ -331,7 +331,7 @@ linkTitle = "DESIGN"
 
 		</div>
 	   </div>
-	  
+
    </div>
    </section>
 
@@ -341,7 +341,7 @@ linkTitle = "DESIGN"
 	<div class="conainer">
 		<p class="home_title_medium" style="text-align: center;">
 		FERRIS Development in 60 Seconds.
-	</p> 
+	</p>
 	</div>
 
 
@@ -369,130 +369,130 @@ linkTitle = "DESIGN"
 	  </ul>
 	  <div class="tab-content" id="myTabContent">
 		<div class="tab-pane fade show active" id="parameters" role="tabpanel" aria-labelledby="home-tab">
-			{{< highlight go >}} 
-		  
+			{{< highlight go >}}
+
 			import sys
 			import json
 			from ferris_cli import ApplicationConfigurator
 			from ferris_cli import EventSender
-			
+
 			payload = json.loads(sys.arg[1])
 			print(payload)
 			my_config = ApplicationConfigurator().get("ferris.services.hello_world.config")['my_config']
 			print(my_config)
-			
+
 			event_type = "my_custom_event_type"
 			data = {"some_parameter":"Hello from Hello World"}
-			
+
 			EventSender().send(event_type,data)
-			
-			
-			
+
+
+
 					  {{< /highlight >}}
 		</div>
 		<div class="tab-pane fade" id="events" role="tabpanel" aria-labelledby="profile-tab">
 
-			{{< highlight go >}} 
-		  
+			{{< highlight go >}}
+
 			import sys
 			import json
 			from ferris_cli import ApplicationConfigurator
 			from ferris_cli import EventSender
-			
+
 			payload = json.loads(sys.arg[1])
 			print(payload)
 			my_config = ApplicationConfigurator().get("ferris.services.hello_world.config")['my_config']
 			print(my_config)
-			
-			
-			
-			
+
+
+
+
 					  {{< /highlight >}}
 
 
 		</div>
 		<div class="tab-pane fade" id="configs" role="tabpanel" aria-labelledby="contact-tab">
-			
-			{{< highlight go >}} 
-		  
+
+			{{< highlight go >}}
+
 			import sys
 			import json
 			from ferris_cli import ApplicationConfigurator
 			from ferris_cli import EventSender
-			
+
 			payload = json.loads(sys.arg[1])
 			print(payload)
 			my_config = ApplicationConfigurator().get("ferris.services.hello_world.config")['my_config']
 			print(my_config)
-			
-			
-			
-			
+
+
+
+
 					  {{< /highlight >}}
 
 
 		</div>
 		<div class="tab-pane fade" id="logging" role="tabpanel" aria-labelledby="contact-tab">
-			
-			{{< highlight go >}} 
-		  
+
+			{{< highlight go >}}
+
 			import sys
 			import json
 			from ferris_cli import ApplicationConfigurator
 			from ferris_cli import EventSender
-			
+
 			payload = json.loads(sys.arg[1])
 			print(payload)
 			my_config = ApplicationConfigurator().get("ferris.services.hello_world.config")['my_config']
 			print(my_config)
-			
-			
-			
-			
+
+
+
+
 					  {{< /highlight >}}
 
 
 		</div>
 
 		<div class="tab-pane fade" id="state" role="tabpanel" aria-labelledby="contact-tab">
-			
-			{{< highlight go >}} 
-		  
+
+			{{< highlight go >}}
+
 			import sys
 			import json
 			from ferris_cli import ApplicationConfigurator
 			from ferris_cli import EventSender
-			
+
 			payload = json.loads(sys.arg[1])
 			print(payload)
 			my_config = ApplicationConfigurator().get("ferris.services.hello_world.config")['my_config']
 			print(my_config)
-			
-			
-			
-			
+
+
+
+
 					  {{< /highlight >}}
 
 
 		</div>
 
 		<div class="tab-pane fade" id="assets" role="tabpanel" aria-labelledby="contact-tab">
-			
-			{{< highlight go >}} 
-		  
+
+			{{< highlight go >}}
+
 			import sys
 			import json
 			from ferris_cli import ApplicationConfigurator
 			from ferris_cli import EventSender
-			
+
 			payload = json.loads(sys.arg[1])
 			print(payload)
 			my_config = ApplicationConfigurator().get("ferris.services.hello_world.config")['my_config']
 			print(my_config)
-			
-			
-			
-			
+
+
+
+
 					  {{< /highlight >}}
 
 
@@ -506,7 +506,7 @@ linkTitle = "DESIGN"
 
 
    <!-- carousel -->
-   
+
 
    <section class="row td-cover-block td-overlay" style="background-color: #a6c7e2;">
 
@@ -574,7 +574,3 @@ linkTitle = "DESIGN"
 
 
    </section>
-
-
-
-
