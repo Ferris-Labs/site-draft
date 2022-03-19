@@ -1,5 +1,5 @@
 ---
-title: Curn Analysis and Alerting – Financial Services
+title: Churn Analysis and Alerting – Financial Services
 category: use case
 industries: [Financial Services, Insurance]
 owner: Tom Debus
