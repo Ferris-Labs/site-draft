@@ -1,30 +1,16 @@
 ---
-title: "Notifications Integration"
-linkTitle: "Notifications Integration"
+title: "Notifications and Messaging"
+linkTitle: "Notifications and Messaging"
 weight: -10
 description: >-
   How to integrate a notifications with the Ferris Platform.
 ---
 
-FerrisDX uses the Apprise Python Libs as an engine for notifiation dispatch. The power of Apprise gives you access to over 40 notification services.  Ac omplete list is provided in a table and the end of the document.
+Ferris provides you access to over 40 notification services such as Slack, Email and Telegram.
 
-In order to send notifications from your package all you need is to create a defined event type. 
+FerrisDX uses the Apprise Python Libs as an engine for notifiation dispatch. The power of Apprise gives you access to over 40 notification services.  A complete list is provided in a table and the end of the document.
 
-## Pre-Requisites
-
-In order to send notifcations 
-
-* The Apprise Libs must be present in the Executor Image.
-
-* You must have the Apprise Notifications Packages installed and running. You can find the code base further below in document.
-
-* You must upload a secrets.json file for the Apprise Notifications Package. Please note that you should maintain a separate copy of the configs since this will not be displayed in your configuration manager since it contains credentials.
-
-* A sample configuration file is provided below. Please use the table based on Apprise documentation to understand the URL Template structure.
-
-* Once the Apprise Notifications Package is installed along with the configurations you must link the package to be triggered by the 'ferris.notifications.apprise.notification' event.
-
-  
+In order to send notifications from your package you need is to create and emit a pre-defined event type. 
 
 ## How to send notifications from your package
 
@@ -52,6 +38,39 @@ event_type = "ferris.notifications.apprise.notification"
 Events().send(event_type, data)
 
 ```
+
+
+
+## How does it Work?
+
+There are 2 approaches to implementing the notifications support.
+
+* Implementation within a Ferris Service
+* Implementation in an Exit Gateway
+
+The 2nd option is used in platforms which are behind a firewall and therefore require the gateway to be outside the firewall for accessing external services. In these cases the adapter runs as a separate container. 
+
+Irrespective of the infrastructure implementation the service internal API (as illustrated above) does not change.
+
+The following documentation refers to Option 1.
+
+
+
+## Pre-Requisites
+
+In order to send notifcations 
+
+* The Apprise Libs must be present in the Executor Image.
+
+* You must have the Apprise Notifications Packages installed and running. You can find the code base further below in document.
+
+* You must upload a secrets.json file for the Apprise Notifications Package. Please note that you should maintain a separate copy of the configs since this will not be displayed in your configuration manager since it contains credentials.
+
+* A sample configuration file is provided below. Please use the table based on Apprise documentation to understand the URL Template structure.
+
+* Once the Apprise Notifications Package is installed along with the configurations you must link the package to be triggered by the 'ferris.notifications.apprise.notification' event.
+
+  
 
 
 
