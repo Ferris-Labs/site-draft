@@ -13,19 +13,19 @@
 }
 
 
-  .home_title { 
+  .home_title {
     font-family: 'gilmer-bold';
     font-size: 50px;
     line-height: 60px;
 }
 
-.home_title_medium { 
+.home_title_medium {
     font-family: 'gilmer-bold';
     font-size: 40px;
     line-height: 40px;
 }
 
-.home_title_small { 
+.home_title_small {
     font-family: 'gilmer-bold';
     font-size: 1.313rem;
     line-height: 1.429em;
@@ -35,10 +35,33 @@
     color: #fff;
 }
 
-.home_title_quote { 
+.home_title_quote {
     font-family: 'gilmer-bold';
     font-size: 1.8rem;
     letter-spacing: -.004em;
     line-height: 1.375em;
 }
 
+#footer {
+  background-color: #161616;
+	padding-bottom: 1rem;
+	ul {
+		padding-inline-start: 0;
+		list-style-type: none;
+		li {
+			&, a {
+		    &, &:visited, &:active {
+		      color: #fff;
+		    }
+				&:hover {
+					color: #999;
+				}
+		  }
+		}
+	}
+	.copyright-text {
+		color: #fff;
+		text-align: center;
+		margin-top: 1rem;
+	}
+}
