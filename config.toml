@@ -1,5 +1,5 @@
 baseURL = "/"
-title = ""
+title = "Ferris Labs"
 
 enableRobotsTXT = true
 
@@ -70,13 +70,11 @@ id = "G-RZ6L6XFT3Q"
 
 [languages]
 [languages.en]
-title = "FERRIS LABS"
+title = "Ferris Labs"
 description = "FERRIS LABS web site"
 languageName =""
 # Weight used for sorting.
 weight = 1
-
-
 
 [markup]
   [markup.goldmark]
@@ -98,7 +96,6 @@ section = ["HTML", "print", "RSS"]
 [params]
 copyright = "FERRIS LABS AG"
 privacy_policy = "https://policies.google.com/privacy"
-
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
