@@ -243,6 +243,14 @@ enable = false
     class = 'highlight-menu-item'
 
 [[menu.main]]
+  identifier = 'integrations'
+  name = 'INTEGRATIONS'
+  url = '/integrations/'
+  weight = -40
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
   identifier = 'solutions'
   name = 'SOLUTIONS'
   url = '/solutions/'

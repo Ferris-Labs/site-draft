@@ -77,3 +77,29 @@ footer {
 	// only temporary
  	height: 40px;
 }
+
+.integrations-card-holder {
+	margin-top: -80px;
+}
+
+.integration-card {
+	background: #fff;
+	border: 1px solid #999999;
+	border-radius: 1rem;
+	margin-bottom: 2rem;
+	min-height: 350px;
+}
+
+.integration-card-title {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-bottom: 1rem;
+	h4 {
+		font-weight: bold;
+	}
+	img {
+		height: 2rem;
+		margin-right: 1rem;
+	}
+}
