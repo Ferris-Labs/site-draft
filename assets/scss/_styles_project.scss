@@ -87,19 +87,36 @@ footer {
 	border: 1px solid #999999;
 	border-radius: 1rem;
 	margin-bottom: 2rem;
-	min-height: 350px;
+	//min-height: 350px;
+	.card-body {
+		min-height: 350px;
+		.integration-card-title {
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			margin-bottom: 1rem;
+			h4 {
+				font-weight: bold;
+			}
+			img {
+				height: 2rem;
+				margin-right: 1rem;
+			}
+		}
+		.integration-tags {
+			margin-top: .5rem;
+			a {
+				line-height: normal;
+			}
+		}
+	}
 }
 
-.integration-card-title {
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	margin-bottom: 1rem;
-	h4 {
-		font-weight: bold;
-	}
-	img {
-		height: 2rem;
-		margin-right: 1rem;
-	}
+.integration-card-footer {
+	//position: relative;
+	//bottom: 100%;
+	//transform: translateY(100%);
+	//a {
+	//	line-height: normal;
+	//}
 }

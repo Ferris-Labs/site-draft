@@ -3,3 +3,7 @@ subtitle: This is a subtitle text for Integration B.
 content: This is a content text for Integration B
 href: /learn-more
 image: marketo.svg
+tags:
+  - tag
+  - tag_2
+  - tag_3
