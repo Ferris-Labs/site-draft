@@ -19,7 +19,7 @@
                     <div class="card-body d-flex flex-column justify-content-between">
                         <div>
                             <div class="integration-card-title" title="{{.title}}">
-                                <h4>
+                                <h4 class="font-weight-bold">
                                     <img src="/images/integrations/{{.image}}" />
                                     {{.title}}
                                 </h4>
@@ -38,7 +38,7 @@
                                     {{ range .tags }}
                                         <a class="taxonomy-term" href="/tags/{{ . }}/" data-taxonomy-term="{{ . }}"><span class="taxonomy-label small">{{ . }}</span></a>
                                     {{ end }}
-                            </div>
+                                </div>
                             {{ end }}
                         </div>
                     </div>

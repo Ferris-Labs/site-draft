@@ -78,6 +78,12 @@ footer {
  	height: 40px;
 }
 
+.no-wrap {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
 .integrations-card-holder {
 	margin-top: -80px;
 }
@@ -87,16 +93,13 @@ footer {
 	border: 1px solid #999999;
 	border-radius: 1rem;
 	margin-bottom: 2rem;
-	//min-height: 350px;
 	.card-body {
 		min-height: 350px;
 		.integration-card-title {
-			overflow: hidden;
-			white-space: nowrap;
-			text-overflow: ellipsis;
 			margin-bottom: 1rem;
 			h4 {
-				font-weight: bold;
+				@extend .no-wrap;
+				text-transform: uppercase;
 			}
 			img {
 				height: 2rem;
@@ -104,19 +107,10 @@ footer {
 			}
 		}
 		.integration-tags {
-			margin-top: .5rem;
+			margin-top: .75rem;
 			a {
 				line-height: normal;
 			}
 		}
 	}
-}
-
-.integration-card-footer {
-	//position: relative;
-	//bottom: 100%;
-	//transform: translateY(100%);
-	//a {
-	//	line-height: normal;
-	//}
 }
