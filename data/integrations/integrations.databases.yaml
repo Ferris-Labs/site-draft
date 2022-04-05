@@ -1,4 +1,11 @@
 databases:
+- name: ascend
+  description: Ascend gives data teams a single unified and automated platform to ingest, transform, and orchestrate their entire data engineering workloads—10X faster than ever before.​
+  learn_more_href: /learn-more
+  icon: FERRIS LABS_Red.png
+  tags:
+    - analytics
+    - data engineering
 - name: aws athena
   description: Amazon Athena is an interactive query service that makes it easy to analyze data directly in Amazon Simple Storage Service (Amazon S3) using standard SQL. 
   learn_more_href: /learn-more
@@ -20,6 +27,11 @@ databases:
   icon: apache_hive.png
   tags:
     - sql
+- name: bigquery
+  description: BigQuery is a fully managed enterprise data warehouse that helps you manage and analyze your data with built-in features like machine learning, geospatial analysis, and business intelligence. 
+  learn_more_href: /learn-more
+  icon: big_query.png
+  tags:
 - name: postgresql
   description: PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability.
   learn_more_href: /learn-more
@@ -34,4 +46,8 @@ databases:
     - object_storage
     - kubernetes
     - multi-cloud
-    
+- name:
+  description:
+  learn_more_href: /learn-more
+  icon: FERRIS LABS_Red.png
+  tags:
