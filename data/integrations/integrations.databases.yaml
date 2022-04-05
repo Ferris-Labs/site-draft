@@ -81,6 +81,9 @@ databases:
   learn_more_href: /docs/databases/databricks/
   icon: databricks.png
   tags:
+    - multicloud
+    - lakehouse
+    - sql
 - name:
   description:
   learn_more_href: /learn-more
