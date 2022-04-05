@@ -1579,7 +1579,8 @@ nodes:
   type: Operators
   description: This operator allows you to post alerts to Opsgenie. Accepts a connection
     that has an Opsgenie API key as the connections password. This operator sets
-    the domain to conn_id.host, and if not set will default to 
+    the domain to conn_id.host, and if not set will default to https://api.opsgenie.com.
+- name: QuboleCheckOperator
   type: Operators
   description: Performs a simple value check using Qubole command. By default, each
     value on the first row of this Qubole command is compared with a pre-defined value.

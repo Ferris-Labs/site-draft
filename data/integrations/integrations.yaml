@@ -1,9 +1,9 @@
 nodes:
-- title: Integration A
-  subtitle: This is a subtitle text for Integration A.
-  content: This is a content text for Integration A
-  href: /learn-more
-  image: hubspot.svg
+- name: Integration A
+  subname: This is a subname text for Integration A.
+  description: This is a description text for Integration A
+  learn_more_href: /learn-more
+  icon: hubspot.svg
   tags:
     - tag
     - longer_tag
@@ -13,34 +13,34 @@ nodes:
     - tag_3
     - tag_4
     - some_longer_tag_2
-- title: Integration B
-  subtitle: This is a subtitle text for Integration B.
-  content: This is a content text for Integration B
-  href: /learn-more
-  image: marketo.svg
+- name: Integration B
+  subname: This is a subname text for Integration B.
+  description: This is a description text for Integration B
+  learn_more_href: /learn-more
+  icon: marketo.svg
   tags:
     - tag
     - tag_2
     - tag_3
-- title: Integration C
-  subtitle: This is a subtitle text for Integration C.
-  content: This is a content text for Integration C
-  href: /learn-more
-  image: mysql.svg
-- title: Integration D
-  subtitle: This is a subtitle text for Integration D.
-  content: This is a content text for Integration D
-  href: /learn-more
-  image: redshift.svg
-- title: Integration E
-  subtitle: This is a subtitle text for Integration E.
-  content: This is a content text for Integration E
-  href: /learn-more
-  image: salesforce.svg
-- title: Integration F
-  subtitle: This is a subtitle text for Integration F.
-  content: This is a content text for Integration F
-  href: /learn-more
-  image: snowflake.svg
+- name: Integration C
+  subname: This is a subname text for Integration C.
+  description: This is a description text for Integration C
+  learn_more_href: /learn-more
+  icon: mysql.svg
+- name: Integration D
+  subname: This is a subname text for Integration D.
+  description: This is a description text for Integration D
+  learn_more_href: /learn-more
+  icon: redshift.svg
+- name: Integration E
+  subname: This is a subname text for Integration E.
+  description: This is a description text for Integration E
+  learn_more_href: /learn-more
+  icon: salesforce.svg
+- name: Integration F
+  subname: This is a subname text for Integration F.
+  description: This is a description text for Integration F
+  learn_more_href: /learn-more
+  icon: snowflake.svg
   tags:
     - tag
