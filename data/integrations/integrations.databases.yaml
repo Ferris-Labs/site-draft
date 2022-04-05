@@ -11,16 +11,17 @@ databases:
   learn_more_href: /docs/databases/athena/
   icon: amazon_athena.png
   tags:
-    - query
-    - sql
     - serverless
+    - sql
+    - query
 - name: aws s3
   description: Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance. 
   learn_more_href: /learn-more
   icon: aws_s3.png
   tags:
-    - bucket
     - s3
+    - bucket
+    - object-storage
 - name: apache hive
   description: Apache Hive is a distributed, fault-tolerant data warehouse system that enables analytics at a massive scale. A data warehouse provides a central store of information. 
   learn_more_href: /docs/databases/hive/
@@ -46,9 +47,9 @@ databases:
   learn_more_href: /learn-more
   icon: minio_bird.png
   tags:
-    - object_storage
     - kubernetes
     - multi-cloud
+    - object-storage
 - name: clickhouse
   description: ClickHouse is a fast open-source column-oriented database management system that allows generating analytical data reports in real-time using SQL queries.
   learn_more_href: /docs/databases/clickhouse/
@@ -57,9 +58,49 @@ databases:
     - sql
     - queries
     - real-time
+    - analytics
     - data
     - reports
-    - analytics
+- name: cockroachdb
+  description: CockroachDB Serverless automates scale, high availability, deployment, and operations. Just connect and build.
+  learn_more_href: docs/databases/cockroachdb/
+  icon: cockroachdb.png
+  tags:
+    - serverless
+    - sql
+    - automation
+- name: cratedb
+  description: the leading open-source, distributed SQL database empowering customers. A Highly Scalable SQL Database Seamlessly Growing With The Use Case. Full text search.
+  learn_more_href: /docs/databases/cratedb/
+  icon: crate_db.png
+  tags:
+    - distributed
+    - sql
+- name: databricks sql
+  description: allows customers to operate a multicloud lakehouse architecture that provides up to 12x better price/performance than traditional cloud data warehouses.
+  learn_more_href: /docs/databases/databricks/
+  icon: databricks.png
+  tags:
+- name:
+  description:
+  learn_more_href: /learn-more
+  icon: ferris_labs_red.png
+  tags:
+- name:
+  description:
+  learn_more_href: /learn-more
+  icon: ferris_labs_red.png
+  tags:
+- name:
+  description:
+  learn_more_href: /learn-more
+  icon: ferris_labs_red.png
+  tags:
+- name:
+  description:
+  learn_more_href: /learn-more
+  icon: ferris_labs_red.png
+  tags:
 # name:
 # description:
 # learn_more_href: /learn-more
