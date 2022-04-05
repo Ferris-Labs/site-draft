@@ -41,7 +41,7 @@ databases:
 - name: minio
   description: MinIO offers high-performance, S3 compatible object storage. Native to Kubernetes, MinIO is the only object storage suite available on every public cloud, every Kubernetes.
   learn_more_href: /learn-more
-  icon: MINIO_Bird.png
+  icon: minio_bird.png
   tags:
     - object_storage
     - kubernetes
