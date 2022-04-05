@@ -110,10 +110,10 @@ databases:
   icon: ferris_labs_red.png
   tags:
 - name: 
-description:
-learn_more_href: /learn-more
-icon: ferris_labs_red.png
-tags:
+  description:
+  learn_more_href: /learn-more
+  icon: ferris_labs_red.png
+  tags:
 - name: 
   description:
   learn_more_href: /learn-more
