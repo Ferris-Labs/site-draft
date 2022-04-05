@@ -90,7 +90,7 @@ footer {
 
 .integration-card {
 	background: #fff;
-	border: 1px solid #999999;
+	border: 1px solid $border-color;
 	border-radius: 1rem;
 	margin-bottom: 2rem;
 	.card-body {
@@ -107,7 +107,7 @@ footer {
 			}
 		}
 		.integration-tags {
-			margin-top: .75rem;
+			margin-bottom: .25rem;
 			a {
 				line-height: normal;
 			}

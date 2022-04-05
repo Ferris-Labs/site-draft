@@ -1,0 +1,46 @@
+nodes:
+- title: Integration A
+  subtitle: This is a subtitle text for Integration A.
+  content: This is a content text for Integration A
+  href: /learn-more
+  image: hubspot.svg
+  tags:
+    - tag
+    - longer_tag
+    - some_longer_tag
+    - tag_2
+    - longer_tag_2
+    - tag_3
+    - tag_4
+    - some_longer_tag_2
+- title: Integration B
+  subtitle: This is a subtitle text for Integration B.
+  content: This is a content text for Integration B
+  href: /learn-more
+  image: marketo.svg
+  tags:
+    - tag
+    - tag_2
+    - tag_3
+- title: Integration C
+  subtitle: This is a subtitle text for Integration C.
+  content: This is a content text for Integration C
+  href: /learn-more
+  image: mysql.svg
+- title: Integration D
+  subtitle: This is a subtitle text for Integration D.
+  content: This is a content text for Integration D
+  href: /learn-more
+  image: redshift.svg
+- title: Integration E
+  subtitle: This is a subtitle text for Integration E.
+  content: This is a content text for Integration E
+  href: /learn-more
+  image: salesforce.svg
+- title: Integration F
+  subtitle: This is a subtitle text for Integration F.
+  content: This is a content text for Integration F
+  href: /learn-more
+  image: snowflake.svg
+  tags:
+    - tag

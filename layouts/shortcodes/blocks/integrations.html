@@ -14,36 +14,42 @@
 <div class="container">
     <div class="row integrations-card-holder">
         {{ range $.Site.Data.integrations }}
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="integration-card">
-                    <div class="card-body d-flex flex-column justify-content-between">
-                        <div>
-                            <div class="integration-card-title" title="{{.title}}">
-                                <h4 class="font-weight-bold">
-                                    <img src="/images/integrations/{{.image}}" />
-                                    {{.title}}
-                                </h4>
-                            </div>
-                            <h5 class="integration-card-title mb-2 text-muted">
-                                {{.subtitle}}
-                            </h5>
-                            <div class="card-text">
-                                <p>{{.content}}</p>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="{{.href}}" class="text-muted"><small>Learn More</small></a>
-                            {{ if .tags }}
-                                <div class="integration-tags">
-                                    {{ range .tags }}
-                                        <a class="taxonomy-term" href="/tags/{{ . }}/" data-taxonomy-term="{{ . }}"><span class="taxonomy-label small">{{ . }}</span></a>
-                                    {{ end }}
+            {{range $index, $element := .}}
+                {{range $element}}
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="integration-card">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="integration-card-title" title="{{.title}}">
+                                        <h4 class="font-weight-bold">
+                                            <img src="/images/integrations/{{.image}}" />
+                                            {{.title}}
+                                        </h4>
+                                    </div>
+                                    <h5 class="integration-card-title mb-2 text-muted">
+                                        {{.subtitle}}
+                                    </h5>
+                                    <div class="card-text">
+                                        <p>{{.content}}</p>
+                                    </div>
                                 </div>
-                            {{ end }}
+                                <div>
+                                    {{ if .tags }}
+                                        <div class="integration-tags">
+                                            {{ range .tags }}
+                                            <a class="taxonomy-term" href="/tags/{{ . }}/" data-taxonomy-term="{{ . }}"><span class="taxonomy-label small">{{ . }}</span></a>
+                                            {{ end }}
+                                        </div>
+                                    {{ end }}
+                                    <div class="text-right">
+                                        <a href="{{.href}}" class="text-muted"><small>Learn More...</small></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                {{ end }}
+            {{ end }}
         {{ end }}
     </div>
 </div>
