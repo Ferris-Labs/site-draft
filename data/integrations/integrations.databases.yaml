@@ -84,26 +84,72 @@ databases:
     - multicloud
     - lakehouse
     - sql
-- name:
-  description:
-  learn_more_href: /learn-more
+- name: dremio
+  description: Dremio is a high-performance SQL (data) lakehouse platform built on an open data architecture that helps to accelerate BI and Analytics directly on cloud data lake storage.
+  learn_more_href: /docs/databases/dremio/
+  icon: dremio.png
+  tags:
+    - sql
+    - lakehouse
+- name: elasticsearch
+  description: Elasticsearch is a search engine based on the Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents.
+  learn_more_href: /docs/databases/elasticsearch/
+  icon: elastic.png
+  tags:
+    - search
+    - analytics
+- name: Exasol
+  description: Exasol is an analytics database management software company. Its product is called Exasol, an in-memory, column-oriented, relational database management system.
+  learn_more_href: /docs/databases/exasol/
+  icon: exasol.png
+  tags:
+    - warehouse
+- name: firebird
+  description: Firebird is an open-source SQL relational database management system that "runs on Linux, Microsoft Windows, macOS and several Unix platforms".
+  learn_more_href: /docs/databases/firebird/
   icon: ferris_labs_red.png
   tags:
-- name:
-  description:
-  learn_more_href: /learn-more
-  icon: ferris_labs_red.png
-  tags:
-- name:
-  description:
-  learn_more_href: /learn-more
-  icon: ferris_labs_red.png
-  tags:
-- name:
-  description:
-  learn_more_href: /learn-more
-  icon: ferris_labs_red.png
-  tags:
+- name: 
+description:
+learn_more_href:
+icon: ferris_labs_red.png
+tags:
+- name: 
+description:
+learn_more_href:
+icon: ferris_labs_red.png
+tags:
+- name: 
+description:
+learn_more_href:
+icon: ferris_labs_red.png
+tags:
+- name: 
+description:
+learn_more_href:
+icon: ferris_labs_red.png
+tags:
+- name: 
+description:
+learn_more_href:
+icon: ferris_labs_red.png
+tags:
+- name: 
+description:
+learn_more_href:
+icon: ferris_labs_red.png
+tags:
+- name: 
+description:
+learn_more_href:
+icon: ferris_labs_red.png
+tags:
+- name: 
+description:
+learn_more_href:
+icon: ferris_labs_red.png
+tags:
+
 # name:
 # description:
 # learn_more_href: /learn-more
