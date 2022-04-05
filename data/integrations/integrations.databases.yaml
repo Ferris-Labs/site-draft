@@ -2,7 +2,7 @@ databases:
 - name: ascend
   description: Ascend gives data teams a single unified and automated platform to ingest, transform, and orchestrate their entire data engineering workloads—10X faster than ever before.​
   learn_more_href: /learn-more
-  icon: FERRIS LABS_Red.png
+  icon: ferris_labs_red.png
   tags:
     - analytics
     - data engineering
@@ -46,8 +46,8 @@ databases:
     - object_storage
     - kubernetes
     - multi-cloud
-- name:
-  description:
-  learn_more_href: /learn-more
-  icon: FERRIS LABS_Red.png
-  tags:
+# name:
+# description:
+# learn_more_href: /learn-more
+# icon: ferris_labs_red.png
+# tags:
