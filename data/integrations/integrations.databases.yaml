@@ -1,14 +1,14 @@
 databases:
 - name: ascend
   description: Ascend gives data teams a single unified and automated platform to ingest, transform, and orchestrate their entire data engineering workloads—10X faster than ever before.​
-  learn_more_href: /learn-more
+  learn_more_href: /docs/databases/ascend/
   icon: ferris_labs_red.png
   tags:
     - analytics
     - data engineering
 - name: aws athena
   description: Amazon Athena is an interactive query service that makes it easy to analyze data directly in Amazon Simple Storage Service (Amazon S3) using standard SQL. 
-  learn_more_href: /learn-more
+  learn_more_href: /docs/databases/athena/
   icon: amazon_athena.png
   tags:
     - query
@@ -23,18 +23,21 @@ databases:
     - s3
 - name: apache hive
   description: Apache Hive is a distributed, fault-tolerant data warehouse system that enables analytics at a massive scale. A data warehouse provides a central store of information. 
-  learn_more_href: /learn-more
+  learn_more_href: /docs/databases/hive/
   icon: apache_hive.png
   tags:
     - sql
 - name: bigquery
   description: BigQuery is a fully managed enterprise data warehouse that helps you manage and analyze your data with built-in features like machine learning, geospatial analysis, and business intelligence. 
-  learn_more_href: /learn-more
+  learn_more_href: /docs/databases/bigquery/
   icon: big_query.png
   tags:
+    - serverless
+    - data 
+    - warehouse
 - name: postgresql
   description: PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability.
-  learn_more_href: /learn-more
+  learn_more_href: /docs/databases/postgres/
   icon: postgresql.png
   tags:
     - sql
@@ -46,6 +49,17 @@ databases:
     - object_storage
     - kubernetes
     - multi-cloud
+- name: clickhouse
+  description: ClickHouse is a fast open-source column-oriented database management system that allows generating analytical data reports in real-time using SQL queries.
+  learn_more_href: /docs/databases/clickhouse/
+  icon: clickhouse.jpeg
+  tags:
+    - sql
+    - queries
+    - real-time
+    - data
+    - reports
+    - analytics
 # name:
 # description:
 # learn_more_href: /learn-more
