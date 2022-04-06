@@ -8,7 +8,7 @@ databases:
     - sql
     - query
 - name: amazon redshift
-  description:Amazon Redshift is a data warehouse product which forms part of the larger cloud-computing platform Amazon Web Services.
+  description: Amazon Redshift is a data warehouse product which forms part of the larger cloud-computing platform Amazon Web Services.
   learn_more_href: /docs/databases/redshift/
   icon: amazon_redshift.png
   tags:
