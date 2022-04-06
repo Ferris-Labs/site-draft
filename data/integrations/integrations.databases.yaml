@@ -8,13 +8,34 @@ databases:
     - sql
     - query
 - name: amazon redshift
-  description: Amazon Redshift is a data warehouse product which forms part of the larger cloud-computing platform Amazon Web Services.
+  description: Amazon Redshift is a data warehouse product which forms part of the larger cloud-computing platform Amazon Web Services. It is built on top of technology from the massive parallel processing data warehouse company ParAccel, to handle large scale data sets and database migrations.
   learn_more_href: /docs/databases/redshift/
   icon: amazon_redshift.png
   tags:
 - name: apache drill
-  description:Apache Drill is an open-source software framework that supports data-intensive distributed applications for interactive analysis of large-scale datasets.
-  learn_more_href: apache_drill.png
+  description: Apache Drill is an open-source software framework that supports data-intensive distributed applications for interactive analysis of large-scale datasets.
+  learn_more_href: /docs/databases/drill/
+  icon: apache_drill.png
+  tags:
+- name: apache druid
+  description: Druid is a column-oriented, open-source, distributed data store written in Java. Druid is designed to quickly ingest massive quantities of event data, and provide low-latency queries on top of the data.
+  learn_more_href: /docs/databases/druid/
+  icon: druid.png
+  tags:
+- name: apache hive
+  description: Apache Hive is a data warehouse software project built on top of Apache Hadoop for providing data query and analysis. Hive gives an SQL-like interface to query data stored in various databases and file systems that integrate with Hadoop.
+  learn_more_href: /docs/databases/hive/
+  icon: apache_hive.png
+  tags:
+    - sql
+- name: apache impala
+  description: Apache Impala is an open source massively parallel processing SQL query engine for data stored in a computer cluster running Apache Hadoop. Impala has been described as the open-source equivalent of Google F1, which inspired its development in 2012.
+  learn_more_href: /docs/databases/impala/
+  icon: ferris_labs_red.png
+  tags:
+- name: apache kylin
+  description: Apache Kylin is an open source distributed analytics engine designed to provide a SQL interface and multi-dimensional analysis on Hadoop and Alluxio supporting extremely large datasets. It was originally developed by eBay, and is now a project of the Apache Software Foundation. 
+  learn_more_href: /docs/databases/kylin/
   icon: ferris_labs_red.png
   tags:
 - name: ascend
@@ -24,20 +45,6 @@ databases:
   tags:
     - analytics
     - data engineering
-- name: aws s3
-  description: Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance. 
-  learn_more_href: /learn-more
-  icon: aws_s3.png
-  tags:
-    - s3
-    - bucket
-    - object-storage
-- name: apache hive
-  description: Apache Hive is a distributed, fault-tolerant data warehouse system that enables analytics at a massive scale. A data warehouse provides a central store of information. 
-  learn_more_href: /docs/databases/hive/
-  icon: apache_hive.png
-  tags:
-    - sql
 - name: bigquery
   description: BigQuery is a fully managed enterprise data warehouse that helps you manage and analyze your data with built-in features like machine learning, geospatial analysis, and business intelligence. 
   learn_more_href: /docs/databases/bigquery/
