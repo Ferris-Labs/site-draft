@@ -163,7 +163,7 @@ databases:
   icon: microsoft-sql-server.png
   tags:
 - name: mysql
-  description: MySQL Cluster enables users to meet the database challenges of next generation web, cloud, and communications services with uncompromising scalability, uptime and agility.
+  description: MySQL is a relational database management system (RDBMS) developed by Oracle that is based on structured query language (SQL).
   learn_more_href: /docs/databases/mysql/
   icon: mysql.png
   tags:
@@ -189,7 +189,7 @@ databases:
   icon: rockset.png
   tags:
 - name: snowflake
-  description: A Snowflake database is where an organization's uploaded structured and semistructured data sets are held for processing and analysis. Snowflake automatically manages all parts of the data storage process, including organization, structure, metadata, file size, compression, and statistics.
+  description: Snowflake is a data-warehousing platform. Snowflake provides an enterprise solution that makes the gathering, processing, using big data easy.
   learn_more_href: /docs/databases/snowflake/
   icon: snowflake.png
   tags:
@@ -199,7 +199,7 @@ databases:
   icon: teradata.png
   tags:
 - name: trino
-  description: Trino is a fast distributed SQL query engine for big data analytics. See the User Manual for deployment instructions and end user documentation.									
+  description: Trino is an ANSI SQL compliant query engine, that works with BI tools such as R, Tableau, Power BI, Superset and many others.								
   learn_more_href: /docs/databases/trino/
   icon: trino_logo2.jpeg
   tags:
