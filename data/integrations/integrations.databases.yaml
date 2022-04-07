@@ -149,28 +149,28 @@ databases:
   tags:
 - name: ibm db2
   description: Db2 is a family of data management products, including database servers, developed by IBM. They initially supported the relational model, but were extended to support object–relational features and non-relational structures like JSON and XML.
-  learn_more_href: /learn-more
+  learn_more_href: /docs/databases/ibm-db2/
+  icon: ibm_db2.png
+  tags:
+- name: ibm netezza performance server
+  description: IBM® Netezza® Performance Server for IBM Cloud Pak® for Data is an advanced data warehouse and analytics platform available both on premises and on cloud.
+  learn_more_href: /docs/databases/netezza/
   icon: ferris_labs_red.png
   tags:
-- name: 
-  description:
-  learn_more_href: /learn-more
-  icon: ferris_labs_red.png
+- name: microsoft sql server
+  description: Microsoft SQL Server is a relational database management system developed by Microsoft. As a database server, it is a software product with the primary function of storing and retrieving data as requested by other software applications
+  learn_more_href: /docs/databases/sql-server/
+  icon: microsoft-sql-server.png
   tags:
-- name: 
-  description:
-  learn_more_href: /learn-more
-  icon: ferris_labs_red.png
+- name: mysql
+  description: MySQL Cluster enables users to meet the database challenges of next generation web, cloud, and communications services with uncompromising scalability, uptime and agility.
+  learn_more_href: /docs/databases/mysql/
+  icon: mysql.png
   tags:
-- name: 
-  description:
-  learn_more_href: /learn-more
-  icon: ferris_labs_red.png
-  tags:
-- name: 
-  description:
-  learn_more_href: /learn-more
-  icon: ferris_labs_red.png
+- name: oracle
+  description: Oracle Database is the first database designed for enterprise grid computing, the most flexible and cost effective way to manage information and applications.
+  learn_more_href: /docs/databases/oracle/
+  icon: oracle.png
   tags:
 - name: postgresql
   description: PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability.
@@ -178,39 +178,39 @@ databases:
   icon: postgresql.png
   tags:
     - sql
-- name: 
-  description:
-  learn_more_href: /learn-more
-  icon: ferris_labs_red.png
+- name: presto
+  description: Presto (or PrestoDB) is an open source, distributed SQL query engine, designed from the ground up for fast analytic queries against data of any size.
+  learn_more_href: /docs/databases/presto/
+  icon: prestodb.png
   tags:
-- name: 
-  description:
-  learn_more_href: /learn-more
-  icon: ferris_labs_red.png
+- name: rockset
+  description: Rockset is a real-time analytics database for serving fast analytics at scale, enabling developers to build modern data apps in record time.
+  learn_more_href: /docs/databases/rockset/
+  icon: rockset.png
   tags:
-- name: 
-  description:
-  learn_more_href: /learn-more
-  icon: ferris_labs_red.png
+- name: snowflake
+  description: A Snowflake database is where an organization's uploaded structured and semistructured data sets are held for processing and analysis. Snowflake automatically manages all parts of the data storage process, including organization, structure, metadata, file size, compression, and statistics.
+  learn_more_href: /docs/databases/snowflake/
+  icon: snowflake.png
   tags:
-- name: 
-  description:
-  learn_more_href: /learn-more
-  icon: ferris_labs_red.png
+- name: teradata
+  description: Teradata Vantage is the connected multi-cloud data platform for enterprise analytics that delivers actionable answers and predictive intelligence.
+  learn_more_href: /docs/databases/teradata/
+  icon: teradata.png
   tags:
-- name: 
-  description:
-  learn_more_href: /learn-more
-  icon: ferris_labs_red.png
+- name: trino
+  description: Trino is a fast distributed SQL query engine for big data analytics. See the User Manual for deployment instructions and end user documentation.									
+  learn_more_href: /docs/databases/trino/
+  icon: trino_logo2.jpeg
   tags:
-- name: 
-  description:
-  learn_more_href: /learn-more
-  icon: ferris_labs_red.png
+- name: vertica
+  description: Vertica provides a best-in-class, unified analytics platform that will forever be independent from underlying infrastructure.
+  learn_more_href: /docs/databases/vertica/
+  icon: vertica.png
   tags:
-- name: 
-  description:
-  learn_more_href: /learn-more
+- name: yugabytedb
+  description: YugabyteDB is a high-performance transactional distributed SQL database for cloud-native applications
+  learn_more_href: /docs/databases/yugabytedb/
   icon: ferris_labs_red.png
   tags:
 
