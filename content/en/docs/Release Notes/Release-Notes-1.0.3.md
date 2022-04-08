@@ -5,7 +5,7 @@ categories: ["Release Notes"]
 linkTitle:
 weight: 100
 description: >-
-     New features, improvements and fixes provided to you in the 3rd Quarter of 2021.
+     New features, improvements and fixes provided to you in the 3rd Quarter of the year 2021.
 
 ---
 

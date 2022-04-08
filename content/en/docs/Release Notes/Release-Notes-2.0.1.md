@@ -5,7 +5,7 @@ categories: ["Release Notes"]
 linkTitle:
 weight: 100
 description: >-
-     New features, improvements and fixes provided to you in the 1st Quarter of 2022.
+     New features, improvements and fixes provided to you in the 1st Quarter of the year 2022.
 
 
 ---
