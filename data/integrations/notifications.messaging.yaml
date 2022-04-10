@@ -1,0 +1,26 @@
+notifications:
+- name: AWS SES
+  description: Amazon Simple Email Service (SES) is a cost-effective, flexible, and scalable email service that enables developers to send mail from within any application.
+  learn_more_href: /docs/knowledge-base/apprise_notifications/
+  icon: ferris_labs_red.png
+  tags: 
+- name: Discord
+  description: Discord is a VoIP, instant messaging and digital distribution platform. Users communicate with voice calls, video calls, text messaging, media and files in private chats or as part of communities called servers.
+  learn_more_href: /docs/knowledge-base/apprise_notifications/
+  icon: ferris_labs_red.png
+  tags: 
+- name: Emby
+  description: Emby is a media server designed to organize, play, and stream audio and video to a variety of devices. Bringing all of your home videos, music, and photos together into one place has never been easier. Your personal Emby Server automatically converts and streams your media on-the-fly to play on any device.
+  learn_more_href: /docs/knowledge-base/apprise_notifications/
+  icon: ferris_labs_red.png
+  tags: 
+- name: Enigma2
+  description: Enigma2 is an application used in Linux-based Digital Video Broadcasting (DVB-S, DVB-C, DVB-T) receivers or TV set-top boxes and Internet Protocol television receivers.
+  learn_more_href: /docs/knowledge-base/apprise_notifications/
+  icon: ferris_labs_red.png
+  tags: 
+- name: Faast
+  description: FAAST is the state of Florida's assistive technology program. Assistive technology activities provided by FAAST include device loans, device demonstrations, device reutilization, device trainings, information and assistance, and a statewide financing program.
+  learn_more_href: /docs/knowledge-base/apprise_notifications/
+  icon: ferris_labs_red.png
+  tags: 
