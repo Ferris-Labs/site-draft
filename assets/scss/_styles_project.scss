@@ -103,6 +103,7 @@ footer {
 			}
 			img {
 				width: 2rem;
+				max-height: 2rem;
 				margin-right: 1rem;
 			}
 		}
@@ -112,5 +113,12 @@ footer {
 				line-height: normal;
 			}
 		}
+	}
+}
+
+.navbar-expand .navbar-nav .dropdown-menu .nav-link {
+	color: #333;
+	&:not(.active) {
+		color: #333;
 	}
 }
