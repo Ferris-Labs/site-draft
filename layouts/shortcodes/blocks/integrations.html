@@ -14,7 +14,6 @@
 <div class="container">
     {{ $fileName := .Get "fileName" | default "" }}
     {{ $file := index $.Site.Data.integrations $fileName }}
-    {{ $file }}
     <div class="row integrations-card-holder">
         {{ range $file }}
             {{/*  {{range $index, $element := . }}  */}}
