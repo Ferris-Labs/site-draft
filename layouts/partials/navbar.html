@@ -15,12 +15,12 @@
 				{{ $post := .Post }}
 				{{ $url := urls.Parse .URL }}
 				{{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
-				{{ if .HasChildren }}
+				{{/*  {{ if .HasChildren }}
 					<li class="nav-item mr-2 mb-2 mb-lg-0 dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							{{ .Name }}
 						</a>
-						<ul class="dropdown-menu show" aria-labelledby="navbarDropdown">
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							{{ range .Children }}
 								<li>
 									<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>{{ .Name }}</a>
@@ -28,11 +28,11 @@
 							{{ end }}
 						</ul>
 					</li>
-				{{ else }}
+				{{ else }}  */}}
 					<li class="nav-item mr-2 mb-2 mb-lg-0">
 						<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>{{ with .Pre}}{{ $pre }}{{ end }}<span{{if $active }} class="active"{{end}}>{{ .Name }}</span>{{ with .Post}}{{ $post }}{{ end }}</a>
 					</li>
-				{{ end }}
+				{{/*  {{ end }}  */}}
 			{{ end }}
 			{{/*  {{ if  .Site.Params.versions }}
 				<li class="nav-item dropdown mr-4 d-none d-lg-block">
