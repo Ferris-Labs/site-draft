@@ -16,19 +16,20 @@ description: >-
 
 ## New <img src="/images/added_blue.png" alt="added_blue" style="zoom:25%;" />
 
-- [x] 
+- [x] Introduction of **Secrets Management UI & API** that can be used for securely storing and accessing secrets on the Platform and Project level.
 
 ---
 
 ## Changed <img src="/images/changed_yellow.png" alt="changed_yellow" style="zoom:25%;" />
 
-- [x] 
+- [x] Re-enabling of the Project/Package/Git Repository/Execution **deletion feature**. 
+- [x] **Version 2 of ferris_cli package** published to public Pypi repository.
 
 ---
 
 ## Improved <img src="/images/improved_green.png" alt="improved_green" style="zoom:25%;" />
 
-- [x] 
+- [x] **Executor ferris_ef package** adjusted for local development.
 
 ---
 
