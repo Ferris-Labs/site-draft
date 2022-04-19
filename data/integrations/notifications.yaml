@@ -127,7 +127,7 @@ notifications:
   - name: Notifico
     description: Notifico is an open-source replacement for the now-defunct cia.vc service. Notifico receives messages from services and scripts and delivers them to IRC channels.
     learn_more_href: /docs/knowledge-base/apprise_notifications/
-    icon: ferris_labs_red.png
+    icon: notifico.png
     tags: 
   - name: Office 365
     description: Microsoft Office 365 applications provide enterprise solutions that can be adapted for any organization. Popular Microsoft Office 365 applications include Word, Excel, PowerPoint, Outlook, OneNote, Access and Publisher.
