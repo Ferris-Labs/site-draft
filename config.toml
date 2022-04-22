@@ -266,7 +266,7 @@ enable = false
 
 [[menu.main]]
   identifier = 'solutions'
-  name = 'SOLUTIONS'
+  name = 'CASE STUDIES'
   url = '/solutions/'
   weight = 4
   [menu.main.params]
@@ -280,19 +280,18 @@ enable = false
   [menu.main.params]
     class = 'highlight-menu-item'
 
-
 [[menu.main]]
-  identifier = 'about'
-  name = 'ABOUT'
-  url = '/about/'
+  identifier = 'design'
+  name = 'DESIGN'
+  url = '/design/'
   weight = 6
   [menu.main.params]
     class = 'highlight-menu-item'
 
 [[menu.main]]
-  identifier = 'design'
-  name = 'DESIGN'
-  url = '/design/'
+  identifier = 'about'
+  name = 'ABOUT'
+  url = '/about/'
   weight = 7
   [menu.main.params]
-    class = 'highlight-menu-item'
+  class = 'highlight-menu-item'
