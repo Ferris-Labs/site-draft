@@ -189,12 +189,22 @@ enable = false
   url = "/partners"
 
 [[params.links.footer.center]]
-  name = "Center footer link 1"
-  url = "https://ferrislabs.net/about"
+  name = "Linkedin"
+  url = "https://www.linkedin.com/company/ferrislabs/"
+  target = "_blank"
 [[params.links.footer.center]]
-  name = "Center footer link 2"
-  url = "https://ferrislabs.net/about"
+  name = "Twitter"
+  url = "https://twitter.com/ferrislabs"
+  target = "_blank"
+[[params.links.footer.center]]
+  name = "YouTube"
+  url = "https://www.youtube.com/channel/UC5miURXVxGLo17EyWPBWCug"
+  target = "_blank"
 
+[[params.links.footer.right]]
+  name = "GitHub Source Code"
+  url = "https://github.com/Ferris-Labs/"
+  target = "_blank"
 [[params.links.footer.right]]
   name = "General Terms and Conditions (GTC)"
   url = "/docs/terms_conditions"
