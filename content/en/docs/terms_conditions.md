@@ -3,11 +3,9 @@ title: "Terms & Conditions"
 linkTitle: "Terms & Conditions"
 tags: [terms and conditions] 
 categories: []
-weight: 100
+weight: 107
 description: >-
  Ferris Labs AG Terms and Conditions.
-
-
 ---
 
 Last updated: February 12, 2021

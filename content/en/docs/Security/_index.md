@@ -2,8 +2,8 @@
 title: "Security"
 linkTitle: "Security"
 tags: [security, access rights] 
+weight: 104
 categories: [Security]
-weight: -7
 description: >-
   Introduction and "how-to" guide to the Ferris Security and Access Rights Management.
 
