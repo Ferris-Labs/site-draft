@@ -6,6 +6,36 @@ description: >-
 
 ---
 
+> ADDED BY NIKOLA
+
+### Service secrets
+
+Uploaded/synced with rest of service scripts as `secrets.json` file. Stored encrypted in database and are passed to the scripts at run time.
+
+### Project Secrets
+
+Created by uploading JSON file on the project secrets tab on the UI.
+
+Can be accessed using `ferris_ef.context.secrets.get('secret_name')`
+
+Can be set using `context.secrets.set("secret_name", {"somekey":"someval"}, "project")`
+
+
+### Platform Secrets
+
+Created by uploading JSON file on the Vault->Secrets page.
+
+Can be accessed using `ferris_ef.context.secrets.get('secret_name')`
+
+Can be set using `context.secrets.set("secret_name", {"somekey":"someval"}, "platform")`
+
+
+*When accessing secrets using `ferris_ef.context.secrets.get('secret_name')` it will first lookup for `secret_name` within service secrets, then project and finally platform*
+
+
+> END OF ADDED BY NIKOLA  
+
+
 Secrets are the ability to deal with sensitive data through scripts (secrets.json) needed for package execution, such as:
 
 - Database Passwords 
