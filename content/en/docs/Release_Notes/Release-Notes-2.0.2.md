@@ -30,6 +30,7 @@ description: >-
 ## Improved <img src="/images/improved_green.png" alt="improved_green" style="zoom:25%;" />
 
 - [x] **Executor ferris_ef package** adjusted for local development.
+- [x] Various changes on the **Ferris UI**.
 
 ---
 
