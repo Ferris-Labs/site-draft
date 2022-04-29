@@ -1,3 +1,11 @@
+---
+title: "The Manifest File of an FX Service"
+linkTitle: "Manifest File"
+description: >-
+     Manifest File Definition
+---
+
+
 `manifest.json` example:
 
 ```json

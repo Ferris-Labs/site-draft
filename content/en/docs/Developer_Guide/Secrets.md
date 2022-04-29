@@ -6,7 +6,7 @@ description: >-
 
 ---
 
-> ADDED BY NIKOLA
+
 
 ### Service secrets
 
