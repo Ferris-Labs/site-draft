@@ -1,6 +1,7 @@
 ---
 title: "The Manifest File of an FX Service"
 linkTitle: "The Manifest File"
+weight: 203
 description: >-
      Manifest File Definition
 ---

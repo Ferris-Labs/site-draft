@@ -1,6 +1,7 @@
 ---
 title: "Development Lifecycle of an FX Service"
 linkTitle: "Development Lifecycle"
+weight: 201
 description: >-
      Development Lifecycle of an FX Service.
 ---
@@ -11,6 +12,31 @@ The following is an overview of the development steps involved in building a Fer
 
 A service is a collection of scripts, modules and assets such as additional configuration files.
 
+The following are the types of supported artefacts.
+
+
+
+| Artefact Type              | Description                                                  |
+| -------------------------- | ------------------------------------------------------------ |
+| *.py                       | Python scripts. A service may consist of any number of python scripts. If there are multiple scripts they are run in the sequence defined in the `maifest.json`file. Python scripts which define classes and static methods may also be used. |
+| config.json                | A JSON file which defines the service configuration. These are stored within consul once they are imported into the platform. The configuration values can be retrieved by using the 'context' of the service using the ferris_ef module. |
+| secrets.json               | A file which defines the secrets accessible within a specific service. |
+| manifest.json              | The `manifest.json`file helps describe the service to the platform as well as other users. It follows a pre-defined structure. It is describe in detail in the section `Manifest File`. |
+| *.sql                      | A fine containing SQL statements which will be executed against the default Db defined in the platform. The .sql files also support 'jinja' like notation which can be used to extract parmeter or embed program logic within the .sql file |
+| *.txt, *.json, *.jinja etc | Assests used by the Service.                                 |
+
+
+
+## Project Set Up
+
+Before you start it is best to create a project and link the project to a git repository. The process id described in detail in the section `GIT Integration`. The following is a summary.
+
+* Create a git repository
+* Create a directory within the project for the first service you will create. Each directory within the git repository is considered a service when synced with the platform. Multiple services may be defined in a signle repository as long as each service is in it's own directory.
+* Create a Project
+* Add the repository to the project
+* Sync the Code
+
 
 
 ### Creating Scripts
@@ -18,40 +44,56 @@ A service is a collection of scripts, modules and assets such as additional conf
 The following is the most basic Service. Create a file with the following script and let us name it **app.py**
 
 ```python
-import sys
-import json
-
-payload = json.loads(sys.arg[1])
-print(payload)
+print('Hello DX')
 ```
 
-The above service script will load and print the JSON payload.
+The above service script will print 'Hello DX' to the console. The output can be viewed within the DX Manager UI as tthe result of a run. 
+
+As you will have noted the script does not include any specific references to the DX Platform.
+
+Nonetheless by virtue of being run within the DX execution environment the script execution can be 
+
+* run on a cron schedule
+* run manually from the UI
+* run through triggering by linking to an Event.
 
 
 
 ### Load the Script to the Platform
 
-Log in to the UI and skip to the packages sub-menu and create a New service. Let us call the service "hello_world".
+To load the script to the platform the following are the steps.
 
-In the add file section upload the file you have just created.
+* push the code to the GIT Repository.
+* sync the repo to the platform by clicking on the `sync` button of the respective GIT Repository
 
 
 
-### Run the Service, view Results & Errors
+### Run the Service, View Results & Errors
 
-The service is now ready to be run. Once you save it you will see the Run Button. On clicking it you will be taken to the list of runs of the specific service. 
+* Once the service has been synced with thh repository you can trigger the execution from the UI by clicking the `run` button.
 
-By clicking on steps you can check the individual steps. 
+* On clicking it you will be taken to the list of runs of the specific service. 
 
-On Clicking result you will see the output of the script.
+* By clicking on steps you can check the individual steps. 
 
-If the script has errors you will see the errors displayed in the same pop-up.
+* On Clicking result you will see the output of the script.
+
+* If the script has errors you will see the errors displayed in the same pop-up.
+* If any of the scripts in a sequence has errors then the execution will be shown as having failed.
+
+
+
+## Set Up Trigger Conditions
+
+The script can be triggered by
+
+* Clicking the `Run` button displayed for each service on the DX UI.
+* Adding a cron expression in the UI. For how to set up a cron please view the section `Cron Schedule`
+* Linking it to an event emitted by another service within the platform.
 
 
 
 ### Trigger an Event and Another Service from your Service
-
-
 
 First let us create another service "**hello_world_2**" with a copy of the **app.py** of the previous service.
 
@@ -122,7 +164,7 @@ print("I am step 2")
 
 Upload the new script to the Service. Once you upload the script you will have 2 scripts and you can change the order in which they are run by clicking and dragging. When you run the service you will also note that boh scripts have access to the properties of the incoming event.
 
-### Add and Retrieve Service Specific Configurations
+### Add Service Specific Configurations and Secrets
 
 Service specific configurations are often a requirement. In order to set up specific configurations for your service please create a file named **config.json** and upload it to the service.
 
@@ -134,21 +176,58 @@ Service specific configurations are often a requirement. In order to set up spec
 
 The configs that you uploaded will be placed by the platform within Consul. 
 
-You can now adjust your code to retrieve and print the configs at run time.
+Secrets are variables that you require in executor packages which you do not wish to be exposed on UI or in Consul, but use in your scripts. 
+
+In order to create Service specific secrets upload a secrets.json file to your package.
+
+The following is a sample secrets json.
+
+```json
+{
+    "DB_NAME": "my_database_username",
+    "DB_PASS": "my_database_password"
+}
+```
+
+
+
+## Retrieve Service Specific Configurations, Secrets and Parameters
+
+DX makes all configurations, secrets and parameters available to each script being run in the service through the `context` object.
+
+The following sample demonstrates the retrieval of the attribuets from the context object.
 
 ```python
-from ferris_cli import ApplicationConfigurator
-from ferris_ef import get_param
+from ferris_ef import context
 
-my_package_name = get_param('package_name')
+print("------- Get Service Config -------")
+print(context.config)
 
-my_config = ApplicationConfigurator().get(my_package_name)
-print(my_config)
+print("------- Get Execution Params -------")
+print(context.params)
+
+print("------- Get Service Info -------")
+print(context.package.name)
+print(context.package.id)
+
+print("------- Get Service State -------")
+print(context.state.get())
+
+print("------- Update Service State -------")
+context.state.put("some_key", "some_value")
+context.state.put("other_key", {"attr_1": "val_1"})
+
+print("------- Get Secret -------")
+print(context.secrets.get("test_secret_1"))
+
+print("------- Set Secret -------")
+print(context.secrets.set("test_secret_4", {"somekey":"plsomeval"}, "platform"))
+print(context.secrets.set("test_secret_4", {"somekey":"plsomeval"}, "project"))
 ```
 
 Update the service by uploading the new version of the code, trigger it and check the results.
 
-**Please note that service specific configurations are not displayed in the configuration manager to avoid inadvertent manual editing or secrets leakage.**
+**Please note that Secrets are not displayed in the configuration manager to avoid inadvertent manual editing or secrets leakage.**
 
 For a full discussion on configuration best practices please review this page - Configurations in FerrisFX.
 
