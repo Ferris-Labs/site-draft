@@ -4,6 +4,9 @@ linkTitle: "Manifest File"
 description: >-
      Manifest File Definition
 ---
+The manifest.json file is used to provide information for your application both to the DX Platform as well as to other users and developers.
+
+The following is a sample manifest.json file.
 
 
 `manifest.json` example:
@@ -24,11 +27,11 @@ description: >-
 
 | parameter       | description                                                                                                                |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------|
-| description     | description of a service                                                                                                   |
-| entrypoint      | script that will be executed on service execution                                                                          |                                                                         |
-| execution_order | Order in which scripts will be executed. If both `entrypoint` and `execution_order` are defined `entrypoint` will be used. 
-|tags| list of tags for service                                                                                                   |
-|trigger_events| list of events that will trigger service execution                                                                         |
-|schedule| cron like definition of service scheduled executions                                                                       |
-|allow_manual_triggering|whether service can be triggered manally or not|
-|active| whether service is active or not|
+| description     | Description of the service                                                                                                   |
+| entrypoint      | Script that will be executed on service execution                                                                          |                                                                         |
+| execution_order | Sequence in which scripts will be executed. If both `entrypoint` and `execution_order` are defined `entrypoint` will be used. 
+|tags| An array of tags for service                                                                                                   |
+|trigger_events| Array of events that will trigger service execution                                                                         |
+|schedule| Optional. Cron like definition of service scheduled executions                                                                       |
+|allow_manual_triggering| Indicates whether service can be triggered manally or not|
+|active| Indicates service is active or inactive|
