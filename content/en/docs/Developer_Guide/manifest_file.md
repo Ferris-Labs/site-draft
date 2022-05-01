@@ -1,6 +1,6 @@
 ---
 title: "The Manifest File of an FX Service"
-linkTitle: "Manifest File"
+linkTitle: "The Manifest File"
 description: >-
      Manifest File Definition
 ---
