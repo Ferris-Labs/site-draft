@@ -252,56 +252,56 @@ enable = false
   [menu.main.params]
     class = 'highlight-menu-item'
 
-[[menu.main]]
-    identifier = "integrations_databases"
-    name = "DATABASES"
-    url = "/integrations/databases"
-    parent = "integrations"
-    weight = 1
+#[[menu.main]]
+#    identifier = "integrations_databases"
+#    name = "DATABASES"
+#    url = "/integrations/databases"
+#    parent = "integrations"
+#    weight = 1
 
-[[menu.main]]
-    identifier = "integrations_notifications"
-    name = "MESSAGES/NOTIFICATIONS"
-    url = "/integrations/notifications"
-    parent = "integrations"
-    weight = 2
+#[[menu.main]]
+#    identifier = "integrations_notifications"
+#    name = "MESSAGES/NOTIFICATIONS"
+#    url = "/integrations/notifications"
+#    parent = "integrations"
+#    weight = 2
 
-[[menu.main]]
-  identifier = 'usecases'
-  name = 'USE CASES'
-  url = '/usecases/'
-  weight = 3
-  [menu.main.params]
-    class = 'highlight-menu-item'
+#[[menu.main]]
+#  identifier = 'usecases'
+#  name = 'USE CASES'
+#  url = '/usecases/'
+#  weight = 3
+#  [menu.main.params]
+#    class = 'highlight-menu-item'
 
 [[menu.main]]
   identifier = 'solutions'
   name = 'CASE STUDIES'
   url = '/solutions/'
-  weight = 4
+  weight = 3
   [menu.main.params]
     class = 'highlight-menu-item'
 
-[[menu.main]]
-  identifier = 'services'
-  name = 'SERVICES'
-  url = '/services/'
-  weight = 5
-  [menu.main.params]
-    class = 'highlight-menu-item'
+#[[menu.main]]
+#  identifier = 'services'
+#  name = 'SERVICES'
+#  url = '/services/'
+#  weight = 5
+#  [menu.main.params]
+#    class = 'highlight-menu-item'
 
-[[menu.main]]
-  identifier = 'design'
-  name = 'DESIGN'
-  url = '/design/'
-  weight = 6
-  [menu.main.params]
-    class = 'highlight-menu-item'
+#[[menu.main]]
+#  identifier = 'design'
+#  name = 'DESIGN'
+#  url = '/design/'
+#  weight = 6
+#  [menu.main.params]
+#    class = 'highlight-menu-item'
 
 [[menu.main]]
   identifier = 'about'
   name = 'ABOUT'
   url = '/about/'
-  weight = 7
+  weight = 4
   [menu.main.params]
   class = 'highlight-menu-item'
