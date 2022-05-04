@@ -116,6 +116,12 @@ footer {
 	}
 }
 
+.img-height-80 {
+	height: 80px;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
 .navbar-expand .navbar-nav .dropdown-menu .nav-link {
 	color: #333;
 	&:not(.active) {
