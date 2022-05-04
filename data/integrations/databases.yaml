@@ -63,7 +63,7 @@ databases:
 - name: clickhouse
   description: ClickHouse is an open-source column-oriented DBMS for online analytical processing that allows users to generate analytical reports using SQL queries in real-time.
   learn_more_href: /docs/integrations/database_guide/databases/clickhouse/
-  icon: ClickHouse.png
+  icon: clickhouse.png
   tags:
     - sql
     - queries
