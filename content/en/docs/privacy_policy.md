@@ -3,7 +3,7 @@ title: "Privacy Policy"
 linkTitle: "Privacy Policy"
 tags: [privacy] 
 categories: []
-weight: 106
+weight: 107
 description: >-
  Ferris Labs AG Privacy Policy.
 
