@@ -216,7 +216,6 @@ enable = false
 [[params.links.footer.right]]
   name = "Impressum"
   url = "/impressum"
-  target = "_blank"
 
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
