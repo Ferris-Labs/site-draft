@@ -11,49 +11,52 @@
     {{ end }}
 </div>
 
-<div class="container">
-    {{ $fileName := .Get "fileName" | default "" }}
-    <div class="integrations-card-holder">
-        {{ if eq $fileName "" }}
-            <div class="row">
-                {{ range $.Site.Data.integrations }}
-                    {{ range $index, $element := . }}
-                        {{ range . | shuffle | first 1 }}
+<section class="row td-cover-block">
+	<div class="container">
+        {{ $fileName := .Get "fileName" | default "" }}
+        <div class="integrations-card-holder">
+            {{ if eq $fileName "" }}
+                {{/*  <div class="row">
+                    {{ range $.Site.Data.integrations }}
+                        {{ range $index, $element := . }}
+                            {{ $count := cond (eq $index "databases") 2 1 }}
+                            {{ range . | shuffle | first $count }}
+                                {{ block "tombstone" . }}{{ end }}
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </div>  */}}
+                <div class="row">
+                    {{ range $.Site.Data.integrations }}
+                        {{ range $index, $element := . }}
+                            <div class="col-md-12">
+                                <p class="home_title" style="text-align: center;">{{ $index | humanize | singularize }} Integrations</p>
+                            </div>
+                            <div class="row">
+                                {{ range first 6 . }}
+                                    {{ block "tombstone" . }}{{ end }}
+                                {{ end }}
+                                <div class="col-md-12 mb-5 text-right">
+                                    <a class="btn btn-lg btn-primary mb-4" href="/integrations/{{ $index }}">
+                                        Show All  <i class="fas fa-arrow-alt-circle-right ml-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            {{ else }}
+                <div class="row">
+                    {{ range index $.Site.Data.integrations $fileName }}
+                        {{ range $index, $element := . }}
                             {{ block "tombstone" . }}{{ end }}
                         {{ end }}
                     {{ end }}
-                {{ end }}
-            </div>
-            <div class="row">
-                {{ range $.Site.Data.integrations }}
-                    {{ range $index, $element := . }}
-                        <div class="col-md-12">
-                            <p class="home_title" style="text-align: center;">{{ $index | humanize | singularize }} Integrations</p>
-                        </div>
-                        <div class="row">
-                            {{ range first 6 . }}
-                                {{ block "tombstone" . }}{{ end }}
-                            {{ end }}
-                            <div class="col-md-12 mb-5 text-right">
-                                <a class="btn btn-lg btn-primary mb-4" href="/integrations/{{ $index }}">
-                                    Show All  <i class="fas fa-arrow-alt-circle-right ml-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    {{ end }}
-                {{ end }}
-            </div>
-        {{ else }}
-            <div class="row">
-                {{ range index $.Site.Data.integrations $fileName }}
-                    {{ range $index, $element := . }}
-                        {{ block "tombstone" . }}{{ end }}
-                    {{ end }}
-                {{ end }}
-            </div>
-        {{ end }}
+                </div>
+            {{ end }}
+        </div>
     </div>
-</div>
+</section>
 
 {{ define "tombstone" }}
     <div class="col-xs-12 col-sm-6 col-md-4">

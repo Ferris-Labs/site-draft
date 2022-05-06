@@ -85,7 +85,7 @@ footer {
 }
 
 .integrations-card-holder {
-	margin-top: -80px;
+	// margin-top: -80px;
 }
 
 .integration-card {
@@ -142,6 +142,10 @@ footer {
 	img {
 		height: 3.5rem;
 	}
+}
+
+.bold {
+	font-weight: 600;
 }
   
 @media (min-width: 700px) {
