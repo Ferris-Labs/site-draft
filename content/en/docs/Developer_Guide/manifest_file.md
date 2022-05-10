@@ -5,7 +5,7 @@ weight: 203
 description: >-
      Manifest File Definition
 ---
-The manifest.json file is used to provide information for your application both to the DX Platform as well as to other users and developers.
+The manifest.json file is used to provide information about your application to the DX Platform as well as to other users and developers.
 
 The following is a sample manifest.json file.
 

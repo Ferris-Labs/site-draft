@@ -1,43 +1,19 @@
 ---
-title: "Development Lifecycle of an FX Service"
-linkTitle: "Development Lifecycle"
-weight: 201
+title: "Create a Service"
+linkTitle: "Create a Service"
+weight: 203
 description: >-
-     Development Lifecycle of an FX Service.
+     Create a Service.
 ---
+In this section we will create a simple service, add a manifest file to the service and deploy the service.
 
 The following is an overview of the development steps involved in building a Ferris Service.
 
-## Creating A Service
+## Pull GIT Repository
+As a first step clone/pull from the GIT Repository that was set up for the project in the previous steps. 
 
-A service is a collection of scripts, modules and assets such as additional configuration files.
-
-The following are the types of supported artefacts.
-
-
-
-| Artefact Type              | Description                                                  |
-| -------------------------- | ------------------------------------------------------------ |
-| *.py                       | Python scripts. A service may consist of any number of python scripts. If there are multiple scripts they are run in the sequence defined in the `maifest.json`file. Python scripts which define classes and static methods may also be used. |
-| config.json                | A JSON file which defines the service configuration. These are stored within consul once they are imported into the platform. The configuration values can be retrieved by using the 'context' of the service using the ferris_ef module. |
-| secrets.json               | A file which defines the secrets accessible within a specific service. |
-| manifest.json              | The `manifest.json`file helps describe the service to the platform as well as other users. It follows a pre-defined structure. It is describe in detail in the section `Manifest File`. |
-| *.sql                      | A fine containing SQL statements which will be executed against the default Db defined in the platform. The .sql files also support 'jinja' like notation which can be used to extract parmeter or embed program logic within the .sql file |
-| *.txt, *.json, *.jinja etc | Assests used by the Service.                                 |
-
-
-
-## Project Set Up
-
-Before you start it is best to create a project and link the project to a git repository. The process id described in detail in the section `GIT Integration`. The following is a summary.
-
-* Create a git repository
-* Create a directory within the project for the first service you will create. Each directory within the git repository is considered a service when synced with the platform. Multiple services may be defined in a signle repository as long as each service is in it's own directory.
-* Create a Project
-* Add the repository to the project
-* Sync the Code
-
-
+## Create a Service Directory
+Create a directory with the name of the service (Snake Case Naming is preferred).
 
 ### Creating Scripts
 
@@ -57,6 +33,13 @@ Nonetheless by virtue of being run within the DX execution environment the scrip
 * run manually from the UI
 * run through triggering by linking to an Event.
 
+###  Add a Manifest File
+
+
+### Push to the GIT Repository
+Push the code to the Project linked GIT Repository
+
+### Sync and Run the Service
 
 
 ### Load the Script to the Platform
