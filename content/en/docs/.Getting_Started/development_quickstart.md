@@ -3,7 +3,6 @@ title: "Development Quickstart"
 linkTitle: "Development Quickstart"
 tags: [quickstart] 
 categories: ["Getting Started"]
-weight: 100
 description: >-
      Understand the Ferris technologies and become a master developer.
 ---
