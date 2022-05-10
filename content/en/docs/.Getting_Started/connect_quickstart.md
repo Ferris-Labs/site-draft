@@ -3,7 +3,6 @@ title: "Ferris Connect Quickstart"
 linkTitle: "Ferris Connect Quickstart"
 tags: [quickstart, connect, register] 
 categories: ["Getting Started"]
-weight: 100
 description: >-
      With this guide, you learn how to quickly estbalish a secure connection to Ferris.
 ---

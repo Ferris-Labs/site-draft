@@ -33,7 +33,7 @@ This approach enables the breaking of the application into granular elements and
 
 In the following sections you will learn how the security components work and how to set them up for your purpose.
 
-> If you want to follow the instructions and examples, you first need to connect to your Ferris demo instance. The  [#Ferris Connect Quickstart]({{< ref "connect_quickstart.md" >}}) instructions will show you how.
+> If you want to follow the instructions and examples, you first need to connect to your Ferris demo instance. 
 
 ##### Navigation
 
