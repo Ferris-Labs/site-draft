@@ -5,12 +5,9 @@ sidebar_position: 7
 version: 1
 ---
 
-import useBaseUrl from "@docusaurus/useBaseUrl";
-
 ## Apache Druid
 
-A native connector to Druid ships with Feris (behind the `DRUID_IS_ACTIVE` flag) but this is
-slowly getting deprecated in favor of SQLAlchemy / DBAPI connector made available in the
+Use the SQLAlchemy / DBAPI connector made available in the
 [pydruid library](https://pythonhosted.org/pydruid/).
 
 The connection string looks like:
@@ -43,23 +40,3 @@ engine_params:
 	{"scheme": "https", "ssl_verify_cert": false}}
 ```
 
-### Aggregations
-
-Common aggregations or Druid metrics can be defined and used in Feris. The first and simpler use
-case is to use the checkbox matrix exposed in your datasource’s edit view (**Sources -> Druid
-Datasources -> [your datasource] -> Edit -> [tab] List Druid Column**).
-
-Clicking the GroupBy and Filterable checkboxes will make the column appear in the related dropdowns
-while in the Explore view. Checking Count Distinct, Min, Max or Sum will result in creating new
-metrics that will appear in the **List Druid Metric** tab upon saving the datasource.
-
-By editing these metrics, you’ll notice that their JSON element corresponds to Druid aggregation
-definition. You can create your own aggregations manually from the **List Druid Metric** tab
-following Druid documentation.
-
-### Post-Aggregations
-
-Druid supports post aggregation and this works in Feris. All you have to do is create a metric,
-much like you would create an aggregation manually, but specify `postagg` as a `Metric Type`. You
-then have to provide a valid json post-aggregation definition (as specified in the Druid docs) in
-the JSON field.

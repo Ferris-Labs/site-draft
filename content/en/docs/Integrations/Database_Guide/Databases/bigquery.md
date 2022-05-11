@@ -43,7 +43,7 @@ credentials file (as a JSON).
     }
 ```
 
-![CleanShot 2021-10-22 at 04 18 11](https://user-images.githubusercontent.com/52086618/138352958-a18ef9cb-8880-4ef1-88c1-452a9f1b8105.gif)
+
 
 3. Additionally, can connect via SQLAlchemy URI instead
 
@@ -82,8 +82,6 @@ credentials file (as a JSON).
    ```
 
 You should then be able to connect to your BigQuery datasets.
-
-![CleanShot 2021-10-22 at 04 47 08](https://user-images.githubusercontent.com/52086618/138354340-df57f477-d3e5-42d4-b032-d901c69d2213.gif)
 
 To be able to upload CSV or Excel files to BigQuery in Feris, you'll need to also add the
 [pandas_gbq](https://github.com/pydata/pandas-gbq) library.
