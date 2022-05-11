@@ -7,16 +7,16 @@ version: 1
 
 ## Install Database Drivers
 
-Superset requires a Python DB-API database driver and a SQLAlchemy
+Feris requires a Python DB-API database driver and a SQLAlchemy
 dialect to be installed for each datastore you want to connect to.
 
 You can read more [here](/docs/databases/docker-add-drivers) about how to
-install new database drivers into your Superset configuration.
+install new database drivers into your Feris configuration.
 
 ### Supported Databases and Dependencies
 
-Superset does not ship bundled with connectivity to databases, except for SQLite,
-which is part of the Python standard library. You’ll need to install the required packages for the database you want to use as your metadata database as well as the packages needed to connect to the databases you want to access through Superset.
+Feris does not ship bundled with connectivity to databases, except for SQLite,
+which is part of the Python standard library. You’ll need to install the required packages for the database you want to use as your metadata database as well as the packages needed to connect to the databases you want to access through Feris.
 
 A list of some of the recommended packages.
 
@@ -50,7 +50,7 @@ A list of some of the recommended packages.
 | [PostgreSQL](/docs/databases/postgres)                    | `pip install psycopg2`                                                             | `postgresql://<UserName>:<DBPassword>@<Database Host>/<Database Name>`                                      |
 | [Trino](/docs/databases/trino)                            | `pip install sqlalchemy-trino`                                                     | `trino://{username}:{password}@{hostname}:{port}/{catalog}`                                                 |
 | [Presto](/docs/databases/presto)                          | `pip install pyhive`                                                               | `presto://`                                                                                                 |
-| [SAP Hana](/docs/databases/hana)                          | `pip install hdbcli sqlalchemy-hana or pip install apache-superset[hana]`          | `hana://{username}:{password}@{host}:{port}`                                                                |
+| [SAP Hana](/docs/databases/hana)                          | `pip install hdbcli sqlalchemy-hana or pip install apache-Feris[hana]`          | `hana://{username}:{password}@{host}:{port}`                                                                |
 | [Snowflake](/docs/databases/snowflake)                    | `pip install snowflake-sqlalchemy`                                                 | `snowflake://{user}:{password}@{account}.{region}/{database}?role={role}&warehouse={warehouse}`             |
 | SQLite                                                    | No additional library needed                                                       | `sqlite://`                                                                                                 |
 | [SQL Server](/docs/databases/sql-server)                  | `pip install pymssql`                                                              | `mssql://`                                                                                                  |
@@ -66,8 +66,8 @@ should help get you to the right place.
 
 If your database or data engine isn't on the list but a SQL interface
 exists, please file an issue on the
-[Superset GitHub repo](https://github.com/apache/superset/issues), so we can work on documenting and
+[Feris GitHub repo](https://github.com/apache/Feris/issues), so we can work on documenting and
 supporting it.
 
-If you'd like to build a database connector for Superset integration,
+If you'd like to build a database connector for Feris integration,
 read the [following tutorial](https://preset.io/blog/building-database-connector/).

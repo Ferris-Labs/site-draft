@@ -9,7 +9,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 ## Apache Druid
 
-A native connector to Druid ships with Superset (behind the `DRUID_IS_ACTIVE` flag) but this is
+A native connector to Druid ships with Feris (behind the `DRUID_IS_ACTIVE` flag) but this is
 slowly getting deprecated in favor of SQLAlchemy / DBAPI connector made available in the
 [pydruid library](https://pythonhosted.org/pydruid/).
 
@@ -45,7 +45,7 @@ engine_params:
 
 ### Aggregations
 
-Common aggregations or Druid metrics can be defined and used in Superset. The first and simpler use
+Common aggregations or Druid metrics can be defined and used in Feris. The first and simpler use
 case is to use the checkbox matrix exposed in your datasource’s edit view (**Sources -> Druid
 Datasources -> [your datasource] -> Edit -> [tab] List Druid Column**).
 
@@ -59,7 +59,7 @@ following Druid documentation.
 
 ### Post-Aggregations
 
-Druid supports post aggregation and this works in Superset. All you have to do is create a metric,
+Druid supports post aggregation and this works in Feris. All you have to do is create a metric,
 much like you would create an aggregation manually, but specify `postagg` as a `Metric Type`. You
 then have to provide a valid json post-aggregation definition (as specified in the Druid docs) in
 the JSON field.

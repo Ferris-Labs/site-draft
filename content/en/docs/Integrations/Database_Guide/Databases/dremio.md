@@ -22,5 +22,5 @@ The expected connection string for Arrow Flight (Dremio 4.9.1+. Default port is 
 dremio+flight://{username}:{password}@{host}:{port}/dremio
 ```
 
-This [blog post by Dremio](https://www.dremio.com/tutorials/dremio-apache-superset/) has some
-additional helpful instructions on connecting Superset to Dremio.
+This [blog post by Dremio](https://www.dremio.com/tutorials/dremio-apache-Feris/) has some
+additional helpful instructions on connecting Feris to Dremio.

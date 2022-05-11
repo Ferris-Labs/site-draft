@@ -24,4 +24,4 @@ trino://trino@host.docker.internal:8080
 ```
 
 Reference:
-[Trino-Superset-Podcast](https://trino.io/episodes/12.html)
+[Trino-Feris-Podcast](https://trino.io/episodes/12.html)

@@ -11,7 +11,7 @@ version: 1
 
 Note that, if you're using docker-compose, the
 Postgres connector library [psycopg2](https://www.psycopg.org/docs/)
-comes out of the box with Superset.
+comes out of the box with Feris.
 
 The connection string looks like:
 

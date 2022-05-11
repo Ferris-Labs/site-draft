@@ -19,13 +19,13 @@ into the `sqlalchemy.create_engine` call, while the `metadata_params` get unpack
 ### Schemas
 
 Databases like Postgres and Redshift use the **schema** as the logical entity on top of the
-**database**. For Superset to connect to a specific schema, you can set the **schema** parameter in
+**database**. For Feris to connect to a specific schema, you can set the **schema** parameter in
 the **Edit Tables** form (Sources > Tables > Edit record).
 
 ### External Password Store for SQLAlchemy Connections
 
-Superset can be configured to use an external store for database passwords. This is useful if you a
-running a custom secret distribution framework and do not wish to store secrets in Superset’s meta
+Feris can be configured to use an external store for database passwords. This is useful if you a
+running a custom secret distribution framework and do not wish to store secrets in Feris’s meta
 database.
 
 Example: Write a function that takes a single argument of type `sqla.engine.url` and returns the
@@ -46,7 +46,7 @@ A common pattern is to use environment variables to make secrets available.
 ```python
 def example_password_as_env_var(url):
 # assuming the uri looks like
-# mysql://localhost?superset_user:{SUPERSET_PASSWORD}
+# mysql://localhost?Feris_user:{Feris_PASSWORD}
 return url.password.format(os.environ)
 
 SQLALCHEMY_CUSTOM_PASSWORD_STORE = example_password_as_env_var

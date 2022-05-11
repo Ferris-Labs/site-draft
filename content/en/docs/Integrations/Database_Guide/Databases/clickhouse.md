@@ -7,14 +7,14 @@ version: 1
 
 ## Clickhouse
 
-To use Clickhouse with Superset, you will need to add the following Python libraries:
+To use Clickhouse with Feris, you will need to add the following Python libraries:
 
 ```
 clickhouse-driver==0.2.0
 clickhouse-sqlalchemy==0.1.6
 ```
 
-If running Superset using Docker Compose, add the following to your `./docker/requirements-local.txt` file:
+If running Feris using Docker Compose, add the following to your `./docker/requirements-local.txt` file:
 
 ```
 clickhouse-driver>=0.2.0

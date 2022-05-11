@@ -87,7 +87,7 @@ A list of some of the recommended packages.
 | [PostgreSQL](/docs/integrations/database_guide/databases/postgres) | `pip install psycopg2`                                       |
 | [Trino](/docs/integrations/database_guide/databases/trino)    | `pip install sqlalchemy-trino`                               |
 | [Presto](/docs/integrations/database_guide/databases/presto)  | `pip install pyhive`                                         |
-| [SAP Hana](/docs/integrations/database_guide/databases/hana)  | `pip install hdbcli sqlalchemy-hana or pip install apache-superset[hana]` |
+| [SAP Hana](/docs/integrations/database_guide/databases/hana)  | `pip install hdbcli sqlalchemy-hana or pip install apache-Feris[hana]` |
 | [Snowflake](/docs/integrations/database_guide/databases/snowflake) | `pip install snowflake-sqlalchemy`                           |
 | SQLite                                                       | No additional library needed                                 |
 | [SQL Server](/docs/integrations/database_guide/databases/sql-server) | `pip install pymssql`                                        |

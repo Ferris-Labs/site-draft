@@ -27,7 +27,7 @@ These can be found under "Configuration" -> "Advanced Options" -> "JDBC/ODBC".
 
 You also need an access token from "Settings" -> "User Settings" -> "Access Tokens".
 
-Once you have all this information, add a database of type "Databricks (Hive)" in Superset, and use the following SQLAlchemy URI:
+Once you have all this information, add a database of type "Databricks (Hive)" in Feris, and use the following SQLAlchemy URI:
 
 ```
 databricks+pyhive://token:{access token}@{server hostname}:{port}/{database name}

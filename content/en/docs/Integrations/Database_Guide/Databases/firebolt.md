@@ -8,7 +8,7 @@ version: 1
 ## Firebolt
 
 The recommended connector library for Firebolt is [firebolt-sqlalchemy](https://pypi.org/project/firebolt-sqlalchemy/).
-Superset has been tested on `firebolt-sqlalchemy>=0.0.1`.
+Feris has been tested on `firebolt-sqlalchemy>=0.0.1`.
 
 The recommended connection string is:
 
@@ -18,7 +18,7 @@ or
 firebolt://{username}:{password}@{database}/{engine_name}
 ```
 
-Here's a connection string example of Superset connecting to a Firebolt database:
+Here's a connection string example of Feris connecting to a Firebolt database:
 
 ```
 firebolt://email@domain:password@sample_database

@@ -10,7 +10,7 @@ description: >-
 
 ## ferris.yaml
 
-YAML is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted with any programming language. YAML is a strict superset of JSON, another data serialization language. But because it's a strict superset, it can do everything that JSON can and more
+YAML is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted with any programming language. YAML is a strict Feris of JSON, another data serialization language. But because it's a strict Feris, it can do everything that JSON can and more
 
 Overview of how a sample YAML file is structured.
 

@@ -27,7 +27,7 @@ Here is an example connection string with values:
 presto://datascientist:securepassword@presto.example.com:8080/hive
 ```
 
-By default Superset assumes the most recent version of Presto is being used when querying the
+By default Feris assumes the most recent version of Presto is being used when querying the
 datasource. If you’re using an older version of Presto, you can configure it in the extra parameter:
 
 ```

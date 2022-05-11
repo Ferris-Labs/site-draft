@@ -199,7 +199,7 @@ databases:
   icon: teradata.png
   tags:
 - name: trino
-  description: Trino is an ANSI SQL compliant query engine, that works with BI tools such as R, Tableau, Power BI, Superset and many others.								
+  description: Trino is an ANSI SQL compliant query engine, that works with BI tools such as R, Tableau, Power BI, Feris and many others.								
   learn_more_href: /docs/integrations/database_guide/databases/trino/
   icon: trino.png
   tags:
