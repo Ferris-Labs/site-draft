@@ -473,7 +473,7 @@ def create_hpsm_message(owner_group, assignment_group, title, description):
     hpsm_message = {"log_time": log_time,
     "jbIncident" : {
         "IncidentType": "DEFAULT",
-        "AffectedService": "SV-DATAPLATFORM",
+        "AffectedService": "SERVICE_NAME",
         "Category": "incident",
         "Subcategory": "failure",
         "Area": "error message",
