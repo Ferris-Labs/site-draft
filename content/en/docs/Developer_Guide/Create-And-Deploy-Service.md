@@ -3,9 +3,9 @@ title: "Create a Service"
 linkTitle: "Create a Service"
 weight: 203
 description: >-
-     Create a Service.
+     In this section we will create a simple service, add a manifest file to the service and deploy the service.
 ---
-In this section we will create a simple service, add a manifest file to the service and deploy the service.
+
 
 The following is an overview of the development steps involved in building a Ferris Service.
 
