@@ -29,7 +29,18 @@ The DX platform supports the following scopes for a secret.
 
 *When accessing secrets using `ferris_ef.context.secrets.get('secret_name')` it will first lookup for `secret_name` within service secrets, then project and finally platform*
 
+##### The secrets.json File
 
+To add service scope secrets you can upload a `secrets.json` file.
+
+Those values are stored double encrypted in database and can be only accessed within the executing script. A sample `secrets.json`
+
+```json
+{
+    "DB_NAME": "test_db",
+    "DB_PASS": "supersecretpas$"
+}
+```
 
 ### Accessing secrets
 
@@ -97,46 +108,3 @@ print(f"DB PASS: {get_secret('DB_PASS')}")
 
 print(f"PACKAGE NAME: {get_param('package_name')}")
 ```
-
-##### secrets.json script
-
-The `secrets.json` file contains sensitive key/value pairs that can be accessed in scripts at execution time. Those values are stored double encrypted in database and can be only accessed within the executing script.
-
-```json
-{
-    "DB_NAME": "test_db",
-    "DB_PASS": "supersecretpas$"
-}
-```
-
-## Check Created Package
-
-1. Click on the magnifying glass to open the package details page
-
-{{< blocks/screenshot color="white" image="/images/check_package_secrets.png">}}
-
-2. Check the scripts attached
-
-Note that only the `test_secrets.py` script is viewable and downloadable. The `secrets.json` script will never be stored anywhere. 
-
-3. Click on run to execute trigger the execution of the package
-
-Once the file is uploaded to the platform, it gets read and all secrets contained in that file will be encrypted with the encryption key that is generated for each package and stored into the database (in this case PostgreSQL). Once the package is ran, it will trigger an event with encypted secrets. At the moment it arrives to the executor for execution, the executor will decrypt the keys and send them to the scripts.
-
-{{< blocks/screenshot color="white" image="/images/check_script_run_execution_secrets.png">}}
-
-After hitting the run button (manual package execution) the user will be automatically redirected to the details page of the package execution (List Package Executions tab)
-
-4. Click on the magnifying glass to open the package execution details page
-
-{{< blocks/screenshot color="white" image="/images/package_execution_secrets.png">}}
-
-5. Click on List Steps tab to open the package execution steps details page
-
-{{< blocks/screenshot color="white" image="/images/details_page_package_execution_secrets.png">}}
-
-6. Click on Show Results to open and see the decrypted secrets
-
-{{< blocks/screenshot color="white" image="/images/package_exec_steps_secrets.png">}}
-
-{{< blocks/screenshot color="white" image="/images/show_results_decrypted_secrets.png">}}
