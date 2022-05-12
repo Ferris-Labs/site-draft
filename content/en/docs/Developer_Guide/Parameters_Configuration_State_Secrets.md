@@ -1,15 +1,15 @@
 ---
-title: "FERRIS Executor Helper"
-linkTitle: "FERRIS Executor Helper"
+title: "Parameters and Configurations"
+linkTitle: "Parameters and Configurations"
 weight: 204
 description: >-
-     FERRIS Executor Helper.
+     Retrieve Parameters and Configurations using ferris_ef module.
 ---
 
 
-# FERRIS Executor Helper
+# The FERRIS Executor Helper
 
- This package can be used for fetching package's configuration, parameters, secrets and state through it's context.
+ The `ferris_ef` package can be used for fetching package's configuration, parameters, secrets and state through it's context.
  
 ```python
 from ferris_ef import context
@@ -23,13 +23,55 @@ from ferris_ef import context
 context.config.get('some_configuration_key')
 ```
 
+To create a configuration set just place a `config.json` in your service directory. Ferris loads and maintains it in Consul.
+
+The following is a sample configuration file.
+
+```json
+{
+  "my_simple_attribute": "my_db_host_name",
+  "my_configuration_array": ["a","b","c"],
+  "my_configuration_dictionary": {
+    "alias": "johndoe",
+    "first_name": "john"
+  }
+}
+```
+As illustrated above the configuration may contain simple attributes, dictionaries and arrays.
+
+
 ### Accessing execution parameters
+
+You can access execution parameters as shown below.
 
 ```python
 from ferris_ef import context
 
 context.params.get('param_name')
 ```
+
+These parameters are populated from the `data` section of the trigerring CloudEvent or from the values entered in the form attached to the service (Please review section on Service UI generation).
+
+An example CloudEvent:
+
+```json
+{
+    "specversion" : "1.0",
+    "type" : "com.example.someevent", // The Event Type
+    "source" : "/mycontext",
+    "subject": null,
+    "id" : "C234-1234-1234",
+    "time" : "2018-04-05T17:31:00Z",
+    "datacontenttype" : "application/json",
+    "data" : {                       // The event payload as JSON
+        "appinfoA" : "abc",
+        "appinfoB" : 123,
+        "appinfoC" : true
+    }
+}
+```
+
+In the next section we discuss Secrets Storage and Rereival and passing state between executions of a service.
 
 ### Accessing secrets
 

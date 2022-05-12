@@ -1,6 +1,7 @@
 ---
 title: "Secrets"
 linkTitle: "Secrets"
+weight: 205
 description: >-
   How to integrate sensitive configurations(Secrets) within your services
 
