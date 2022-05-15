@@ -29,6 +29,7 @@
     font-family: 'gilmer-bold';
     font-size: 1.313rem;
     line-height: 1.429em;
+	color: red;
 }
 
 .home_title_small .font_white {
@@ -87,6 +88,18 @@ footer {
 .integrations-card-holder {
 	// margin-top: -80px;
 }
+
+.lead {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.colorize-orange {
+    -webkit-filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
+   filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
+ }
+
 
 .integration-card {
 	background: #fff;
