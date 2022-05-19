@@ -179,3 +179,199 @@ footer {
 		line-height: 3rem;
 	}
 }
+
+
+// Footer
+
+.footer-component {
+	background-color: #1b1a21;
+	.social-links {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		.social-link {
+			color: #c2c1c7;
+			font-size: 26px;
+			padding: 10px 16px;
+			transition: .15s ease-in-out;
+			will-change: color;
+		}
+	}
+	.footer-links {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	.footer-links {
+		.footer-column {
+			flex-basis: 20%;
+			margin: 0 0 20px;
+			min-width: 160px;
+			padding-right: 25px;
+			.footer-item {
+				border-radius: 4px;
+				transition: .15s ease-in-out;
+				&.footer-item-header {
+					margin-bottom: 0.5rem;
+				}
+			}
+		}
+	}
+}
+
+.section-container {
+    content-visibility: auto;
+    position: relative;
+	.content {
+		opacity: .9999;
+		width: 100%;
+	}
+}
+
+.page-container {
+    margin: 0 auto;
+    max-width: 1080px;
+	&.padding-small-x {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.margin-component.bottom-small-x {
+    margin-bottom: 20px;
+}
+
+.list-component {
+    list-style: none;
+    padding: 0;
+}
+
+.link-component {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.centering-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+    box-sizing: content-box;
+    overflow: visible;
+}
+.svg-inline--fa {
+    display: var(--fa-display,inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+.br-component {
+    display: none;
+}
+
+.footer-component .legal-links {
+	.typography-text {
+		color: #c2c1c7;
+		&.p2-normal {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 20px;
+		}
+		&.align-center {
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+	.legal-link {
+		color: #c2c1c7;
+		transition: .15s ease-in-out;
+		will-change: color;
+	}
+}
+
+.footer-component .footer-links .footer-column .footer-item.footer-item-header {
+    margin-bottom: 0.5rem;
+}
+.footer-component .footer-links .footer-column .footer-item {
+    border-radius: 4px;
+    transition: .15s ease-in-out;
+}
+.list-item-component .inner {
+    display: flex;
+}
+.margin-component.bottom-zero {
+    margin-bottom: 0;
+}
+.footer-component .footer-links .footer-column .footer-item.footer-item-header .footer-header {
+    font-weight: 900;
+}
+.footer-component .footer-links .footer-column .footer-item .footer-link {
+    color: #fff;
+    display: block;
+    font-size: .9rem;
+    line-height: 1.5625;
+    padding: 5px 8px;
+}
+.typography-text.p2-caps {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.typography-text.inverted {
+    color: #fff;
+}
+.typography-text {
+    color: #4c4a57;
+    font-family: Lato,sans-serif;
+    margin: 0;
+}
+.footer-component .footer-links .footer-column .footer-item:not(.footer-item-header):hover {
+    background: rgba(255,255,255,.1);
+}
+.footer-component .footer-links .footer-column .footer-item.footer-item-header .footer-header {
+    font-weight: 900;
+}
+
+.footer-component .footer-links .footer-column .footer-item .footer-link {
+    color: #fff;
+    display: block;
+    font-size: .9rem;
+    line-height: 1.5625;
+    padding: 5px 8px;
+}
+.typography-text.p2-caps {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.typography-text.inverted {
+    color: #fff;
+}
+.typography-text {
+    color: #4c4a57;
+    font-family: Lato,sans-serif;
+    margin: 0;
+}
+
+.footer-component .footer-links .footer-column .footer-item .footer-link .footer-pill-wrapper {
+    white-space: nowrap;
+}
+
+.footer-component .footer-links .footer-column .footer-item .footer-link .footer-pill-wrapper .footer-pill {
+    background: #b81414;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 5px;
+    padding: 2px 6px;
+    text-transform: uppercase;
+}
