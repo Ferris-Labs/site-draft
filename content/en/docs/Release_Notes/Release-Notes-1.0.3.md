@@ -3,7 +3,7 @@ title: "Release 1.0.3"
 tags: ["releases"] 
 categories: ["Release Notes"]
 linkTitle:
-weight: 100
+weight: -102
 description: >-
      New features, improvements and fixes provided to you in the 3rd Quarter of the year 2021.
 

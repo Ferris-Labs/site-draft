@@ -3,7 +3,7 @@ title: "Release 1.0.4"
 tags: ["releases"]
 categories: ["Release Notes"]
 linkTitle:
-weight: 100
+weight: -103
 description: >-
      New features, improvements and fixes provided to you in the 4th Quarter of the year 2021.
 
