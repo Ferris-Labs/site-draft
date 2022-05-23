@@ -7,8 +7,6 @@ tags: [fraud, fraudremodelling, frauddetection, fraudtracking, compliance, kyc]
 clients: [   ]
 ---
 
-## Onboarding and Fraud Remodelling
-
 ### Executive summary
 Leverage an industry proven onboarding and Know Your Customer (KYC) ontology and fine-tune it to your corporate compliance policies. Ensure manual processing, existing triggers and information sources are tied together by a unified and harmonized process supporting sales and compliance simultaneously.
 
@@ -47,5 +45,3 @@ The deliverables included:
 - Compliance Officer Workbench
 - Use case specific orchestration flow
 
-### Tags / Keywords
-#fraud #fraudremodelling #frauddetection #fraudtracking #compliance #kyc

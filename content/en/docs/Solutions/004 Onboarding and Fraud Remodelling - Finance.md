@@ -7,8 +7,6 @@ tags: [fraud, fraudremodelling, compliance, kyc, financialservices, bank]
 clients: [  ]
 ---
 
-## Onboarding and Fraud Remodelling
-
 ### Executive summary
 Leverage an industry proven onboarding and Know Your Customer (KYC) ontology and fine-tune it to your corporate compliance policies. Ensure manual processing, existing triggers and information sources are tied together by a unified and harmonized process supporting front-office and compliance simultaneously.
 
@@ -48,11 +46,7 @@ The deliverables included:
 - Use case specific orchestration flow
 
 ### Impact and benefits
-Decreased compliance team by 30% from 18 down to 12 Fuull-Time Employees by automating standard case load. Increased compliance quality and decreased client case resolution time by eliminating aspects not required by current jurisdictional scope.
+Decreased compliance team by 30% from 18 down to 12 Full-Time Employees by automating standard case load. Increased compliance quality and decreased client case resolution time by eliminating aspects not required by current jurisdictional scope.
 
 ### Testimonials
 > "This is a compliance expert‘s dream come true. Before I never had an oversight of where I or my team where standing. Now we can actually support our client facing colleagues."
-> — Mr. XXX YYY, Title, Company ZZZ.
-
-### Tags / Keywords
-#fraud #fraudremodelling #compliance #kyc #financialservices #bank

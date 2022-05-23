@@ -7,8 +7,6 @@ tags: [sensorbasedmonitoring, iot, sensitivegoods, intelligentpackaging, intelli
 clients: [   ]
 ---
 
-## Sensor-based Monitoring of Sensitive Goods
-
 ### Executive summary
 Sensor-based monitoring of sensitive goods along the transport chain (location, light, temperature, humidity & shocks in one sensor) and integration of these IoT components in a smart and decentralized cloud including the event-controlled connection to the relevant peripheral systems.
 
@@ -29,8 +27,8 @@ The cells communicate bidirectionally with the software through global IoT netwo
 Bidirectional capabilities allow transmitting data of the sensors and receiving instructions and updates remotely.
 Cells can also interact with the electronics of the objects they are attached to, they can read and transmit any parameters and providing remote control of them wherever they are.
 All data of the cells are transmitted to our own cloud applications, a learning brain using the power of data management and AI of Google Cloud and Microsoft Azure where we can combine IoT data of objects with any other data in intelligent and self-learning algorithms.
-The location or any other parameter of the objects can be displayed in any Browser or Smart device.
-The user interfaces can be customized and  allow to interact at any moment changing frequency of connection, SMS or email alarm values and who receives them (human or machine) or acting as remote control of any object.
+The location or any other parameter of the objects can be displayed in any Browser or Smart device. 
+The user interfaces can be customized and  allow to interact at any moment changing frequency of connection, SMS or email alarm values and who receives them (human or machine) or acting as remote control of any object. 
 All of this can be offered fully pay peruse, to ensure a very low entry point for the technology. You can turn the cell on and off remotely, and only pay cents per day when you use the cell capabilities or buy the solution.
 
 ### Stakeholders
@@ -46,7 +44,7 @@ All of this can be offered fully pay peruse, to ensure a very low entry point fo
 As an Input from the client, the following items were used:
 - Container / goods data
 - Transport routing
-- Thresholds / boundary conditions
+- Thresholds / boundary conditions 
 - Past Quality Control data for pattern recognition
 
 Assets & Artefacts:
@@ -56,11 +54,3 @@ Assets & Artefacts:
 The deliverables included:
 - Driver dispatcher and client apps
 - Operational routing optimization
-
-<!-- 7 Implementation results -->
-
-<!-- 8 Testimonials -->
-
-<!-- 9 Tags / Keywords -->
-### Tags / Keywords
-#sensorbasedmonitoring #iot #sensitivegoods #intelligentpackaging #intelligentlogistics #industry40 #industry #packaging #logistics #homeprotection #consumergoods #luxurygoods

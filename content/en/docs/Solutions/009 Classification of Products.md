@@ -7,8 +7,6 @@ tags: [      ]
 clients: [Stark Group]
 ---
 
-## Classification of products along different regulatory frameworks
-
 ### Executive summary
 Multi-dimensional and ontology-based classification of products along different regulatory frameworks
 and systematic mapping of the company's internal specialist expertise in a knowledge graph that can be used
@@ -17,7 +15,7 @@ by both humans and algorithms or other systems.
 ### Problem statement
 Depending on the applicable regulation, the products and materials need to be classified for further usage.
 This requires an effective classification approach and also involves the challenge of knowledge management.
-Respective product / material information need to be extracted from various sources, cuch as core systems,
+Respective product / material information need to be extracted from various sources, such as core systems,
 product information systems, etc. This task usually requires lots of time-consuming manual work utilizing the domain knowledge.
 
 ### Target market / Industries
@@ -54,9 +52,3 @@ The deliverables included:
 ### Impact and benefits
 The classification process, that cannot be done manually
 with reasonable manpower and time resources is now automated.
-
-<!-- 8 Testimonials -->
-
-### Tags / Keywords
-#classification #classificationofproduct #classificationofmaterial
-#classificationautomation #automation #production #financialservices #production #retail

@@ -7,8 +7,6 @@ tags: [ideatotrade, nextbestproduct, salesadvice, financialservices, bank, insur
 clients: [   ]
 ---
 
-## Idea to Trade / Next Best Product
-
 ### Executive summary
 To support advisors and clients with a “next best product” recommendation, a closed loop flow has been established
 from Research / Chief Investment Officer to Relationship Managers and eventually to the client.
@@ -82,6 +80,3 @@ The use-case implementation resulted in:
 **+18%** increased targeted product sales
 
 **+8%** share of wallet
-
-### Tags / Keywords
-#ideatotrade #nextbestproduct #salesadvice #financialservices #bank #insurance #investment

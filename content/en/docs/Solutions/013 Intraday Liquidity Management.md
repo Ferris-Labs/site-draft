@@ -7,16 +7,14 @@ tags: [liquidity, liquiditymanagement, intradayliquiditymanagement, cashmanageme
 clients: []
 ---
 
-## Intraday Liquidity Management Optimization
-
 ### Executive summary
 In order to avoid long internal lead times and to cater to stringent time-to-market expectations, an end-to-end Analytics Design and streaming real time analytics environment for group wide BCBS (Basel III) Intraday Liquidity Management was implemented. The bank's predictive liquidity and cash management models were rebuilt from scratch using real-time streams from 13 different SWIFT messaging gateways.
 
 ### Problem statement
-All financial institutions need to be on top of their liquidity levels throughout the entire day. Since every organization usually experiencing many cash inflows and outflows during the day, it is diffcult to understand what are the currenct liquidity levels. To be compliant with the regulations, the liquidity levels need to be monitored. Having too much cash is not commerically viable and too little cash is too risky. Knowing the current cash levels the bank can adjust accordingly. The entire cash balancing act is based on the cascade of different events. Cash flow events and also cash-related events need to be integrated from various transaction management systems. 
+All financial institutions need to be on top of their liquidity levels throughout the entire day. Since every organization usually experiencing many cash inflows and outflows during the day, it is difficult to understand what are the current liquidity levels. To be compliant with the regulations, the liquidity levels need to be monitored. Having too much cash is not commercially viable and too little cash is too risky. Knowing the current cash levels the bank can adjust accordingly. The entire cash balancing act is based on the cascade of different events. Cash flow events and also cash-related events need to be integrated from various transaction management systems. 
 
 ### Target market / Industries
-The use case is applicable in all regualted and cash-intence industries, i.e. 
+The use case is applicable in all regulated and cash-intense industries, i.e. 
 - Financial service
 - Treasury departments of large corporations
 
@@ -57,6 +55,3 @@ The use-case implementation resulted in:
 >“Moving from a batch to a real-time liquidity monitoring was a substantial task that had countless positive knock-on effects throughout the organization.”
 
 — Mr. Juerg Schnyder, Liquidity expert, Global universal bank
-
-### Tags / Keywords
-#liquidity #liquiditymanagement #intradayliquiditymanagement #cashmanagement #BCBS #Basel3 #financialservices

@@ -7,8 +7,6 @@ tags: [marketdataanalysis, bigdata, bigdatainfrastructure, datascience, datascie
 clients: []
 ---
 
-## Marketing Data Analysis
-
 ### Executive summary
 Implemented the first service- and on-demand based big data and data science infrastructure for the bank. Data pipelines are built and maintained leveraging two key infrastructure components: a custom-built aggregation tool and the marketing content & event platform. The aggregation tool builds the data lake for all analytics activities and enables the marketing platform to organically grow customer and campaign projects.
 
@@ -62,7 +60,5 @@ The use-case implementation resulted in:
 
 ### Testimonials
 > "Using Ferris we were able to digest a massive amount of text and extract personalized investment themes which allows our RMs to increase their face time with the clients and surprise them with the meaningful content."
-> — Mr. R. Giger, Head of Marketing and Campaigns, Swiss Private Bank
+— Mr. R. Giger, Head of Marketing and Campaigns, Swiss Private Bank
 
-### Tags / Keywords
-#marketdataanalysis #bigdata #bigdatainfrastructure #datascience #datascienceinfrastructure #financialservices #bank

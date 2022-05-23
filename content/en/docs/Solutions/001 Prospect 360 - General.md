@@ -7,8 +7,6 @@ tags: [salesfunnel, salesautomation, newclients, prospecting, prospect360]
 clients: [Wagner, Stark Gruppe]
 ---
 
-## Prospect 360°
-
 ### Executive summary
 For many strategic prospects the preparation of possible offers and establishment of a real relationship either involves great effort or lacks structure and focus. The Prospect 360° use case augments traditional sales and marketing intelligence with automation to improve this original dilemma.
 
@@ -36,7 +34,11 @@ The solution included:
 
 
 ##### Example Use Case Agent Cascade
-{{< blocks/screenshot color="white" image="/images/uc_001_2021.png">}}
+
+
+
+![Example Prospecting 360 Event Cascade](./img/uc_001_2021.png)
+
 
 
 <!-- 5 Stakeholders -->
@@ -74,7 +76,3 @@ As an Input from the client, the following items were used:
 <!-- 7 Implementation results -->
 
 <!-- 8 Testimonials -->
-
-<!-- 9 Tags / Keywords -->
-### Tags / Keywords
-#newclients #salesfunnel #sales #marketing #salesautomation #prospecting #prospect360

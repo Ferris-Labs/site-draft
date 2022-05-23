@@ -7,8 +7,6 @@ tags: [ideatotrade, nextbestproduct, salesadvice, crossindustry]
 clients: [   ]
 ---
 
-## Idea to Trade / Next Best Product recommendation
-
 ### Executive summary
 To support sales people and clients with a “next best product” recommendation, a closed loop flow has been established
 from Marketing / Research to Sales and eventually to the client.
@@ -59,6 +57,3 @@ The deliverables included:
 - Sales & Onboarding Ontology
 - Use case specific orchestration flow
 - Integration with many info sources
-
-### Tags / Keywords
-#ideatotrade #nextbestproduct #salesadvice #crossindustry

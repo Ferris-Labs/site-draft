@@ -7,14 +7,12 @@ tags: [dataquality, dataqualityimprovement, machinelearning, production, manufac
 clients: [   ]
 ---
 
-## Metadata-controlled Data Quality & Data Lineage in Production
-
 ### Executive summary
 Metadata-controlled data quality & data lineage along the production chain integrated with a laboratory information system for monitoring and quality documentation of various BoM & formulation variations in the biochemical production of active pharmaceutical ingredients (preliminary production of active ingredients in transplant medicine).
 
 ### Problem statement
 Neither technical, nor rule based approaches can adequately help in raising data quality without domain expertise.
-Using the domain expertise to create the rules is time consuming and often not feasible from the manpower prospective.
+Using the domain expertise to create the rules is time consuming and often not feasible from the manpower perspective.
 
 ### Target market / Industries
 The use case is applicable to any industry dealing with large volumes of data if insufficient quality, e.g.:
@@ -28,7 +26,7 @@ The use case is applicable to any industry dealing with large volumes of data if
 The approach is based on few shot manual learning, when the expert creates a few dozens of examples with real-life data. Later on from these examples the model learns strategies to identify and correct data quality errors.
 
 ##### Example Use Case Agent Cascade
-{{< blocks/screenshot color="white" image="/images/uc_008_2021.png">}}
+![Example Metadata-controlled Data Quality & Data Lineage in Production Event Cascade](./img/uc_008_2021.jpg)
 
 ### Stakeholders
 - Domain experts
@@ -50,8 +48,3 @@ The deliverables included:
 
 ### Impact and benefits
 The use case implementation allows to address data quality issues in an efficient manner with high quality of the process automation. If the data quality management process would remain manual, this would result in 5-6 Full Time Employees dedicated for this task. The Machine Learning model will over time accumulate respective knowledge and support domain expertise with relevant automated data quality improvement proposals.
-
-<!-- 8 Testimonials -->
-
-### Tags / Keywords
-#dataquality #dataqualityimprovement #machinelearning #production #manufacturing #serialmanufacturing #massproduction #medicine #laboratory #pharma #financialservices #crossindustry

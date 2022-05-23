@@ -7,13 +7,11 @@ tags: [singlesourceoftruth, ssot, bank, privatebank, financialservices, insuranc
 clients: [   ]
 ---
 
-## Regulatory Single Source of Truth
-
 ### Executive summary
 Leveraging all existing data sources from core banking, risk- and trading systems to the Customer Relationship Management (CRM) and general ledger as granular input for your regulatory Single Source of Truth (SSoT).
 
 ### Problem statement
-Most regulatory solutions today require huge maintenance effort on both business and technology teams. Ever more granular and ever more near-time regulatory requirements further increase this pressure. Usually the various regulatory domains have created and continue to create silos for central bank, credit risk, liquidity, Anti-Money Laundering (ALM) / Know Your Customer (KYC) and transaction monitoring regulations. Further requirements from ePrivacy, Product Suitability and Sustainability regulations even further dilute these efforts.
+Most regulatory solutions today require huge maintenance effort on both business and technology teams. Ever more granular and ever more near-time regulatory requirements further increase this pressure. Usually, the various regulatory domains have created and continue to create silos for central bank, credit risk, liquidity, Anti-Money Laundering (ALM) / Know Your Customer (KYC) and transaction monitoring regulations. Further requirements from e-Privacy, Product Suitability and Sustainability regulations even further dilute these efforts.
 
 ### Target market / Industries
 - Financial services
@@ -60,7 +58,4 @@ In addition, recurring Cost of Capital savings of over 15m CHF p.a. were achieve
 
 ### Testimonials
 > "We have semantically integrated +220 different data sources at Switzerland largest independent Private Bank. The regulatory team  was able to deliver better results faster and yet decreased the team size by 30%."
-> — Mr. XXX YYY, Title, Company ZZZ.
 
-### Tags / Keywords
-#singlesourceoftruth #ssot #bank #privatebank #financialservices #insurance

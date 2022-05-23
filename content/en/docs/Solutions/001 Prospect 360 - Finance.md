@@ -7,9 +7,6 @@ tags: [kyc, knowyourcustomer, finance, financialservices, onboarding, prospectin
 clients: [UBS, CS, BJB, VPB, Newcent]
 ---
 
-## Prospect 360°
-
-
 ### Executive summary
 For many strategic prospects the preparation of possible offers and establishment of a real relationship either involves great effort or lacks structure and focus. The Prospect 360° use case augments traditional advisor intelligence with automation to improve this original dilemma.
 
@@ -19,7 +16,7 @@ Hunting for new important clients usually is driven by referrals and the search 
 
 <!-- 3 Target markets -->
 ### Target market / Industries
-This use case is traditionally applicable to such industries where the customer engagement and acquisition process is long and costs per customer are high:
+This use case is traditionally applicable to such industries where the customer engagement and acquisition process is long and costs per customer are high: 
 
 * Financial Services
 * Insurance
@@ -43,7 +40,10 @@ The solution included:
 
 
 ##### Example Use Case Agent Cascade
-{{< blocks/screenshot color="white" image="/images/uc_001_2021.png">}}
+
+
+
+![Example Prospecting 360 Event Cascade](./img/uc_001_2021.png)
 
 <!-- 5 Stakeholders -->
 
@@ -58,7 +58,7 @@ The solution included:
 As an Input from the client, the following items were used:
 
 - Sales organization setup (desks / books)
-
+  
 - Client to Client / Client to Company graphs
 
 ##### Capabilities utilized:
@@ -96,8 +96,3 @@ The use-case implementation resulted in:
 > "I feel a lot more as a real advisor. I can be helpful and feel informed. And I still can make my own judgments of what is relevant for my personal relationship to existing clients and new referrals. I learn as the system learns."
 
 — Mr. Pius Brändli, Managing Director, Credit Suisse
-
-<!-- 9 Tags / Keywords -->
-
-### Tags / Keywords
-#kyc, #knowyourcustomer, #finance, #financialservices, #onboarding, #prospecting, #prospect360
