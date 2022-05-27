@@ -3,7 +3,7 @@ title: "Release 2.0.1"
 tags: ["releases"] 
 categories: ["Release Notes"]
 linkTitle:
-weight: 100
+weight: -104
 description: >-
      New features, improvements and fixes provided to you in the 1st Quarter of the year 2022.
 

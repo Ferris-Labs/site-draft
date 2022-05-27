@@ -3,7 +3,7 @@ title: "Release 1.0.2"
 tags: ["releases"] 
 categories: ["Release Notes"]
 linkTitle:
-weight: 100
+weight: -101
 description: >-
      New features, improvements and fixes provided to you in the 2nd Quarter of the year 2021.
 
