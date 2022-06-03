@@ -251,19 +251,19 @@ enable = false
   [menu.main.params]
     class = 'highlight-menu-item'
 
-#[[menu.main]]
-#    identifier = "integrations_databases"
-#    name = "DATABASES"
-#    url = "/integrations/databases"
-#    parent = "integrations"
-#    weight = 1
+[[menu.main]]
+    identifier = "integrations_databases"
+    name = "DATABASES"
+    url = "/integrations/databases"
+    parent = "integrations"
+    weight = 1
 
-#[[menu.main]]
-#    identifier = "integrations_notifications"
-#    name = "MESSAGES/NOTIFICATIONS"
-#    url = "/integrations/notifications"
-#    parent = "integrations"
-#    weight = 2
+[[menu.main]]
+    identifier = "integrations_notifications"
+    name = "NOTIFICATIONS"
+    url = "/integrations/notifications"
+    parent = "integrations"
+    weight = 2
 
 #[[menu.main]]
 #  identifier = 'usecases'
