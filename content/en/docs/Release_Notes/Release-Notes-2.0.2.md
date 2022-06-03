@@ -38,6 +38,7 @@ description: >-
 - [x] Introduced **module based translations** instead of global translations.
 - [x] Improved **Git Synchronisation error handling**.
 
+
 ---
 
 ## Fixed <img src="/images/fixed_red.png" alt="fixed_red" style="zoom:25%;" />
