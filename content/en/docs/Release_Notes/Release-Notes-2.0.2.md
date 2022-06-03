@@ -36,6 +36,8 @@ description: >-
 - [x] Various changes on the **Ferris UI**.
 - [x] New **charts** on dashboard - **slowest executions and packages**.
 - [x] Introduced **module based translations** instead of global translations.
+- [x] Improved **Git Synchronisation error handling**.
+
 
 ---
 

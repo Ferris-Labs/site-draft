@@ -1,0 +1,41 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<div class="pt-3 lead">
+    {{ if eq .Page.File.Ext "md" }}
+    {{ .Inner | markdownify }}
+    {{ else }}
+    {{ .Inner | htmlUnescape | safeHTML }}
+    {{ end }}
+</div>
+
+<section class="row td-cover-block">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="timeline">
+                    {{ $left := "direction-l" }}
+                    {{ $right := "direction-r" }}
+                    {{ range $index, $val := $.Site.Data.about.timeline }}
+                        {{ $class := cond (not (modBool $index 2)) $left $right }}
+                        <li>
+                            <div class="{{ cond (not (modBool $index 2)) $left $right }}">
+                                {{ block "about_block" . }}{{ end }}
+                            </div>
+                        </li>
+                    {{ end }}
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+{{ define "about_block" }}
+    <div class="flag-wrapper">
+        <span class="flag">{{ .flag }}</span>
+        <span class="time-wrapper"><span class="time">{{ .time }}</span></span>
+    </div>
+    <div class="desc">
+        <p class="lead">{{ .description | safeHTML }}</p>
+    </div>
+{{ end }}

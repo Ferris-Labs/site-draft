@@ -1,0 +1,46 @@
+
+- flag: FerrisSX
+  time: 2022 (shipping in June) 
+  description: The Kafka based streaming platform is taken to the next level with Ferris Streaming Automation or FerrisSX is the latest addition, enabling the automated onboarding of new data and event streams.
+- flag: Embedded CI/CD
+  time: 2022 
+  description: Removed the need for a separate CI/CD function by integrating Git with Ferris. Upon commit, code deployments are automatically pushed into Ferris.
+- flag: Ferris Application Builder
+  time: 2021
+  description: The Ferris Application Builder (FAB) is another step in automation and removing the need for specialised resources when building process and applications.
+- flag: FerrisDSM
+  time: 2021 
+  description: FerrisDSM (Data and Service Mesh) is the logical extension of FerrisFX, augmenting it with loads of source data adaptors, pre-built micro-services and the ability to extend the platform with additional technologies and services.
+- flag: FerrisFX and FerrisDX
+  time: 2021
+  description: The Ferris Executor (FerrisFX) becomes the cornerstone service of the newly named Ferris Digital Transformation (FerrisDX) platform. FerrisFX establishes the services and events based architecture and centricity of micro-integrations into the platform.
+- flag: Ferris Labs AG
+  time: 2021 
+  description: "On 01.01.2022 Ferris Labs AG was founded by the same group of people who gave the ferris idea birth in 2016.\nThe vision of Ferris ​​Labs is to establish Ferris as an industry leading data and process platform across industries and geographies.\nFerris Labs is an independent and privately owned company. The organic growth of Ferris ensures laser sharp focus on development, distribution and growth."
+- flag: Container Management & Automation
+  time: 2020 
+  description: Ferris containerization is taking the next leap in evolution by introducing Kubernetes for container and cluster management, reducing the platform footprint again and optimising resource management drastically.
+- flag: Use Cases
+  time: 2019
+  description: Ferris introduces the use cases approach, delivering business value use case by use case within no more than 8-12 weeks. Use cases draw from each others resources (data) and thus the platform grows organically into cross domain Data Lake.
+- flag: Streaming
+  time: 2019
+  description: Apache Kafka is introduced as the central data sourcing and ingestion platform becoming the central data hub for all data sources - even for those who are still maintained manually or via batch files.
+- flag: The Big Data Journey
+  time: 2018
+  description: The Ferris Data Platform evolves into a data ingestion and engineering powerhouse. Sourcing, ingestion and curation are automated and onboarding systems and applications is made available as a factory approach.
+- flag: PaaS Design
+  time: 2017 
+  description: The platform is fully containerized, enabling enterprise-ready implementations in a couple of weeks, including multiple environments and network integration.
+- flag: Design Principles
+  time: 2017
+  description: Key architectural principles of Ferris were set based on open source technologies and a hybrid cloud approach.
+- flag: ferris.ai
+  time: 2017
+  description: "The brand ferris.ai is introduced as the enterprise-scale Big Data and AI platform, serving the front-to-back data lifecycle from sourcing to analytics, machine learning as well as consumption services.\nFerris.ai is built for Data Engineers, Data Scientists, Data Ops and Dev Ops ensuring resource optimization at the human as well as at the platform level."
+- flag: Early Days
+  time: 2016
+  description: The first flavour of Ferris was implemented as a Hadoop based Big Data and Data Science platform at a large global wealth management company.
+- flag: Roots
+  time: 2016
+  description: The Ferris idea and technical foundation was established in Switzerland by a group of Data and Technology entrepreneurs, each bringing many years of successful track records in international and corporate business.
