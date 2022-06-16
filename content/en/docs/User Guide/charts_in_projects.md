@@ -3,12 +3,14 @@ title: "Charts in Projects"
 linkTitle: "Charts in Projects"
 weight: -14
 description: >-
-  How to format JSON data to render proper charts. There are 3 types of charts:
-    - Pie
-    - Line
-    - Table
-
+  How to format JSON data to render charts.
 ---
+
+There are 3 types of charts:
+
+* Pie
+* Line
+* Table
 
 ## Pie Chart
 
