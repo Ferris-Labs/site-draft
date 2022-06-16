@@ -244,6 +244,27 @@ enable = false
     class = 'highlight-menu-item'
 
 [[menu.main]]
+    identifier = "product_ferris_dx"
+    name = "FERRIS DX"
+    url = "/product"
+    parent = "product"
+    weight = 1
+
+[[menu.main]]
+    identifier = "product_ferris_dsm"
+    name = "FERRIS DSM"
+    url = "/product"
+    parent = "product"
+    weight = 2
+
+[[menu.main]]
+    identifier = "product_ferris_sx"
+    name = "FERRIS SX"
+    url = "/product"
+    parent = "product"
+    weight = 3
+
+[[menu.main]]
   identifier = 'integrations'
   name = 'INTEGRATIONS'
   url = '/integrations/'
@@ -251,19 +272,23 @@ enable = false
   [menu.main.params]
     class = 'highlight-menu-item'
 
-#[[menu.main]]
-#    identifier = "integrations_databases"
-#    name = "DATABASES"
-#    url = "/integrations/databases"
-#    parent = "integrations"
-#    weight = 1
+[[menu.main]]
+    identifier = "integrations_databases"
+    name = "DATABASES"
+    url = "/integrations/databases"
+    parent = "integrations"
+    weight = 1
+    [menu.main.params]
+      class = 'highlight-menu-item'
 
-#[[menu.main]]
-#    identifier = "integrations_notifications"
-#    name = "MESSAGES/NOTIFICATIONS"
-#    url = "/integrations/notifications"
-#    parent = "integrations"
-#    weight = 2
+[[menu.main]]
+    identifier = "integrations_notifications"
+    name = "NOTIFICATIONS"
+    url = "/integrations/notifications"
+    parent = "integrations"
+    weight = 2
+    [menu.main.params]
+      class = 'highlight-menu-item'
 
 #[[menu.main]]
 #  identifier = 'usecases'
@@ -298,9 +323,102 @@ enable = false
 #    class = 'highlight-menu-item'
 
 [[menu.main]]
-  identifier = 'about'
-  name = 'ABOUT'
+  identifier = 'company'
+  name = 'COMPANY'
   url = '/about/'
   weight = 4
   [menu.main.params]
-  class = 'highlight-menu-item'
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+    identifier = "company_about"
+    name = "ABOUT US"
+    url = "/about"
+    parent = "company"
+    weight = 1
+
+[[menu.main]]
+    identifier = "company_contact"
+    name = "CONTACT US"
+    url = "/contact"
+    parent = "company"
+    weight = 2
+
+[[menu.main]]
+    identifier = "company_careers"
+    name = "CAREERS"
+    url = "/jobs"
+    parent = "company"
+    weight = 3
+
+[[menu.main]]
+    identifier = "company_partners"
+    name = "PARTNERS"
+    url = "/partners"
+    parent = "company"
+    weight = 4
+
+[[menu.main]]
+  identifier = 'learn'
+  name = 'LEARN'
+  url = '/learn/'
+  weight = 5
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+    identifier = "learn_develoer_guide"
+    name = "DEVELOPER GUIDE"
+    url = "/docs/developer_guide"
+    parent = "learn"
+    weight = 1
+
+[[menu.main]]
+    identifier = "learn_integrations_guide"
+    name = "INTEGRATIONS GUIDE"
+    url = "/docs/integrations"
+    parent = "learn"
+    weight = 2
+
+[[menu.main]]
+    identifier = "learn_user_guide"
+    name = "USER GUIDE"
+    url = "/docs/user-guide"
+    parent = "learn"
+    weight = 3
+
+[[menu.main]]
+    identifier = "learn_security"
+    name = "SECURITY"
+    url = "/docs/security"
+    parent = "learn"
+    weight = 4
+
+[[menu.main]]
+  identifier = 'support'
+  name = 'SUPPORT'
+  url = '/support/'
+  weight = 6
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+    identifier = "support_support_plans"
+    name = "SUPPORT PLANS"
+    url = "/support"
+    parent = "support"
+    weight = 1
+
+[[menu.main]]
+    identifier = "support_professional_services"
+    name = "PROFESSIONAL SERVICES"
+    url = "/services"
+    parent = "support"
+    weight = 2
+
+[[menu.main]]
+    identifier = "support_documentation"
+    name = "DOCUMENTATION"
+    url = "/docs"
+    parent = "support"
+    weight = 3
