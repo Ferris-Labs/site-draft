@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 linkTitle: "Projects"
-weight: -17
+weight: -15
 description: >
   How to create Projects and Users for new projects.
 ---
