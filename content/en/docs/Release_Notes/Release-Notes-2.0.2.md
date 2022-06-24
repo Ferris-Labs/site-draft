@@ -20,10 +20,11 @@ description: >-
 - [x] Integration of **Slack notifications** triggered through events sent by any service.
 - [x] **Dashboard charts** integrated on project page - showing data related to services belonging to project
 - [x] Added **new charts** to Dashboard page - slowest executions and average execution time per service
+- [x] Integration of **Third Party Charts on Projects Dashboard**
 
 ---
 
-## Changed <img src="/images/changed_yellow.png" alt="changed_yellow" style="zoom:25%;" />
+## Changed <img src="/images/changed_yellow.png" alt="changed_yellow" style="zoom:25%;" /> 
 
 - [x] Re-enabling of the Project/Package/Git Repository/Execution **deletion feature**. 
 - [x] **Version 2 of ferris_cli package** published to public Pypi repository.

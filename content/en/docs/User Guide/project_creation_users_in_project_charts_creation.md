@@ -3,7 +3,7 @@ title: "Projects"
 linkTitle: "Projects"
 weight: -15
 description: >
-  How to create Projects and Users for new projects.
+  How to create Projects, Users and Charts within a projects.
 ---
 
 This subcategory explains the creation of new projects and users withtin these projects.
@@ -123,3 +123,45 @@ As defined above, a Project User can only view the projects he belongs to. He ca
 
 As Project User, one can view packages and trigger manually runs within the projects the user belongs to. The Project User can not delete or edit packages, runs or related elements.
 
+## Chart creation within the project
+
+Charts within the projects are the same charts as used by default on the Ferris Platform Dashboard. The sole difference is that users can more specifically adapt the charts on the project level to their needs.
+
+Project Owners and Project Admins can create charts within a project. 
+
+There are 3 different types of charts:
+
+* Pie
+* Line
+* Table
+
+The documentation on "how to format JSON data to render charts", can be found in the next subcategory: [Charts in Projects](/docs/user-guide/charts_in_projects/ "Charts in Projects").
+
+**Note:** the API created by an user, returns the correctly formated JSON script.
+
+Navigate to a previously created project.
+
+1. Click on the "List Charts" tab 
+2. Click on "+Add" to load the "Create Chart" page
+
+{{< blocks/screenshot color="white" image="/images/list_charts.png">}}
+
+1. Name the chart
+2. Input the API url of the chart
+3. Select the chart type in the dropdown menu:
+   1. Pie
+   2. Line
+   3. Table
+4. Select "Active" to activate the chart 
+5. Click on "Preview" to verify if the JSON script returned by the API is structured as shown in the documentation
+6. Click "Save" to create the chart on the project page
+
+{{< blocks/screenshot color="white" image="/images/create_chart_pie.png">}}
+
+The new chart will be displayed on the Project's "Details" page.
+
+{{< blocks/screenshot color="white" image="/images/preview_chart_details_page.png">}}
+
+The created chart can also be viewed under the "List Charts" tab.
+
+{{< blocks/screenshot color="white" image="/images/list_charts_created_charts">}}
