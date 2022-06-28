@@ -164,4 +164,4 @@ The new chart will be displayed on the Project's "Details" page.
 
 The created chart can also be viewed under the "List Charts" tab.
 
-{{< blocks/screenshot color="white" image="/images/list_charts_created_charts">}}
+{{< blocks/screenshot color="white" image="/images/list_charts_created_charts.png">}}
