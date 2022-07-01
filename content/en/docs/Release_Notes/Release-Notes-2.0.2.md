@@ -6,8 +6,6 @@ linkTitle:
 weight: -105
 description: >-
      New features, improvements and fixes provided to you in the 2nd Quarter of the year 2022.
-
-
 ---
 
 ![ferris_banner](/images/ferris_banner.png)
@@ -21,6 +19,8 @@ description: >-
 - [x] **Dashboard charts** integrated on project page - showing data related to services belonging to project
 - [x] Added **new charts** to Dashboard page - slowest executions and average execution time per service
 - [x] Integration of **Third Party Charts on Projects Dashboard**
+- [x]  **Executions prioritization** - Introduction of **Multiple Priority-based Executor Lanes** 
+- [x]  Skip **Pending Executions** functionality
 
 ---
 
