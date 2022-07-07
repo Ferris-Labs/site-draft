@@ -1,0 +1,201 @@
+bundles:
+- services:
+  - name: Maintenance & Support
+    id: maintenance_support
+    items:
+      - name: Support Types
+        description: Coverage of services, resources and channels
+        bundles:
+          - name: startup
+            items:
+              - on-demand system
+              - platform proactive
+              - preventive upgrades
+          - name: standard
+            items:
+              - on-demand system
+              - platform proactive
+              - preventive upgrades
+          - name: scale
+            items:
+              - Same as Standard
+              - +
+          - name: enterprise
+            items:
+              - Same as Standard
+              - +
+      - name: Support Availability
+        description: Coverage of services, resources and channels
+        bundles:
+          - name: startup
+            items:
+              - CET business hours
+              - Remote Chat
+              - Mail
+          - name: standard
+            items:
+            - CET business hours
+            - Remote Chat
+            - Mail
+          - name: scale
+            items:
+              - Chat
+              - E-Mail
+              - Phone
+          - name: enterprise
+            items:
+              - Around the globe
+              - Remote or on-premise
+              - Dedicated resources
+      - name: Additional Resources
+        description: Enabling Resources
+        bundles:
+          - name: startup
+            items:
+              - online documentation
+              - how-to videos
+          - name: standard
+            items:
+            - online documentation
+            - how-to videos
+          - name: scale
+            items:
+              - DevOps Support <br /> 15h/quarter
+              - Live Training <br /> 6h/quarter
+          - name: enterprise
+            items:
+              - DevOps Support <br /> Starting at 0.5 FTE
+              - Live Training <br /> on demand
+      - name: Service Levels
+        description: Response, Resolution, Close
+        bundles:
+          - name: startup
+            items:
+              - 4/24/best effort
+          - name: standard
+            items:
+            - 4/24/best effort
+          - name: scale
+            items:
+              - 2/16/48
+          - name: enterprise
+            items:
+              - 2/16/48
+      - name: Ferris DSM
+        description: Technology and service integrations
+        bundles:
+          - name: startup
+            items:
+              - '&mdash;'
+          - name: standard
+            items:
+            - '&mdash;'
+          - name: scale
+            items:
+              - Integrations with enterprise tech (in-house) <br /> 3 integrations
+              - Integrations with non-enterprise services (cloud) <br /> 3 integrations
+          - name: enterprise
+            items:
+              - Integrations with enterprise tech (in-house) <br /> as needed / integrations
+              - Integrations with non-enterprise services (cloud) <br /> as needed / integrations
+      - name: Service Duration
+        description: Support duration and Opt out
+        bundles:
+          - name: startup
+            items:
+              - 'Support duration: 1 year'
+              - 'Opt out: 6 months'
+          - name: standard
+            items:
+              - 'Support duration: 1-3 years'
+              - 'Opt out: 6 months'
+          - name: scale
+            items:
+              - 'Support duration: 1-3 years'
+              - 'Opt out: 6 months'
+          - name: enterprise
+            items:
+              - 'Support duration: 1-3 years'
+              - 'Opt out: 6 months'
+      - name: Nodes &amp; Environments
+        description: Minimum supported infrastructure <br /> Available (min) environments
+        bundles:
+          - name: startup
+            items:
+              - min. 4 nodes/servers (per env)
+              - DEV/TST or PROD
+          - name: standard
+            items:
+              - min. 4 nodes/servers (per env) 7)
+              - DEV, UAT, PROD
+          - name: scale
+            items:
+              - min. 4 nodes/servers (per env) 7)
+              - DEV, UAT, PROD
+          - name: enterprise
+            items:
+              - min. 4 nodes/servers (per env) 7)
+              - DEV, UAT, PROD
+      - name: Cost
+        description: EUR / nodes / month 2) - starting at
+        bundles:
+          - name: startup
+            items:
+              - 650
+          - name: standard
+            items:
+              - 950
+          - name: scale
+            items:
+              - 1’250
+          - name: enterprise
+            items:
+              - call us
+  - name: Accordion 2
+    id: id_2
+    items:
+      - name: 
+        description: 
+        bundles:
+          - name: startup
+            items:
+              - 
+          - name: standard
+            items:
+              - 
+          - name: scale
+            items:
+              - 
+          - name: enterprise
+            items:
+              - 
+      - name: 
+        description: 
+        bundles:
+          - name: startup
+            items:
+              - 
+          - name: standard
+            items:
+              - 
+          - name: scale
+            items:
+              - 
+          - name: enterprise
+            items:
+              - 
+      - name: 
+        description: 
+        bundles:
+          - name: startup
+            items:
+              - 
+          - name: standard
+            items:
+              - 
+          - name: scale
+            items:
+              - 
+          - name: enterprise
+            items:
+              - 
