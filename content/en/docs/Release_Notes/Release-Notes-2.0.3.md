@@ -15,6 +15,7 @@ description: >-
 
 - [x] Introduced possibility to add **new python requirements** in the **deployment file** 
 - [x] **Pending excutions view** added.
+- [x] **Logging Capability** added to **ferris_ef** package with streaming to ElasticSearch.
 
 ---
 
