@@ -778,3 +778,21 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
   }
   
 // Navbar dropdown
+
+#bundlesModal {
+	.card-header {
+		button {
+			color: $primary;
+			font-size: 1rem;
+			padding-left: 0;
+		}
+	}
+	.card-body {
+		>.row:nth-child(even) {
+			background: rgba(0, 0, 0, 0.03);
+		}
+		p.bold {
+			padding: .75rem 0;
+		}
+	}
+}
