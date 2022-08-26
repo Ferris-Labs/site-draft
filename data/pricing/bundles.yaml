@@ -151,51 +151,117 @@ bundles:
           - name: enterprise
             items:
               - call us
-  - name: Accordion 2
-    id: id_2
+  - name: DX Engineering (optional)
+    id: dx_engineering
     items:
-      - name: 
+      - name: Process Engineering
+        description: Dedicated remote or on-premise support and coaching for FX, SX, DSM and platform based engineering
+        bundles:
+          - name: startup
+            items:
+              - not available
+          - name: standard
+            items:
+              - FX Expert Engineering Coaching
+              - Mentoring
+          - name: scale
+            items:
+              - FX Expert Engineering Coaching
+              - Mentoring
+          - name: enterprise
+            items:
+              - FX Expert Engineering Coaching
+              - Mentoring
+      - name: EUR / month
         description: 
         bundles:
           - name: startup
             items:
-              - 
+              - '&nbsp;'
           - name: standard
             items:
-              - 
+              - 15h/quarter
+              - 22&apos;000
           - name: scale
             items:
-              - 
+              - 25h/quarter
+              - 37&apos;500
           - name: enterprise
             items:
-              - 
-      - name: 
+              - call us
+  - name: Dev Ops / Data Ops (optional)
+    id: dev_ops_data_ops
+    items:
+      - name: Dev Ops
+        description: Dedicated remote or on-premise operations support
+        bundles:
+          - name: startup
+            items:
+              - '&nbsp;'
+          - name: standard
+            items:
+              - Expert FX, SX, DSM Operations
+              - ...
+          - name: scale
+            items:
+              - FX Expert Engineering Coaching
+              - Mentoring
+          - name: enterprise
+            items:
+              - FX Expert Engineering Coaching
+              - Mentoring
+      - name: EUR / month
         description: 
         bundles:
           - name: startup
             items:
-              - 
+              - '&nbsp;'
           - name: standard
             items:
-              - 
+              - 15h/quarter
+              - 22&apos;000
           - name: scale
             items:
-              - 
+              - 25h/quarter
+              - 37&apos;500
           - name: enterprise
             items:
-              - 
-      - name: 
-        description: 
+              - call us
+  - name: Cloud & Infrastructure Services
+    id: cloud_infrastructure_services
+    items:
+      - name: Cloud & Infrastructure Setup
+        description: Ferris Platform enablement
         bundles:
           - name: startup
             items:
-              - 
+              - Ferris Platform enablement
+              - Nodes setup
+              - Storage setup
+              - Network setup
+              - '&nbsp;'
+              - Cloud costs are passed on 1:1
           - name: standard
             items:
-              - 
+              - Ferris Platform enablement
+              - Nodes setup
+              - Storage setup
+              - Network setup
+              - '&nbsp;'
+              - Cloud costs are passed on 1:1
           - name: scale
             items:
-              - 
+              - Ferris Platform enablement
+              - Nodes setup
+              - Storage setup
+              - Network setup
+              - '&nbsp;'
+              - Cloud costs are passed on 1:1
           - name: enterprise
             items:
-              - 
+              - Ferris Platform enablement
+              - Nodes setup
+              - Storage setup
+              - Network setup
+              - '&nbsp;'
+              - Cloud costs are passed on 1:1
