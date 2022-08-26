@@ -1,0 +1,161 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<!--{{ $col_id := .Get "color" | default .Ordinal }}-->
+<!--{{ $height := .Get "height" | default "auto"  }}-->
+<!--{{ $type   := .Get "type" | default "" }}-->
+
+<div class="pt-3 lead">
+    {{ if eq .Page.File.Ext "md" }}
+    {{ .Inner | markdownify }}
+    {{ else }}
+    {{ .Inner | htmlUnescape | safeHTML }}
+    {{ end }}
+</div>
+
+<section class="row td-cover-block" style="margin-top: -130px;">
+	<div class="container">
+        {{ $fileName := .Get "fileName" | default "" }}
+        <div class="integrations-card-holder">
+            <div class="row">
+                {{ range $.Site.Data.pricing.plans }}
+                    {{ range $index, $element := . }}
+                            {{ block "tombstone" . }}{{ end }}
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal" id="bundlesModal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Bundles and Services</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="accordion">
+                    <div class="row" style="margin: 0;">
+                        <div class="col-md-3 d-none d-lg-block">
+                            
+                        </div>
+                        <div class="col-md-9 d-none d-lg-block">
+                            <div class="row">
+                                {{ range $.Site.Data.pricing.plans }}
+                                    {{ range $index, $element := . }}
+                                        <div class="col-md-3">
+                                            <p class="bold text-capitalize text-center">{{ .name }}</p>
+                                        </div>
+                                    {{ end }}
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                    {{ range $.Site.Data.pricing.bundles }}
+                        {{ range $index, $element := . }}
+                            {{ range .services }}
+                                <div class="card">
+                                    <div class="card-header" id="{{.id}}_heading">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse" data-target="#{{.id}}" aria-expanded="true" aria-controls="collapseOne">
+                                                {{ .name | safeHTML }}
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="{{.id}}" class="collapse show" aria-labelledby="{{.id}}_heading" data-parent="#accordion">
+                                        <div class="card-body">
+                                            {{ range .items }}
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-3">
+                                                                <p class="bold mb-1">{{ .name | safeHTML }}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <p class="small font-italic">{{ .description | safeHTML }}</p>
+                                                    </div>
+                                                    <div class="col-lg-9">
+                                                        <div class="row mb-3">
+                                                            {{ range .bundles }}
+                                                                <div class="col-md-12 col-lg-3">
+                                                                    <div class="d-block d-lg-none">
+                                                                        <p class="bold text-capitalize text-center mb-0">{{ .name | safeHTML }}</p>
+                                                                    </div>
+                                                                    <div class="small text-center mb-2">
+                                                                        {{ range .items }}
+                                                                            <p class="mb-1">{{ . | safeHTML }}</p>
+                                                                        {{ end }}
+                                                                    </div>
+                                                                </div>
+                                                            {{ end }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            {{ end }}
+                                        </div>
+                                    </div>
+                                </div>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ define "tombstone" }}
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between" style="min-height: 500px;">
+                <div>
+                    <div class="integration-card-title" title="{{.name}}">
+                        <div class="text-center">
+                            <img style="height: 60px; width: auto;" class="m-0" src="/images/brand_images/{{.icon}}" alt="{{.name}}" />
+                        </div>
+                        <h4 class="font-weight-bold text-center text-capitalize mb-3">
+                            {{ .name }}
+                        </h4>
+                    </div>
+                    {{ if .description }}
+                        <p class="integration-card-title mb-2 text-muted text-center">
+                            {{ .description }}
+                        </p>
+                    {{ end }}
+                    <h4 class="text-center mt-4 mb-4">
+                        {{ .price | safeHTML }}
+                    </h4>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <a class="btn btn-md btn-primary mb-4" href="/contact">
+                                    Get in touch <i class="fas fa-arrow-alt-circle-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {{ if .features }}
+                        {{ range .features }}
+                            <p class="small mb-1">
+                                {{ if . }}
+                                    <i class="fa fa-check mr-1" aria-hidden="true" style="color: #b81414"></i>
+                                {{ else }}
+                                    &nbsp;
+                                {{ end }}
+                                {{ . }}
+                            </p>
+                        {{ end }}
+                    {{ end }}
+                </div>
+                <div>
+                    <p class="small text-muted"><small>Cloud or HW infrastructure not included - see Cloud Services EUR / month 1)</small></p>
+                    <div class="text-right">
+                        <a href="#" class="small text-muted" data-toggle="modal" data-target="#bundlesModal" style="color: #b81414;">See all plan features</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ end }} 

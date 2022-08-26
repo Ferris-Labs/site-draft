@@ -1,7 +1,7 @@
 ---
 title: "Events"
 linkTitle: "Events"
-weight: -11
+weight: -10
 description: >-
   How to configure a package to be triggered bt the FX Router when a specific type of event is observed on the platform.
 ---

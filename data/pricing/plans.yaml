@@ -1,0 +1,37 @@
+plans:
+- name: Startup
+  description: 
+  icon: ferris_labs_red.png
+  features:
+    - Ferris Executor (FX)
+    - 
+    - Ferris Data & Service Mesh (DSM)
+    - Ferris Technology Platform
+  price: '<sup>&euro;</sup> 650<sup>.00</sup>'
+- name: Standard
+  description: 
+  icon: ferris_labs_red.png
+  features:
+    - Ferris Executor (FX)
+    - 
+    - Ferris Data & Service Mesh (DSM)
+    - Ferris Technology Platform
+  price: '<sup>&euro;</sup> 950<sup>.00</sup>'
+- name: Scale
+  description: 
+  icon: ferris_labs_red.png
+  features:
+    - Ferris Executor (FX)
+    - Ferris Streaming Automation (SX)
+    - Ferris Data & Service Mesh (DSM)
+    - Ferris Technology Platform
+  price: '<sup>&euro;</sup> 1&apos;250<sup>.00</sup>'
+- name: Enterprise
+  description: 
+  icon: ferris_labs_red.png
+  features:
+    - Ferris Executor (FX)
+    - Ferris Streaming Automation (SX)
+    - Ferris Data & Service Mesh (DSM)
+    - Ferris Technology Platform
+  price: 'call us'

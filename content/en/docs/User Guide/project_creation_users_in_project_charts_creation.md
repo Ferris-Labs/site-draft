@@ -3,7 +3,7 @@ title: "Projects"
 linkTitle: "Projects"
 weight: -15
 description: >
-  How to create Projects and Users for new projects.
+  How to create Projects, Users and Charts within a projects.
 ---
 
 This subcategory explains the creation of new projects and users withtin these projects.
@@ -29,15 +29,19 @@ This subcategory explains the creation of new projects and users withtin these p
 
 Project on the Ferris Platform form the overarching organizational bracket for different types of objects. All users, packages, scripts, parameters, secrets and other elements are organized into projects to ease enterprise data management. The default owner for new projects is the Platform Admin (PA).  
 
-## User creation within the project
+## Adding User(s) to the project
 
-Since the Platform Administrator created the Project, he is automatically assigned as the Project Owner. All user roles on the project level are defined in detail as follows:
+Once the project is created, the creator is automatically assigned as the Project Owner. All user roles on the project level are defined in detail as follows:
 
-- **Project Owner** -  has all permissions on project and related entities (packages, users) including deletion of project(s) (and users) created by the PO. By default it is the user that created project
+- **Project Owner** -  has all permissions on project and related entities (servicess, users) including deletion of project(s) (and users) created by the PO. By default it is the user that created project
 - **Project Admin** - has all permissions as Owner except deletion
 - **Project User** - has only list / view permissions
 
-**Please note that users without Platform Administrator role, do not see any projects and packages they are not assigned to. All project role rights are translated to package level also, eg. a user with Project User role will not be able to edit packages of that project, only to list/view them and run a (manual) execution**
+**Below the Project User Matrix**
+
+{{< blocks/screenshot color="white" image="/images/Ferris_Project_User_Matrix.png">}}
+
+**Please note that users without Platform Administrator role, do not see any projects and services they are not assigned to. All project role rights are translated to service level also, eg. a user with Project User role will not be able to edit services of that project, only to list/view them and run a (manual) execution.**
 
 1. Click on the magnifying glass to open Project details page
 
@@ -58,13 +62,13 @@ Since the Platform Administrator created the Project, he is automatically assign
 {{< blocks/screenshot color="white" image="/images/add_new_project_user_roboto.png">}}
 
 
-- Check the user has been created
+- Check the user has been added to the project
 
 {{< blocks/screenshot color="white" image="/images/check_all_users_new.png">}}
 
 
 
-Since new users were created, no package(s) are yet assigned to the project. A project needs to be assigned to an existing package as follows:
+Since new users were added, no service(s) are yet assigned to the project. A project needs to be assigned to an existing package as follows:
 
 1. Click on *Executions* to open dropdown and then *Packages* in the menu on the left
 2. Click on edit
@@ -85,7 +89,7 @@ Once that a project was assigned to a package, the users created within that pro
 
 {{< blocks/screenshot color="white" image="/images/list_projects_as_projectowner_roboto.png">}}
 
-As defined above, a Project Owner can add new projects, view, edit and delete the projects he belongs to.
+As defined above, a Project Owner can  view, edit and delete the projects he belongs to.
 
 3. Click on *Executions* to open dropdown and then on *Packages*
 
@@ -100,13 +104,13 @@ As Project Owner, one can add new packages, view, edit, delete and trigger manua
 
 {{< blocks/screenshot color="white" image="/images/list_projects_as_projectadmin_roboto.png">}}
 
-As defined above, a Project Admin can add new projects, view and edit the projects he belongs to but can not delete anything.
+As defined above, a Project Admin can  view and edit the projects he belongs to but can not delete anything.
 
 3. Click on *Executions* to open dropdown and then on *Packages*
 
 {{< blocks/screenshot color="white" image="/images/view_packages_as_projectadmin_roboto.png">}}
 
-As Project Admin, one can add new packages, view, edit and trigger manually runs within the projects the user belongs to. The Project Admin can not delete the packages, runs or related elements.
+As Project Admin, one can add new packages, view, edit and trigger manually runs within the projects the user belongs to. The Project Admin can not delete the packages or runs.
 
 **Project User**
 
@@ -115,11 +119,53 @@ As Project Admin, one can add new packages, view, edit and trigger manually runs
 
 {{< blocks/screenshot color="white" image="/images/list_projects_as_projectuser_roboto.png">}}
 
-As defined above, a Project User can only view the projects he belongs to. He can neither edit, nore delete anything. 
+As defined above, a Project User can only view the projects he belongs to. He can neither edit, nor delete anything. 
 
 3. Click on *Executions* to open dropdown and then on *Packages*.
 
 {{< blocks/screenshot color="white" image="/images/view_packages_as_projectuser_roboto.png">}}
 
-As Project User, one can view packages and trigger manually runs within the projects the user belongs to. The Project User can not delete or edit packages, runs or related elements.
+As Project User, one can view packages and trigger manually runs within the projects the user belongs to. The Project User can not delete or edit packages or runs.
 
+## Chart adding within the project
+
+By default projects view page includes standard dashboard chart, but in project scope. Beside that, user can add additional charts that will be sourced by custom data.
+
+Project Owners and Project Admins can create charts within a project. 
+
+There are 3 different types of charts:
+
+* Pie
+* Line
+* Table
+
+The documentation on "how to format JSON data to render charts", can be found in the next subcategory: [Charts in Projects](/docs/user-guide/charts_in_projects/ "Charts in Projects").
+
+**Note:** the API created by an user, returns the correctly formated JSON script.
+
+Navigate to a previously created project.
+
+1. Click on the "List Charts" tab 
+2. Click on "+Add" to load the "Create Chart" page
+
+{{< blocks/screenshot color="white" image="/images/list_charts.png">}}
+
+1. Name the chart
+2. Input the API url of the chart
+3. Select the chart type in the dropdown menu:
+   1. Pie
+   2. Line
+   3. Table
+4. Select "Active" to activate the chart 
+5. Click on "Preview" to verify if the JSON script returned by the API is structured as shown in the documentation
+6. Click "Save" to create the chart on the project page
+
+{{< blocks/screenshot color="white" image="/images/create_chart_pie.png">}}
+
+The new chart will be displayed on the Project's "Details" page.
+
+{{< blocks/screenshot color="white" image="/images/preview_chart_details_page.png">}}
+
+The created chart can also be viewed under the "List Charts" tab.
+
+{{< blocks/screenshot color="white" image="/images/list_charts_created_charts.png">}}

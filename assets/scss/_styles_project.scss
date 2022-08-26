@@ -129,10 +129,11 @@ footer {
     margin-bottom: 1rem;
 }
 
-.navbar-expand .navbar-nav .dropdown-menu .nav-link {
-	color: #333;
-	&:not(.active) {
-		color: #333;
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+	background-color: #b81414;
+	& .nav-link {
+		padding-left: .5rem;
+		color: rgba(255, 255, 255, 0.75);
 	}
 }
 
@@ -777,3 +778,22 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
   }
   
 // Navbar dropdown
+
+#bundlesModal {
+	.card-header {
+		button {
+			color: $primary;
+			font-size: 1rem;
+			padding-left: 0;
+		}
+	}
+	.card-body {
+		padding-top: 0;
+		>.row:nth-child(even) {
+			background: rgba(0, 0, 0, 0.03);
+		}
+		p.bold {
+			padding: .75rem 0 0;
+		}
+	}
+}
