@@ -7,7 +7,7 @@ plans:
     - 
     - Ferris Data & Service Mesh (DSM)
     - Ferris Technology Platform
-  price: '<sup>&euro;</sup>650<sup>.00</sup>'
+  price: '<sup>&euro;</sup> 650<sup>.00</sup>'
 - name: Standard
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   icon: ferris_labs_red.png
@@ -16,7 +16,7 @@ plans:
     - 
     - Ferris Data & Service Mesh (DSM)
     - Ferris Technology Platform
-  price: '<sup>&euro;</sup>950<sup>.00</sup>'
+  price: '<sup>&euro;</sup> 950<sup>.00</sup>'
 - name: Scale
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   icon: ferris_labs_red.png
@@ -25,7 +25,7 @@ plans:
     - Ferris Streaming Automation (SX)
     - Ferris Data & Service Mesh (DSM)
     - Ferris Technology Platform
-  price: '<sup>&euro;</sup>1’250<sup>.00</sup>'
+  price: '<sup>&euro;</sup> 1&apos;250<sup>.00</sup>'
 - name: Enterprise
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   icon: ferris_labs_red.png

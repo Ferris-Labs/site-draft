@@ -147,7 +147,7 @@ bundles:
               - 950
           - name: scale
             items:
-              - 1’250
+              - 1&apos;250
           - name: enterprise
             items:
               - call us
