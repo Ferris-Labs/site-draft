@@ -1,6 +1,6 @@
 plans:
 - name: Startup
-  description: '<br />'
+  description: 
   icon: ferris_labs_red.png
   features:
     - Ferris Executor (FX)
@@ -9,7 +9,7 @@ plans:
     - Ferris Technology Platform
   price: '<sup>&euro;</sup> 650<sup>.00</sup>'
 - name: Standard
-  description: '<br />'
+  description: 
   icon: ferris_labs_red.png
   features:
     - Ferris Executor (FX)
@@ -18,7 +18,7 @@ plans:
     - Ferris Technology Platform
   price: '<sup>&euro;</sup> 950<sup>.00</sup>'
 - name: Scale
-  description: '<br />'
+  description: 
   icon: ferris_labs_red.png
   features:
     - Ferris Executor (FX)
@@ -27,7 +27,7 @@ plans:
     - Ferris Technology Platform
   price: '<sup>&euro;</sup> 1&apos;250<sup>.00</sup>'
 - name: Enterprise
-  description: '<br />'
+  description: 
   icon: ferris_labs_red.png
   features:
     - Ferris Executor (FX)
