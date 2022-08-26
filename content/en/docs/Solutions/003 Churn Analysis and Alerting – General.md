@@ -1,5 +1,5 @@
 ---
-title: Curn Analysis and Alerting – General
+title: Churn Analysis and Alerting – General
 category: use case
 industries: [Retail, Intertainment, Massmedia]
 owner: Tom Debus
