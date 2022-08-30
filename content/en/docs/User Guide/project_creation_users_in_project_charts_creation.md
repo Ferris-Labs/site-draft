@@ -27,7 +27,7 @@ This subcategory explains the creation of new projects and users withtin these p
 
 
 
-Project on the Ferris Platform form the overarching organizational bracket for different types of objects. All users, packages, scripts, parameters, secrets and other elements are organized into projects to ease enterprise data management. The default owner for new projects is the Platform Admin (PA).  
+Project on the Ferris Platform form the overarching organizational bracket for different types of objects. All users, services, scripts, parameters, secrets and other elements are organized into projects to ease enterprise data management. The default owner for new projects is the Platform Admin (PA).  
 
 ## Adding User(s) to the project
 
@@ -66,21 +66,13 @@ Once the project is created, the creator is automatically assigned as the Projec
 
 {{< blocks/screenshot color="white" image="/images/check_all_users_new.png">}}
 
+Since new users were added, no service(s) are yet assigned to the project. A project needs to be assigned to an existing service. The details of "how to" can be found under [Executions/Services](/docs/user-guide/executions_services "Executions-Services").
 
+Once a project was assigned to a service, the users created within that project will be able to perform their chores.
 
-Since new users were added, no service(s) are yet assigned to the project. A project needs to be assigned to an existing package as follows:
+- Click on "List Services" to view the service the project belongs to
 
-1. Click on *Executions* to open dropdown and then *Packages* in the menu on the left
-2. Click on edit
-
-{{< blocks/screenshot color="white" image="/images/edit_package_to_add_project_roboto.png">}}
-
-3. Choose a project from dropdown
-4. Click Save
-
-{{< blocks/screenshot color="white" image="/images/added_project_to_package_roboto.png">}}
-
-Once that a project was assigned to a package, the users created within that project will be able to perform their chores.
+{{< blocks/screenshot color="white" image="/images/list_services_project.png">}}
 
 ##### Project Owner
 
@@ -89,13 +81,15 @@ Once that a project was assigned to a package, the users created within that pro
 
 {{< blocks/screenshot color="white" image="/images/list_projects_as_projectowner_roboto.png">}}
 
-As defined above, a Project Owner can  view, edit and delete the projects he belongs to.
+As defined above, a Project Owner can  view and edit but not delete the projects he belongs to.
 
-3. Click on *Executions* to open dropdown and then on *Packages*
+3. Click on the magnifying glass of the *Testing Demo Project*, the *List Services* tab should be redirected automatically. If not, click the *List Services* tab to view the services.
 
-{{< blocks/screenshot color="white" image="/images/view_packages_as_project_owner.png">}}
+{{< blocks/screenshot color="white" image="/images/magnifying_glass_project_PO.png">}}
 
-As Project Owner, one can add new packages, view, edit, delete and trigger manual runs and delete the packages within the projects the user belongs to.
+{{< blocks/screenshot color="white" image="/images/list_services_PO.png">}}
+
+As Project Owner, one can add new services, view, edit and trigger manual runs but not delete the services within the projects the user belongs to.
 
 ##### Project Admin
 
@@ -106,11 +100,13 @@ As Project Owner, one can add new packages, view, edit, delete and trigger manua
 
 As defined above, a Project Admin can  view and edit the projects he belongs to but can not delete anything.
 
-3. Click on *Executions* to open dropdown and then on *Packages*
+3. Click on the magnifying glass of the *Testing Demo Project*, the *List Services* tab should be redirected automatically. If not, click the *List Services* tab to view the services.
 
-{{< blocks/screenshot color="white" image="/images/view_packages_as_projectadmin_roboto.png">}}
+{{< blocks/screenshot color="white" image="/images/magnifying_glass_project_PA.png">}}
 
-As Project Admin, one can add new packages, view, edit and trigger manually runs within the projects the user belongs to. The Project Admin can not delete the packages or runs.
+{{< blocks/screenshot color="white" image="/images/list_services_PA.png">}}
+
+As Project Admin, one can add new services, view, edit and trigger manually runs within the projects the user belongs to.
 
 **Project User**
 
@@ -121,11 +117,13 @@ As Project Admin, one can add new packages, view, edit and trigger manually runs
 
 As defined above, a Project User can only view the projects he belongs to. He can neither edit, nor delete anything. 
 
-3. Click on *Executions* to open dropdown and then on *Packages*.
+3. Click on the magnifying glass of the *Testing Demo Project*, the *List Services* tab should be redirected automatically. If not, click the *List Services* tab to view the services.
 
-{{< blocks/screenshot color="white" image="/images/view_packages_as_projectuser_roboto.png">}}
+{{< blocks/screenshot color="white" image="/images/view_services_as_projectuser_roboto.png">}}
 
-As Project User, one can view packages and trigger manually runs within the projects the user belongs to. The Project User can not delete or edit packages or runs.
+{{< blocks/screenshot color="white" image="/images/list_services_PU.png">}}
+
+As Project User, one can view services and trigger manually runs within the projects the user belongs to. The Project User can not delete or edit services and runs.
 
 ## Chart adding within the project
 
