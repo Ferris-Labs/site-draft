@@ -14,14 +14,14 @@ In this specific use case the insights and analytics of the FerrisFX Data Platfo
 
   - the last 18 executions showcase the following details:
 
-    - service (name)
+    - Service (name)
     - Status
     - Execution time
     - Finished
 
   - the last 18 executions with failed state showcase the following details:
 
-    - service (name)
+    - Service (name)
     - Status failed
     - Triggered time 
 
@@ -43,7 +43,7 @@ In this specific use case the insights and analytics of the FerrisFX Data Platfo
 - In the 4th row, the average execution time per day (last 7 days) and the most recently updated services
 
   - the details of the most recently updated services are divided as follows:
-    - service
+    - Service
     - Project
     - Updated on (date and time)
 
