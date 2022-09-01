@@ -84,25 +84,3 @@ It will automatically open the *List Package Executions* tab.
 
 {{< blocks/screenshot color="white" image="/images/details_page_event.png">}}
 
-## Workflow -> approval completed trigger event
-
-To finalize the second trigger event (ferris.apps.modules.approvals.step_approval_completed), an existing Workflow will be used to trigger a Case Management that will need to get approved.
-
-1. Click on *Workflows* on the left side of the dashboard menu to open the drop-down
-2. Click on *List Workflows* 
-3. Click on the magnifying glass to show the details page of the workflow
-
-Note that before even getting a closer look at the Workflow details, the *Entrypoint Event* is displayed -> ferris.apps.modules.minio.file_uploaded
-
-{{< blocks/screenshot color="white" image="/images/workflow_second_trigger_event.png">}}
-
-Check the details in the JSON snippet to understand what or which event types will trigger the second event type. The first event type shown in the JSON snippet is: ferris.apps.modules.minio.file_uploaded -> which means that a file will need to get uploaded for the event to get triggered. The second event type shown in the JSON snippet is: ferris.apps.modules.approvals.step_approval_completed -> meaning the uploaded file will need to get approved in the *Case Management* module before the wanted event gets triggered. 
-
-{{< blocks/screenshot color="white" image="/images/workflow_trigger_event_types.png">}}
-
-## Case Management -> -> approval completed trigger event
-
-1. Upload a file to a bucket (the process of uploading a file was described in detail on top of this page)
-2. Click on *Case Management* on the left side of the dashboard menu to open the drop-down
-3. Click on *Approvals* 
-
