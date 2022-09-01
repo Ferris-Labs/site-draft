@@ -178,7 +178,7 @@ Example of a valid Table chart data - `data.json`:
 {
   "columns": [
     {
-      "field": "package_name",
+      "field": "service_name",
       "title": "Service Name"
     },
     {
@@ -194,32 +194,32 @@ Example of a valid Table chart data - `data.json`:
     {
       "avg_time": 341135.94,
       "exec_count": 154,
-      "package_name": "test_context"
+      "service_name": "test_context"
     },
     {
       "avg_time": 2950.1,
       "exec_count": 153,
-      "package_name": "Test secret script"
+      "service_name": "Test secret script"
     },
     {
       "avg_time": 2264.09,
       "exec_count": 154,
-      "package_name": "test_import"
+      "service_name": "test_import"
     },
     {
       "avg_time": 1507.73,
       "exec_count": 154,
-      "package_name": "super test sql 124"
+      "service_name": "super test sql 124"
     },
     {
       "avg_time": 916.37,
       "exec_count": 3,
-      "package_name": "test_manifest"
+      "service_name": "test_manifest"
     },
     {
       "avg_time": 770.68,
       "exec_count": 3,
-      "package_name": "dfasdfasfda"
+      "service_name": "dfasdfasfda"
     }
   ],
   "title": "Average Execution Time per Service in last 7 days",

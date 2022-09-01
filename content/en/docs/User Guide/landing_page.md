@@ -14,18 +14,18 @@ In this specific use case the insights and analytics of the FerrisFX Data Platfo
 
   - the last 18 executions showcase the following details:
 
-    - Package (name)
+    - Service (name)
     - Status
     - Execution time
     - Finished
 
   - the last 18 executions with failed state showcase the following details:
 
-    - Package (name)
+    - Service (name)
     - Status failed
     - Triggered time 
 
-    It allows users of the platform to verify why the triggered package has failed executing.
+    It allows users of the platform to verify why the triggered service has failed executing.
 
 - In the second row, the executions statuses per day (last 7 days) and the executions by status (last 7 days)
 
@@ -40,16 +40,16 @@ In this specific use case the insights and analytics of the FerrisFX Data Platfo
   - scheduled
   - manual
 
-- In the 4th row, the average execution time per day (last 7 days) and the most recently updated packages
+- In the 4th row, the average execution time per day (last 7 days) and the most recently updated services
 
-  - the details of the most recently updated packages are divided as follows:
-    - Package
+  - the details of the most recently updated services are divided as follows:
+    - Service
     - Project
     - Updated on (date and time)
 
-- In the 5th row, the most frequently executed packages in the last 7 days with the following details:
+- In the 5th row, the most frequently executed services in the last 7 days with the following details:
 
-  - Package (name)
+  - service (name)
   - Number of exections
 
 {{< blocks/screenshot color="white" image="/images/dashboard_landing_page.png">}}
