@@ -6,7 +6,7 @@ description: >
   How to add Tags and the importance of Taxonomy.
 ---
 
-Taxonomies or Tags describe the ability to organize and structure types and classes of objects and their correlations within executions/packages and events (event types) across any given application, use case or project. Tags are searchable and makes it easy to group and relate objects across different components and lifecycle stages.
+Taxonomies or Tags describe the ability to organize and structure types and classes of objects and their correlations within executions/services and events (event types) across any given application, use case or project. Tags are searchable and makes it easy to group and relate objects across different components and lifecycle stages.
 
 As a generic base module "taggability" can easily be included in any model, use case or application by the developers/users.
 
@@ -24,11 +24,11 @@ As a generic base module "taggability" can easily be included in any model, use 
 
 {{< blocks/screenshot color="white" image="/images/create_tag_save_roboto.png">}}
 
-- Check created Tag(s)
+- **Check created Tag(s)**
 
 1. Click on the magnifying glass to open details (show tag) page
 2. This will automatically transfer you to the tag details page
-3. Click on *List Packages* to see in which packages the same tag is used
+3. Click on *List services* to see in which services the same tag is used
 5. Click on *Event Types* to see in which event type the same tag is uses (in this example no event type is associated with the tag just created)
 6. Click on the Edit icon (List tags page) to edit/rename a tag
 
@@ -36,7 +36,7 @@ As a generic base module "taggability" can easily be included in any model, use 
 
 {{< blocks/screenshot color="white" image="/images/show_tag_details_roboto.png">}}
 
-{{< blocks/screenshot color="white" image="/images/list_tag_packages_roboto.png">}}
+{{< blocks/screenshot color="white" image="/images/list_tag_services_roboto.png">}}
 
 {{< blocks/screenshot color="white" image="/images/list_event_types_tag_roboto.png">}}
 

@@ -21,7 +21,7 @@
                         {{ range $index, $element := . }}
                             {{ $count := cond (eq $index "databases") 2 1 }}
                             {{ range . | shuffle | first $count }}
-                                {{ block "tombstone" . }}{{ end }}
+                                {{ block "integrations_tombstone" . }}{{ end }}
                             {{ end }}
                         {{ end }}
                     {{ end }}
@@ -34,7 +34,7 @@
                             </div>
                             <div class="row">
                                 {{ range first 6 . }}
-                                    {{ block "tombstone" . }}{{ end }}
+                                    {{ block "integrations_tombstone" . }}{{ end }}
                                 {{ end }}
                                 <div class="col-md-12 mb-5 text-right">
                                     <a class="btn btn-lg btn-primary mb-4" href="/integrations/{{ $index }}">
@@ -49,7 +49,7 @@
                 <div class="row">
                     {{ range index $.Site.Data.integrations $fileName }}
                         {{ range $index, $element := . }}
-                            {{ block "tombstone" . }}{{ end }}
+                            {{ block "integrations_tombstone" . }}{{ end }}
                         {{ end }}
                     {{ end }}
                 </div>
@@ -58,7 +58,7 @@
     </div>
 </section>
 
-{{ define "tombstone" }}
+{{ define "integrations_tombstone" }}
     <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="integration-card">
             <div class="card-body d-flex flex-column justify-content-between">
