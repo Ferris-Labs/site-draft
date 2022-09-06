@@ -24,7 +24,7 @@ As a generic base module "taggability" can easily be included in any model, use 
 
 {{< blocks/screenshot color="white" image="/images/create_tag_save_roboto.png">}}
 
-- **Check created Tag(s)**
+- Check created Tag(s)
 
 1. Click on the magnifying glass to open details (show tag) page
 2. This will automatically transfer you to the tag details page
@@ -52,7 +52,9 @@ As a generic base module "taggability" can easily be included in any model, use 
 - Ends with
 - Contains
 - Equal to
-- Etc.
+- Not Starts with
+- Not ends with
+- Not Contains
 
 4. Insert tag "Name"
 5. Hit the Search button
