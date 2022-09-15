@@ -5,7 +5,7 @@ description: >-
   How to integrate a Git Repository with the Ferris Platform.
 ---
 
-The Git Integration is the capability to generate a connection from a git repository with projects and synchronise the Packages from the Executor with the git repository, with the goal to execute it through the FerrisFX Platform. It provides another, more fluent way for connecting scripts with the FerrisFX Platform without the necessity to upload files directly to the platform.
+The Git Integration is the capability to generate a connection from a git repository with projects and synchronise the services from the Executor with the git repository, with the goal to execute it through the FerrisFX Platform. It provides another, more fluent way for connecting scripts with the FerrisFX Platform without the necessity to upload files directly to the platform.
 
 A new Project will be created to showcase the capabilty of the git integration:
 
@@ -41,7 +41,7 @@ A new Project will be created to showcase the capabilty of the git integration:
 *Note that before adding your GitHub Repository to the platform, a public SSH key needs to be generated.*
 
 1. Login to your GitHub account
-2. Go to the Repository you want to add to the project, in this use case "ferris-packages"
+2. Go to the Repository you want to add to the project, in this use case "ferris-services"
 3. Click on the the green Code button to showcase the repository URLs
 4. Copy the SSH URL
 
@@ -54,7 +54,7 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 {{< blocks/screenshot color="white" image="/images/create_git_repo.png">}}
 
-*Note that a pair of  public and private keys are generated for each repository which is safed on the FerrisFX platform. The private key is encrypted and stored safely in the database and will never be presented to anyone, whereas the public key should be copied and added to the git repository in order to provide the FerrisFX access to the repository and the possibility to clone packages.*
+*Note that a pair of  public and private keys are generated for each repository which is safed on the FerrisFX platform. The private key is encrypted and stored safely in the database and will never be presented to anyone, whereas the public key should be copied and added to the git repository in order to provide the FerrisFX access to the repository and the possibility to clone services.*
 
 {{< blocks/screenshot color="white" image="/images/public_key_repo.png">}}
 
@@ -90,9 +90,9 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 {{< blocks/screenshot color="white" image="/images/synced_repos.png">}}
 
-4. Click on the List Packages tab to verify that the packages were imported
+4. Click on the List services tab to verify that the services were imported
 
-{{< blocks/screenshot color="white" image="/images/list_packages_git_import.png">}}
+{{< blocks/screenshot color="white" image="/images/list_services_git_import.png">}}
 
 ## Change Git Branch on the platform
 
@@ -107,13 +107,13 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 {{< blocks/screenshot color="white" image="/images/save_branch.png">}}
 
-4. Click on Sync to synchronise the packages from the dev branch
+4. Click on Sync to synchronise the services from the dev branch
 
 {{< blocks/screenshot color="white" image="/images/sync_dev_branch.png">}}
 
-5. Click on the List Packages tab to verify the packages have been synced from the dev branch
+5. Click on the List services tab to verify the services have been synced from the dev branch
 
-{{< blocks/screenshot color="white" image="/images/list_packages_dev.png">}}
+{{< blocks/screenshot color="white" image="/images/list_services_dev.png">}}
 
 *Note that a public key can be regenerated at any moment if in doubt that someone has access to it. If a new key gets generated, it needs to get added to GitHub again and synced on the platform afterwards. If the step of adding the key is missed, the synchronisation will fail. Keys can also be deleted directly on GitHub if the platform access shouldn't be granted anymore.*
 
