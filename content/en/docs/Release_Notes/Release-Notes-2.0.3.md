@@ -21,7 +21,7 @@ description: >-
 
 ## Changed <img src="/images/changed_yellow.png" alt="changed_yellow" style="zoom:25%;" /> 
 
-- [x] No changes to report
+- [x] View of **execution step result** changed to terminal like view.
 
 ---
 
