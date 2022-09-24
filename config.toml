@@ -322,8 +322,8 @@ enable = false
 
 [[menu.main]]
   identifier = 'learn'
-  name = 'DOCS'
-  url = '/learn/'
+  name = 'DOCUMENTATION'
+  url = '/docs/'
   weight = 5
   [menu.main.params]
     class = 'highlight-menu-item'
