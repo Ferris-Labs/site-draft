@@ -351,7 +351,7 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 // Timeline
 .timeline {
 	position: relative;
-	width: 860px;
+	width: 100%;
 	margin: 0 auto;
 	margin-top: 20px;
 	padding: 1em 0;
@@ -421,7 +421,7 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 	}
 	.direction-l {
 		position: relative;
-		width: 400px;
+		width: calc(50% - 30px);
 		float: left;
 		text-align: right;
 		.flag {
@@ -448,7 +448,7 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 	}
 	.direction-r {
 		position: relative;
-		width: 400px;
+		width: calc(50% - 30px);
 		float: right;
 		.flag {
 			-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
