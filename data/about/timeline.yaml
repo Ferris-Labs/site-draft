@@ -1,6 +1,9 @@
 
+- flag: FerrisK8X
+  time: 2023 (coming soon)
+  description: Event Driven Kubernetes - By running FerrisK8X as a service inside your Kubernetes cluster, you can harness the power of millions of available Docker images.
 - flag: FerrisSX
-  time: 2022 (shipping in June) 
+  time: 2022
   description: The Kafka based streaming platform is taken to the next level with Ferris Streaming Automation or FerrisSX is the latest addition, enabling the automated onboarding of new data and event streams.
 - flag: Embedded CI/CD
   time: 2022 
