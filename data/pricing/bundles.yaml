@@ -173,18 +173,18 @@ bundles:
               - FX Expert Engineering Coaching
               - Mentoring
       - name: EUR / month
-        description: 
+        description:
         bundles:
           - name: startup
             items:
               - '&nbsp;'
           - name: standard
             items:
-              - 15h/quarter
+              - 15d/quarter
               - 22&apos;000
           - name: scale
             items:
-              - 25h/quarter
+              - 25d/quarter
               - 37&apos;500
           - name: enterprise
             items:
@@ -211,18 +211,18 @@ bundles:
               - FX Expert Engineering Coaching
               - Mentoring
       - name: EUR / month
-        description: 
+        description:
         bundles:
           - name: startup
             items:
               - '&nbsp;'
           - name: standard
             items:
-              - 15h/quarter
+              - 15d/quarter
               - 22&apos;000
           - name: scale
             items:
-              - 25h/quarter
+              - 25d/quarter
               - 37&apos;500
           - name: enterprise
             items:
