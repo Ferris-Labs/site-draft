@@ -186,11 +186,14 @@ footer {
 		flex-direction: row;
 		justify-content: center;
 		.social-link {
-			color: #c2c1c7;
-			font-size: 26px;
+			// color: #c2c1c7;
+			// font-size: 26px;
 			padding: 10px 16px;
-			transition: .15s ease-in-out;
+			transition: .3s ease-in-out;
 			will-change: color;
+			img {
+				height: 26px;
+			}
 		}
 	}
 	.footer-links {
