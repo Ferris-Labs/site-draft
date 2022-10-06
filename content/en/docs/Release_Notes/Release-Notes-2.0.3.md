@@ -6,7 +6,6 @@ linkTitle:
 weight: -106
 description: >-
      New features, improvements and fixes provided to you in the 3rd Quarter of the year 2022.
-
 ---
 
 ![ferris_banner](/images/ferris_banner.png)
