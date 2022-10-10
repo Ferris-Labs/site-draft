@@ -278,6 +278,50 @@ enable = false
     class = 'highlight-menu-item'
 
 [[menu.main]]
+  identifier = 'learn'
+  name = 'DOCUMENTATION'
+  url = '/docs/'
+  weight = 4
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+#[[menu.main]]
+#    identifier = "learn_develoer_guide"
+#    name = "DEVELOPER GUIDE"
+#    url = "/docs/developer_guide"
+#    parent = "learn"
+#    weight = 1
+
+#[[menu.main]]
+#    identifier = "learn_integrations_guide"
+#    name = "INTEGRATIONS GUIDE"
+#    url = "/docs/integrations"
+#    parent = "learn"
+#    weight = 2
+
+#[[menu.main]]
+#    identifier = "learn_user_guide"
+#    name = "USER GUIDE"
+#    url = "/docs/user-guide"
+#    parent = "learn"
+#    weight = 3
+
+#[[menu.main]]
+#    identifier = "learn_security"
+#    name = "SECURITY"
+#    url = "/docs/security"
+#    parent = "learn"
+#    weight = 4
+
+[[menu.main]]
+  identifier = 'blog'
+  name = 'BLOG'
+  url = '/blog/'
+  weight = 5
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
   identifier = 'company'
   name = 'COMPANY'
   url = '/about/'
@@ -319,39 +363,3 @@ enable = false
     url = "/SUPPORT"
     parent = "company"
     weight = 5
-
-[[menu.main]]
-  identifier = 'learn'
-  name = 'DOCUMENTATION'
-  url = '/docs/'
-  weight = 5
-  [menu.main.params]
-    class = 'highlight-menu-item'
-
-[[menu.main]]
-    identifier = "learn_develoer_guide"
-    name = "DEVELOPER GUIDE"
-    url = "/docs/developer_guide"
-    parent = "learn"
-    weight = 1
-
-[[menu.main]]
-    identifier = "learn_integrations_guide"
-    name = "INTEGRATIONS GUIDE"
-    url = "/docs/integrations"
-    parent = "learn"
-    weight = 2
-
-[[menu.main]]
-    identifier = "learn_user_guide"
-    name = "USER GUIDE"
-    url = "/docs/user-guide"
-    parent = "learn"
-    weight = 3
-
-[[menu.main]]
-    identifier = "learn_security"
-    name = "SECURITY"
-    url = "/docs/security"
-    parent = "learn"
-    weight = 4
