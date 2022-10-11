@@ -7,11 +7,11 @@ description: >-
 
 The UI Generator has the ability to facilitate and automate manual parameter based processes to define step by step flows or pipelines. Based on definition of models, views and interfaces within the code, the generator will create UIs automatically considering the configuration of modules as well.
 
-Another script which has the ability to generate  UIs will be added to the service already created previously "Test service with Scripts". This process will work as follows:
+Another script which has the ability to generate  UIs will be added to the service already created previously "Test Service". This process will work as follows:
 
 ## Edit existing service
 
-1. Click on *Executions -> services* to open the list of services
+1. Click on *Executions -> Services* to open the list of services
 2. Click on the edit icon to open the service/execution details
 
 {{< blocks/screenshot color="white" image="/images/edit_service_roboto.png">}}
@@ -144,7 +144,7 @@ The *parameters.json* file contains a JSON definition of fields that will be ren
 
 The parameters from the "parameters.json" test script will be rendered and displayed.
 
-1. Fill in some text "Server 1 - test" since it is a required field
+1. Fill in some text "Server1-test" since it is a required field
 2. Fill in some text
 3. Add some file
 4. Click on Run to send the filled parameters to the service for execution
