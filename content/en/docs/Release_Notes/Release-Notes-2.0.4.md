@@ -12,7 +12,7 @@ description: >-
 
 ## New <img src="/images/added_blue.png" alt="added_blue" style="zoom:25%;" />
 
-- [x] Switching **DEV Environment**  to**K3D**.
+- [x] Switching **DEV Environment**  to **K3D**.
 
 ---
 
