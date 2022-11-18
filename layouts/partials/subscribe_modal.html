@@ -16,36 +16,36 @@
                 
                                 <div id="mauticform_flnewsletterform_f_name" data-validate="f_name" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-1 mauticform-required">
                                     <label id="mauticform_label_flnewsletterform_f_name" for="mauticform_input_flnewsletterform_f_name" class="mauticform-label font-weight 100">First Name</label>
-                                    <input id="mauticform_input_flnewsletterform_f_name" name="mauticform[f_name]" value="" placeholder="First Name" class="mauticform-input" type="text" aria-label="Input field">
+                                    <input id="mauticform_input_flnewsletterform_f_name" name="mauticform_2[f_name]" value="" placeholder="First Name" class="mauticform-input" type="text" aria-label="Input field">
                                     <span class="mauticform-errormsg" style="display: none;">This is required.</span>
                                 </div>
                     
                                 <div id="mauticform_flnewsletterform_last_name" data-validate="last_name" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-2 mauticform-required">
                                     <label id="mauticform_label_flnewsletterform_last_name" for="mauticform_input_flnewsletterform_last_name" class="mauticform-label font-weight normal">Last Name</label>
-                                    <input id="mauticform_input_flnewsletterform_last_name" name="mauticform[last_name]" value="" placeholder="Last Name" class="mauticform-input" type="text" aria-label="Input field">
+                                    <input id="mauticform_input_flnewsletterform_last_name" name="mauticform_2[last_name]" value="" placeholder="Last Name" class="mauticform-input" type="text" aria-label="Input field">
                                     <span class="mauticform-errormsg" style="display: none;">This is required.</span>
                                 </div>
                     
                                 <div id="mauticform_flnewsletterform_email" data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-3 mauticform-required">
                                     <label id="mauticform_label_flnewsletterform_email" for="mauticform_input_flnewsletterform_email" class="mauticform-label">E-Mail</label>
-                                    <input id="mauticform_input_flnewsletterform_email" name="mauticform[email]" value="" placeholder="E-Mail" class="mauticform-input" type="email" aria-label="Input field">
+                                    <input id="mauticform_input_flnewsletterform_email" name="mauticform_2[email]" value="" placeholder="E-Mail" class="mauticform-input" type="email" aria-label="Input field">
                                     <span class="mauticform-errormsg" style="display: none;">This is required.</span>
                                 </div>
 
                                 <div id="mauticform_flnewsletterform_recaptcha" class="mauticform-row mauticform-div-wrapper mauticform-field-4">
-                                            <input id="mauticform_input_flnewsletterform_recaptcha" name="mauticform[recaptcha]" value="" class="mauticform-input" type="hidden">
+                                            <input id="mauticform_input_flnewsletterform_recaptcha" name="mauticform_2[recaptcha]" value="" class="mauticform-input" type="hidden">
                                     <span class="mauticform-errormsg" style="display: none;"></span>
                                 </div>
 
                                 <div id="mauticform_flnewsletterform_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-5">
-                                    <button type="submit" name="mauticform[submit]" id="mauticform_input_flnewsletterform_submit" value="" class="mauticform-button btn btn-default">Submit</button>
+                                    <button type="submit" name="mauticform_2[submit]" id="mauticform_input_flnewsletterform_submit" value="" class="mauticform-button btn btn-default">Submit</button>
                                 </div>
                             </div>
                         </div>
 
-                        <input type="hidden" name="mauticform[formId]" id="mauticform_flnewsletterform_id" value="19">
-                        <input type="hidden" name="mauticform[return]" id="mauticform_flnewsletterform_return" value="">
-                        <input type="hidden" name="mauticform[formName]" id="mauticform_flnewsletterform_name" value="flnewsletterform">
+                        <input type="hidden" name="mauticform_2[formId]" id="mauticform_flnewsletterform_id" value="19">
+                        <input type="hidden" name="mauticform_2[return]" id="mauticform_flnewsletterform_return" value="">
+                        <input type="hidden" name="mauticform_2[formName]" id="mauticform_flnewsletterform_name" value="flnewsletterform">
                     </form>
                 </div>
 			</div>
@@ -81,7 +81,7 @@
                 const entries = urlParams.entries();
 
                 for(const entry of entries) {
-                    const inputs = document.getElementsByName(`mauticform[${entry[0]}]`);
+                    const inputs = document.getElementsByName(`mauticform_2[${entry[0]}]`);
                     inputs.forEach(function (input) {
                         input.value = entry[1];
                     });
