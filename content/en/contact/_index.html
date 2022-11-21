@@ -62,16 +62,16 @@ linkTitle = "contact"
     }
 </script>
 <script type="text/javascript">
-    function verifyCallback_ca8723c75f9ff3cd0b0c27d411256c29( response ) {
+    function verifyCallback_reCaptchaContactForm( response ) {
         document.getElementById("mauticform_input_flcontactform_recaptcha").value = response;
     }
-    function onLoadca8723c75f9ff3cd0b0c27d411256c29() { 
+    function reCaptchaContactFormOnLoad() { 
         grecaptcha.execute('https://console.cloud.google.com/security/recaptcha?_ga=2.18561082.2055820716.1668152030-1795201378.1668152030', {action: 'form'}).then(function(token) {
-            verifyCallback_ca8723c75f9ff3cd0b0c27d411256c29(token);
+            verifyCallback_reCaptchaContactForm(token);
          }); 
     }
 </script>
-<script src="https://www.google.com/recaptcha/api.js?onload=onLoadca8723c75f9ff3cd0b0c27d411256c29&render=https://console.cloud.google.com/security/recaptcha?_ga=2.18561082.2055820716.1668152030-1795201378.1668152030"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=reCaptchaContactFormOnLoad&render=https://console.cloud.google.com/security/recaptcha?_ga=2.18561082.2055820716.1668152030-1795201378.1668152030"></script>
 
 
 <div id="mauticform_wrapper_flcontactform" class="mauticform_wrapper">

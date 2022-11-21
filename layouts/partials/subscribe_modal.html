@@ -91,13 +91,13 @@
     }
 </script>
 <script type="text/javascript">
-    function verifyCallback_07564f7b3578404ef2fcb7f4596508a5( response ) {
+    function verifyCallback_reCaptchaSubscriptionForm( response ) {
         document.getElementById("mauticform_input_flnewsletterform_recaptcha").value = response;
     }
-    function onLoad07564f7b3578404ef2fcb7f4596508a5() { 
+    function reCaptchaSubscriptionFormOnLoad() { 
         grecaptcha.execute('6LfbRfsiAAAAAHS_hDnq73lyJkifCAAUHg4sS54z', {action: 'form'}).then(function(token) {
-            verifyCallback_07564f7b3578404ef2fcb7f4596508a5(token);
+            verifyCallback_reCaptchaSubscriptionForm(token);
          }); 
     }
 </script>
-<script src="https://www.google.com/recaptcha/api.js?onload=onLoad07564f7b3578404ef2fcb7f4596508a5&render=6LfbRfsiAAAAAHS_hDnq73lyJkifCAAUHg4sS54z"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=reCaptchaSubscriptionFormOnLoad&render=6LfbRfsiAAAAAHS_hDnq73lyJkifCAAUHg4sS54z"></script>
