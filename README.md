@@ -1,3 +1,10 @@
+Branch deployment status <b>'master'</b> to https://www.ferrislabs.net: 
+[![Netlify 'master' branch status](https://api.netlify.com/api/v1/badges/efd1c5c3-e992-4c01-8a50-ebe9a6c920a0/deploy-status/?branch=master)](https://app.netlify.com/sites/ferrislabs/deploys)
+
+Branch deployment status <b>'uat'</b> to https://uat--ferrislabs.netlify.app/: 
+[![Netlify 'uat' branch status](https://api.netlify.com/api/v1/badges/efd1c5c3-e992-4c01-8a50-ebe9a6c920a0/deploy-status/?branch=uat)](https://app.netlify.com/sites/ferrislabs/deploys) 
+---
+
 # Ferris FX Site ( based on Docsy )
 
 **Please follow instructions. IMPORTANT clone with submodules as in instructions below.** 
