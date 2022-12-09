@@ -5,7 +5,7 @@ plans:
   features:
     - Ferris Executor (FX)
     - 
-    - Ferris Data & Service Mesh (DSM)
+    - Ferris Event Driven Kubernetes (K8X)
     - Ferris Technology Platform
   price: '<sup>&euro;</sup> 650<sup>.00</sup>'
 - name: Standard
@@ -14,7 +14,7 @@ plans:
   features:
     - Ferris Executor (FX)
     - 
-    - Ferris Data & Service Mesh (DSM)
+    - Ferris Event Driven Kubernetes (K8X)
     - Ferris Technology Platform
   price: '<sup>&euro;</sup> 950<sup>.00</sup>'
 - name: Scale
@@ -23,7 +23,7 @@ plans:
   features:
     - Ferris Executor (FX)
     - Ferris Streaming Automation (SX)
-    - Ferris Data & Service Mesh (DSM)
+    - Ferris Event Driven Kubernetes (K8X)
     - Ferris Technology Platform
   price: '<sup>&euro;</sup> 1&apos;250<sup>.00</sup>'
 - name: Enterprise
@@ -32,6 +32,6 @@ plans:
   features:
     - Ferris Executor (FX)
     - Ferris Streaming Automation (SX)
-    - Ferris Data & Service Mesh (DSM)
+    - Ferris Event Driven Kubernetes (K8X)
     - Ferris Technology Platform
   price: 'call us'

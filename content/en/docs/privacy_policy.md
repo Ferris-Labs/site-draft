@@ -1,7 +1,7 @@
 ---
 title: "Privacy Policy"
 linkTitle: "Privacy Policy"
-tags: [privacy] 
+tags: [privacy, policy, terms] 
 categories: []
 weight: 107
 description: >-

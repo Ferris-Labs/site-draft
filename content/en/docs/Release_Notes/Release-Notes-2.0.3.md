@@ -6,7 +6,6 @@ linkTitle:
 weight: -106
 description: >-
      New features, improvements and fixes provided to you in the 3rd Quarter of the year 2022.
-
 ---
 
 ![ferris_banner](/images/ferris_banner.png)
@@ -16,12 +15,13 @@ description: >-
 - [x] Introduced possibility to add **new python requirements** in the **deployment file** 
 - [x] **Pending excutions view** added.
 - [x] **Logging Capability** added to **ferris_ef** package with streaming to ElasticSearch.
+- [x] Introduced the **streaming automation module -** **FerrisSX **.
 
 ---
 
 ## Changed <img src="/images/changed_yellow.png" alt="changed_yellow" style="zoom:25%;" /> 
 
-- [x] No changes to report
+- [x] View of **execution step result** changed to terminal like view.
 
 ---
 

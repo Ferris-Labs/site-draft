@@ -131,7 +131,7 @@ github_project_repo = "https://github.com/Ferris-Labs/site-draft"
 # github_branch= "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "d72aa9b2712488cc3"
+gcs_engine_id = "f2900b47814a344fa"
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
@@ -244,27 +244,6 @@ enable = false
     class = 'highlight-menu-item'
 
 [[menu.main]]
-    identifier = "product_ferris_dx"
-    name = "FERRIS DX"
-    url = "/product"
-    parent = "product"
-    weight = 1
-
-[[menu.main]]
-    identifier = "product_ferris_dsm"
-    name = "FERRIS DSM"
-    url = "/product"
-    parent = "product"
-    weight = 2
-
-[[menu.main]]
-    identifier = "product_ferris_sx"
-    name = "FERRIS SX"
-    url = "/product"
-    parent = "product"
-    weight = 3
-
-[[menu.main]]
   identifier = 'integrations'
   name = 'INTEGRATIONS'
   url = '/integrations/'
@@ -290,14 +269,6 @@ enable = false
     [menu.main.params]
       class = 'highlight-menu-item'
 
-#[[menu.main]]
-#  identifier = 'usecases'
-#  name = 'USE CASES'
-#  url = '/usecases/'
-#  weight = 3
-#  [menu.main.params]
-#    class = 'highlight-menu-item'
-
 [[menu.main]]
   identifier = 'solutions'
   name = 'CASE STUDIES'
@@ -306,27 +277,55 @@ enable = false
   [menu.main.params]
     class = 'highlight-menu-item'
 
-#[[menu.main]]
-#  identifier = 'services'
-#  name = 'SERVICES'
-#  url = '/services/'
-#  weight = 5
-#  [menu.main.params]
-#    class = 'highlight-menu-item'
+[[menu.main]]
+  identifier = 'learn'
+  name = 'DOCUMENTATION'
+  url = '/docs/'
+  weight = 4
+  [menu.main.params]
+    class = 'highlight-menu-item'
 
 #[[menu.main]]
-#  identifier = 'design'
-#  name = 'DESIGN'
-#  url = '/design/'
-#  weight = 6
-#  [menu.main.params]
-#    class = 'highlight-menu-item'
+#    identifier = "learn_develoer_guide"
+#    name = "DEVELOPER GUIDE"
+#    url = "/docs/developer_guide"
+#    parent = "learn"
+#    weight = 1
+
+#[[menu.main]]
+#    identifier = "learn_integrations_guide"
+#    name = "INTEGRATIONS GUIDE"
+#    url = "/docs/integrations"
+#    parent = "learn"
+#    weight = 2
+
+#[[menu.main]]
+#    identifier = "learn_user_guide"
+#    name = "USER GUIDE"
+#    url = "/docs/user-guide"
+#    parent = "learn"
+#    weight = 3
+
+#[[menu.main]]
+#    identifier = "learn_security"
+#    name = "SECURITY"
+#    url = "/docs/security"
+#    parent = "learn"
+#    weight = 4
+
+[[menu.main]]
+  identifier = 'blog'
+  name = 'BLOG'
+  url = '/blog/'
+  weight = 5
+  [menu.main.params]
+    class = 'highlight-menu-item'
 
 [[menu.main]]
   identifier = 'company'
   name = 'COMPANY'
   url = '/about/'
-  weight = 4
+  weight = 6
   [menu.main.params]
     class = 'highlight-menu-item'
 
@@ -359,66 +358,8 @@ enable = false
     weight = 4
 
 [[menu.main]]
-  identifier = 'learn'
-  name = 'LEARN'
-  url = '/learn/'
-  weight = 5
-  [menu.main.params]
-    class = 'highlight-menu-item'
-
-[[menu.main]]
-    identifier = "learn_develoer_guide"
-    name = "DEVELOPER GUIDE"
-    url = "/docs/developer_guide"
-    parent = "learn"
-    weight = 1
-
-[[menu.main]]
-    identifier = "learn_integrations_guide"
-    name = "INTEGRATIONS GUIDE"
-    url = "/docs/integrations"
-    parent = "learn"
-    weight = 2
-
-[[menu.main]]
-    identifier = "learn_user_guide"
-    name = "USER GUIDE"
-    url = "/docs/user-guide"
-    parent = "learn"
-    weight = 3
-
-[[menu.main]]
-    identifier = "learn_security"
-    name = "SECURITY"
-    url = "/docs/security"
-    parent = "learn"
-    weight = 4
-
-[[menu.main]]
-  identifier = 'support'
-  name = 'SUPPORT'
-  url = '/support/'
-  weight = 6
-  [menu.main.params]
-    class = 'highlight-menu-item'
-
-[[menu.main]]
-    identifier = "support_support_plans"
-    name = "SUPPORT PLANS"
-    url = "/support"
-    parent = "support"
-    weight = 1
-
-[[menu.main]]
     identifier = "support_professional_services"
-    name = "PROFESSIONAL SERVICES"
-    url = "/services"
-    parent = "support"
-    weight = 2
-
-[[menu.main]]
-    identifier = "support_documentation"
-    name = "DOCUMENTATION"
-    url = "/docs"
-    parent = "support"
-    weight = 3
+    name = "PRICING"
+    url = "/SUPPORT"
+    parent = "company"
+    weight = 5

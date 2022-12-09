@@ -3,10 +3,10 @@ title: "Events"
 linkTitle: "Events"
 weight: -10
 description: >-
-  How to configure a package to be triggered bt the FX Router when a specific type of event is observed on the platform.
+  How to configure a service to be triggered bt the FX Router when a specific type of event is observed on the platform.
 ---
 
-FX is an event driven platform wich means that each action generating an event can be reused for further triggering of executions. Also within an executing script, an event can be generated and sent as a message. Each event is defined at least by it’s source, type and payload (data). Event message format is following the cloudevents standard. A list of all event types is maintained so the user can bound package execution to certain event type, which means that each time such an event is received, the package execution will be triggered.
+FX is an event driven platform wich means that each action generating an event can be reused for further triggering of executions. Also within an executing script, an event can be generated and sent as a message. Each event is defined at least by it’s source, type and payload (data). Event message format is following the cloudevents standard. A list of all event types is maintained so the user can bound service execution to certain event type, which means that each time such an event is received, the service execution will be triggered.
 
 # Events
 
@@ -18,7 +18,7 @@ To have a better detailed understanding of how Events are generated, please refe
 
 ## Events
 
-This use case defines how to configure a package to be triggered bt the FX Router when a specific type of event is observed on the platform.
+This use case defines how to configure a service to be triggered bt the FX Router when a specific type of event is observed on the platform.
 
 1. Click on *Events* on the left side of the dashboard menu to open drop-down
 2. Click on *Event Types* 
@@ -26,27 +26,28 @@ This use case defines how to configure a package to be triggered bt the FX Route
    - ferris.apps.modules.approvals.step_approval_completed
    - ferris.apps.modules.minio.file_uploaded
 
-Events can be created within scripts during package execution by sending a message to the **Kafka Topic** using the `ferris_cli` python package. For example, a package can be bound to a file_upload event that is triggered every time a file gets uploaded to **MinIO** using FX file storage module. New event types will be registered as they are sent to the **Kafka Topic** using the `ferris_cli` python package.
+Events can be created within scripts during service execution by sending a message to the **Kafka Topic** using the `ferris_cli` python service. For example, a service can be bound to a file_upload event that is triggered every time a file gets uploaded to **MinIO** using FX file storage module. New event types will be registered as they are sent to the **Kafka Topic** using the `ferris_cli` python service.
 
 Further details regarding `ferris_cli` can be found in the subcategory [Development Lifecycle](/docs/developerguide/development-lifecycle/ "development-lifecycle") in the *Developer Guide*.
 
 {{< blocks/screenshot color="white" image="/images/events_event_types.png">}}
 
-## Executions - Packages -> file upload trigger event
+## Executions - services -> file upload trigger event
 
-In this use case an existing package will be edited to define the file upload event type.
+In this use case an existing service will be edited to define the file upload event type.
 
 1. Click on *Executions* on the left side of the dashboard menu to open drop-down
-2. Click on *Packages*
-3. Click on the edit record button to edit the existing package *Test Package with Scripts*
+2. Click on *services*
+3. Click on the edit record button to edit the existing service *Test service with Scripts*
 
-{{< blocks/screenshot color="white" image="/images/edit_package_event.png">}}
+{{< blocks/screenshot color="white" image="/images/edit_service_event.png">}}
 
 1. Delete the *CronJob Schedule* to allow a *Trigger Event Type*
 2. Select the *Value* of the event type (ferris.apps.modules.minio.file_uploaded)
-3. Save the edited package.
+3. Select *Entrypoint* -> select script in dropdown menu
+4. Save the edited service.
 
-{{< blocks/screenshot color="white" image="/images/save_edited_package_event.png">}}
+{{< blocks/screenshot color="white" image="/images/save_edited_service_event.png">}}
 
 ## File Storage
 
@@ -65,15 +66,15 @@ To finalize the process, a file needs to be uploaded to a MinIO bucket (file sto
 
 {{< blocks/screenshot color="white" image="/images/upload_file_event.png">}}
 
-To verify if the package execution has been triggered, go back to the initial, edited package.
+To verify if the service execution has been triggered, go back to the initial, edited service.
 
 1. Click on *Executions* on the left side of the dashboard menu to open drop-down
-2. Click on *Packages*
-3. Click on the magnifying glass to open the details page of the package *Test Package with Scripts*
+2. Click on *Services*
+3. Click on the magnifying glass to open the details page of the service *Test service with Scripts*
 
-{{< blocks/screenshot color="white" image="/images/package_details_event.png">}}
+{{< blocks/screenshot color="white" image="/images/service_details_event.png">}}
 
-It will automatically open the *List Package Executions* tab.
+It will automatically open the *List service Executions* tab.
 
 1. Check the last Event, date and time to verify it corresponds to the time the file was uploaded
 2. Click on the magnifying glass to open the details page of the triggered execution
@@ -83,26 +84,4 @@ It will automatically open the *List Package Executions* tab.
 - Check the details page of the event triggered run
 
 {{< blocks/screenshot color="white" image="/images/details_page_event.png">}}
-
-## Workflow -> approval completed trigger event
-
-To finalize the second trigger event (ferris.apps.modules.approvals.step_approval_completed), an existing Workflow will be used to trigger a Case Management that will need to get approved.
-
-1. Click on *Workflows* on the left side of the dashboard menu to open the drop-down
-2. Click on *List Workflows* 
-3. Click on the magnifying glass to show the details page of the workflow
-
-Note that before even getting a closer look at the Workflow details, the *Entrypoint Event* is displayed -> ferris.apps.modules.minio.file_uploaded
-
-{{< blocks/screenshot color="white" image="/images/workflow_second_trigger_event.png">}}
-
-Check the details in the JSON snippet to understand what or which event types will trigger the second event type. The first event type shown in the JSON snippet is: ferris.apps.modules.minio.file_uploaded -> which means that a file will need to get uploaded for the event to get triggered. The second event type shown in the JSON snippet is: ferris.apps.modules.approvals.step_approval_completed -> meaning the uploaded file will need to get approved in the *Case Management* module before the wanted event gets triggered. 
-
-{{< blocks/screenshot color="white" image="/images/workflow_trigger_event_types.png">}}
-
-## Case Management -> -> approval completed trigger event
-
-1. Upload a file to a bucket (the process of uploading a file was described in detail on top of this page)
-2. Click on *Case Management* on the left side of the dashboard menu to open the drop-down
-3. Click on *Approvals* 
 

@@ -8,14 +8,14 @@ description: >-
 ---
 Secrets are sensitive configuration information which you wish to use within your service. These may be a single attribute(such as a password) structures with multiple attributes.
 
-Secrets are the ability to deal with sensitive data through scripts (secrets.json) needed for package execution, such as:
+Secrets are the ability to deal with sensitive data through scripts (secrets.json) needed for service execution, such as:
 
 - Database Passwords 
 - Secret Keys 
 - API Keys
 - any other sensitive data
 
-Secrets aren't visible to any users and are passed encrypted to the actual script at the predefined package execution time. Once the script (secrets.json) is uploaded to the platform, the data is read and securely (double encryption) stored in the database.
+Secrets aren't visible to any users and are passed encrypted to the actual script at the predefined service execution time. Once the script (secrets.json) is uploaded to the platform, the data is read and securely (double encryption) stored in the database.
 
 ## Secret Scopes
 
@@ -55,7 +55,7 @@ context.secrets.get('secret_name')
 
 
 
-This command will first lookup for secret named `secret_name` within package secrets (defined in `secrets.json` file of the package). If such key doesn't exist it will lookup for it within project secrets, and finally within platform's secrets. If secret with such name doesn't exist `None` will be returned.
+This command will first lookup for secret named `secret_name` within service secrets (defined in `secrets.json` file of the service). If such key doesn't exist it will lookup for it within project secrets, and finally within platform's secrets. If secret with such name doesn't exist `None` will be returned.
 
 Can be accessed using `ferris_ef.context.secrets.get('secret_name'). Can be set using `context.secrets.set("secret_name", {"somekey":"someval"}, "project")`
 
@@ -79,26 +79,26 @@ context.secrets.set(name="platform_secret", value={"somekey":"someval"}, context
 
 
 
-## Create a new package
+## Create a new service
 
-Note that the package creation was presented in another submenu of the User Guide, so only the needed parameters will be filled in the package to showcase the Secrets functionality.
+Note that the service creation was presented in another submenu of the User Guide, so only the needed parameters will be filled in the service to showcase the Secrets functionality.
 
-1. Click on Executions in the left side menu and on Packages
+1. Click on Executions in the left side menu and on services
 
-2. Click on Add to create a new package
+2. Click on Add to create a new service
 
-{{< blocks/screenshot color="white" image="/images/create_package_secrets.png">}}
+{{< blocks/screenshot color="white" image="/images/create_service_secrets.png">}}
 
-3. Name the package
+3. Name the service
 4. Click on choose file and add the python scrypt (test_secrets.py)
 5. Click on Add more scripts and click on choose file to add the JSON script (secrets.json)
-6. Click on Save to save the package
+6. Click on Save to save the service
 
-{{< blocks/screenshot color="white" image="/images/save_package_secrets.png">}}
+{{< blocks/screenshot color="white" image="/images/save_service_secrets.png">}}
 
 ##### test_secrets.py script
 
-This is an example script that shows how secrets from the `secrets.json` file can be accessed from a script at execution time using the `get_secret()` helper function from the `ferris_ef` package.
+This is an example script that shows how secrets from the `secrets.json` file can be accessed from a script at execution time using the `get_secret()` helper function from the `ferris_ef` service.
 
 ```python
 from ferris_ef import get_secret, get_param
@@ -106,5 +106,5 @@ from ferris_ef import get_secret, get_param
 print(f"DB NAME: {get_secret('DB_NAME')}")
 print(f"DB PASS: {get_secret('DB_PASS')}")
 
-print(f"PACKAGE NAME: {get_param('package_name')}")
+print(f"service NAME: {get_param('service_name')}")
 ```

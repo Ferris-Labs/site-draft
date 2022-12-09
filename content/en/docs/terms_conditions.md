@@ -1,7 +1,7 @@
 ---
 title: "Terms & Conditions"
 linkTitle: "Terms & Conditions"
-tags: [terms and conditions] 
+tags: [terms and conditions, policy] 
 categories: []
 weight: 108
 description: >-

@@ -81,7 +81,7 @@ bundles:
           - name: enterprise
             items:
               - 2/16/48
-      - name: Ferris DSM
+      - name: Ferris K8X
         description: Technology and service integrations
         bundles:
           - name: startup
@@ -155,7 +155,7 @@ bundles:
     id: dx_engineering
     items:
       - name: Process Engineering
-        description: Dedicated remote or on-premise support and coaching for FX, SX, DSM and platform based engineering
+        description: Dedicated remote or on-premise support and coaching for FX, SX, K8X and platform based engineering
         bundles:
           - name: startup
             items:
@@ -173,18 +173,18 @@ bundles:
               - FX Expert Engineering Coaching
               - Mentoring
       - name: EUR / month
-        description: 
+        description:
         bundles:
           - name: startup
             items:
               - '&nbsp;'
           - name: standard
             items:
-              - 15h/quarter
+              - 15d/quarter
               - 22&apos;000
           - name: scale
             items:
-              - 25h/quarter
+              - 25d/quarter
               - 37&apos;500
           - name: enterprise
             items:
@@ -200,7 +200,7 @@ bundles:
               - '&nbsp;'
           - name: standard
             items:
-              - Expert FX, SX, DSM Operations
+              - Expert FX, SX, K8X Operations
               - ...
           - name: scale
             items:
@@ -211,18 +211,18 @@ bundles:
               - FX Expert Engineering Coaching
               - Mentoring
       - name: EUR / month
-        description: 
+        description:
         bundles:
           - name: startup
             items:
               - '&nbsp;'
           - name: standard
             items:
-              - 15h/quarter
+              - 15d/quarter
               - 22&apos;000
           - name: scale
             items:
-              - 25h/quarter
+              - 25d/quarter
               - 37&apos;500
           - name: enterprise
             items:

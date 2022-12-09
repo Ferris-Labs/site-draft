@@ -186,11 +186,14 @@ footer {
 		flex-direction: row;
 		justify-content: center;
 		.social-link {
-			color: #c2c1c7;
-			font-size: 26px;
+			// color: #c2c1c7;
+			// font-size: 26px;
 			padding: 10px 16px;
-			transition: .15s ease-in-out;
+			transition: .3s ease-in-out;
 			will-change: color;
+			img {
+				height: 26px;
+			}
 		}
 	}
 	.footer-links {
@@ -351,7 +354,7 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 // Timeline
 .timeline {
 	position: relative;
-	width: 860px;
+	width: 100%;
 	margin: 0 auto;
 	margin-top: 20px;
 	padding: 1em 0;
@@ -421,7 +424,7 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 	}
 	.direction-l {
 		position: relative;
-		width: 400px;
+		width: calc(50% - 30px);
 		float: left;
 		text-align: right;
 		.flag {
@@ -448,7 +451,7 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 	}
 	.direction-r {
 		position: relative;
-		width: 400px;
+		width: calc(50% - 30px);
 		float: right;
 		.flag {
 			-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
@@ -797,3 +800,30 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 		}
 	}
 }
+
+// subscribe form
+.mauticform_wrapper { max-width: 600px; margin: 10px auto; }
+.mauticform-innerform {}
+.mauticform-post-success {}
+.mauticform-name { font-weight: bold; font-size: 1.5em; margin-bottom: 3px; }
+.mauticform-description { margin-top: 2px; margin-bottom: 10px; }
+.mauticform-error { margin-bottom: 10px; color: red; }
+.mauticform-message { margin-bottom: 10px;color: green; }
+.mauticform-row { display: block; margin-bottom: 20px; }
+.mauticform-label { font-size: 1.1em; display: block; font-weight: normal; margin-bottom: 5px; }
+.mauticform-row.mauticform-required .mauticform-label:after { color: #e32; content: " *"; display: inline; }
+.mauticform-helpmessage { display: block; font-size: 0.9em; margin-bottom: 3px; }
+.mauticform-errormsg { display: block; color: red; margin-top: 2px; }
+.mauticform-selectbox, .mauticform-input, .mauticform-textarea { width: 100%; padding: 0.5em 0.5em; border: 1px solid #CCC; background: #fff; box-shadow: 0px 0px 0px #fff inset; border-radius: 4px; box-sizing: border-box; }
+.mauticform-checkboxgrp-row {}
+.mauticform-checkboxgrp-label { font-weight: normal; }
+.mauticform-checkboxgrp-checkbox {}
+.mauticform-radiogrp-row {}
+.mauticform-radiogrp-label { font-weight: normal; }
+.mauticform-radiogrp-radio {}
+.mauticform-button-wrapper .mauticform-button.btn-default, .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default { color: #5D6C7C;background-color: #FFFFFF;border-color: #DDDDDD;}
+.mauticform-button-wrapper .mauticform-button, .mauticform-pagebreak-wrapper .mauticform-pagebreak { text-align: center; vertical-align: middle; cursor: pointer; background-image: none; white-space: nowrap; -webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+.mauticform-button-wrapper .mauticform-button.btn-default[disabled], .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default[disabled] { background-color: #FFFFFF; border-color: #DDDDDD; opacity: 0.75; cursor: not-allowed; }
+.mauticform-pagebreak-wrapper .mauticform-button-wrapper {  display: inline; }
+.mauticform-field-hidden { display:none }
+// subscribe form

@@ -24,7 +24,6 @@ linkTitle = "contact"
 </section>
 
 <!-- Mautic Contact-Us form insert -->
-{{< blocks/lead color="white" >}}
 <script type="text/javascript">
     /** This section is only needed once per page if manually copying **/
     if (typeof MauticSDKLoaded == 'undefined') {
@@ -39,10 +38,27 @@ linkTitle = "contact"
         head.appendChild(script);
         var MauticDomain = 'https://m.ferrislabs.net';
         var MauticLang   = {
-            'submittingMessage': "Bitte warten..."
+            'submittingMessage': "Please wait..."
         }
-    }else if (typeof MauticSDK != 'undefined') {
+    } else if (typeof MauticSDK != 'undefined') {
         MauticSDK.onLoad();
+    }
+
+    document.onreadystatechange = function () {
+        if (document.readyState === 'interactive') {
+            if (document.forms.length !== 0 && window.location.search) {
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+                const entries = urlParams.entries();
+
+                for(const entry of entries) {
+                    const inputs = document.getElementsByName(`mauticform[${entry[0]}]`);
+                    inputs.forEach(function (input) {
+                        input.value = entry[1];
+                    });
+                }
+            }
+        }
     }
 </script>
 
@@ -57,7 +73,7 @@ linkTitle = "contact"
     .mauticform-error { margin-bottom: 10px; color: red; }
     .mauticform-message { margin-bottom: 10px;color: green; }
     .mauticform-row { display: block; margin-bottom: 20px; }
-    .mauticform-label { font-size: 1.1em; display: block; font-weight: normal; margin-bottom: 5px; }
+    .mauticform-label { font-size: 1.1em; display: block; font-weight: bold; margin-bottom: 5px; }
     .mauticform-row.mauticform-required .mauticform-label:after { color: #e32; content: " *"; display: inline; }
     .mauticform-helpmessage { display: block; font-size: 0.9em; margin-bottom: 3px; }
     .mauticform-errormsg { display: block; color: red; margin-top: 2px; }
@@ -68,7 +84,7 @@ linkTitle = "contact"
     .mauticform-radiogrp-row {}
     .mauticform-radiogrp-label { font-weight: normal; }
     .mauticform-radiogrp-radio {}
-    .mauticform-button-wrapper .mauticform-button.btn-default, .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default { color: #ffffff;background-color: #b81414;border-color: #dddddd;}
+    .mauticform-button-wrapper .mauticform-button.btn-default, .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default { color: #5d6c7c;background-color: #ffffff;border-color: #dddddd;}
     .mauticform-button-wrapper .mauticform-button, .mauticform-pagebreak-wrapper .mauticform-pagebreak { display: inline-block;margin-bottom: 0;font-weight: 600;text-align: center;vertical-align: middle;cursor: pointer;background-image: none;border: 1px solid transparent;white-space: nowrap;padding: 6px 12px;font-size: 13px;line-height: 1.3856;border-radius: 3px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
     .mauticform-button-wrapper .mauticform-button.btn-default[disabled], .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default[disabled] { background-color: #ffffff; border-color: #dddddd; opacity: 0.75; cursor: not-allowed; }
     .mauticform-pagebreak-wrapper .mauticform-button-wrapper {  display: inline; }
@@ -85,19 +101,19 @@ linkTitle = "contact"
             <div id="mauticform_flcontactform_f_name" data-validate="f_name" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-1 mauticform-required">
                 <label id="mauticform_label_flcontactform_f_name" for="mauticform_input_flcontactform_f_name" class="mauticform-label font-weight 100">Name</label>
                 <input id="mauticform_input_flcontactform_f_name" name="mauticform[f_name]" value="" class="mauticform-input" type="text">
-                <span class="mauticform-errormsg" style="display: none;">Erforderlich</span>
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
             </div>
 
             <div id="mauticform_flcontactform_last_name" data-validate="last_name" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-2 mauticform-required">
                 <label id="mauticform_label_flcontactform_last_name" for="mauticform_input_flcontactform_last_name" class="mauticform-label font-weight normal">Last Name</label>
                 <input id="mauticform_input_flcontactform_last_name" name="mauticform[last_name]" value="" class="mauticform-input" type="text">
-                <span class="mauticform-errormsg" style="display: none;">Erforderlich</span>
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
             </div>
 
             <div id="mauticform_flcontactform_email" data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-3 mauticform-required">
                 <label id="mauticform_label_flcontactform_email" for="mauticform_input_flcontactform_email" class="mauticform-label">E-Mail</label>
                 <input id="mauticform_input_flcontactform_email" name="mauticform[email]" value="" class="mauticform-input" type="email">
-                <span class="mauticform-errormsg" style="display: none;">Erforderlich</span>
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
             </div>
 
             <div id="mauticform_flcontactform_note" class="mauticform-row mauticform-text mauticform-field-4">
@@ -106,10 +122,15 @@ linkTitle = "contact"
                 <span class="mauticform-errormsg" style="display: none;"></span>
             </div>
 
-            <div id="mauticform_flcontactform_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-5 text-right">
-                <button type="submit" name="mauticform[submit]" id="mauticform_input_flcontactform_submit" value="" class="btn btn-lg btn-primary">
-                    Submit <i class="fas fa-arrow-alt-circle-right ml-2"></i>
-                </button>
+            <div id="mauticform_flcontactform_captcha" data-validate="captcha" data-validation-type="captcha" class="mauticform-row mauticform-text mauticform-field-5 mauticform-required">
+                <label id="mauticform_label_flcontactform_captcha" for="mauticform_input_flcontactform_captcha" class="mauticform-label">Captcha</label>
+                <span class="mauticform-helpmessage">Prove that you're a human</span>
+                <input id="mauticform_input_flcontactform_captcha" name="mauticform[captcha]" value="" placeholder="How much is 11 + 4?" class="mauticform-input" type="text">
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+
+            <div id="mauticform_flcontactform_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-6">
+                <button type="submit" name="mauticform[submit]" id="mauticform_input_flcontactform_submit" value="" class="mauticform-button btn btn-default">Submit</button>
             </div>
             </div>
         </div>
@@ -121,10 +142,9 @@ linkTitle = "contact"
         </form>
 </div>
 
-{{< /blocks/lead >}}
 
 <!-- Calendly badge widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/ferris-demo', text: 'Book a Ferris Demo', color: '#b81414', textColor: '#ffffff', branding: true }); }</script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/ferris-intro/30min?hide_event_type_details=1&primary_color=b81414', text: 'Book a Ferris Demo', color: '#b81414', textColor: '#ffffff', branding: false }); }</script>
 <!-- Calendly badge widget end -->
