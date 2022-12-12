@@ -1,9 +1,9 @@
 ---
 title: "Roles"
 linkTitle: "Roles"
-tags: [security, access rights, roles] 
+tags: [security, roles]
 categories: [Security]
-weight: -14
+weight: 13
 description: >-
   Meaning, role and application of Roles.
 
@@ -21,8 +21,8 @@ Roles represent a collection of permissions or rights that can be performed with
 
 Besides displaying the list of all available Roles, the Roles page offers a number of capabilities:
 
-- Add Role ![Add User](/images/add_icon.png) 
-- Actions ![Add User](/images/actions_icon.png) 
+- Add Role ![Add User](/images/add_icon.png)
+- Actions ![Add User](/images/actions_icon.png)
 - Show Roles ![](/images/view_icon.png)
 - Edit Roles ![](/images/edit_icon.png)
 - Delete Roles ![](/images/delete_icon.png)
@@ -33,13 +33,13 @@ Besides displaying the list of all available Roles, the Roles page offers a numb
 
 ##### Add new Role
 
-Adding a new Role can be done directly within Ferris by any person who has the necessary permissions to do so. This is normally a designated Security Lead. 
+Adding a new Role can be done directly within Ferris by any person who has the necessary permissions to do so. This is normally a designated Security Lead.
 
 Often times, adding new Roles is done by integrating Ferris with the corporate Identity Access Management (IAM) and Active Directory (AD).
 
 > Click on the plus sign ![Add Role](/images/add_icon.png) to add a new user.
 
-{{< blocks/screenshot color="white" image="/images/add_role_page.png">}} 
+{{< blocks/screenshot color="white" image="/images/add_role_page.png">}}
 
 *Example: Adding a new Role and Permissions*
 
@@ -57,6 +57,3 @@ In order to apply an Action, first select the Role you want the action to apply 
 
 - Select a Role then click Actions > Copy Role > click **Yes** to confirm
 - The Role is now copied and can be found in the list of Roles as **"[original role name] copy"**
-
-
-

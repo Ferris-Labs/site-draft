@@ -1,7 +1,7 @@
 ---
 title: "Components + Purpose"
 linkTitle: "Components & Purpose"
-weight: 5
+weight: 6
 description: >
   Ferris FX Components + Purpose.
 ---

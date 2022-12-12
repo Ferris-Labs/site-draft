@@ -1,9 +1,9 @@
 ---
 title: "Permissions"
 linkTitle: "Permissions"
-tags: [security, access rights, permissions] 
+tags: [security, permissions]
 categories: [Security]
-weight: -14
+weight: 12
 description: >-
   Meaning, role and application of Roles.
 
@@ -15,16 +15,15 @@ This is us - humans - using Ferris on a day to day basis. And in this section ea
 
 > To get the the Users page, navigate to: Security > List Roles
 
-{{< blocks/screenshot color="white" image="/images/list_users_page.png">}} 
+{{< blocks/screenshot color="white" image="/images/list_users_page.png">}}
 
 *Example: List of Ferris Users*
 
 Besides displaying the list of all current users, the Users page offers a number of capabilities:
 
-- Add User ![Add User](../../../../../../../images/add_icon.png) 
+- Add User ![Add User](../../../../../../../images/add_icon.png)
 - Show User ![](../../../../../../../images/view_icon.png)
 - Edit User ![](../../../../../../../images/edit_icon.png)
 - Delete User ![](../../../../../../../images/delete_icon.png)
 
 *Note that each of these capabilities depends on the Permissions given to your Role. Some roles may be given full rights (e.g. add, show, edit, delete), where others may only be given viewing rights (e.g. show). As a result, some users may only be seeing the "Show User" magnifying glass icon.*
-

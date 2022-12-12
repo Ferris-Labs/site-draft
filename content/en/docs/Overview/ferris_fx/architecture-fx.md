@@ -1,20 +1,20 @@
 ---
-title: "Architecture Overview"
+title: "FX Architecture Overview"
 linkTitle: "Architecture"
-weight: 20
+weight: 7
 description: >-
-     An overview of the architecture of FerrisFX.
+     An overview of the Ferris architecture
 ---
 
 ## Concepts
 
 FerrisFX is based on 2 simple concepts - **Services** and **Events**
 
-**On FX you are effectively writing large applications by connecting “blocks” of code through Events.** 
+**On FX you are effectively writing large applications by connecting “blocks” of code through Events.**
 
 ![image-20211024081829495](/images/image-20211024081829495.png)
 
-Each Service is a self contained piece of functionality such as loading a file, running a database view rebuild or launching a container. You can link and re-link the blocks of code at anytime you like. The source code can be as big or as tiny as you like. 
+Each Service is a self contained piece of functionality such as loading a file, running a database view rebuild or launching a container. You can link and re-link the blocks of code at anytime you like. The source code can be as big or as tiny as you like.
 
 Each Service is triggered by an Event. Each Service also emits Events thereby allowing other Services to be triggered following (or during) the execution of a Service.
 
@@ -22,14 +22,14 @@ A Service can respond to multiple Event types, and a single Event Type may trigg
 
 ![image-20211024080659941](/images/image-20211024080659941.png)
 
-You are not required to think in terms of pre-defined DAGS and can rapidly and iteratively build, test and deploy your applications. 
+You are not required to think in terms of pre-defined DAGS and can rapidly and iteratively build, test and deploy your applications.
 
 {{< blocks/screenshot color="white" image="/images/list_projects_add_roboto.png">}}
 
 
 ### Services
 
-**SERVICES** are collections of scripts and modules which are executed in sequence by the **FX Executor**. 
+**SERVICES** are collections of scripts and modules which are executed in sequence by the **FX Executor**.
 
 Services are triggered by **EVENTS**, which are JSON messages which carry a header and payload. A Service can be Linked to one or more events.
 
@@ -53,9 +53,9 @@ hello_world(payload)
 
 Events are messages passed through the platform which are generated either by Services or by the Ferris Manager(in the case of manually triggered runs and scheduled runs).
 
-Events are in the form of JSON formatted messages which adhere to the CloudEvents format. 
+Events are in the form of JSON formatted messages which adhere to the CloudEvents format.
 
-Events carry a Header which indicates the event type and a Payload (or Data section) which contain information about the event. 
+Events carry a Header which indicates the event type and a Payload (or Data section) which contain information about the event.
 
 The following is a sample Event.
 
@@ -88,9 +88,9 @@ Irrespective of how a Service is triggered it is always triggered by an Event. I
 
 ### Late Linking
 
-One of the most important features of the FX Platform is that you are not required to link the Service to an Event during the course of development. And you can also change the Trigger Event(s) post-deployment. 
+One of the most important features of the FX Platform is that you are not required to link the Service to an Event during the course of development. And you can also change the Trigger Event(s) post-deployment.
 
-This approach gives you a great flexibility to: 
+This approach gives you a great flexibility to:
 
 * not having to think of pre-defined flows but to build the Flow as well as the Services iteratively.
 * maintain and test multiple versions of the same Service in parallel.
@@ -99,7 +99,7 @@ This approach gives you a great flexibility to:
 
 ## The FerrisFX Flow
 
-At the core of the FX Platform messages (Events) are passed through **Apache Kafka**. These 'events' are JSON formatted messages which adhere to the CloudEvents format. 
+At the core of the FX Platform messages (Events) are passed through **Apache Kafka**. These 'events' are JSON formatted messages which adhere to the CloudEvents format.
 
 ![image-20211024083411584](/images/image-20211024083411584.png)
 
@@ -130,4 +130,3 @@ The following are the infrastructure components required for a FerrisFX installa
 | FerrisFX-Manager  | FerrisFX Manager is the main UI used for all activities on the FerrisFX platform. |
 | FerrisFX-Router   | The Route container is responsible for listenting to events flowing through the system and forwarding the events to the appropriate micro-services that you create. |
 | FerrisFX-Executor | The executor container(s) is where the code gets executed.   |
-

@@ -1,9 +1,9 @@
 ---
 title: "Statistics"
 linkTitle: "Statistics"
-tags: [security, access rights]
+tags: [security]
 categories: [Security]
-weight: 4
+weight: 15
 description: >-
   Statistics lists the number of successful as well as failed login counts by user.
 
@@ -16,7 +16,6 @@ Here a Security Lead finds useful information on any user's successful as well a
 
 Navigate to: Security > User's Statistics
 
-{{< blocks/screenshot color="white" image="/images/users_statistics.png">}} 
+{{< blocks/screenshot color="white" image="/images/users_statistics.png">}}
 
 *Example: Users Statistics > Login count*
-

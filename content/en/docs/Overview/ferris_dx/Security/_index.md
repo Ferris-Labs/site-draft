@@ -1,9 +1,9 @@
 ---
 title: "Security"
 linkTitle: "Security"
-tags: [security, access rights] 
-weight: 104
+tags: [security]
 categories: [Security]
+weight: 11
 description: >-
   Introduction and "how-to" guide to the Ferris Security and Access Rights Management.
 
@@ -13,7 +13,7 @@ description: >-
 
 Ferris is taking a multi-layered and integrative approach to security and access rights management, protecting systems, networks, users and data alike.
 
-While the security architecture of Ferris stands alone and operates well in isolation, it is built to integrate with enterprise security systems such as LDAP and Active Directory. 
+While the security architecture of Ferris stands alone and operates well in isolation, it is built to integrate with enterprise security systems such as LDAP and Active Directory.
 
 It supports Single Sign On (SSO) through open protocols such as Auth0 and SAML.
 
@@ -33,11 +33,11 @@ This approach enables the breaking of the application into granular elements and
 
 In the following sections you will learn how the security components work and how to set them up for your purpose.
 
-> If you want to follow the instructions and examples, you first need to connect to your Ferris demo instance. 
+> If you want to follow the instructions and examples, you first need to connect to your Ferris demo instance.
 
 ##### Navigation
 
-The Security menu is found on left hand navigation of Ferris. 
+The Security menu is found on left hand navigation of Ferris.
 
 - Click on the Security menu to expand it and display all security relevant menu items.
 
@@ -59,7 +59,7 @@ The Security menu is found on left hand navigation of Ferris.
 
 #### Authentication and Authorization
 
-Add text 
+Add text
 
 
 
@@ -80,4 +80,3 @@ Add text
 Add viewing function (below)
 
 Add logging and monitoring capabilities
-

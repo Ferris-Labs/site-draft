@@ -1,7 +1,7 @@
 ---
 title: "Components and pieces of DX"
 linkTitle: "Components and pieces of DX"
-weight: 1
+weight: 2
 description: >
   The following section provides a short overview of components and pieces of Ferris DX.
 ---

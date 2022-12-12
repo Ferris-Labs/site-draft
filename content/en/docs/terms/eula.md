@@ -2,7 +2,7 @@
 title: "End User License Agreement"
 linkTitle: "End User License Agreement"
 tags: [licensing, terms]
-categories: []
+categories: [terms]
 weight: 110
 description: >-
  Ferris Labs End User License Agreement (EULA).

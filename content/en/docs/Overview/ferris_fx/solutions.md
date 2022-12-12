@@ -1,7 +1,7 @@
 ---
 title: "Solutions snippets / explain problem solved / link to relevant use case"
 linkTitle: "Solutions"
-weight: 4
+weight: 5
 description: >
   The following section provides Ferris FX solutions snippets / explain problem solved / link to relevant use case.
 ---

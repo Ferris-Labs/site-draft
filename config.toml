@@ -207,11 +207,11 @@ enable = false
   target = "_blank"
 [[params.links.footer.right]]
   name = "General Terms and Conditions (GTC)"
-  url = "/docs/terms_conditions"
+  url = "/docs/terms/terms_conditions"
   target = "_blank"
 [[params.links.footer.right]]
-  name = "Data protection policy"
-  url = "/docs/privacy_policy"
+  name = "Data Protection Policy"
+  url = "/docs/terms/privacy_policy"
   target = "_blank"
 [[params.links.footer.right]]
   name = "Impressum"
@@ -280,7 +280,7 @@ enable = false
 [[menu.main]]
   identifier = 'learn'
   name = 'DOCUMENTATION'
-  url = '/docs/'
+  url = '/docs/overview'
   weight = 4
   [menu.main.params]
     class = 'highlight-menu-item'

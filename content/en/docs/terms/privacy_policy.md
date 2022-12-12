@@ -1,8 +1,8 @@
 ---
 title: "Privacy Policy"
 linkTitle: "Privacy Policy"
-tags: [privacy, policy, terms] 
-categories: []
+tags: [privacy, policy, terms]
+categories: [terms]
 weight: 107
 description: >-
  Ferris Labs AG Privacy Policy.

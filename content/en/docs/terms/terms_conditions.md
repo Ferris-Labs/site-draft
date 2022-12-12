@@ -1,8 +1,8 @@
 ---
 title: "Terms & Conditions"
 linkTitle: "Terms & Conditions"
-tags: [terms and conditions, policy] 
-categories: []
+tags: [terms and conditions, policy]
+categories: [terms]
 weight: 108
 description: >-
  Ferris Labs AG Terms and Conditions.

@@ -2,7 +2,7 @@
 title: "Support Policy"
 linkTitle: "Support Policy"
 tags: [support, terms]
-categories: []
+categories: [terms]
 weight: 109
 description: >-
  Ferris Labs Enterprise Support Policy.

@@ -1,9 +1,9 @@
 ---
 title: "Users"
 linkTitle: "Users"
-tags: [security, access rights, users] 
+tags: [security, users]
 categories: [Security]
-weight: -14
+weight: 14
 description: >-
   Meaning, role and setup of the Ferris User.  
 
@@ -15,13 +15,13 @@ This is us - humans - using Ferris on a day to day basis. And in this section ea
 
 > To get the the Users page, navigate to: Security > List Users
 
-{{< blocks/screenshot color="white" image="/images/list_users_page.png">}} 
+{{< blocks/screenshot color="white" image="/images/list_users_page.png">}}
 
 *Example: List of Ferris Users*
 
 Besides displaying the list of all current users, the Users page offers a number of capabilities:
 
-- Add User ![Add User](/images/add_icon.png) 
+- Add User ![Add User](/images/add_icon.png)
 - Show User ![](/images/view_icon.png)
 - Edit User ![](/images/edit_icon.png)
 - Delete User ![](/images/delete_icon.png)
@@ -30,13 +30,13 @@ Besides displaying the list of all current users, the Users page offers a number
 
 ##### Add new User
 
-Adding a new User can be done directly within Ferris by any person who has the necessary permissions to do so. This is normally a designated Security Lead. 
+Adding a new User can be done directly within Ferris by any person who has the necessary permissions to do so. This is normally a designated Security Lead.
 
 Most often though, adding new Users is done by integrating Ferris with the corporate Identity Access Management (IAM) and Single Sign On (SSO) system.
 
 > Click on the plus sign ![Add User](/images/add_icon.png) to add a new user.
 
-{{< blocks/screenshot color="white" image="/images/add_user_page.png">}} 
+{{< blocks/screenshot color="white" image="/images/add_user_page.png">}}
 
 *Example: Adding a new Ferris Users*
 
@@ -62,7 +62,7 @@ Most often though, adding new Users is done by integrating Ferris with the corpo
 
 >  Click on the spyglass icon ![Add User](/images/view_icon.png) in front of the user you want to look at.
 
-{{< blocks/screenshot color="white" image="/images/view_user_page.png">}} 
+{{< blocks/screenshot color="white" image="/images/view_user_page.png">}}
 
 *Example: View only List of Ferris Users*
 
@@ -70,7 +70,7 @@ Most often though, adding new Users is done by integrating Ferris with the corpo
 
 - **User Name:** displays user name
 - **Is Active:** shows whether the user is set to active or inactive. Note that an inactivated user may not be able to loginto Ferris
-- **Role:** Associated roles 
+- **Role:** Associated roles
 - **Login Count:** Count of how many times the user has logged in in total
 
 **Personal Info**
@@ -96,7 +96,7 @@ Most often though, adding new Users is done by integrating Ferris with the corpo
 
 ##### Edit User
 
-Editing User details such as name, email or even Role(s) may be done here. 
+Editing User details such as name, email or even Role(s) may be done here.
 
 *Note though that if the Ferris Security is integrated with the corporate Identity Access Management (IAM), adding or removing Roles should be done there in order to ensure the change is permanent and not overwritten at the next syncronization.*
 
@@ -115,4 +115,3 @@ Delete Users permanetly from Ferris.
 > Click on the delete icon ![Add User](/images/delete_icon.png) in front of the user you want to delete.
 
 ---
-
