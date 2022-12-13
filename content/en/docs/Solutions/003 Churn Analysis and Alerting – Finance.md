@@ -1,10 +1,7 @@
 ---
 title: Churn Analysis and Alerting – Financial Services
-category: use case
-industries: [Financial Services, Insurance]
-owner: Tom Debus
-tags: [churn, churnanalysis, financialservices, insurance, bank, retention, clientretention, customerretention]
-clients: [UBS]
+categories: ["Use Cases"]
+tags: [use case, financial services, insurance]
 ---
 
 ### Executive summary

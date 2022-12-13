@@ -1,10 +1,7 @@
 ---
 title: Metadata-controlled Data Quality & Data Lineage in Production
-category: use case
-industries: [Production, Serial Manufacturing, Retail, Financial Services, Pharma, Medicine, Laboratory, Cross-industry]
-owner: Tom Debus
-tags: [dataquality, dataqualityimprovement, machinelearning, production, manufacturing, serialmanufacturing, financialservices, medicine, laboratory, pharma, crossindustry]
-clients: [   ]
+categories: ["Use Cases"]
+tags: [use case, generic industry]
 ---
 
 ### Executive summary

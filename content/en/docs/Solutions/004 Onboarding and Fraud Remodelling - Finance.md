@@ -1,10 +1,7 @@
 ---
 title: Onboarding and Fraud Remodelling - Financial Services
-category: use case
-industries: [Financial Services]
-owner: Tom Debus
-tags: [fraud, fraudremodelling, compliance, kyc, financialservices, bank]
-clients: [  ]
+categories: ["Use Cases"]
+tags: [use case, financial services]
 ---
 
 ### Executive summary

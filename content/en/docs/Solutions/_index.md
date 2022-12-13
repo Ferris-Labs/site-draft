@@ -1,7 +1,7 @@
 ---
 title: "Projects & Use Cases"
 linkTitle: "Projects & Use Cases"
-tags: [project, use cases]
+tags: [project, use case]
 categories: ["Use Cases"]
 weight: 51
 description: >-

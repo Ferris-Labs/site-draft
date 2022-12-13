@@ -1,10 +1,7 @@
 ---
 title: Voice-based Trade Compliance
-category: use case
-industries: [Financial Services]
-owner: Tom Debus
-tags: [voicetradecompliance, tradecompliance, compliance, bank, communicationscreening, financialservices]
-clients: [   ]
+categories: ["Use Cases"]
+tags: [use case, financial services]
 ---
 
 ### Executive summary

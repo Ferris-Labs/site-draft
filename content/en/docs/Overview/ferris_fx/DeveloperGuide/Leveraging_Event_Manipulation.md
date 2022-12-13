@@ -1,8 +1,8 @@
 ---
 title: "Event Manipulation Strategies"
 linkTitle: "Leveraging Event Manipulation"
-tags: [quickstart, connect, register] 
-categories: ["Knowledge Base"]
+tags: [developer guide, guide, events] 
+categories: []
 description: >-
      Leveraging Event Manipulation.
 ---

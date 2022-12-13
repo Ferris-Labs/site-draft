@@ -1,8 +1,8 @@
 ---
 title: "Extending the Platform"
 linkTitle: "Extending the Platform"
-tags: [quickstart, connect, register] 
-categories: ["Knowledge Base"]
+tags: [developer guide, guide, extensions, platform] 
+categories: []
 description: >-
      Extending the Platform.
 ---

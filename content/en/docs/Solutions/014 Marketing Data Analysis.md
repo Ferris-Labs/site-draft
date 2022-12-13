@@ -1,10 +1,7 @@
 ---
 title: Automating Marketing Data Analysis
-category: use case
-industries: [Financial Service]
-owner: Tom Debus
-tags: [marketdataanalysis, bigdata, bigdatainfrastructure, datascience, datascienceinfrastructure, financialservices, financial services, insurance, relationships]
-clients: []
+categories: ["Use Cases"]
+tags: [use case, financial services, insurance]
 ---
 
 ### Executive summary

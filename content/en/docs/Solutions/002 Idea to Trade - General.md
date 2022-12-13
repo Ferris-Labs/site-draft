@@ -1,10 +1,7 @@
 ---
-title: Idea to Trade / Next Best Product - General
-category: use case
-industries: [crossindustry]
-owner: Tom Debus
-tags: [ideatotrade, nextbestproduct, salesadvice, crossindustry]
-clients: [   ]
+title: Idea to Trade / Next Best Product - generic
+categories: ["Use Cases"]
+tags: [use case, generic industry]
 ---
 
 ### Executive summary

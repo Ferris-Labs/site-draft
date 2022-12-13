@@ -1,10 +1,7 @@
 ---
 title: Regulatory Single Source of Truth
-category: use case
-industries: [Financial Services, Insurance]
-owner: Tom Debus
-tags: [singlesourceoftruth, ssot, bank, privatebank, financialservices, insurance]
-clients: [   ]
+categories: ["Use Cases"]
+tags: [use case, financial services, insurance]
 ---
 
 ### Executive summary

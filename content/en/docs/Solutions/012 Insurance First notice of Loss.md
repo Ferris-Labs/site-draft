@@ -1,10 +1,7 @@
 ---
 title: First Notice of Loss Automation
-category: use case
-industries: [Motor Vehicle Insurance]
-owner: Tom Debus
-tags: [insurance, FNOL, firstnoticeofloss]
-clients: [Inter Europe]
+categories: ["Use Cases"]
+tags: [use case, insurance]
 ---
 
 ### Executive summary

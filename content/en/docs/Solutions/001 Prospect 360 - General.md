@@ -1,10 +1,7 @@
 ---
-title: Prospecting 360 Degree - general
-category: use case
-industries: [General Services, B2B Services]
-owner: Tom Debus
-tags: [salesfunnel, salesautomation, newclients, prospecting, prospect360]
-clients: [Wagner, Stark Gruppe]
+title: Prospecting 360 Degrees - generic
+categories: ["Use Cases"]
+tags: [use case, generic industry]
 ---
 
 ### Executive summary

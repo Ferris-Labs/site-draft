@@ -1,10 +1,7 @@
 ---
-title: Onboarding and Fraud Remodelling - General
-category: use case
-industries: [General Services, B2B Services]
-owner: Tom Debus
-tags: [fraud, fraudremodelling, frauddetection, fraudtracking, compliance, kyc]
-clients: [   ]
+title: Onboarding and Fraud Remodelling - generic
+categories: ["Use Cases"]
+tags: [use case, generic industry]
 ---
 
 ### Executive summary

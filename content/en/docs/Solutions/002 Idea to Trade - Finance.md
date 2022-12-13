@@ -1,10 +1,7 @@
 ---
 title: Idea to Trade / Next Best Product - Financial Services
-category: use case
-industries: [Financial Services, Insurance]
-owner: Tom Debus
-tags: [ideatotrade, nextbestproduct, salesadvice, financialservices, bank, insurance, investment]
-clients: [   ]
+categories: ["Use Cases"]
+tags: [use case, financial services, insurance]
 ---
 
 ### Executive summary

@@ -1,10 +1,7 @@
 ---
-title: Churn Analysis and Alerting – General
-category: use case
-industries: [Retail, Intertainment, Massmedia]
-owner: Tom Debus
-tags: [churn, churnanalysis, retail, entertainment, massmedia, retention, clientretention, customerretention]
-clients: [   ]
+title: Churn Analysis and Alerting – generic
+categories: ["Use Cases"]
+tags: [use case, generic industry]
 ---
 
 ### Executive summary

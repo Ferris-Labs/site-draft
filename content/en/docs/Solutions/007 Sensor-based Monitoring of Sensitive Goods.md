@@ -1,10 +1,7 @@
 ---
 title: Sensor-based Monitoring of Sensitive Goods
-category: use case
-industries: [Intelligent packaging, Intelligent logistics, Industrial applications, Industry 4.0, Consumer and luxury goods, Home protection]
-owner: Tom Debus
-tags: [sensorbasedmonitoring, iot, sensitivegoods, intelligentpackaging, intelligentlogistics, industry40, industry, packaging, logistics, homeprotection, consumergoods, luxurygoods]
-clients: [   ]
+categories: ["Use Cases"]
+tags: [use case, iot]
 ---
 
 ### Executive summary

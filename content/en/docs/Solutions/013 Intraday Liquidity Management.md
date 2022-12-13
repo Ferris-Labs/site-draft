@@ -1,10 +1,7 @@
 ---
 title: Intraday Liquidity Management Optimization
-category: use case
-industries: [Financial Service]
-owner: Tom Debus
-tags: [liquidity, liquiditymanagement, intradayliquiditymanagement, cashmanagement, BCBS, Basel3, financialservices]
-clients: []
+categories: ["Use Cases"]
+tags: [use case, financial services]
 ---
 
 ### Executive summary

@@ -1,10 +1,7 @@
 ---
-title: Prospecting 360 Degree
-category: use case
-industries: [Financial Service, Insurance]
-owner: Tom Debus
-tags: [kyc, knowyourcustomer, finance, financialservices, onboarding, prospecting, prospect360]
-clients: [UBS, CS, BJB, VPB, Newcent]
+title: Prospecting 360 Degrees
+categories: ["Use Cases"]
+tags: [use case, financial services, insurance]
 ---
 
 ### Executive summary

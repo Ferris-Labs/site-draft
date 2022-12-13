@@ -1,10 +1,7 @@
 ---
 title: Classification of products along different regulatory frameworks
-category: use case
-industries: [Financial Service, Manufacturing, Retail]
-owner: Tom Debus
-tags: [      ]
-clients: [Stark Group]
+categories: ["Use Cases"]
+tags: [use case, financial services]
 ---
 
 ### Executive summary
