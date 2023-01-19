@@ -20,19 +20,21 @@ The following is a sample manifest.json file.
   "tags": ["devops"],
   "trigger_events": ["ferris.apps.minio.file_uploaded"],
   "schedule": "54 * * * *",
+  "priority": "5",
   "allow_manual_triggering": true,
   "active": true
 }
 ```
 
 
-| parameter       | description                                                                                                                |
-|-----------------|----------------------------------------------------------------------------------------------------------------------------|
-| description     | Description of the service                                                                                                   |
-| entrypoint      | Script that will be executed on service execution                                                                          |                                                                         |
-| execution_order | Sequence in which scripts will be executed. If both `entrypoint` and `execution_order` are defined `entrypoint` will be used. 
-|tags| An array of tags for service                                                                                                   |
-|trigger_events| Array of events that will trigger service execution                                                                         |
-|schedule| Optional. Cron like definition of service scheduled executions                                                                       |
-|allow_manual_triggering| Indicates whether service can be triggered manally or not|
-|active| Indicates service is active or inactive|
+| parameter               | description                                                                                                                   |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| description             | Description of the service                                                                                                    |
+| entrypoint              | Script that will be executed on service execution                                                                             |                                                                         |
+| execution_order         | Sequence in which scripts will be executed. If both `entrypoint` and `execution_order` are defined `entrypoint` will be used. 
+| tags                    | An array of tags for service                                                                                                  |
+| trigger_events          | Array of events that will trigger service execution                                                                           |
+| schedule                | Optional. Cron like definition of service scheduled executions                                                                |
+| priority                | Priority of the service in the execution queue. A value between 1 (highest) and 10 (lowest). Default priority is 5            |
+| allow_manual_triggering | Indicates whether service can be triggered manally or not                                                                     |
+| active                  | Indicates service is active or inactive                                                                                       |
