@@ -1,0 +1,17 @@
+items:
+  # - title: Google Anaytics (functional)
+  #   description: This code gives us insight into the number of people that visit our website, where they are from and what they are clicking on. We follow the guidelines which describe how to use Google Analytics without requiring explicit consent.
+  #   is_functional: true
+  #   script_file: false
+  - title: Your Privacy (functional)
+    description: Our Privacy Policy describes our policies and procedures on the collection, use and disclosure of your information when you use the Service. It tells you about your privacy rights and how the law protects you. <br /> Read more about our privacy policy  <a href="/docs/terms/privacy_policy/">here</a>.
+    is_functional: true
+    script_file: 
+  - title: Strictly necessary cookies
+    description: 
+    is_functional: false
+    script_file: 
+  - title: Performance cookies
+    description: 
+    is_functional: false
+    script_file: 
