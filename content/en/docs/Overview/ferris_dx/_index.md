@@ -1,6 +1,6 @@
 ---
-title: "Ferris DX"
-linkTitle: "Ferris DX"
+title: "The Ferris DX Suite"
+linkTitle: "Ferris DX Suite"
 tags: [dx]
 categories: []
 weight: 1

@@ -3,13 +3,31 @@ title: "Ferris K8X"
 linkTitle: "Ferris K8X"
 weight: 4
 description: >
-  The following section provides a short overview of key features, concepts and architecture of Ferris K8X.
+  Overview and in-depth introduction to Ferris Event Driven Kubernetes.
 ---
 
-## TBD
+> Ferris K8X is available as an optional component to Ferris FX.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## What is Ferris K8X
 
-## TBD
+Ferris K8X is the first *Event driven Kubernetes*, invoking and terminating containers upon demand. Meaning, a containers default state is dormant and only invoked upon a pre-defined event happening.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Event Driven Kubernetes works across any Kubernetes cluster, be it within Ferris or across external clusters, such as cloud based services and applications.
+
+The purpose of Ferris K8X is to concatenate containers and their associated services with each other, therefore building a chain of event driven services. Since each service or container is invoked upon an event trigger, they (service, container) are dormant and require no compute resources.
+
+This embedded and event driven nature of K8X makes it not only easy to use and fast to deploy, it brings unprecedented levels of resources effiecncy to any Kubernetes Cluster.
+
+## What does it do?
+
+K8X
+
+## How it works
+
+Lorem ...
+
+## Benefits of K8X
+
+Lorem ...
+
+## ...
