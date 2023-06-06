@@ -13,17 +13,17 @@ description: >-
 
 ## New <img src="/images/added_blue.png" alt="added_blue" style="zoom:25%;" />
 
-- Introduced the **Correlation ID** giving you the ability to research services and executions by drilling into corresponding details.
+- Introduced the **Correlation ID** giving you the ability to track executions related to a single flow across multiple services.
 
-- Introduced **programmatic retry function**, letting the system re-start previously failed jobs.
+- Introduced **programmatic retry function**, programatically execute retry of an execution giving the developer control over retries if a specific execution fails.
 
-- Introduced a dedicated **listing of failed events**.
+- Introduced a dedicated **listing of failed events**. For easier tracking and analysis of failed executions.
 
 - Added a dedicated button for an **executive overview** of logs, triggers and parameters.
 
-- Added a new UI for **combined logs** and **all scripts**.
+- Added a new UI for **combined logs** and **all scripts**. View aggregated logs of all steps of an execution from the 'list executions' view.
 
-- Added a UI for **correlations based flow tracking**.
+- Added a UI for **correlations based flow tracking**. UI for tracking executions which share a correlation ID.
 
 - Added generic **extensions** and dashboard **improvements**.
 
@@ -44,7 +44,7 @@ description: >-
 - Extension to **ferris_ef** library:
 
      - supporting new correlation id
-     - support for logging
+     - support for logging. Logs of services which use the ferri_ef logging are aggregated to Kafka.
      - scheduling
      - programmatic retry
 
