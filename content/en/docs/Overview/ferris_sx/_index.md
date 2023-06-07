@@ -36,22 +36,20 @@ Now, while Kafka is great for building scalable and high-performance streaming a
 1. For one thing, the system is large and complex, which is why most companies fail to meet their goals.
 2. On top of that, integrating client systems with Kafka brings additional challenges that can be difficult even for experienced teams, because there are many different technical complexities that could potentially cause hiccups in your integration strategy. -> Data schema, supported protocol and serialization are just some of the examples.
 3. As a result, Kafka requires a dedicated team with advanced knowledge and varying skill sets to handle its adoption — engineers, DevOps specialists, DataOps engineers, and GitOps experts.
-4. Moreover, Moreover, due to the complexity of the applications, especially the concern of scalability, it can take a significant time to build each application.
+4. Moreover, due to the complexity of the applications, especially the concern of scalability, it can take a significant time to build each application.
 
 There are many steps involved: from defining and writing business logic, setting up Kafka and integrating it with other services, to automating and deploying the applications.
 
 ### How Does Ferris SX Address And Solve These Issues?
 
-Ferris SX is the latest state-of-the-art addition to the Ferris DX suite, and it takes streaming automation to a whole new level.
-
-It’s simple — Ferris SX removes the complexity of Kafka connections, integrations, setups, automation, deployments and gives the end user the opportunity to focus on building client applications instead of losing time learning how to manage Kafka.
+Ferris SX takes streaming automation to a whole new level. And the way it works is simple. It removes the complexity of Kafka connections, integrations, setups, automation, deployments and gives the end user the opportunity to focus on building client applications instead of losing time learning how to manage Kafka.
 
 But how exactly does Ferris SX solve the common issues and pitfalls mentioned above? By simplifying all processes:
 
-- It has a low learning curve: By reading through the documentation, the end user can start working on the Ferris SX platform and see the first results within an hour.
-- It hides all the complex sides of Kafka: The developer focuses strictly on business logic for processing messages and the Ferris SX python package takes care of configuration, Kafka connections, error handling, logging, and functions to interact with other services inside the Ferris platform.
-- It’s flexible. Ferris SX allows you to use different underlying images and install additional components or pip modules.
-- It allows you to connect the code automatically to Streams and Topics.
+- It is easy to adop and therefore has a low learning curve: Users can start working with Ferris SX and experience first results within an hour.
+- It removes the all complexities of Kafka: Engineers focus strictly on business logic for processing messages. The Ferris SX python package takes care of configuration, Kafka connections, error handling, logging, and functions to interact with other services inside Ferris.
+- It is flexible. Ferris SX allows using different underlying images and install additional components or pip modules.
+- It enables connecting services code automatically to Streams and Topics.
 - It helps you to quickly iterate on your service architecture. With Ferris SX, once the images are deployed and the services are running, results are displayed right away.
 - It takes care of all the underlying core processes. This means that you don’t need to worry about any technical or operational considerations.
 - It is highly scalable and provides flexibility to up- or down-scale at any time, adjusted to the user’s needs and the number of topic partitions.
