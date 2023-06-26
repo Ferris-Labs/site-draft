@@ -3,13 +3,13 @@ title: "Creating Projects and Linking with GIT"
 linkTitle: "Project and Source Code Management"
 weight: 201
 description: >-
-  Managing your project.
+    Managing your project.
 ---
 
-Before you begin creating your services it is best to create a Project and link a GIT Repository to the project. Since Ferris uses a GitOps approach this will ensure you can deploy and iterate your code faster. 
+Before you begin creating your services it is best to create a Project and link a GIT Repository to the project. Since
+Ferris uses a GitOps approach this will ensure you can deploy and iterate your code faster.
 
 Follow the steps described below to create your first project and link it to a GIT Repository.
-
 
 ## Create a New Project
 
@@ -53,11 +53,15 @@ Follow the steps described below to create your first project and link it to a G
 
 1. Paste the copied SSH URL from your repo
 2. Click `Save` to set up the repository on the platform
-3. When you click `Save` a pop-up will display a platform generated public key. This Key must be added to the GitHub Repo in order to allow for syncing the code running on the Platform.
+3. When you click `Save` a pop-up will display a platform generated public key. This Key must be added to the GitHub
+   Repo in order to allow for syncing the code running on the Platform.
 
 {{< blocks/screenshot color="white" image="/images/create_git_repo.png">}}
 
-*Note that a pair of  public and private keys are generated for each repository which is set up on the FerrisFX platform. The private key is encrypted and stored safely in the database and will never be presented to anyone, whereas the public key should be copied and added to the git repository in order to provide the FerrisFX access to the repository and the possibility to clone packages.*
+*Note that a pair of public and private keys are generated for each repository which is set up on the FerrisFX platform.
+The private key is encrypted and stored safely in the database and will never be presented to anyone, whereas the public
+key should be copied and added to the git repository in order to provide the FerrisFX access to the repository and the
+possibility to clone packages.*
 
 {{< blocks/screenshot color="white" image="/images/public_key_repo.png">}}
 
@@ -72,7 +76,7 @@ Follow the steps described below to create your first project and link it to a G
 
 5. Paste the generated public key
 6. Name the public key
-7. Click on `Add Key` 
+7. Click on `Add Key`
 
 {{< blocks/screenshot color="white" image="/images/save_public_key_git.png">}}
 
@@ -93,18 +97,17 @@ Follow the steps described below to create your first project and link it to a G
 
 {{< blocks/screenshot color="white" image="/images/synced_repos.png">}}
 
-Tha main branch is syncronized by default. As you continue developing your project and have multiple branches these can also be synced separately.
+Tha main branch is syncronized by default. As you continue developing your project and have multiple branches these can
+also be synced separately.
 
-
-
-
-4. Click on the `List Packages` tab to verify that the packages were imported
+4. Click on the `List Services` tab to verify that the packages were imported
 
 {{< blocks/screenshot color="white" image="/images/list_packages_git_import.png">}}
 
 ## Change Git Branch on the Platform
 
-*If a user wants to test or work on a specific branch, he can select the branch required to do so. The main branch is selected by default.*
+*If a user wants to test or work on a specific branch, he can select the branch required to do so. The main branch is
+selected by default.*
 
 1. Click on the edit button to open the `Edit Repository` details page
 
@@ -119,9 +122,12 @@ Tha main branch is syncronized by default. As you continue developing your proje
 
 {{< blocks/screenshot color="white" image="/images/sync_dev_branch.png">}}
 
-5. Click on the `List Packages` tab to verify the packages have been synced from the dev branch
+5. Click on the `List Services` tab to verify the packages have been synced from the dev branch
 
 {{< blocks/screenshot color="white" image="/images/list_packages_dev.png">}}
 
-*Note that a public key can be regenerated at any moment if in doubt that someone has access to it. If a new key gets generated, it needs to get added to GitHub again and synced on the platform afterwards. If the step of adding the key is missed, the synchronisation will fail. Keys can also be deleted directly on GitHub if the platform access shouldn't be granted anymore.*
+*Note that a public key can be regenerated at any moment if in doubt that someone has access to it. If a new key gets
+generated, it needs to get added to GitHub again and synced on the platform afterwards. If the step of adding the key is
+missed, the synchronisation will fail. Keys can also be deleted directly on GitHub if the platform access shouldn't be
+granted anymore.*
 

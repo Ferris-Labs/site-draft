@@ -117,3 +117,14 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 *Note that a public key can be regenerated at any moment if in doubt that someone has access to it. If a new key gets generated, it needs to get added to GitHub again and synced on the platform afterwards. If the step of adding the key is missed, the synchronisation will fail. Keys can also be deleted directly on GitHub if the platform access shouldn't be granted anymore.*
 
+
+## Structuring Packages Within The GIT Repository
+
+Each directory within the git repo is considered a package by FX. As there is no way to control the sequence of script
+execution within the repository based backages please ensure that your scripts either do not require a specific run
+sequence or ensure that only a single script needs to be called ( other functionality can be called from teh entry point
+script)
+
+The configurations are loaded from the config.json file. If secrets.json file exists in the git repo then it will be
+loaded and discarded ( but will remain in the GIT Repository)
+

@@ -23,7 +23,7 @@ The following is the most basic Service. Create a file with the following script
 print('Hello DX')
 ```
 
-The above service script will print 'Hello DX' to the console. The output can be viewed within the DX Manager UI as tthe result of a run. 
+The above service script will print 'Hello DX' to the console. The output can be viewed within the DX Manager UI as the result of a run.
 
 As you will have noted the script does not include any specific references to the DX Platform.
 
