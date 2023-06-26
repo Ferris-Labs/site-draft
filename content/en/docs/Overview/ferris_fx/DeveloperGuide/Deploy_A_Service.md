@@ -294,12 +294,10 @@ support this usage scenario you can use the auto-generated UI feature. In order 
 metadata.json. The UI is generated based on the metadata.json and the parameter values are passed to the execution when
 run.
 
-- Once you have created a metadata.json file you can upload it along with the other scripts.
-- The run icon for the executor will change to a form icon. On clicking run the user will be displayed the form for
-  entry of the parameter values.
+- Once you have created a `metadata.json file you can upload it along with the other scripts.
+- The run icon for the executor will change to a form icon. On clicking run the user will be displayed the form for entry of the parameter values.
 
-The following is a self-explantory template showing the different types of form fields that can be generated and the
-constraints thereof.
+The following is a self-explantory template showing the different types of form fields that can be generated and the constraints thereof.
 
 ```json
 {
@@ -410,9 +408,9 @@ constraints thereof.
 
 ## Create an HPSM Message
 
-HPSM messages can be created by sending an appropriately formatted JSON to the ferris.hpsm Kafka topic.
+HPSM ticketing messages can be created by sending an appropriately formatted JSON to the ferris.hpsm Kafka topic.
 
-The following is sample method to create an HPSM message.
+The following is a sample method to create an HPSM message.
 
 ```python
 from kafka import KafkaProducer

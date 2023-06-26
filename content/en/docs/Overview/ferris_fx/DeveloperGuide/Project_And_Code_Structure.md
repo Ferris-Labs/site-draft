@@ -35,13 +35,3 @@ The following are the types of supported artefacts and their roles.
 | config.json                | A JSON file which defines the service configuration. These are stored within consul once they are imported into the platform. The configuration values can be retrieved by using the 'context' of the service using the ferris_ef module.      |
 | secrets.json               | A file which defines the secrets accessible within a specific service.                                                                                                                                                                         |
 | *.txt, *.json, *.jinja etc | Assests used by the Service.                                                                                                                                                                                                                   |
-
-## Structuring Packages Within The GIT Repository
-
-Each directory within the git repo is considered a package by FX. As there is no way to control the sequence of script
-execution within the repository based backages please ensure that your scripts either do not require a specific run
-sequence or ensure that only a single script needs to be called ( other functionality can be called from teh entry point
-script)
-
-The configurations are loaded from the config.json file. If secrets.json file exists in the git repo then it will be
-loaded and discarded ( but will remain in the GIT Repository)

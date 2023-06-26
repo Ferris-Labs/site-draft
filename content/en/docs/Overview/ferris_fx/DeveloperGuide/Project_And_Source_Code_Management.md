@@ -130,4 +130,3 @@ selected by default.*
 generated, it needs to get added to GitHub again and synced on the platform afterwards. If the step of adding the key is
 missed, the synchronisation will fail. Keys can also be deleted directly on GitHub if the platform access shouldn't be
 granted anymore.*
-

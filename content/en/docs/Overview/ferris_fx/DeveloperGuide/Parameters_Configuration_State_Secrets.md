@@ -9,7 +9,7 @@ description: >-
 
 # The FERRIS Executor Helper
 
- The `ferris_ef` package can be used for fetching package's configuration, parameters, secrets and state through it's context.
+ The `ferris_ef` package can be used for fetching package's configuration, parameters, secrets and state through its context.
  
 ```python
 from ferris_ef import context
@@ -50,7 +50,7 @@ from ferris_ef import context
 context.params.get('param_name')
 ```
 
-These parameters are populated from the `data` section of the trigerring CloudEvent or from the values entered in the form attached to the service (Please review section on Service UI generation).
+These parameters are populated from the `data` section of the trigerring CloudEvent or from the values entered in the form attached to the service. Please review section [Service UI generation](/docs/overview/ferris_fx/developerguide/"ui_generator")
 
 An example CloudEvent:
 
@@ -71,7 +71,7 @@ An example CloudEvent:
 }
 ```
 
-In the next section we discuss Secrets Storage and Rereival and passing state between executions of a service.
+In the next section we discuss Secrets Storage and Retreival and passing state between executions of a service.
 
 ### Accessing secrets
 
