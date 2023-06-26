@@ -16,12 +16,12 @@ the payload of the output Cloud Even.
 
 The following are a couple of examples of source adapters:
 
-&ensp; Generic Webhook Adapter : Exposes a webhook end point outside the cluster which may be used to submit events as
-webhook requets. The generic adapter may source multiple event types and does not filter the content. It may be used for
-example to simultaneously accept AWS EventBrige CouldEvents and GitHub Webhooks. It is the role of a package to filter
-or split events as is suited for the use case.
+* Generic Webhook Adapter : Exposes a webhook end point outside the cluster which may be used to submit events as
+  webhook requets. The generic adapter may source multiple event types and does not filter the content. It may be used
+  for example to simultaneously accept AWS EventBrige CouldEvents and GitHub Webhooks. It is the role of a package to
+  filter or split events as is suited for the use case.
 
-&ensp; Twitter Adapter: Streams twitter based on configured hash tags and converts them to cloud events.
+* Twitter Adapter: Streams twitter based on configured hash tags and converts them to cloud events.
 
 - IBM MQ Adapter
 - Kafka Adapter: Sources data from JSON streams within kafka and converts them to Cloud Events.
