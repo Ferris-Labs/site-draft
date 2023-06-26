@@ -3,14 +3,19 @@ title: "Taxonomy/Tagging"
 linkTitle: "Taxonomy/Tagging"
 weight: -09
 description: >
-  How to add Tags and the importance of Taxonomy.
+    How to add Tags and the importance of Taxonomy.
 ---
 
-Taxonomies or Tags describe the ability to organize and structure types and classes of objects and their correlations within executions/services and events (event types) across any given application, use case or project. Tags are searchable and makes it easy to group and relate objects across different components and lifecycle stages.
+Taxonomies or Tags describe the ability to organize and structure types and classes of objects and their correlations
+within executions/services and events (event types) across any given application, use case or project. Tags are
+searchable and makes it easy to group and relate objects across different components and lifecycle stages.
 
-As a generic base module "taggability" can easily be included in any model, use case or application by the developers/users.
+As a generic base module "taggability" can easily be included in any model, use case or application by the
+developers/users.
 
-**Note: As of the current release the Taxonomy is universal across all projects, use cases and cannot be segregated along different functional domains. It is thus essential to create a unified naming convention to be shared among the different projects & user groups.**
+**Note: As of the current release the Taxonomy is universal across all projects, use cases and cannot be segregated
+along different functional domains. It is thus essential to create a unified naming convention to be shared among the
+different projects & user groups.**
 
 # Taxonomies / Tags
 
@@ -29,7 +34,8 @@ As a generic base module "taggability" can easily be included in any model, use 
 1. Click on the magnifying glass to open details (show tag) page
 2. This will automatically transfer you to the tag details page
 3. Click on *List services* to see in which services the same tag is used
-5. Click on *Event Types* to see in which event type the same tag is uses (in this example no event type is associated with the tag just created)
+5. Click on *Event Types* to see in which event type the same tag uses (in this example no event type is associated with
+   the tag just created)
 6. Click on the Edit icon (List tags page) to edit/rename a tag
 
 {{< blocks/screenshot color="white" image="/images/tag_list_click_loupe_details_roboto.png">}}

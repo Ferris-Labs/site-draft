@@ -100,7 +100,7 @@ first_name and designation in the output event. But the mobile number will be st
 
 When this strategy is applied only the attributes present in the mapping file will be available in the output event.
 
-**Please note that you cannot map events to the same event type to avoid loopbacks.**
+_Please note that you cannot map events to the same event type to avoid loopbacks._
 
 **Map**
 

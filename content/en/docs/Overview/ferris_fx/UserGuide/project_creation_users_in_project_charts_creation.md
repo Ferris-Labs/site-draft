@@ -6,7 +6,7 @@ description: >
   How to create Projects, Users and Charts within a projects.
 ---
 
-This subcategory explains the creation of new projects and users withtin these projects.
+This subcategory explains the creation of new projects and users within these projects.
 
 ## Project 
 
@@ -15,17 +15,12 @@ This subcategory explains the creation of new projects and users withtin these p
 
 {{< blocks/screenshot color="white" image="/images/list_projects_add_roboto.png">}}
 
-
-
 1. Name the new project
 2. Save
 
 {{< blocks/screenshot color="white" image="/images/create_project_roboto.png">}}
 
-
 {{< blocks/screenshot color="white" image="/images/list_projects_created_roboto.png">}}
-
-
 
 Project on the Ferris Platform form the overarching organizational bracket for different types of objects. All users, services, scripts, parameters, secrets and other elements are organized into projects to ease enterprise data management. The default owner for new projects is the Platform Admin (PA).  
 
@@ -33,8 +28,8 @@ Project on the Ferris Platform form the overarching organizational bracket for d
 
 Once the project is created, the creator is automatically assigned as the Project Owner. All user roles on the project level are defined in detail as follows:
 
-- **Project Owner** -  has all permissions on project and related entities (servicess, users) including deletion of project(s) (and users) created by the PO. By default it is the user that created project
-- **Project Admin** - has all permissions as Owner except deletion
+- **Project Owner** -  has all permissions on project and related entities (services, users) including deletion of project and users.
+- **Project Admin** - has same permissions as the Owner, except deletion
 - **Project User** - has only list / view permissions
 
 **Below the Project User Matrix**
@@ -139,7 +134,7 @@ There are 3 different types of charts:
 
 The documentation on "how to format JSON data to render charts", can be found in the next subcategory: [Charts in Projects](/docs/user-guide/charts_in_projects/ "Charts in Projects").
 
-**Note:** the API created by an user, returns the correctly formated JSON script.
+**Note:** the API created by a user, returns the correctly formated JSON script.
 
 Navigate to a previously created project.
 

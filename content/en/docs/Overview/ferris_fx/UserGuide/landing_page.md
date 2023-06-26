@@ -6,7 +6,7 @@ description: >-
   Overview of the FerrisFX Dashboard.
 ---
 
-The FerrisFX  Landing page provides insights and analytics around typical platform related metrics mostly related to Data Ops and detailed event handling. It can be finetuned and tailored to customer specific needs. 
+The FerrisFX  Landing page provides insights and analytics around typical platform related metrics mostly related to Data Ops and detailed event handling. It can be fine tuned and tailored to customer specific needs. 
 
 In this specific use case the insights and analytics of the FerrisFX Data Platform are highlighted as follows:
 

@@ -2,50 +2,33 @@
 title: "Logging and Monitoring"
 linkTitle: "Logging and Monitoring"
 description: >-
-     Development Lifecycle of an FX Service.
+    Development Lifecycle of an FX Service.
 ---
 
-# Logging and Monitoring
+Ferris FX aggregates all operational data into Elasticsearch. Most operational data and events are transported through
+Kafka from which it is placed in Elasticsearch by Elasticsearch Sink containers.
 
-Ferris FX aggregates all operational data into Elasticsearch. Most operational data and events are transported through Kafka from which it is placed in Elasticsearch by Elasticsearch Sink containers. 
+## Logs
 
-The following are the Kex Data and The matching Elasticsearch Indexes
-
-
-
-## Logs 
-
-Contains Logs from all applications. Elasticsearch index is XYZ
+Contains Logs from all applications.
 
 ## Events
 
-All events that are transported through the ferris.events Topic are loaded into Elasticsearch Index.
-
-
+All events that are transported through the `ferris.events` topic are loaded into Elasticsearch Index.
 
 ## Checking Logs
 
-Ferris Logs are in logstash format. The logs can be aggregated from the application by using the ferris_cli library. 
+Ferris Logs are in logstash format. The logs can be aggregated from the application by using the ferris_cli library.
 
-The following is a sample log entry with extended descriptions below. 
+Logs are identified by the app_name attribute which provides you with an indication of the application from which it was
+generated.
 
-Logs are identified by the app_name attribute which provides you with an indication of the application from which it was generated. 
-
-
-
-To Filter Application Logs use the following
-
-App_name: 
-
-
+To Filter Application Logs use the following: `app_name
 
 ## Checking Events
 
-Events are in form of cloud events. The data section of an event is schema less i.e. the data provided in the attributes may vara from event type to event type. If you require custom extractions for specific event types the best is to tap into the 
+Events are in form of cloud events. The data section of an event is schema less i.e. the data provided in the attributes
+may vary from event type to event type. If you require custom extractions for specific event types the best is to tap
+into the event namespace.
 
-
-
-
-
-## Event Name Spaces
 
