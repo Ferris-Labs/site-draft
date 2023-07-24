@@ -12,11 +12,12 @@ description: >-
 
 ## New <img src="/images/added_blue.png" alt="added_blue" style="zoom:25%;" />
 
-- We introduced a new **Execution button** to prevent scheduled executions in the Ferris Executor from running. With
-  this button, users can skip executions until further notice. With the same button, users can unskip executions and and
-  thus bring them back into the planned execution cycle.
+- We introduced a new **skip execution** button to prevent scheduled executions in the Ferris Executor from running.
+  With this button, users can skip executions until further notice. With the same button, users can unskip executions
+  and and thus bring them back into the planned execution cycle.
 
-- We added the ability of a **dynamic priorizations of executions** by forcing one-time executions on different ..?
+- We added the ability of a **dynamic priorisations of executions** by forcing a one-time execution on a different
+  priority lane, rather than the service’s default.
 
 ---
 
