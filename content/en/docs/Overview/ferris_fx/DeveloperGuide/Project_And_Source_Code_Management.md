@@ -102,7 +102,7 @@ also be synced separately.
 
 4. Click on the `List Services` tab to verify that the packages were imported
 
-{{< blocks/screenshot color="white" image="/images/list_packages_git_import.png">}}
+{{< blocks/screenshot color="white" image="/images/list_services_git_import.png">}}
 
 ## Change Git Branch on the Platform
 
@@ -124,7 +124,7 @@ selected by default.*
 
 5. Click on the `List Services` tab to verify the packages have been synced from the dev branch
 
-{{< blocks/screenshot color="white" image="/images/list_packages_dev.png">}}
+{{< blocks/screenshot color="white" image="/images/list_services_dev.png">}}
 
 *Note that a public key can be regenerated at any moment if in doubt that someone has access to it. If a new key gets
 generated, it needs to get added to GitHub again and synced on the platform afterwards. If the step of adding the key is
