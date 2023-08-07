@@ -4,6 +4,9 @@ Branch deployment status <b>'master'</b> to https://www.ferrislabs.net:
 Branch deployment status <b>'uat'</b> to https://uat--ferrislabs.netlify.app/: 
 [![Netlify 'uat' branch status](https://api.netlify.com/api/v1/badges/efd1c5c3-e992-4c01-8a50-ebe9a6c920a0/deploy-status/?branch=uat)](https://app.netlify.com/sites/ferrislabs/deploys) 
 
+ranch deployment status <b>'dev'</b> to https://dev--ferrislabs.netlify.app/: 
+[![Netlify 'dev' branch status](https://api.netlify.com/api/v1/badges/efd1c5c3-e992-4c01-8a50-ebe9a6c920a0/deploy-status/?branch=dev)](https://app.netlify.com/sites/ferrislabs/deploys) 
+
 ---
 
 # Ferris FX Site ( based on Docsy )
@@ -191,4 +194,3 @@ Error: Error building site: TOCSS: failed to transform "scss/main.scss" (text/x-
 
 This error occurs if you have not installed the extended version of Hugo.
 See our [user guide](https://www.docsy.dev/docs/getting-started/) for instructions on how to install Hugo.
-
