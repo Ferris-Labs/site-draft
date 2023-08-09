@@ -177,16 +177,16 @@ enable = false
 [params.links.footer]
 [[params.links.footer.left]]
   name = "About Us"
-  url = "/about"
+  url = "/about/"
 [[params.links.footer.left]]
   name = "Contact Us"
-  url = "/contact"
+  url = "/contact/"
 [[params.links.footer.left]]
   name = "Jobs"
-  url = "/jobs"
+  url = "/jobs/"
 [[params.links.footer.left]]
   name = "Partners"
-  url = "/partners"
+  url = "/partners/"
 
 [[params.links.footer.center]]
   name = "Linkedin"
@@ -194,11 +194,11 @@ enable = false
   target = "_blank"
 [[params.links.footer.center]]
   name = "Twitter"
-  url = "https://twitter.com/ferrislabs"
+  url = "https://twitter.com/ferrislabs/"
   target = "_blank"
 [[params.links.footer.center]]
   name = "YouTube"
-  url = "https://www.youtube.com/channel/UC5miURXVxGLo17EyWPBWCug"
+  url = "https://www.youtube.com/channel/UC5miURXVxGLo17EyWPBWCug/"
   target = "_blank"
 
 [[params.links.footer.right]]
@@ -207,20 +207,20 @@ enable = false
   target = "_blank"
 [[params.links.footer.right]]
   name = "General Terms and Conditions (GTC)"
-  url = "/docs/terms_conditions"
+  url = "/docs/terms_conditions/"
   target = "_blank"
 [[params.links.footer.right]]
   name = "Data protection policy"
-  url = "/docs/privacy_policy"
+  url = "/docs/privacy_policy/"
   target = "_blank"
 [[params.links.footer.right]]
   name = "Impressum"
-  url = "/impressum"
+  url = "/impressum/"
 
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
 	name = "User mailing list"
-	url = "https://ferrislabs.net/about"
+	url = "https://ferrislabs.net/about/"
 	icon = "fa fa-envelope"
         desc = "Ferris news and updates"
 [[params.links.user]]
@@ -230,7 +230,7 @@ enable = false
         desc = "Follow us on Linkedin to get the latest news!"
 [[params.links.user]]
 	name = "GitHub"
-	url = "https://github.com/Ferris-Labs"
+	url = "https://github.com/Ferris-Labs/"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
 
@@ -254,7 +254,7 @@ enable = false
 [[menu.main]]
     identifier = "integrations_databases"
     name = "DATABASES"
-    url = "/integrations/databases"
+    url = "/integrations/databases/"
     parent = "integrations"
     weight = 1
     [menu.main.params]
@@ -263,7 +263,7 @@ enable = false
 [[menu.main]]
     identifier = "integrations_notifications"
     name = "NOTIFICATIONS"
-    url = "/integrations/notifications"
+    url = "/integrations/notifications/"
     parent = "integrations"
     weight = 2
     [menu.main.params]
@@ -288,28 +288,28 @@ enable = false
 #[[menu.main]]
 #    identifier = "learn_develoer_guide"
 #    name = "DEVELOPER GUIDE"
-#    url = "/docs/developer_guide"
+#    url = "/docs/developer_guide/"
 #    parent = "learn"
 #    weight = 1
 
 #[[menu.main]]
 #    identifier = "learn_integrations_guide"
 #    name = "INTEGRATIONS GUIDE"
-#    url = "/docs/integrations"
+#    url = "/docs/integrations/"
 #    parent = "learn"
 #    weight = 2
 
 #[[menu.main]]
 #    identifier = "learn_user_guide"
 #    name = "USER GUIDE"
-#    url = "/docs/user-guide"
+#    url = "/docs/user-guide/"
 #    parent = "learn"
 #    weight = 3
 
 #[[menu.main]]
 #    identifier = "learn_security"
 #    name = "SECURITY"
-#    url = "/docs/security"
+#    url = "/docs/security/"
 #    parent = "learn"
 #    weight = 4
 
@@ -332,34 +332,34 @@ enable = false
 [[menu.main]]
     identifier = "company_about"
     name = "ABOUT US"
-    url = "/about"
+    url = "/about/"
     parent = "company"
     weight = 1
 
 [[menu.main]]
     identifier = "company_contact"
     name = "CONTACT US"
-    url = "/contact"
+    url = "/contact/"
     parent = "company"
     weight = 2
 
 [[menu.main]]
     identifier = "company_careers"
     name = "CAREERS"
-    url = "/jobs"
+    url = "/jobs/"
     parent = "company"
     weight = 3
 
 [[menu.main]]
     identifier = "company_partners"
     name = "PARTNERS"
-    url = "/partners"
+    url = "/partners/"
     parent = "company"
     weight = 4
 
 [[menu.main]]
     identifier = "support_professional_services"
     name = "PRICING"
-    url = "/SUPPORT"
+    url = "/SUPPORT/"
     parent = "company"
     weight = 5
