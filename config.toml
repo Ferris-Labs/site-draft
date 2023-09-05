@@ -363,3 +363,12 @@ enable = false
     url = "/SUPPORT"
     parent = "company"
     weight = 5
+
+
+[params.replacables]
+  company_name = "Ferris Labs AG"
+  github_url = "https://github.com/Ferris-Labs/"
+  twitter_url = "https://github.com/ferrislabs/"
+  youtube_url = "https://github.com/ferrislabs/"
+  website_url = "https://github.com/ferrislabs/"
+  brand_name = "Ferris"
