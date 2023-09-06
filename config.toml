@@ -373,3 +373,8 @@ enable = false
   website_url = "https://github.com/ferrislabs/"
   brand_name = "Ferris"
   brand_name_lower="ferris"
+
+  company_email = "info@ferrislabs.net"
+  company_website = "ferrislabs.com"
+  company_address = "Fabrikstrasse 5, 6330 Cham, Switzerland"
+  company_phone = "+41(0)41 561 0105"
