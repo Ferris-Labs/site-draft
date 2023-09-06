@@ -14,7 +14,7 @@
 {{ end -}}
 
 {{ partialCached "favicons.html" . }}
-<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . | markdownify }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
 <!-- for search engine optimization and third-party search engines like Elastic App Search-->
 {{ if .Page.Description }}
   <meta name="description" content="{{ .Page.Description }}">
