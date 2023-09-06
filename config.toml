@@ -368,8 +368,10 @@ enable = false
 [params.replacables]
   company_name = "Ferris Labs AG"
   github_url = "https://github.com/Ferris-Labs/"
-  twitter_url = "https://github.com/ferrislabs/"
-  youtube_url = "https://github.com/ferrislabs/"
+  twitter_url = "https://twitter.com/ferrislabs"
+  youtube_url = "https://www.youtube.com/@ferrislabs"
+  linkedin_url = "https://www.linkedin.com/company/ferrislabs/"
+  medium_url = "https://medium.com/ferrislabs"
   website_url = "https://github.com/ferrislabs/"
   brand_name = "Ferris"
   brand_name_lower="ferris"
