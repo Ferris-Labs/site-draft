@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Ferris Labs"
+title = "Ferris Labs for Scalable Microservices Development"
 
 enableRobotsTXT = true
 
@@ -131,7 +131,7 @@ github_project_repo = "https://github.com/Ferris-Labs/site-draft"
 # github_branch= "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "f2900b47814a344fa"
+# gcs_engine_id = "f2900b47814a344fa"
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
@@ -151,7 +151,7 @@ footer_about_disable = true
 # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
 navbar_logo = true
 # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
-navbar_translucent_over_cover_disable = true
+navbar_translucent_over_cover_disable = false
 # Enable to show the side bar menu in its compact state.
 sidebar_menu_compact = true
 # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
@@ -277,13 +277,13 @@ enable = false
   [menu.main.params]
     class = 'highlight-menu-item'
 
-[[menu.main]]
-  identifier = 'learn'
-  name = 'DOCUMENTATION'
-  url = '/docs/overview'
-  weight = 4
-  [menu.main.params]
-    class = 'highlight-menu-item'
+#[[menu.main]]
+#  identifier = 'learn'
+#  name = 'DOCUMENTATION'
+#  url = '/docs/overview'
+#  weight = 4
+#  [menu.main.params]
+#    class = 'highlight-menu-item'
 
 #[[menu.main]]
 #    identifier = "learn_develoer_guide"
@@ -313,13 +313,13 @@ enable = false
 #    parent = "learn"
 #    weight = 4
 
-[[menu.main]]
-  identifier = 'blog'
-  name = 'BLOG'
-  url = '/blog/'
-  weight = 5
-  [menu.main.params]
-    class = 'highlight-menu-item'
+# [[menu.main]]
+#  identifier = 'blog'
+#  name = 'BLOG'
+#  url = '/blog/'
+#  weight = 5
+#  [menu.main.params]
+#    class = 'highlight-menu-item'
 
 [[menu.main]]
   identifier = 'company'
@@ -364,6 +364,17 @@ enable = false
     parent = "company"
     weight = 5
 
+[[menu.main]]
+  name = " "
+  pre = '<button type="button">Get Started</button>'
+  url = "#get_started"
+  weight = 100
+
+[[menu.main]]
+  name = ""
+  pre = '<button type="button">Demo</button>'
+  url = "/demo"
+  weight = 101
 
 [params.replacables]
   company_name = "Ferris Labs AG"
