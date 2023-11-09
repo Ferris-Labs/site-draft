@@ -365,15 +365,15 @@ enable = false
     weight = 5
 
 [[menu.main]]
-  name = " "
-  pre = '<button type="button" class="btn-sm btn-white" >Get Started</button>'
-  url = "#get_started"
+  name = ""
+  pre = '<button type="button" class="btn-sm btn-primary" >Get Started</button>'
+  url = "https://m.ferrislabs.net/fl-sandbox-lp"
   weight = 100
 
 [[menu.main]]
-  name = ""
-  pre = '<button type="button">Demo</button>'
-  url = "/demo"
+  name = " "
+  pre = '<button type="button" class="btn-sm btn-primary" >Demo</button>'
+  url = "https://calendly.com/ferris-team/ferris-intro"
   weight = 101
 
 [params.replacables]
