@@ -277,13 +277,13 @@ enable = false
   [menu.main.params]
     class = 'highlight-menu-item'
 
-#[[menu.main]]
-#  identifier = 'learn'
-#  name = 'DOCUMENTATION'
-#  url = '/docs/overview'
-#  weight = 4
-#  [menu.main.params]
-#    class = 'highlight-menu-item'
+[[menu.main]]
+ identifier = 'learn'
+ name = 'DOCUMENTATION'
+ url = '/docs'
+ weight = 4
+ [menu.main.params]
+   class = 'highlight-menu-item'
 
 #[[menu.main]]
 #    identifier = "learn_develoer_guide"
@@ -366,7 +366,7 @@ enable = false
 
 [[menu.main]]
   name = " "
-  pre = '<button type="button">Get Started</button>'
+  pre = '<button type="button" class="btn-sm btn-white" >Get Started</button>'
   url = "#get_started"
   weight = 100
 
