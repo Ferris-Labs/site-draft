@@ -237,132 +237,112 @@ enable = false
 [menu]
 [[menu.main]]
   identifier = 'product'
-  name = 'PRODUCT'
+  name = 'PRODUCTS'
   url = '/product/'
   weight = 1
   [menu.main.params]
     class = 'highlight-menu-item'
 
 [[menu.main]]
-  identifier = 'integrations'
-  name = 'INTEGRATIONS'
-  url = '/integrations/'
+  identifier = 'solutions'
+  name = 'SOLUTIONS'
+  url = '/solutions/'
   weight = 2
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+  identifier = 'integrations'
+  name = "INTEGRATIONS"
+  url = "/integrations/"
+  weight = 3
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+  identifier = 'integrations_integrations'
+  name = "INTEGRATIONS"
+  url = "/integrations/"
+  parent = "integrations"
+  weight = 1
   [menu.main.params]
     class = 'highlight-menu-item'
 
 [[menu.main]]
     identifier = "integrations_databases"
     name = "DATABASES"
-    url = "/integrations/databases"
+    url = "/integrations/databases/"
     parent = "integrations"
-    weight = 1
+    weight = 2
     [menu.main.params]
       class = 'highlight-menu-item'
 
 [[menu.main]]
     identifier = "integrations_notifications"
     name = "NOTIFICATIONS"
-    url = "/integrations/notifications"
+    url = "/integrations/notifications/"
     parent = "integrations"
-    weight = 2
+    weight = 3
     [menu.main.params]
       class = 'highlight-menu-item'
-
-[[menu.main]]
-  identifier = 'solutions'
-  name = 'CASE STUDIES'
-  url = '/solutions/'
-  weight = 3
-  [menu.main.params]
-    class = 'highlight-menu-item'
-
-[[menu.main]]
- identifier = 'learn'
- name = 'DOCUMENTATION'
- url = '/docs'
- weight = 4
- [menu.main.params]
-   class = 'highlight-menu-item'
-
-#[[menu.main]]
-#    identifier = "learn_develoer_guide"
-#    name = "DEVELOPER GUIDE"
-#    url = "/docs/developer_guide"
-#    parent = "learn"
-#    weight = 1
-
-#[[menu.main]]
-#    identifier = "learn_integrations_guide"
-#    name = "INTEGRATIONS GUIDE"
-#    url = "/docs/integrations"
-#    parent = "learn"
-#    weight = 2
-
-#[[menu.main]]
-#    identifier = "learn_user_guide"
-#    name = "USER GUIDE"
-#    url = "/docs/user-guide"
-#    parent = "learn"
-#    weight = 3
-
-#[[menu.main]]
-#    identifier = "learn_security"
-#    name = "SECURITY"
-#    url = "/docs/security"
-#    parent = "learn"
-#    weight = 4
-
-# [[menu.main]]
-#  identifier = 'blog'
-#  name = 'BLOG'
-#  url = '/blog/'
-#  weight = 5
-#  [menu.main.params]
-#    class = 'highlight-menu-item'
 
 [[menu.main]]
   identifier = 'company'
   name = 'COMPANY'
   url = '/about/'
-  weight = 6
+  weight = 4
   [menu.main.params]
     class = 'highlight-menu-item'
 
 [[menu.main]]
     identifier = "company_about"
     name = "ABOUT US"
-    url = "/about"
+    url = "/about/"
     parent = "company"
     weight = 1
 
 [[menu.main]]
     identifier = "company_contact"
     name = "CONTACT US"
-    url = "/contact"
+    url = "/contact/"
     parent = "company"
     weight = 2
 
 [[menu.main]]
     identifier = "company_careers"
     name = "CAREERS"
-    url = "/jobs"
+    url = "/jobs/"
     parent = "company"
     weight = 3
 
 [[menu.main]]
     identifier = "company_partners"
     name = "PARTNERS"
-    url = "/partners"
+    url = "/partners/"
     parent = "company"
     weight = 4
 
 [[menu.main]]
     identifier = "support_professional_services"
     name = "PRICING"
-    url = "/SUPPORT"
+    url = "/support/"
     parent = "company"
     weight = 5
+
+[[menu.main]]
+    identifier = "company_blog"
+    name = "BLOG"
+    url = "/blog/"
+    parent = "company"
+    weight = 6
+
+[[menu.main]]
+ identifier = 'learn'
+ name = 'DOCUMENTATION'
+ url = "/docs/"
+ weight = 6
+ [menu.main.params]
+   class = 'highlight-menu-item'
 
 [[menu.main]]
   name = ""
