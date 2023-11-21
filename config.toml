@@ -309,33 +309,33 @@ enable = false
     parent = "company"
     weight = 1
 
-[[menu.main]]
-    identifier = "company_contact"
-    name = "CONTACT US"
-    url = "https://www.ferrislabs.net/contact/"
-    parent = "company"
-    weight = 2
-
-[[menu.main]]
-    identifier = "company_careers"
-    name = "CAREERS"
-    url = "https://www.ferrislabs.net/jobs/"
-    parent = "company"
-    weight = 3
+#[[menu.main]]
+#    identifier = "company_contact"
+#    name = "CONTACT US"
+#    url = "https://www.ferrislabs.net/contact/"
+#    parent = "company"
+#    weight = 2
 
 [[menu.main]]
     identifier = "company_partners"
     name = "PARTNERS"
     url = "https://www.ferrislabs.net/partners/"
     parent = "company"
-    weight = 4
+    weight = 3
 
 [[menu.main]]
-    identifier = "support_professional_services"
-    name = "PRICING"
-    url = "https://www.ferrislabs.net/support/"
+    identifier = "company_careers"
+    name = "CAREERS"
+    url = "https://www.ferrislabs.net/jobs/"
     parent = "company"
-    weight = 5
+    weight = 4
+
+#[[menu.main]]
+#    identifier = "support_professional_services"
+#    name = "PRICING"
+#    url = "https://www.ferrislabs.net/support/"
+#    parent = "company"
+#    weight = 5
 
 [[menu.main]]
     identifier = "company_blog"
