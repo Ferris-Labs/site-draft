@@ -355,7 +355,7 @@ enable = false
 [[menu.main]]
   name = ""
   pre = '<button type="button" class="btn-sm btn-primary" >Get Started</button>'
-  url = "https://m.ferrislabs.net/fl-sandbox-lp"
+  url = "https://docs.ferrislabs.net/docs/"
   weight = 100
 
 [[menu.main]]
