@@ -344,25 +344,25 @@ enable = false
     parent = "company"
     weight = 6
 
-[[menu.main]]
- identifier = 'learn'
- name = 'DOCUMENTATION'
- url = "https://docs.ferrislabs.net/docs/"
- weight = 6
- [menu.main.params]
-   class = 'highlight-menu-item'
+#[[menu.main]]
+# identifier = 'learn'
+# name = 'DOCUMENTATION'
+# url = "https://docs.ferrislabs.net/docs/"
+# weight = 5
+# [menu.main.params]
+#   class = 'highlight-menu-item'
 
-[[menu.main]]
-  name = ""
-  pre = '<button type="button" class="btn-sm btn-primary" >Get Started</button>'
-  url = "https://docs.ferrislabs.net/docs/"
-  weight = 100
+#[[menu.main]]
+#  name = ""
+#  pre = '<button type="button" class="btn-sm btn-primary" >Get Started</button>'
+#  url = "https://docs.ferrislabs.net/docs/"
+#  weight = 100
 
-[[menu.main]]
-  name = " "
-  pre = '<button type="button" class="btn-sm btn-primary" >Demo</button>'
-  url = "https://calendly.com/ferris-team/ferris-intro"
-  weight = 101
+#[[menu.main]]
+#  name = " "
+#  pre = '<button type="button" class="btn-sm btn-primary" >Demo</button>'
+#  url = "https://calendly.com/ferris-team/ferris-intro"
+#  weight = 101
 
 [params.replacables]
   company_name = "Ferris Labs AG"
