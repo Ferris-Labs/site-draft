@@ -14,7 +14,11 @@
 {{ end -}}
 
 {{ partialCached "favicons.html" . }}
+<<<<<<< HEAD
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . | markdownify }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+=======
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+>>>>>>> master
 <!-- for search engine optimization and third-party search engines like Elastic App Search-->
 {{ if .Page.Description }}
   <meta name="description" content="{{ .Page.Description }}">
@@ -24,7 +28,10 @@
 {{ end }}
 
 {{- template "_internal/opengraph.html" . -}}
+<<<<<<< HEAD
+=======
 {{/*  {{- template "_internal/google_news.html" . -}}  */}}
+>>>>>>> master
 {{- template "_internal/schema.html" . -}}
 {{- template "_internal/twitter_cards.html" . -}}
 
@@ -52,6 +59,8 @@
 {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
 {{ end }}
+<<<<<<< HEAD
+=======
 
 <!-- Google Tag Manager -->
 <script>
@@ -62,3 +71,4 @@
   })(window,document,'script','dataLayer','GTM-KC3D35Z');
 </script>
 <!-- End Google Tag Manager -->
+>>>>>>> master

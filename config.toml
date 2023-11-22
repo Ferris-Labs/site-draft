@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Ferris Labs"
+title = "Ferris Labs for Scalable Microservices Development"
 
 enableRobotsTXT = true
 
@@ -91,7 +91,7 @@ weight = 1
 
 # Comment out if you don't want the "print entire section" link enabled.
 [outputs]
-section = ["HTML", "print", "RSS"]
+section = ["HTML", "RSS"]
 
 [params]
 copyright = "FERRIS LABS AG"
@@ -142,6 +142,14 @@ offlineSearch = false
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
 
+
+# Special configs for docs site integration
+company_baseurl = "https://www.ferrislabs.net"
+company_docsurl = "https://docs.ferrislabs.net"
+company_footer = "footer_fl.html"
+company_index = "index_fl.html"
+company_navbar_logo = "icons/logo.svg"
+
 # User interface configuration
 [params.ui]
 #  Set to true to disable breadcrumb navigation.
@@ -151,7 +159,7 @@ footer_about_disable = true
 # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
 navbar_logo = true
 # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
-navbar_translucent_over_cover_disable = true
+navbar_translucent_over_cover_disable = false
 # Enable to show the side bar menu in its compact state.
 sidebar_menu_compact = true
 # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
@@ -207,11 +215,19 @@ enable = false
   target = "_blank"
 [[params.links.footer.right]]
   name = "General Terms and Conditions (GTC)"
+<<<<<<< HEAD
+  url = "/docs/terms/terms_conditions"
+  target = "_blank"
+[[params.links.footer.right]]
+  name = "Data Protection Policy"
+  url = "/docs/terms/privacy_policy"
+=======
   url = "/docs/terms_conditions/"
   target = "_blank"
 [[params.links.footer.right]]
   name = "Data protection policy"
   url = "/docs/privacy_policy/"
+>>>>>>> master
   target = "_blank"
 [[params.links.footer.right]]
   name = "Impressum"
@@ -237,39 +253,66 @@ enable = false
 [menu]
 [[menu.main]]
   identifier = 'product'
-  name = 'PRODUCT'
-  url = '/product/'
+  name = 'PRODUCTS'
+  url = 'https://www.ferrislabs.net/product/'
   weight = 1
   [menu.main.params]
     class = 'highlight-menu-item'
 
 [[menu.main]]
-  identifier = 'integrations'
-  name = 'INTEGRATIONS'
-  url = '/integrations/'
+  identifier = 'solutions'
+  name = 'SOLUTIONS'
+  url = 'https://www.ferrislabs.net/solutions/'
   weight = 2
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+  identifier = 'integrations'
+  name = "INTEGRATIONS"
+  url = "https://www.ferrislabs.net/integrations/"
+  weight = 3
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+  identifier = 'integrations_integrations'
+  name = "INTEGRATIONS"
+  url = "https://www.ferrislabs.net/integrations/"
+  parent = "integrations"
+  weight = 1
   [menu.main.params]
     class = 'highlight-menu-item'
 
 [[menu.main]]
     identifier = "integrations_databases"
     name = "DATABASES"
+<<<<<<< HEAD
+    url = "https://www.ferrislabs.net/integrations/databases/"
+=======
     url = "/integrations/databases/"
-    parent = "integrations"
-    weight = 1
-    [menu.main.params]
-      class = 'highlight-menu-item'
-
-[[menu.main]]
-    identifier = "integrations_notifications"
-    name = "NOTIFICATIONS"
-    url = "/integrations/notifications/"
+>>>>>>> master
     parent = "integrations"
     weight = 2
     [menu.main.params]
       class = 'highlight-menu-item'
 
 [[menu.main]]
+    identifier = "integrations_notifications"
+    name = "NOTIFICATIONS"
+<<<<<<< HEAD
+    url = "https://www.ferrislabs.net/integrations/notifications/"
+=======
+    url = "/integrations/notifications/"
+>>>>>>> master
+    parent = "integrations"
+    weight = 3
+    [menu.main.params]
+      class = 'highlight-menu-item'
+
+[[menu.main]]
+<<<<<<< HEAD
+=======
   identifier = 'solutions'
   name = 'CASE STUDIES'
   url = '/solutions/'
@@ -322,16 +365,29 @@ enable = false
     class = 'highlight-menu-item'
 
 [[menu.main]]
+>>>>>>> master
   identifier = 'company'
   name = 'COMPANY'
-  url = '/about/'
-  weight = 6
+  url = 'https://www.ferrislabs.net/about/'
+  weight = 4
   [menu.main.params]
     class = 'highlight-menu-item'
 
 [[menu.main]]
     identifier = "company_about"
     name = "ABOUT US"
+<<<<<<< HEAD
+    url = "https://www.ferrislabs.net/about/"
+    parent = "company"
+    weight = 1
+
+#[[menu.main]]
+#    identifier = "company_contact"
+#    name = "CONTACT US"
+#    url = "https://www.ferrislabs.net/contact/"
+#    parent = "company"
+#    weight = 2
+=======
     url = "/about/"
     parent = "company"
     weight = 1
@@ -349,17 +405,77 @@ enable = false
     url = "/jobs/"
     parent = "company"
     weight = 3
+>>>>>>> master
 
 [[menu.main]]
     identifier = "company_partners"
     name = "PARTNERS"
+<<<<<<< HEAD
+    url = "https://www.ferrislabs.net/partners/"
+    parent = "company"
+    weight = 3
+
+[[menu.main]]
+    identifier = "company_careers"
+    name = "CAREERS"
+    url = "https://www.ferrislabs.net/jobs/"
+=======
     url = "/partners/"
+>>>>>>> master
     parent = "company"
     weight = 4
 
+#[[menu.main]]
+#    identifier = "support_professional_services"
+#    name = "PRICING"
+#    url = "https://www.ferrislabs.net/support/"
+#    parent = "company"
+#    weight = 5
+
 [[menu.main]]
+<<<<<<< HEAD
+    identifier = "company_blog"
+    name = "BLOG"
+    url = "https://www.ferrislabs.net/blog/"
+=======
     identifier = "support_professional_services"
     name = "PRICING"
     url = "/SUPPORT/"
+>>>>>>> master
     parent = "company"
-    weight = 5
+    weight = 6
+
+#[[menu.main]]
+# identifier = 'learn'
+# name = 'DOCUMENTATION'
+# url = "https://docs.ferrislabs.net/docs/"
+# weight = 5
+# [menu.main.params]
+#   class = 'highlight-menu-item'
+
+#[[menu.main]]
+#  name = ""
+#  pre = '<button type="button" class="btn-sm btn-primary" >Get Started</button>'
+#  url = "https://docs.ferrislabs.net/docs/"
+#  weight = 100
+
+#[[menu.main]]
+#  name = " "
+#  pre = '<button type="button" class="btn-sm btn-primary" >Demo</button>'
+#  url = "https://calendly.com/ferris-team/ferris-intro"
+#  weight = 101
+
+[params.replacables]
+  company_name = "Ferris Labs AG"
+  github_url = "https://github.com/Ferris-Labs/"
+  twitter_url = "https://twitter.com/ferrislabs"
+  youtube_url = "https://www.youtube.com/@ferrislabs"
+  linkedin_url = "https://www.linkedin.com/company/ferrislabs/"
+  medium_url = "https://medium.com/ferrislabs"
+  website_url = "https://github.com/ferrislabs/"
+  brand_name = "Ferris"
+  brand_name_lower="ferris"
+  company_email = "info@ferrislabs.net"
+  company_website = "ferrislabs.com"
+  company_address = "Fabrikstrasse 5, 6330 Cham, Switzerland"
+  company_phone = "+41(0)41 561 0105"
