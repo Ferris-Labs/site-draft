@@ -64,7 +64,7 @@ anchor = "smart"
 [services]
 [services.googleAnalytics]
 # Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
-id = "G-RZ6L6XFT3Q"
+id = "G-7F8D9T716Q"
 
 # Language configuration
 
@@ -185,16 +185,16 @@ enable = false
 [params.links.footer]
 [[params.links.footer.left]]
   name = "About Us"
-  url = "/about"
+  url = "/about/"
 [[params.links.footer.left]]
   name = "Contact Us"
-  url = "/contact"
+  url = "/contact/"
 [[params.links.footer.left]]
   name = "Jobs"
-  url = "/jobs"
+  url = "/jobs/"
 [[params.links.footer.left]]
   name = "Partners"
-  url = "/partners"
+  url = "/partners/"
 
 [[params.links.footer.center]]
   name = "Linkedin"
@@ -202,11 +202,11 @@ enable = false
   target = "_blank"
 [[params.links.footer.center]]
   name = "Twitter"
-  url = "https://twitter.com/ferrislabs"
+  url = "https://twitter.com/ferrislabs/"
   target = "_blank"
 [[params.links.footer.center]]
   name = "YouTube"
-  url = "https://www.youtube.com/channel/UC5miURXVxGLo17EyWPBWCug"
+  url = "https://www.youtube.com/channel/UC5miURXVxGLo17EyWPBWCug/"
   target = "_blank"
 
 [[params.links.footer.right]]
@@ -215,20 +215,28 @@ enable = false
   target = "_blank"
 [[params.links.footer.right]]
   name = "General Terms and Conditions (GTC)"
+<<<<<<< HEAD
   url = "/docs/terms/terms_conditions"
   target = "_blank"
 [[params.links.footer.right]]
   name = "Data Protection Policy"
   url = "/docs/terms/privacy_policy"
+=======
+  url = "/docs/terms_conditions/"
+  target = "_blank"
+[[params.links.footer.right]]
+  name = "Data protection policy"
+  url = "/docs/privacy_policy/"
+>>>>>>> master
   target = "_blank"
 [[params.links.footer.right]]
   name = "Impressum"
-  url = "/impressum"
+  url = "/impressum/"
 
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
 	name = "User mailing list"
-	url = "https://ferrislabs.net/about"
+	url = "https://ferrislabs.net/about/"
 	icon = "fa fa-envelope"
         desc = "Ferris news and updates"
 [[params.links.user]]
@@ -238,7 +246,7 @@ enable = false
         desc = "Follow us on Linkedin to get the latest news!"
 [[params.links.user]]
 	name = "GitHub"
-	url = "https://github.com/Ferris-Labs"
+	url = "https://github.com/Ferris-Labs/"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
 
@@ -279,7 +287,11 @@ enable = false
 [[menu.main]]
     identifier = "integrations_databases"
     name = "DATABASES"
+<<<<<<< HEAD
     url = "https://www.ferrislabs.net/integrations/databases/"
+=======
+    url = "/integrations/databases/"
+>>>>>>> master
     parent = "integrations"
     weight = 2
     [menu.main.params]
@@ -288,13 +300,72 @@ enable = false
 [[menu.main]]
     identifier = "integrations_notifications"
     name = "NOTIFICATIONS"
+<<<<<<< HEAD
     url = "https://www.ferrislabs.net/integrations/notifications/"
+=======
+    url = "/integrations/notifications/"
+>>>>>>> master
     parent = "integrations"
     weight = 3
     [menu.main.params]
       class = 'highlight-menu-item'
 
 [[menu.main]]
+<<<<<<< HEAD
+=======
+  identifier = 'solutions'
+  name = 'CASE STUDIES'
+  url = '/solutions/'
+  weight = 3
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+  identifier = 'learn'
+  name = 'DOCUMENTATION'
+  url = '/docs/'
+  weight = 4
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+#[[menu.main]]
+#    identifier = "learn_develoer_guide"
+#    name = "DEVELOPER GUIDE"
+#    url = "/docs/developer_guide/"
+#    parent = "learn"
+#    weight = 1
+
+#[[menu.main]]
+#    identifier = "learn_integrations_guide"
+#    name = "INTEGRATIONS GUIDE"
+#    url = "/docs/integrations/"
+#    parent = "learn"
+#    weight = 2
+
+#[[menu.main]]
+#    identifier = "learn_user_guide"
+#    name = "USER GUIDE"
+#    url = "/docs/user-guide/"
+#    parent = "learn"
+#    weight = 3
+
+#[[menu.main]]
+#    identifier = "learn_security"
+#    name = "SECURITY"
+#    url = "/docs/security/"
+#    parent = "learn"
+#    weight = 4
+
+[[menu.main]]
+  identifier = 'blog'
+  name = 'BLOG'
+  url = '/blog/'
+  weight = 5
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+>>>>>>> master
   identifier = 'company'
   name = 'COMPANY'
   url = 'https://www.ferrislabs.net/about/'
@@ -305,6 +376,7 @@ enable = false
 [[menu.main]]
     identifier = "company_about"
     name = "ABOUT US"
+<<<<<<< HEAD
     url = "https://www.ferrislabs.net/about/"
     parent = "company"
     weight = 1
@@ -315,10 +387,30 @@ enable = false
 #    url = "https://www.ferrislabs.net/contact/"
 #    parent = "company"
 #    weight = 2
+=======
+    url = "/about/"
+    parent = "company"
+    weight = 1
+
+[[menu.main]]
+    identifier = "company_contact"
+    name = "CONTACT US"
+    url = "/contact/"
+    parent = "company"
+    weight = 2
+
+[[menu.main]]
+    identifier = "company_careers"
+    name = "CAREERS"
+    url = "/jobs/"
+    parent = "company"
+    weight = 3
+>>>>>>> master
 
 [[menu.main]]
     identifier = "company_partners"
     name = "PARTNERS"
+<<<<<<< HEAD
     url = "https://www.ferrislabs.net/partners/"
     parent = "company"
     weight = 3
@@ -327,6 +419,9 @@ enable = false
     identifier = "company_careers"
     name = "CAREERS"
     url = "https://www.ferrislabs.net/jobs/"
+=======
+    url = "/partners/"
+>>>>>>> master
     parent = "company"
     weight = 4
 
@@ -338,9 +433,15 @@ enable = false
 #    weight = 5
 
 [[menu.main]]
+<<<<<<< HEAD
     identifier = "company_blog"
     name = "BLOG"
     url = "https://www.ferrislabs.net/blog/"
+=======
+    identifier = "support_professional_services"
+    name = "PRICING"
+    url = "/SUPPORT/"
+>>>>>>> master
     parent = "company"
     weight = 6
 

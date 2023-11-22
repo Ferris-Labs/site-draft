@@ -14,7 +14,11 @@
 {{ end -}}
 
 {{ partialCached "favicons.html" . }}
+<<<<<<< HEAD
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . | markdownify }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+=======
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+>>>>>>> master
 <!-- for search engine optimization and third-party search engines like Elastic App Search-->
 {{ if .Page.Description }}
   <meta name="description" content="{{ .Page.Description }}">
@@ -24,6 +28,10 @@
 {{ end }}
 
 {{- template "_internal/opengraph.html" . -}}
+<<<<<<< HEAD
+=======
+{{/*  {{- template "_internal/google_news.html" . -}}  */}}
+>>>>>>> master
 {{- template "_internal/schema.html" . -}}
 {{- template "_internal/twitter_cards.html" . -}}
 
@@ -51,3 +59,16 @@
 {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
 {{ end }}
+<<<<<<< HEAD
+=======
+
+<!-- Google Tag Manager -->
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KC3D35Z');
+</script>
+<!-- End Google Tag Manager -->
+>>>>>>> master
