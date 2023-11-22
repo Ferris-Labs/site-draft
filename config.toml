@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Ferris Labs"
+title = "Ferris Labs for Scalable Microservices Development"
 
 enableRobotsTXT = true
 
@@ -142,6 +142,14 @@ offlineSearch = false
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
 
+
+# Special configs for docs site integration
+company_baseurl = "https://www.ferrislabs.net"
+company_docsurl = "https://docs.ferrislabs.net"
+company_footer = "footer_fl.html"
+company_index = "index_fl.html"
+company_navbar_logo = "icons/logo.svg"
+
 # User interface configuration
 [params.ui]
 #  Set to true to disable breadcrumb navigation.
@@ -151,7 +159,7 @@ footer_about_disable = true
 # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
 navbar_logo = true
 # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
-navbar_translucent_over_cover_disable = true
+navbar_translucent_over_cover_disable = false
 # Enable to show the side bar menu in its compact state.
 sidebar_menu_compact = true
 # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
@@ -237,133 +245,124 @@ enable = false
 [menu]
 [[menu.main]]
   identifier = 'product'
-  name = 'PRODUCT'
-  url = '/product/'
+  name = 'PRODUCTS'
+  url = 'https://www.ferrislabs.net/product/'
   weight = 1
   [menu.main.params]
     class = 'highlight-menu-item'
 
 [[menu.main]]
-  identifier = 'integrations'
-  name = 'INTEGRATIONS'
-  url = '/integrations/'
+  identifier = 'solutions'
+  name = 'SOLUTIONS'
+  url = 'https://www.ferrislabs.net/solutions/'
   weight = 2
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+  identifier = 'integrations'
+  name = "INTEGRATIONS"
+  url = "https://www.ferrislabs.net/integrations/"
+  weight = 3
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+  identifier = 'integrations_integrations'
+  name = "INTEGRATIONS"
+  url = "https://www.ferrislabs.net/integrations/"
+  parent = "integrations"
+  weight = 1
   [menu.main.params]
     class = 'highlight-menu-item'
 
 [[menu.main]]
     identifier = "integrations_databases"
     name = "DATABASES"
-    url = "/integrations/databases"
+    url = "https://www.ferrislabs.net/integrations/databases/"
     parent = "integrations"
-    weight = 1
+    weight = 2
     [menu.main.params]
       class = 'highlight-menu-item'
 
 [[menu.main]]
     identifier = "integrations_notifications"
     name = "NOTIFICATIONS"
-    url = "/integrations/notifications"
+    url = "https://www.ferrislabs.net/integrations/notifications/"
     parent = "integrations"
-    weight = 2
+    weight = 3
     [menu.main.params]
       class = 'highlight-menu-item'
 
 [[menu.main]]
-  identifier = 'solutions'
-  name = 'CASE STUDIES'
-  url = '/solutions/'
-  weight = 3
-  [menu.main.params]
-    class = 'highlight-menu-item'
-
-[[menu.main]]
-  identifier = 'learn'
-  name = 'DOCUMENTATION'
-  url = '/docs/overview'
-  weight = 4
-  [menu.main.params]
-    class = 'highlight-menu-item'
-
-#[[menu.main]]
-#    identifier = "learn_develoer_guide"
-#    name = "DEVELOPER GUIDE"
-#    url = "/docs/developer_guide"
-#    parent = "learn"
-#    weight = 1
-
-#[[menu.main]]
-#    identifier = "learn_integrations_guide"
-#    name = "INTEGRATIONS GUIDE"
-#    url = "/docs/integrations"
-#    parent = "learn"
-#    weight = 2
-
-#[[menu.main]]
-#    identifier = "learn_user_guide"
-#    name = "USER GUIDE"
-#    url = "/docs/user-guide"
-#    parent = "learn"
-#    weight = 3
-
-#[[menu.main]]
-#    identifier = "learn_security"
-#    name = "SECURITY"
-#    url = "/docs/security"
-#    parent = "learn"
-#    weight = 4
-
-[[menu.main]]
-  identifier = 'blog'
-  name = 'BLOG'
-  url = '/blog/'
-  weight = 5
-  [menu.main.params]
-    class = 'highlight-menu-item'
-
-[[menu.main]]
   identifier = 'company'
   name = 'COMPANY'
-  url = '/about/'
-  weight = 6
+  url = 'https://www.ferrislabs.net/about/'
+  weight = 4
   [menu.main.params]
     class = 'highlight-menu-item'
 
 [[menu.main]]
     identifier = "company_about"
     name = "ABOUT US"
-    url = "/about"
+    url = "https://www.ferrislabs.net/about/"
     parent = "company"
     weight = 1
 
-[[menu.main]]
-    identifier = "company_contact"
-    name = "CONTACT US"
-    url = "/contact"
-    parent = "company"
-    weight = 2
-
-[[menu.main]]
-    identifier = "company_careers"
-    name = "CAREERS"
-    url = "/jobs"
-    parent = "company"
-    weight = 3
+#[[menu.main]]
+#    identifier = "company_contact"
+#    name = "CONTACT US"
+#    url = "https://www.ferrislabs.net/contact/"
+#    parent = "company"
+#    weight = 2
 
 [[menu.main]]
     identifier = "company_partners"
     name = "PARTNERS"
-    url = "/partners"
+    url = "https://www.ferrislabs.net/partners/"
+    parent = "company"
+    weight = 3
+
+[[menu.main]]
+    identifier = "company_careers"
+    name = "CAREERS"
+    url = "https://www.ferrislabs.net/jobs/"
     parent = "company"
     weight = 4
 
-[[menu.main]]
-    identifier = "support_professional_services"
-    name = "PRICING"
-    url = "/SUPPORT"
-    parent = "company"
-    weight = 5
+#[[menu.main]]
+#    identifier = "support_professional_services"
+#    name = "PRICING"
+#    url = "https://www.ferrislabs.net/support/"
+#    parent = "company"
+#    weight = 5
 
+[[menu.main]]
+    identifier = "company_blog"
+    name = "BLOG"
+    url = "https://www.ferrislabs.net/blog/"
+    parent = "company"
+    weight = 6
+
+#[[menu.main]]
+# identifier = 'learn'
+# name = 'DOCUMENTATION'
+# url = "https://docs.ferrislabs.net/docs/"
+# weight = 5
+# [menu.main.params]
+#   class = 'highlight-menu-item'
+
+#[[menu.main]]
+#  name = ""
+#  pre = '<button type="button" class="btn-sm btn-primary" >Get Started</button>'
+#  url = "https://docs.ferrislabs.net/docs/"
+#  weight = 100
+
+#[[menu.main]]
+#  name = " "
+#  pre = '<button type="button" class="btn-sm btn-primary" >Demo</button>'
+#  url = "https://calendly.com/ferris-team/ferris-intro"
+#  weight = 101
 
 [params.replacables]
   company_name = "Ferris Labs AG"
