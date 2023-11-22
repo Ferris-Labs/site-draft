@@ -279,11 +279,7 @@ enable = false
 [[menu.main]]
     identifier = "integrations_databases"
     name = "DATABASES"
-<<<<<<< HEAD
-    url = "https://www.ferrislabs.net/integrations/databases/"
-=======
     url = "/integrations/databases/"
->>>>>>> master
     parent = "integrations"
     weight = 2
     [menu.main.params]
@@ -292,19 +288,13 @@ enable = false
 [[menu.main]]
     identifier = "integrations_notifications"
     name = "NOTIFICATIONS"
-<<<<<<< HEAD
-    url = "https://www.ferrislabs.net/integrations/notifications/"
-=======
     url = "/integrations/notifications/"
->>>>>>> master
     parent = "integrations"
     weight = 3
     [menu.main.params]
       class = 'highlight-menu-item'
 
 [[menu.main]]
-<<<<<<< HEAD
-=======
   identifier = 'solutions'
   name = 'CASE STUDIES'
   url = '/solutions/'
@@ -357,7 +347,6 @@ enable = false
     class = 'highlight-menu-item'
 
 [[menu.main]]
->>>>>>> master
   identifier = 'company'
   name = 'COMPANY'
   url = 'https://www.ferrislabs.net/about/'
@@ -368,18 +357,6 @@ enable = false
 [[menu.main]]
     identifier = "company_about"
     name = "ABOUT US"
-<<<<<<< HEAD
-    url = "https://www.ferrislabs.net/about/"
-    parent = "company"
-    weight = 1
-
-#[[menu.main]]
-#    identifier = "company_contact"
-#    name = "CONTACT US"
-#    url = "https://www.ferrislabs.net/contact/"
-#    parent = "company"
-#    weight = 2
-=======
     url = "/about/"
     parent = "company"
     weight = 1
@@ -397,23 +374,11 @@ enable = false
     url = "/jobs/"
     parent = "company"
     weight = 3
->>>>>>> master
 
 [[menu.main]]
     identifier = "company_partners"
     name = "PARTNERS"
-<<<<<<< HEAD
-    url = "https://www.ferrislabs.net/partners/"
-    parent = "company"
-    weight = 3
-
-[[menu.main]]
-    identifier = "company_careers"
-    name = "CAREERS"
-    url = "https://www.ferrislabs.net/jobs/"
-=======
     url = "/partners/"
->>>>>>> master
     parent = "company"
     weight = 4
 
@@ -425,15 +390,9 @@ enable = false
 #    weight = 5
 
 [[menu.main]]
-<<<<<<< HEAD
-    identifier = "company_blog"
-    name = "BLOG"
-    url = "https://www.ferrislabs.net/blog/"
-=======
     identifier = "support_professional_services"
     name = "PRICING"
     url = "/SUPPORT/"
->>>>>>> master
     parent = "company"
     weight = 6
 
