@@ -215,19 +215,11 @@ enable = false
   target = "_blank"
 [[params.links.footer.right]]
   name = "General Terms and Conditions (GTC)"
-<<<<<<< HEAD
-  url = "/docs/terms/terms_conditions"
-  target = "_blank"
-[[params.links.footer.right]]
-  name = "Data Protection Policy"
-  url = "/docs/terms/privacy_policy"
-=======
   url = "/docs/terms_conditions/"
   target = "_blank"
 [[params.links.footer.right]]
   name = "Data protection policy"
   url = "/docs/privacy_policy/"
->>>>>>> master
   target = "_blank"
 [[params.links.footer.right]]
   name = "Impressum"
