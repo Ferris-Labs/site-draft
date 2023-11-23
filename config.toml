@@ -71,7 +71,7 @@ id = "G-7F8D9T716Q"
 [languages]
 [languages.en]
 title = "Ferris Labs"
-description = "FERRIS LABS web site"
+description = "FERRIS LABS"
 languageName =""
 # Weight used for sorting.
 weight = 1
