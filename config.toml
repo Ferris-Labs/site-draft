@@ -4,10 +4,7 @@ title = "Ferris Labs for Scalable Microservices Development"
 enableRobotsTXT = true
 
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
-[module]
-replacements = "github.com/FortAwesome/Font-Awesome -> ., github.com/twbs/bootstrap -> ."
-[[module.imports]]
-path = "docsy"
+theme = ["docsy"]
 
 # Will give values to .Lastmod etc.
 enableGitInfo = true
