@@ -11,6 +11,23 @@
     {{ end }}
 </div>
 
+<!-- Promo Section -->
+<section class="row td-cover-block" style="margin-top: -130px;">
+	<div class="container">
+        {{ $fileName := .Get "fileName" | default "" }}
+        <div class="integrations-card-holder">
+            <div class="row">
+                {{ range $.Site.Data.pricing.promo }}
+                    {{ range $index, $element := . }}
+                            {{ block "promo_tombstone" . }}{{ end }}
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
 <section class="row td-cover-block" style="margin-top: -130px;">
 	<div class="container">
         {{ $fileName := .Get "fileName" | default "" }}
@@ -106,6 +123,7 @@
     </div>
 </div>
 
+<!-- Pricing Tombstone-->
 {{ define "pricing_tombstone" }}
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
         <div class="integration-card">
@@ -151,6 +169,70 @@
                 </div>
                 <div>
                     <p class="small text-muted"><small>Cloud or on premise infrastructure not included - see Cloud Services EUR / month 1)</small></p>
+                    <div class="text-right">
+                        <a href="#" class="small text-muted" data-toggle="modal" data-target="#bundlesModal" style="color: #b81414;">See all plan features</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ end }}
+
+
+<!-- Promo Tombstone-->
+{{ define "promo_tombstone" }}
+    <div class="col-lg-12">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between" style="min-height: 200px;">
+                <div>
+                    <div class="integration-card-title" title="{{.name}}">
+                        <div class="text-center">
+                            <img style="height: 60px; width: auto;" class="m-0" src="/images/brand_images/{{.icon}}" alt="{{.name}}" />
+                        </div>
+                        <h4 class="font-weight-bold text-center text-capitalize mb-3">
+                            {{ .name }}
+                        </h4>
+                    </div>
+                    {{ if .description1 }}
+                        <p class="integration-card-title mb-2 text-muted text-center">
+                            {{ .description1 }}
+                        </p>
+                    {{ end }}
+                    {{ if .description2 }}
+                        <p class="integration-card-title mb-2 text-muted text-center">
+                            {{ .description2 }}
+                        </p>
+                    {{ end }}
+                    {{ if .features }}
+                        {{ range .features }}
+                            <p class="small mb-1">
+                                {{ if . }}
+                                    <i class="fa fa-check mr-1" aria-hidden="true" style="color: #b81414"></i>
+                                {{ else }}
+                                {{ end }}
+                                {{ . }}
+                            </p>
+                        {{ end }}
+                    {{ end }}
+
+                    &nbsp;
+                    &nbsp;
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <a class="btn btn-md btn-primary mb-4" href="/contact">
+                                    Book Starter Pack <i class="fas fa-arrow-alt-circle-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="text-center mt-4 mb-1">
+                        {{ .price | safeHTML }}
+                    </h4>
+                    <h4 class="small mb-1" style="text-align: center; font-style: italic;">
+                        {{ .footer | safeHTML }}
+                    </h4>
                     <div class="text-right">
                         <a href="#" class="small text-muted" data-toggle="modal" data-target="#bundlesModal" style="color: #b81414;">See all plan features</a>
                     </div>

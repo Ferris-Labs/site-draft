@@ -1,0 +1,9 @@
+promo:
+- name: Quick Starter
+  description1: Unlock the full potential of rapid and efficient application development with our exclusive Starter Pack, a comprehensive package that seamlessly integrates the cutting-edge Ferris case with your own data and business case.
+  description2: Get your first mini-application, based on your own data and requirements, in a few days only. 
+  icon: ferris_labs_red.png
+  features:
+  
+  price: '<sup>&euro;</sup> 7 499<sup>.00</sup>'
+  footer: one time product and project fee
