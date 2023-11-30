@@ -350,19 +350,19 @@ enable = false
 # url = "https://docs.ferrislabs.net/docs/"
 # weight = 5
 # [menu.main.params]
-#   class = 'highlight-menu-item'
+#    class = 'highlight-menu-item'
 
 #[[menu.main]]
-#  name = ""
+#  identifier = 'getstarted'
 #  pre = '<button type="button" class="btn-sm btn-primary" >Get Started</button>'
 #  url = "https://docs.ferrislabs.net/docs/"
-#  weight = 100
+#  weight = 6
 
 #[[menu.main]]
-#  name = " "
+#  identifier = 'demo'
 #  pre = '<button type="button" class="btn-sm btn-primary" >Demo</button>'
 #  url = "https://calendly.com/ferris-team/ferris-intro"
-#  weight = 101
+#  weight = 7
 
 [params.replacables]
   company_name = "Ferris Labs AG"
