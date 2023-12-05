@@ -7,7 +7,11 @@ plans:
     - Ferris Technology Platform
   features2:
     - cloud only
-  price: '<sup>&euro;</sup>7 499<sup></sup>'
+  price: '<sup>&euro;</sup>7 499<sup>.00</sup>'
+  button:
+    href: '/contact'
+    text: 'Book Starter Pack'
+  footer_note: false
 
 - name: Startup
   description: 
@@ -18,6 +22,10 @@ plans:
   features2:
     - cloud only
   price: '<sup>&euro;</sup> 650<sup>.00/mt</sup>'
+  button:
+    href: '/contact'
+    text: 'Get in touch'
+  footer_note: true
 
 - name: Standard
   description: 
@@ -29,6 +37,10 @@ plans:
   features2:
     - cloud, hybrid cloud, on premise
   price: '<sup>&euro;</sup> 1 250<sup>.00/mt</sup>'
+  button:
+    href: '/contact'
+    text: 'Get in touch'
+  footer_note: true
 
 - name: Enterprise
   description: 
@@ -42,3 +54,7 @@ plans:
     - enterprise integration
     - enterprise architecture
   price: 'call us'
+  button:
+    href: '/contact'
+    text: 'Get in touch'
+  footer_note: true

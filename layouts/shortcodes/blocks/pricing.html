@@ -106,7 +106,7 @@
 {{ define "pricing_tombstone" }}
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
         <div class="integration-card">
-            <div class="card-body d-flex flex-column justify-content-between" style="min-height: 500px;">
+            <div class="card-body d-flex flex-column justify-content-between" style="min-height: 540px;">
                 <div>
                     <div class="integration-card-title" title="{{.name}}">
                         <div class="text-center">
@@ -127,8 +127,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="text-center">
-                                <a class="btn btn-md btn-primary mb-4" href="/contact">
-                                    Get in touch <i class="fas fa-arrow-alt-circle-right ml-2"></i>
+                                <a class="btn btn-md btn-primary mb-4" href="{{ .button.href | relLangURL }}">
+                                    {{ .button.text }}
+                                    <i class="fas fa-arrow-alt-circle-right ml-2"></i>
                                 </a>
                             </div>
                         </div>
@@ -160,11 +161,19 @@
                     {{ end }}
                     &nbsp;
                 </div>
-                <div>
-                    <p class="small text-muted"><small>Service fees apply per node and month. <br>Cloud or on premise infrastructure not included</small></p>
-                    <div class="text-right">
-                        <a href="#" class="small text-muted" data-toggle="modal" data-target="#bundlesModal" style="color: #b81414;">See all plan features</a>
+                {{ if .footer_note }}
+                    <div>
+                        <p class="small text-muted">
+                            <small>
+                                Service fees apply per node and month.
+                                <br>
+                                Cloud or on premise infrastructure not included.
+                            </small>
+                        </p>
                     </div>
+                {{ end }}
+                <div class="text-right">
+                    <a href="#" class="small text-muted" data-toggle="modal" data-target="#bundlesModal" style="color: #b81414;">See all plan features</a>
                 </div>
             </div>
         </div>
