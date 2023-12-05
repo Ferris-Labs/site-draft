@@ -6,6 +6,9 @@ bundles:
       - name: Support Types
         description: Coverage of services, resources and channels
         bundles:
+          - name: starter pack
+            items:
+              - basic platform readiness
           - name: startup
             items:
               - on-demand system
@@ -16,100 +19,84 @@ bundles:
               - on-demand system
               - platform proactive
               - preventive upgrades
-          - name: scale
-            items:
-              - Same as Standard
-              - +
           - name: enterprise
             items:
-              - Same as Standard
-              - +
+              - on-demand system
+              - platform proactive
+              - preventive upgrades
       - name: Support Availability
         description: Coverage of services, resources and channels
         bundles:
-          - name: startup
+          - name: starter pack
             items:
               - CET business hours
               - Remote Chat
               - Mail
-          - name: standard
+          - name: startup
             items:
             - CET business hours
             - Remote Chat
             - Mail
-          - name: scale
+          - name: standard
             items:
-              - Chat
+              - +
+              - Chat (dedicated)
               - E-Mail
               - Phone
           - name: enterprise
             items:
+              - +
               - Around the globe
               - Remote or on-premise
               - Dedicated resources
       - name: Additional Resources
         description: Enabling Resources
         bundles:
-          - name: startup
+          - name: starter pack
             items:
               - online documentation
               - how-to videos
-          - name: standard
+          - name: startup
             items:
             - online documentation
             - how-to videos
-          - name: scale
+          - name: standard
             items:
-              - DevOps Support <br /> 15h/quarter
-              - Live Training <br /> 6h/quarter
+              - +
+              - DevOps Support (optional)
+              - Live Training (optional)
           - name: enterprise
             items:
-              - DevOps Support <br /> Starting at 0.5 FTE
-              - Live Training <br /> on demand
+              - +
+              - DevOps Support (optional)
+              - Live Training (optional)
       - name: Service Levels
         description: Response, Resolution, Close
         bundles:
-          - name: startup
+          - name: starter pack
             items:
               - 4/24/best effort
-          - name: standard
-            items:
-            - 4/24/best effort
-          - name: scale
-            items:
-              - 2/16/48
-          - name: enterprise
-            items:
-              - 2/16/48
-      - name: Ferris K8X
-        description: Technology and service integrations
-        bundles:
           - name: startup
             items:
-              - '&mdash;'
+            - 4/24/best effort
           - name: standard
             items:
-            - '&mdash;'
-          - name: scale
-            items:
-              - Integrations with enterprise tech (in-house) <br /> 3 integrations
-              - Integrations with non-enterprise services (cloud) <br /> 3 integrations
+              - 2/16/48
           - name: enterprise
             items:
-              - Integrations with enterprise tech (in-house) <br /> as needed / integrations
-              - Integrations with non-enterprise services (cloud) <br /> as needed / integrations
+              - 2/16/48
       - name: Service Duration
         description: Support duration and Opt out
         bundles:
+          - name: starter pack
+            items:
+              - 'Support duration: 6 months'
+              - 'Opt out: n/a'
           - name: startup
             items:
               - 'Support duration: 1 year'
               - 'Opt out: 6 months'
           - name: standard
-            items:
-              - 'Support duration: 1-3 years'
-              - 'Opt out: 6 months'
-          - name: scale
             items:
               - 'Support duration: 1-3 years'
               - 'Opt out: 6 months'
@@ -120,128 +107,123 @@ bundles:
       - name: Nodes &amp; Environments
         description: Minimum supported infrastructure <br /> Available (min) environments
         bundles:
+          - name: starter pack
+            items:
+              - n/a
           - name: startup
             items:
-              - min. 4 nodes/servers (per env)
-              - DEV/TST or PROD
+              - 4 nodes/servers (per env)
+              - DEV/TST, PROD
           - name: standard
             items:
-              - min. 4 nodes/servers (per env) 7)
-              - DEV, UAT, PROD
-          - name: scale
-            items:
-              - min. 4 nodes/servers (per env) 7)
+              - 4 nodes/servers (per env)
               - DEV, UAT, PROD
           - name: enterprise
             items:
-              - min. 4 nodes/servers (per env) 7)
+              - 4 nodes/servers (per env)
               - DEV, UAT, PROD
       - name: Cost
-        description: EUR / nodes / month 2) - starting at
+        description: EUR / nodes / month - starting at
         bundles:
+          - name: starter pack
+            items:
+              - 7 499 <br>(one time, all inclusive)</br>
           - name: startup
             items:
               - 650
           - name: standard
             items:
-              - 950
-          - name: scale
-            items:
               - 1&apos;250
           - name: enterprise
             items:
               - call us
-  - name: DX Engineering (optional)
+  - name: Ferris Engineering (optional)
     id: dx_engineering
     items:
       - name: Process Engineering
-        description: Dedicated remote or on-premise support and coaching for FX, SX, K8X and platform based engineering
+        description: Dedicated remote or on-premise support and coaching
         bundles:
+          - name: starter pack
+            items:
+              - delivery of one use case
+              - all inclusive engineering
+              - mentoring on event based services
           - name: startup
             items:
-              - not available
+              - mentoring on event based services
           - name: standard
             items:
-              - FX Expert Engineering Coaching
-              - Mentoring
-          - name: scale
-            items:
-              - FX Expert Engineering Coaching
-              - Mentoring
+              - +
+              - expert engineering and coaching
+              - services trouble shooting
           - name: enterprise
             items:
-              - FX Expert Engineering Coaching
-              - Mentoring
+              - +
+              - expert engineering and coaching
+              - services trouble shooting
+              - on prem platform trouble shooting
       - name: EUR / month
         description:
         bundles:
+          - name: starter pack
+            items:
+              - n/a
           - name: startup
             items:
-              - '&nbsp;'
+              - time & material
           - name: standard
             items:
-              - 15d/quarter
-              - 22&apos;000
-          - name: scale
-            items:
-              - 25d/quarter
-              - 37&apos;500
+              - time & material
           - name: enterprise
             items:
-              - call us
+              - time & material
   - name: Dev Ops / Data Ops (optional)
     id: dev_ops_data_ops
     items:
       - name: Dev Ops
         description: Dedicated remote or on-premise operations support
         bundles:
+          - name: starter pack
+            items:
+              - n/a
           - name: startup
             items:
-              - '&nbsp;'
+              - n/a
           - name: standard
             items:
-              - Expert FX, SX, K8X Operations
-              - ...
-          - name: scale
-            items:
-              - FX Expert Engineering Coaching
-              - Mentoring
+              - Coaching on Ferris Engineering
+              - Mentoring on Event based Services Engineering
           - name: enterprise
             items:
-              - FX Expert Engineering Coaching
-              - Mentoring
+              - +
+              - Coaching on Ferris Engineering
+              - Mentoring on Event based Services Engineering
+              - Architecture on Event based Services Engineering
       - name: EUR / month
         description:
         bundles:
+          - name: starter pack
+            items:
+              - n/a
           - name: startup
             items:
-              - '&nbsp;'
+            - time & material
           - name: standard
             items:
-              - 15d/quarter
-              - 22&apos;000
-          - name: scale
-            items:
-              - 25d/quarter
-              - 37&apos;500
+            - time & material
           - name: enterprise
             items:
-              - call us
+            - time & material
   - name: Cloud & Infrastructure Services
     id: cloud_infrastructure_services
     items:
       - name: Cloud & Infrastructure Setup
         description: Ferris Platform enablement
         bundles:
-          - name: startup
+          - name: starter pack
             items:
-              - Ferris Platform enablement
-              - Nodes setup
-              - Storage setup
-              - Network setup
-              - '&nbsp;'
-              - Cloud costs are passed on 1:1
-          - name: standard
+              - all inclusive
+          - name: startup
             items:
               - Ferris Platform enablement
               - Nodes setup
@@ -256,6 +238,8 @@ bundles:
               - Storage setup
               - Network setup
               - '&nbsp;'
+              - operations (optional)
+              - '&nbsp;'
               - Cloud costs are passed on 1:1
           - name: enterprise
             items:
@@ -263,5 +247,7 @@ bundles:
               - Nodes setup
               - Storage setup
               - Network setup
+              - '&nbsp;'
+              - operations (optional)
               - '&nbsp;'
               - Cloud costs are passed on 1:1

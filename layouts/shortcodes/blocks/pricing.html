@@ -92,15 +92,9 @@
                             </div>
                         </div>
                     </div>
-                    <h4 class="text-center mt-4 mb-1">
-                        {{ .price | safeHTML }}
-                    </h4>
                     <h4 class="small mb-1" style="text-align: center; font-style: italic;">
                         {{ .footer | safeHTML }}
                     </h4>
-                    <div class="text-right">
-                        <a href="#" class="small text-muted" data-toggle="modal" data-target="#promoModal" style="color: #b81414;">See all plan features</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -151,9 +145,23 @@
                             </p>
                         {{ end }}
                     {{ end }}
+                    &nbsp;          
+                    {{ if .features2 }}
+                        {{ range .features2 }}
+                            <p class="small mb-1">
+                                {{ if . }}
+                                    <i class="fa fa-check mr-1" aria-hidden="true" style="color: #b81414"></i>
+                                {{ else }}
+                                    &nbsp;
+                                {{ end }}
+                                {{ . }}
+                            </p>
+                        {{ end }}
+                    {{ end }}
+                    &nbsp;
                 </div>
                 <div>
-                    <p class="small text-muted"><small>Cloud or on premise infrastructure not included - see Cloud Services EUR / month 1)</small></p>
+                    <p class="small text-muted"><small>Service fees apply per node and month. <br>Cloud or on premise infrastructure not included</small></p>
                     <div class="text-right">
                         <a href="#" class="small text-muted" data-toggle="modal" data-target="#bundlesModal" style="color: #b81414;">See all plan features</a>
                     </div>
@@ -162,87 +170,6 @@
         </div>
     </div>
 {{ end }}
-
-
-<!-- Promo Modal for Detail Terms -->
-<div class="modal" id="promoModal">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Starter Pack Services</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div id="accordion">
-                    <div class="row" style="margin: 0;">
-                        <div class="col-md-3 d-none d-lg-block">
-                        </div>
-                        <div class="col-md-9 d-none d-lg-block">
-                            <div class="row">
-                                {{ range $.Site.Data.pricing.promo }}
-                                    {{ range $index, $element := . }}
-                                        <div class="col-md-3">
-                                            <p class="bold text-capitalize text-center">{{ .name }}</p>
-                                        </div>
-                                    {{ end }}
-                                {{ end }}
-                            </div>
-                        </div>
-                    </div>
-                    {{ range $.Site.Data.pricing.promo_terms }}
-                        {{ range $index, $element := . }}
-                            {{ range .services }}
-                                <div class="card">
-                                    <div class="card-header" id="{{.id}}_heading">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link" data-toggle="collapse" data-target="#{{.id}}" aria-expanded="true" aria-controls="collapseOne">
-                                                {{ .name | safeHTML }}
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="{{.id}}" class="collapse show" aria-labelledby="{{.id}}_heading" data-parent="#accordion">
-                                        <div class="card-body">
-                                            {{ range .items }}
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <div class="row">
-                                                            <div class="col-lg-3">
-                                                                <p class="bold mb-1">{{ .name | safeHTML }}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p class="small font-italic">{{ .description | safeHTML }}</p>
-                                                    </div>
-                                                    <div class="col-lg-9">
-                                                        <div class="row mb-3">
-                                                            {{ range .promo_terms }}
-                                                                <div class="col-md-12 col-lg-3">
-                                                                    <div class="d-block d-lg-none">
-                                                                        <p class="bold text-capitalize text-center mb-0">{{ .name | safeHTML }}</p>
-                                                                    </div>
-                                                                    <div class="small text-center mb-2">
-                                                                        {{ range .items }}
-                                                                            <p class="mb-1">{{ . | safeHTML }}</p>
-                                                                        {{ end }}
-                                                                    </div>
-                                                                </div>
-                                                            {{ end }}
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            {{ end }}
-                                        </div>
-                                    </div>
-                                </div>
-                            {{ end }}
-                        {{ end }}
-                    {{ end }}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <!-- Pricing Modal for Detail Terms -->
@@ -257,7 +184,6 @@
                 <div id="accordion">
                     <div class="row" style="margin: 0;">
                         <div class="col-md-3 d-none d-lg-block">
-
                         </div>
                         <div class="col-md-9 d-none d-lg-block">
                             <div class="row">

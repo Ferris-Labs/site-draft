@@ -1,37 +1,44 @@
 plans:
+- name: Starter Pack
+  description: 
+  icon: ferris_labs_red.png
+  features:
+    - Ferris Executor
+    - Ferris Technology Platform
+  features2:
+    - cloud only
+  price: '<sup>&euro;</sup>7 499<sup></sup>'
+
 - name: Startup
   description: 
   icon: ferris_labs_red.png
   features:
-    - Ferris Executor (FX)
-    - 
-    - Ferris Event Driven Kubernetes (K8X)
+    - Ferris Executor
     - Ferris Technology Platform
-  price: '<sup>&euro;</sup> 650<sup>.00</sup>'
+  features2:
+    - cloud only
+  price: '<sup>&euro;</sup> 650<sup>.00/mt</sup>'
+
 - name: Standard
   description: 
   icon: ferris_labs_red.png
   features:
-    - Ferris Executor (FX)
-    - 
-    - Ferris Event Driven Kubernetes (K8X)
+    - Ferris Executor
+    - Ferris Event Driven Kubernetes
     - Ferris Technology Platform
-  price: '<sup>&euro;</sup> 950<sup>.00</sup>'
-- name: Scale
-  description: 
-  icon: ferris_labs_red.png
-  features:
-    - Ferris Executor (FX)
-    - Ferris Streaming Automation (SX)
-    - Ferris Event Driven Kubernetes (K8X)
-    - Ferris Technology Platform
-  price: '<sup>&euro;</sup> 1&apos;250<sup>.00</sup>'
+  features2:
+    - cloud, hybrid cloud, on premise
+  price: '<sup>&euro;</sup> 1 250<sup>.00/mt</sup>'
+
 - name: Enterprise
   description: 
   icon: ferris_labs_red.png
   features:
-    - Ferris Executor (FX)
-    - Ferris Streaming Automation (SX)
-    - Ferris Event Driven Kubernetes (K8X)
+    - Ferris Executor
+    - Ferris Event Driven Kubernetes
     - Ferris Technology Platform
+  features2:
+    - cloud, hybrid cloud, on premise
+    - enterprise integration
+    - enterprise architecture
   price: 'call us'
