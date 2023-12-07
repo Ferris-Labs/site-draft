@@ -6,6 +6,10 @@ keywords = "microservices, event based development, ipaas"
 
 +++
 
+<!-- Include this in the head of your HTML document -->
+<link rel="stylesheet" type="text/css" href="/assets/scss/_styles_project.scss">
+
+
 <!-- Header / tagline block-->
 {{< blocks/cover title=" DEVELOP. DEPLOY. OPERATE." color="primary" image_anchor="top" height="auto"
     title_text_color_class="text-primary" promo_image_big="/content/en/background_new.png">}}
@@ -47,10 +51,6 @@ keywords = "microservices, event based development, ipaas"
 </section>
 
 <div class="mx-auto">
-    <!-- <p class="lead mt- text-dark home_title_small">Ferris is THE Event-Driven Services and Integrations Platform: 
-        simple, scalable and natively cross-cloud enabled. Leverage industry-standard, open-source technology to 
-        connect all your clouds, systems and data - whether it is for Process Automation, Stream Processing, 
-        no-code DevOps or AI/ML Modelling.</p> -->
 <br>
     <a class="btn btn-lg btn-primary mr-3 mb-1" href="https://docs.ferrislabs.net/docs/" target="_blank">
     Get Started <i class="fas fa-arrow-alt-circle-right ml-2"></i>
@@ -78,9 +78,6 @@ keywords = "microservices, event based development, ipaas"
 <section class="row td-cover-block" style="background-color: primary;">
     <div class="container">
       <p class="home_title text-dark" style="text-align: left;" >One platform. <br>Many solutions</p>
-    <!-- <p class="text-left lead">There is never only one demand to consider and deliver towards. There are business demands,
-        regulatory imperatives and a company strategy to pursue. But what if there is one platform that allows you to
-        deliver tactical solutions and strategic transformation at the same time?</p> -->
         <div class="row">
             <div class="col-md-4">
                 <br>
@@ -88,8 +85,6 @@ keywords = "microservices, event based development, ipaas"
                 <br>
                 <p class="lead " style="text-align: left;">Legacy applications account for up to 80% of annual IT budgets, leaving
                     little room for strategic investments that are imperative to advancing your organization's competitive edge.</p>
-                <!-- <p class="lead " style="font-weight: bold; text-align: left;">Break down unwieldy tasks into small and manageable
-                    pieces, delivering immediate business value. Reducing legacy TCO by up to 60%.</p> -->
             </div>
             <div class="col-md-4">
                 <br>
@@ -98,8 +93,6 @@ keywords = "microservices, event based development, ipaas"
                 <p class="lead " style="text-align: left;">The time to act on generative AI is now. Being late to the game could
                     prove fatal - but what if the skills required seem unavailable? Do you have good ideas, but no idea how to act on
                     them?</p>
-                <!-- <p class="lead " style="font-weight: bold; text-align: left">Experiment and learn while you try out new technologies
-                    in a safe environment. Let automation reduce operational pains incrementally.</p> -->
             </div>
             <div class="col-md-4 mb-5">
                 <br>
@@ -107,8 +100,6 @@ keywords = "microservices, event based development, ipaas"
                 <br>
                 <p class="lead " style="text-align: left;">You heard that "data is the new oil". But how do you make this theme
                     tangible in the short term and without breaking your bank or putting security at risk?</p>
-                <!-- <p class="lead " style="font-weight: bold; text-align: left">Apply a unified approach to combine the needs of team
-                    independence, systems resilience and cost effectiveness. Breaking silos but retain agility.</p> -->
             </div>
         </div>
         <br>
@@ -321,6 +312,62 @@ keywords = "microservices, event based development, ipaas"
  {{< /blocks/lead >}}
 
 
+<!-- Product Overview - Tabbed View -->
+<section class="row td-cover-block" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="row">
+            <p class="home_title text-dark" style="text-align: left;">The FERRIS Platform</p>
+            <p class="lead" style="text-align: left;">Efficiency and innovation define our integrated development 
+                platform, seamlessly combining development, deployment, and operations. Specializing in state-of-the-art event 
+                microservices engineering, it empowers your team to build scalable, responsive applications, maximizing productivity 
+                for streamlined projects.</p>
+
+            <div class="tab-container">
+                <button class="tab tablink" onclick="openProduct(event, 'Executor')">The Executor</button>
+                <button class="tab tablink" onclick="openProduct(event, 'StreamingAutomation')">Streaming Automation</button>
+                <button class="tab tablink" onclick="openProduct(event, 'EventDrivenKubernetes')">Event Driven Kubernetes</button>
+                <button class="tab tablink" onclick="openProduct(event, 'ContainerManagement')">Static Container Management</button>
+            </div>
+            
+            <!-- Tab content container -->
+            <div class="tab-content-container">
+                <!-- Tab content -->
+                <div id="Executor" class="tabcontent">
+                    <h3>The Executor</h3>
+                    <p>This is the content for The Executor.</p>
+                </div>
+                <div id="StreamingAutomation" class="tabcontent">
+                    <h3>Streaming Automation Content</h3>
+                    <p>This is the content for Streaming Automation.</p>
+                </div>
+                <div id="EventDrivenKubernetes" class="tabcontent">
+                    <h3>Event Driven Kubernetes Content</h3>
+                    <p>This is the content for Event Driven Kubernetes.</p>
+                </div>
+                <div id="ContainerManagement" class="tabcontent">
+                    <h3>Static Container Management Content</h3>
+                    <p>This is the content for Static Container Management.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openProduct(evt, productName) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            document.getElementById(productName).style.display = "block";
+            evt.currentTarget.classList.add("active-tab");
+        }
+    </script>
+</section>
+
+
 <!-- 3 Column Section  -->
 <section class="row td-cover-block" style="background-color: #ffffff;">
     <div class="container">
@@ -378,7 +425,6 @@ keywords = "microservices, event based development, ipaas"
         </div>
     </div>
 </section>
-
 
 <!-- Newsletter Subscription-->
 <div class="mx-auto" style="background-color: #f9f9fa;">

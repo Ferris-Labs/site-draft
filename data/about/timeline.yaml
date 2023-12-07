@@ -1,6 +1,6 @@
 
 - flag: FerrisK8X
-  time: 2023 (coming soon)
+  time: 2023
   description: Event Driven Kubernetes - By running FerrisK8X as a service inside your Kubernetes cluster, you can harness the power of millions of available Docker images.
 - flag: FerrisSX
   time: 2022

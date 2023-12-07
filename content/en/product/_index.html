@@ -299,6 +299,115 @@ keywords = "microservices, event based development, ipaas"
 </section>
 
 
+<!-- Ferris Features - Accordion Section -->
+<section class="row td-cover-block" style="background-color: #f9f9fa;;">
+<div class="container">
+	<div class="container">
+		<p class="home_title" style="text-align: center;">Feature Rich Platform</p>
+		&nbsp;
+		<div class="row">
+			<div class=" lead col-md-6">
+				<p class="home_title_small" style="text-align: left; color: black;">For your enhanced development autonomy</p>
+				<p>The Ferris Platform is designed to simplify cross-cloud and cross-infrastructure application development.</p>
+				<p>Multi-level authentication and secrets management, connectors and edge adaptors, multi-project support, real-time job exectution, 
+					automatic retries, in-depth, logging and monitoring, bi-directional corelation ids...</p>
+				<p>All features are built dy developers, built for developers, based on years of project and engineering experience.</p>
+			</div>
+			<div class="col-md-6">
+				<button class="accordion" data-toggle="collapse" data-target="accordion">Integrations</button>
+				<div class="panel">
+					<p style="font-weight: bold;">Edge Adaptors</p>
+				  	<p style="padding-right: 10%; text-align:justify;">Integrate with any source and convert events and source them into Kafka. 
+						Integration support is provided out of the box for many sources. Additional sources can be added with templated Edge Adaptors.</p>
+					<p style="font-weight: bold;">Data Ingestion</p>
+				  	<p style="padding-right: 10%; text-align:justify;">Build fully automated data ingestion pipelines, spanning diverse source systems, 
+						data types and event types. User configurable data quality, data curation, logging and monitoring ensure enterprise scale 
+					and robustness.</p>
+					<p style="font-weight: bold;">Consumers</p>
+				  	<p style="padding-right: 10%; text-align:justify;">Consumers of data, services or events may be written and reused from any system or 
+						language, making Ferris - and your development efforts - extremely reusable.</p>
+				</div>
+				<button class="accordion">Real-time</button>
+				<div class="panel">
+					<p style="font-weight: bold;">Develop</p>
+					<p style="padding-right: 10%; text-align:justify;">Keep your habits and stay productive with the tech that's been serving you well.
+						The IDE (integrated development environment) you're most confortable with already integrates with Ferris.</p>
+					<p style="font-weight: bold;">Test</p>
+					<p style="padding-right: 10%; text-align:justify;">Test new code as soon as you're ready. No more waiting for cumbersome handovers 
+						and administrative hurdles. You're in control!</p>
+					<p style="font-weight: bold;">Deploy</p>
+					<p style="padding-right: 10%; text-align:justify;">We put deployment and propagation, <i>to any environment</i>, into your hands. 
+						You do it when <b>you</b> are ready.</p>
+				</div>
+				<button class="accordion">Deployment</button>
+				<div class="panel">
+					<p style="font-weight: bold;">Git Integration</p>
+					<p style="padding-right: 10%; text-align:justify;">Ferris integrates with Git seamlessly and in real-time. The moment your code is checked in, 
+					it's integrated with the entire ecosystem of services, jobs and data.</p>
+					<p style="font-weight: bold;">Observability</p>
+					<p style="padding-right: 10%; text-align:justify;">Ferris makes software development fully transparent. What you code is what you see!</p>
+					<p style="font-weight: bold;">No Code Deployments</p>
+					<p style="padding-right: 10%; text-align:justify;">Fully integrated GitOps deployment with no requirement for other tools. 
+						Re-orchstrate flows and add or update services with no downtime.</p>
+				</div>
+				<button class="accordion">Multi-Project</button>
+				<div class="panel">
+					<p style="font-weight: bold;">Multi Entity</p>
+					<p style="padding-right: 10%; text-align:justify;">The lightweight Ferris Platform and user interface make it easily suitable for a 
+					multi entity and multi project setup.</p>
+					<p style="font-weight: bold;">Multi User</p>
+					<p style="padding-right: 10%; text-align:justify;">Out of the box integration with external LDAP, 0Auth and SSO provide a seamless bridge
+					into existing authentication management systems. Granular access rights are managed on a funtion, project and service level.</p>
+					<p style="font-weight: bold;">Security</p>
+					<p style="padding-right: 10%; text-align:justify;">Built-in secrets storage to save your applications secrets. Support for secrets at 
+						service, project and platform level. All actions are aggregated and ready to ingest into the audit system of choice.</p>
+				</div>
+				<button class="accordion">Transparency</button>
+				<div class="panel">
+					<p style="font-weight: bold;">Correlation ID</p>
+					<p style="padding-right: 10%; text-align:justify;">A service level bi-directional correlation id serves as the connecting element
+					between events and services. Track processes and flows up-stream and down-stream to determine their impact.</p>
+					<p style="font-weight: bold;">Logging and Monitoring</p>
+					<p style="padding-right: 10%; text-align:justify;">The Ferris UI makes it easy to understand what Ferris does under the hood. Log data 
+						is made available at great detail in the form of data, code and visual graphs.</p>
+					<p style="font-weight: bold;">You're in control</p>
+					<p style="padding-right: 10%; text-align:justify;">Ferris lets you schedule, run, pause, re-run and even weigh and prioritize jobs and services. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+
+function hideAll(exceptThis) {
+  for (var i = 0; i < acc.length; i++) {
+    if (acc[i] !== exceptThis) {
+      acc[i].classList.remove("active");
+      var panel = acc[i].nextElementSibling;
+      panel.style.maxHeight = null;
+    }
+  }
+}
+
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    hideAll(this);
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</section>
+
+
 <!-- Ferris Newsletter Modal -->
 <script src="//m.ferrislabs.net/focus/3.js" type="text/javascript" charset="utf-8" async="async"></script>
 

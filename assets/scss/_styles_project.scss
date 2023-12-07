@@ -827,3 +827,84 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 .mauticform-pagebreak-wrapper .mauticform-button-wrapper {  display: inline; }
 .mauticform-field-hidden { display:none }
 // subscribe form
+
+
+// Acordion Style
+.accordion {
+	background-color: #eee;
+	color: #b81414;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+	background-color: #b81414;
+	color: white;
+	font-weight: bold;
+  }
+  
+  .accordion:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: #b81414;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+	color: #b81414;
+  }
+
+  .panel {
+	padding: 0px 0px 0px 18px;
+	margin:  3px 0px 0px 0px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+  }
+// Acordion Style End
+
+// Tabbed Views
+.tab-container {
+    display: flex;
+    width: 100%;
+}
+
+.tab tablink {
+    background-color: #b81414;
+    border: none !important;
+    outline: none !important;
+    cursor: pointer;
+    padding: 10pt;
+    transition: 0.3s;
+    text-align: left;
+    margin-right: 10pt;
+    border-top: 1px solid transparent !important;
+    border-bottom: 1px solid transparent !important;
+}
+
+.tab tablink:hover {
+    background-color: #ddd;
+}
+
+.tab tablink.active-tab {
+    background-color: #ccc;
+}
+
+.tab-content-container {
+    width: 100%; /* Full width of the container */
+    border: 1px solid #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px; /* Adjust the padding for content */
+}
+// Tabbed Views End
