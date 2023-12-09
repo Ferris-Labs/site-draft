@@ -871,31 +871,34 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
   }
 // Acordion Style End
 
+
 // Tabbed Views
 .tab-container {
     display: flex;
     width: 100%;
 }
 
-.tab tablink {
-    background-color: #b81414;
-    border: none !important;
-    outline: none !important;
+.tab.tablink {
+    background-color: #ccc;
+    border: none;
+	border-radius: 10px 10px 0px 0px;
+    outline: none;
     cursor: pointer;
     padding: 10pt;
     transition: 0.3s;
     text-align: left;
     margin-right: 10pt;
-    border-top: 1px solid transparent !important;
-    border-bottom: 1px solid transparent !important;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 
-.tab tablink:hover {
+.tab.tablink:hover {
     background-color: #ddd;
 }
 
-.tab tablink.active-tab {
-    background-color: #ccc;
+.tab.tablink.active-tab {
+    background-color: #b81414;
+	color: white;
 }
 
 .tab-content-container {
