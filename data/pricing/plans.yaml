@@ -4,14 +4,15 @@ plans:
   icon: ferris_labs_red.png
   features:
     - Ferris Executor
-    - Ferris Technology Platform
+
   features2:
-    - cloud only
+    - 30 days free use
+    - personal, small teams
   price: '<i>free</i>'
   button:
     href: '/contact'
     text: 'Register'
-  footer_note: true
+  footer_note: false
 
 - name: Startup
   description: 
@@ -51,8 +52,7 @@ plans:
     - Ferris Technology Platform
   features2:
     - cloud, hybrid cloud, on premise
-    - enterprise integration
-    - enterprise architecture
+    - enterprise readiness
   price: 'call us'
   button:
     href: '/contact'
