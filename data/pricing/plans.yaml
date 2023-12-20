@@ -1,5 +1,5 @@
 plans:
-- name: Starter Pack
+- name: Sandbox
   description: 
   icon: ferris_labs_red.png
   features:
@@ -7,11 +7,11 @@ plans:
     - Ferris Technology Platform
   features2:
     - cloud only
-  price: '<sup>&euro;</sup>7 499<sup>.00</sup>'
+  price: '<i>free</i>'
   button:
     href: '/contact'
-    text: 'Book Starter Pack'
-  footer_note: false
+    text: 'Register'
+  footer_note: true
 
 - name: Startup
   description: 
@@ -24,7 +24,7 @@ plans:
   price: '<sup>&euro;</sup> 650<sup>.00/mt</sup>'
   button:
     href: '/contact'
-    text: 'Get in touch'
+    text: 'Book'
   footer_note: true
 
 - name: Standard
@@ -39,7 +39,7 @@ plans:
   price: '<sup>&euro;</sup> 1 250<sup>.00/mt</sup>'
   button:
     href: '/contact'
-    text: 'Get in touch'
+    text: 'Book'
   footer_note: true
 
 - name: Enterprise
@@ -56,5 +56,5 @@ plans:
   price: 'call us'
   button:
     href: '/contact'
-    text: 'Get in touch'
+    text: 'Contact Sales'
   footer_note: true

@@ -46,60 +46,64 @@
 
 <!-- Promo Tombstone-->
 {{ define "promo_tombstone" }}
-    <div class="col-lg-12">
-        <div class="integration-card">
-            <div class="card-body d-flex flex-column justify-content-between" style="min-height: 200px;">
-                <div>
-                    <div class="integration-card-title" title="{{.name}}">
-                        <div class="text-center">
-                            <img style="height: 60px; width: auto;" class="m-0" src="/images/brand_images/{{.icon}}" alt="{{.name}}" />
-                        </div>
-                        <h4 class="font-weight-bold text-center text-capitalize mb-3">
-                            {{ .name }}
-                        </h4>
+<div class="col-lg-12">
+    <div class="integration-card-promo">
+        <div class="card-body d-flex flex-column justify-content-between" style="min-height: 200px;">
+            <div class="integration-card-title" title="{{.name}}">
+                <div class="text-center">
+                    <img style="height: 60px; width: auto;" class="m-0" src="/images/brand_images/{{.icon}}" alt="{{.name}}" />
+                </div>
+                <h2 class="font-weight-bold text-center text-capitalize mb-3">
+                    {{ .name }}
+                </h2>
+            </div>
+            <div>
+                <h4 style="text-align: center;">Limited time offer for an all-inclusive personalized starter Use Case.</h4>
+                <div class="pill">Limited Time Offer: 31.03.2024</div>
+                <p style="margin: 3% 5% 2% 5%;">Experience a revolution in modern applications development with Ferris Labs' Quick Starter Pack. In less than 2 weeks, and for a more than affordable cost, dive into the future with the Ferris Development Platform, receive a fully functioning, business-ready Use Case, meticulously tailored to your specific needs, ensuring immediate relevance and applicability.</p>
+                <p style="margin: 2% 5% 2% 5%;">Enjoy these benefits, including a personalized touch with hands-on mentoring of your development staff teaching them fast yet sustainable development and integration techniques:</p>
+                
+                <div class="two-column-list">
+                    <div class="two-column-list-item">
+                        <h3>Business-Ready Use Case</h3>
+                        <p>Gain access to the powerful Ferris Development Platform, a comprehensive suite of tools and resources tailored for efficient and modern application development.</p>
                     </div>
-                    {{ if .description1 }}
-                        <p class="integration-card-title mb-2 text-muted text-center">
-                            {{ .description1 }}
-                        </p>
-                    {{ end }}
-                    {{ if .description2 }}
-                        <p class="integration-card-title mb-2 text-muted text-center">
-                            {{ .description2 }}
-                        </p>
-                    {{ end }}
-                    {{ if .features }}
-                        {{ range .features }}
-                            <p class="small mb-1">
-                                {{ if . }}
-                                    <i class="fa fa-check mr-1" aria-hidden="true" style="color: #b81414"></i>
-                                {{ else }}
-                                {{ end }}
-                                {{ . }}
-                            </p>
-                        {{ end }}
-                    {{ end }}
-
-                    &nbsp;
-                    &nbsp;
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="text-center">
-                                <a class="btn btn-md btn-primary mb-4" href="/contact">
-                                    Book Starter Pack <i class="fas fa-arrow-alt-circle-right ml-2"></i>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="two-column-list-item">
+                        <h3>Ferris Development Platform</h3>
+                        <p>Gain access to the powerful Ferris Development Platform, a comprehensive suite of tools and resources tailored for efficient and modern application development.</p>
                     </div>
-                    <h4 class="small mb-1" style="text-align: center; font-style: italic;">
-                        {{ .footer | safeHTML }}
-                    </h4>
+                    <div class="two-column-list-item">
+                        <h3>Tailored to Your Business</h3>
+                        <p>Enjoy a personalized touch with solutions crafted specifically for your business, optimizing the Quick Starter Pack to align seamlessly with your unique requirements and objectives.</p>
+                    </div>
+                    <div class="two-column-list-item">
+                        <h3>Insights and Learning Curve</h3>
+                        <p>Benefit from valuable insights and guidance through personalized mentoring sessions. Our experts will provide hands-on support, sharing engineering methodologies and best practices to enhance your team's skills and knowledge.</p>
+                    </div>
                 </div>
             </div>
+
+            &nbsp;
+            &nbsp;
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <a class="btn btn-md btn-primary mb-4" href="/contact">
+                            Secure Your Quick Starter Pack <i class="fas fa-arrow-alt-circle-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <h4 class="small mb-1" style="text-align: center; font-style: italic;">
+                {{ .footer | safeHTML }}
+            </h4>
         </div>
     </div>
+</div>
 {{ end }}
+
 
 
 <!-- Pricing Tombstone-->

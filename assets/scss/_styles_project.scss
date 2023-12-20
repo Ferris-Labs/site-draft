@@ -123,6 +123,62 @@ footer {
 	}
 }
 
+
+.integration-card-promo{
+	background: #efefef;
+	border: 1px solid $border-color;
+	border-radius: 1rem;
+	margin-bottom: 2rem;
+	.card-body {
+		min-height: 350px;
+		.integration-card-title {
+			margin-bottom: 1rem;
+			h4 {
+				@extend .no-wrap;
+				text-transform: uppercase;
+			}
+			img {
+				width: 2.2rem;
+				margin-right: 1rem;
+			}
+		}
+		.integration-tags {
+			margin-bottom: .25rem;
+			a {
+				line-height: normal;
+			}
+		}
+	}
+}
+
+.integration-card-lead-promo{
+	background: black;
+	color: white;
+	border: 1px solid $border-color;
+	border-radius: 1rem;
+	margin-bottom: 2rem;
+	.card-body {
+		min-height: 350px;
+		.integration-card-title {
+			margin-bottom: 1rem;
+			h4 {
+				@extend .no-wrap;
+				text-transform: uppercase;
+			}
+			img {
+				width: 2.2rem;
+				margin-right: 1rem;
+			}
+		}
+		.integration-tags {
+			margin-bottom: .25rem;
+			a {
+				line-height: normal;
+			}
+		}
+	}
+}
+
 .img-height-80 {
 	height: 80px;
     width: auto;
@@ -918,53 +974,43 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-  @keyframes slide {
+ }
+ 
+ @keyframes slide {
 	from {
-		transform: translateX(0);
+	   transform: translateX(0);
 	}	
 	to {
-		transform: translateX(-100%);
+	   transform: translateX(-100%);
 	}
-}
-  
- .logos {
-	// background-color: #ccc;
-	white-space: nowrap;
-	overflow: hidden;
-	padding: 15pt 0 15pt 0;
-	position: relative;
-	margin-bottom: 10pt;
-  }
-
-  .logos:hover .logos-slide {
-	animation-play-state: paused;
-  }
-
- .logos::before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 50px;
-	height: 100%;
-	background: transparent;
-	content: "";
-	z-index: 2;
  }
-
-  
-  .logos-slide {
+ 
+ .logos {
+    width: 80%; /* Adjust the percentage or use a specific width that suits your layout */
+    margin: 0 auto; /* Center the container and adjust margins */
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 15pt 0;
+    position: relative;
+    margin-bottom: 10pt;
+}
+ 
+ .logos:hover .logos-slide {
+	animation-play-state: paused;
+ }
+ 
+ .logos-slide {
 	display: inline-block;
-	animation: 30s slide infinite linear;
-  }
-  
-  .logos-slide img {
-	width: auto;
-	height: 40px;
-	object-fit: cover; /* or contain, based on your preference */
-	margin: 0 40px;
-  }
+	animation: 20s slide infinite linear; /* Adjust duration */
+	animation-delay: 2s;
+ }
+ 
+ .logos-slide img {
+	height: 30px;
+	object-fit: cover;
+	margin: 0 50px; /* Adjust margin */
+ }
+ 
 // Scrolling Banner - Customer & Partner Logos
 
 // Profile Images - About Section
@@ -996,3 +1042,45 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
     text-align: center;
     z-index: 1000;
 }
+
+
+/* Additional styles for the two-column list */
+.two-column-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* Center the columns */
+  }
+  
+  /* Style for each list item */
+  .two-column-list-item {
+	position: relative; /* Position relative for absolute positioning of the pill element */
+	width: calc(50% - 4%); /* Adjust the width of each column and consider the gap */
+	margin-bottom: 20px; /* Adjust the margin between items */
+	box-sizing: border-box; /* Include padding and border in the width calculation */
+	padding: 10px; /* Add padding for better readability */
+  }
+  
+  /* Style for the pill element */
+  .pill {
+	position: absolute;
+	top: 10%; /* Adjust the distance from the bottom as needed */
+	right: 10%; /* Adjust the distance from the right as needed */
+	background-color: #b81414; /* Background color of the pill */
+	color: #fff; /* Text color of the pill */
+	padding: 5px 10px; /* Adjust the padding as needed */
+	border-radius: 20px; /* Adjust the border-radius for a pill shape */
+  }
+  
+  /* Style for the heading in each list item */
+  .two-column-list-item h3 {
+	font-size: 1.2em;
+	color: #007bff; /* Adjust the color as needed */
+	margin-bottom: 10px; /* Add space between heading and paragraph */
+	position: relative; /* Position relative for z-index stacking context */
+  }
+  
+  /* Style for the paragraph in each list item */
+  .two-column-list-item p {
+	line-height: 1.5;
+  }
+  
